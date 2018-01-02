@@ -4,14 +4,18 @@
             <template v-if="!loadingSeries">
                 <v-flex xs12>
                     <v-toolbar>
-                        <v-toolbar-title>{{series.name}}</v-toolbar-title>
+                        <v-toolbar-title>{{series.fullName}}</v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-btn outline round color="teal" :to="'/series/'+series.id">
+                            {{series.name}}
+                        </v-btn>
                     </v-toolbar>
                     <v-card>
                         <v-card-text>
                             <p>{{series.description}}</p>
                             <v-list>
                                 <template v-for="season in series.seasons" @key="season.id">
-                                    <v-list-tile @click="" :to="'/races/season/'+season.name+'/'">
+                                    <v-list-tile @click="" :to="'/races/series/'+series.id+'/season/'+season.id+'/'">
                                         <v-list-tile-content>
                                             <v-list-tile-title>{{ season.name }}</v-list-tile-title>
                                         </v-list-tile-content>

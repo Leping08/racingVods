@@ -19,8 +19,6 @@ Vue.use(Vuetify, {
 Vue.use(VueRouter);
 Vue.component('layout', layout);
 
-
-
 import layout from './components/layout/layout.vue';
 import races from './components/races/races.vue';
 import raceID from './components/races/raceID.vue';
@@ -28,9 +26,8 @@ import series from './components/series/series.vue';
 import schedule from './components/schedule/schedule.vue';
 import about from './components/about/about.vue';
 import seriesID from './components/series/seriesID.vue';
+import seasonRaces from './components/season/seasonRaces.vue';
 import home from './components/home/home.vue';
-
-
 
 const router = new VueRouter({
     mode: 'history',
@@ -42,6 +39,7 @@ const router = new VueRouter({
         { path: '/schedule', component: schedule },
         { path: '/about', component: about },
         { path: '/series/:id', component: seriesID },
+        { path: '/races/series/:seriesID/season/:seasonID', component: seasonRaces },
         { path: '/', redirect: '/home' }
 
     ]

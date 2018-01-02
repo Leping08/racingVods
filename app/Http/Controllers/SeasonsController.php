@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Season;
+use App\Race;
 use Illuminate\Http\Request;
 
 class SeasonsController extends Controller
@@ -81,5 +82,15 @@ class SeasonsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function races($seriesID, $seasonID)
+    {
+        return Race::where('season_id', $seasonID)
+                    ->where('series_id', $seriesID)
+                    ->orderBy('race_date', 'asc')
+                    ->with('track')
+                    ->with('series')
+                    ->get();
     }
 }

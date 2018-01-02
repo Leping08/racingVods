@@ -46,3 +46,6 @@ Route::get('/series/{id}', 'SeriesController@show');
 // Seasons
 /* @see SeasonsController::index() */
 Route::get('/seasons', 'SeasonsController@index');
+
+/* @see SeasonsController::races() */
+Route::get('/series/{seriesID}/season/{seasonID}', 'SeasonsController@races');
