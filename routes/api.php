@@ -34,6 +34,9 @@ Route::get('/tracks', 'TracksController@index');
 /* @see TracksController::show() */
 Route::get('/track/{id}', 'TracksController@show');
 
+/* @see TracksController::races() */
+Route::get('/track/{id}/races', 'TracksController@races');
+
 
 // Series
 /* @see SeriesController::index() */

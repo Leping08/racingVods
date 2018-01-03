@@ -12,6 +12,7 @@
                     </v-toolbar>
                     <v-card>
                         <v-card-text>
+                            <!-- TODO: Make this card better -->
                             <p>{{series.description}}</p>
                             <v-list>
                                 <template v-for="season in series.seasons" @key="season.id">

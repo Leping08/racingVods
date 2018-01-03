@@ -11,6 +11,5 @@ class Track extends Model
     public function races()
     {
         return $this->hasMany(Race::class)->orderBy('race_date');
-
     }
 }

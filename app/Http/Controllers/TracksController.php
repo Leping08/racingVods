@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Track;
+use App\Race;
 use Illuminate\Http\Request;
 
 class TracksController extends Controller
@@ -81,5 +82,10 @@ class TracksController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function races($id)
+    {
+        return Race::orderBy('race_date', 'desc')->with('series')->where('track_id', $id)->get();
     }
 }
