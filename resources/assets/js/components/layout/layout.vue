@@ -5,18 +5,18 @@
                 v-model="drawer"
                 app
         >
-            <v-toolbar flat>
+            <v-toolbar>
                 <v-list>
                     <v-list-tile>
                         <v-list-tile-title>
                             Racing Vods
-                        </v-list-tile-title>
+                    </v-list-tile-title>
                     </v-list-tile>
                 </v-list>
             </v-toolbar>
             <v-divider></v-divider>
             <v-list>
-                <v-list-tile @click="" to="/home">
+                <v-list-tile ripple @click="" to="/home">
                     <v-list-tile-action>
                         <v-icon>home</v-icon>
                     </v-list-tile-action>
@@ -24,7 +24,7 @@
                         <v-list-tile-title>Home</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile @click="" to="/series">
+                <v-list-tile ripple @click="" to="/series">
                     <v-list-tile-action>
                         <v-icon>mdi-format-list-bulleted</v-icon>
                     </v-list-tile-action>
@@ -32,7 +32,7 @@
                         <v-list-tile-title>Series</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile @click="" to="/races">
+                <v-list-tile ripple @click="" to="/races">
                     <v-list-tile-action>
                         <v-icon>mdi-flag-checkered</v-icon>
                     </v-list-tile-action>
@@ -40,7 +40,7 @@
                         <v-list-tile-title>Races</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile @click="">
+                <v-list-tile ripple @click="" to="/tracks">
                     <v-list-tile-action>
                         <v-icon>mdi-road</v-icon>
                     </v-list-tile-action>
@@ -48,7 +48,7 @@
                         <v-list-tile-title>Tracks</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile @click="" to="/schedule">
+                <v-list-tile ripple @click="" to="/schedule">
                     <v-list-tile-action>
                         <v-icon>mdi-calendar-range</v-icon>
                     </v-list-tile-action>
@@ -58,7 +58,7 @@
                 </v-list-tile>
                 <v-divider></v-divider>
                 <v-subheader>Additional resources</v-subheader>
-                <v-list-tile @click="" to="/about">
+                <v-list-tile ripple @click="" to="/about">
                     <v-list-tile-action>
                         <v-icon>mdi-information-outline</v-icon>
                     </v-list-tile-action>
@@ -70,17 +70,17 @@
                         prepend-icon="mdi-account-multiple"
                         no-action
                 >
-                    <v-list-tile slot="activator">
+                    <v-list-tile ripple slot="activator">
                         <v-list-tile-content>
                             <v-list-tile-title>Comunity</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
-                    <v-list-tile @click="" to="">
+                    <v-list-tile ripple @click="" to="">
                         <v-list-tile-content>
                             <v-list-tile-title>Discord</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
-                    <v-list-tile @click="" to="">
+                    <v-list-tile ripple @click="" to="">
                         <v-list-tile-content>
                             <v-list-tile-title>Patreon</v-list-tile-title>
                         </v-list-tile-content>

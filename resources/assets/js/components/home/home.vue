@@ -13,7 +13,7 @@
 
         <v-layout row wrap>
             <v-flex md4 xs12 d-flex>
-                <v-card class="text-xs-center" hover="true" flat="true" to="/series">
+                <v-card ripple class="text-xs-center" hover="true" flat="true" to="/series">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-format-list-bulleted</v-icon>
@@ -28,7 +28,7 @@
             </v-flex>
 
             <v-flex md4 xs12 d-flex>
-                <v-card class="text-xs-center" hover="true" flat="true" to="/races">
+                <v-card ripple class="text-xs-center" hover="true" flat="true" to="/races">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-flag-checkered</v-icon>
@@ -43,7 +43,7 @@
             </v-flex>
 
             <v-flex md4 xs12 d-flex>
-                <v-card class="text-xs-center" hover="true" flat="true" to="/tracks">
+                <v-card ripple class="text-xs-center" hover="true" flat="true" to="/tracks">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-road</v-icon>
@@ -67,7 +67,7 @@
                 </v-card>
                 <v-parallax src="/img/nurbur-night.png" height="400">
                     <v-layout column align-right justify-center class="text-xs-right">
-                        <h2 class="white--text">Built For Enthusiasts By Enthusiasts</h2>
+                        <h2 class="white--text">Built For Enthusiasts,<br>By Enthusiasts</h2>
                     </v-layout>
                 </v-parallax>
             </v-flex>

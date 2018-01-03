@@ -2,8 +2,8 @@
     <v-container fluid grid-list-md>
         <v-layout row wrap>
             <template v-for="race in races" @key="race.id" v-if="!loadingRaces">
-                <v-flex md4 xs12>
-                    <v-card :hover="true" :to="/races/+race.id">
+                <v-flex lg4 md6 xs12>
+                    <v-card ripple :hover="true" :to="/races/+race.id">
                         <v-toolbar>
                             <v-toolbar-title>{{race.name}}</v-toolbar-title>
                             <v-spacer></v-spacer>

@@ -18285,3 +18285,9 @@ table.table tfoot tr td {
 .embed-responsive-1by1::before {
     padding-top: 100%;
 }
+
+@media only screen and (max-width: 599px) {
+    .container {
+        padding: 10px;
+    }
+}

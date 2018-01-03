@@ -14,7 +14,7 @@ class RacesController extends Controller
      */
     public function index()
     {
-        return Race::with(['track', 'season', 'series'])->get();
+        return Race::orderBy('id', 'desc')->with(['track', 'season', 'series'])->get();
     }
 
     /**
