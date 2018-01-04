@@ -1113,7 +1113,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_tracks_tracks_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_tracks_tracks_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_tracks_tracksID_vue__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_tracks_tracksID_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_tracks_tracksID_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_races_create_vue__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_races_create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_races_create_vue__);
 //Racing Vods 2 JS
+
 
 
 
@@ -1148,7 +1151,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('layout', __WEBPACK_IMPORT
 
 var router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
     mode: 'history',
-    routes: [{ path: '/home', component: __WEBPACK_IMPORTED_MODULE_11__components_home_home_vue___default.a }, { path: '/about', component: __WEBPACK_IMPORTED_MODULE_8__components_about_about_vue___default.a }, { path: '/races', component: __WEBPACK_IMPORTED_MODULE_4__components_races_races_vue___default.a }, { path: '/series', component: __WEBPACK_IMPORTED_MODULE_6__components_series_series_vue___default.a }, { path: '/tracks', component: __WEBPACK_IMPORTED_MODULE_12__components_tracks_tracks_vue___default.a }, { path: '/schedule', component: __WEBPACK_IMPORTED_MODULE_7__components_schedule_schedule_vue___default.a }, { path: '/races/:id', component: __WEBPACK_IMPORTED_MODULE_5__components_races_raceID_vue___default.a }, { path: '/series/:id', component: __WEBPACK_IMPORTED_MODULE_9__components_series_seriesID_vue___default.a }, { path: '/tracks/:id', component: __WEBPACK_IMPORTED_MODULE_13__components_tracks_tracksID_vue___default.a }, { path: '/races/series/:seriesID/season/:seasonID', component: __WEBPACK_IMPORTED_MODULE_10__components_season_seasonRaces_vue___default.a }, { path: '/', redirect: '/home' }]
+    routes: [{ path: '/home', component: __WEBPACK_IMPORTED_MODULE_11__components_home_home_vue___default.a }, { path: '/about', component: __WEBPACK_IMPORTED_MODULE_8__components_about_about_vue___default.a }, { path: '/races', component: __WEBPACK_IMPORTED_MODULE_4__components_races_races_vue___default.a }, { path: '/series', component: __WEBPACK_IMPORTED_MODULE_6__components_series_series_vue___default.a }, { path: '/tracks', component: __WEBPACK_IMPORTED_MODULE_12__components_tracks_tracks_vue___default.a }, { path: '/schedule', component: __WEBPACK_IMPORTED_MODULE_7__components_schedule_schedule_vue___default.a }, { path: '/races/:id', component: __WEBPACK_IMPORTED_MODULE_5__components_races_raceID_vue___default.a }, { path: '/series/:id', component: __WEBPACK_IMPORTED_MODULE_9__components_series_seriesID_vue___default.a }, { path: '/tracks/:id', component: __WEBPACK_IMPORTED_MODULE_13__components_tracks_tracksID_vue___default.a }, { path: '/add/race', component: __WEBPACK_IMPORTED_MODULE_14__components_races_create_vue___default.a }, { path: '/races/series/:seriesID/season/:seasonID', component: __WEBPACK_IMPORTED_MODULE_10__components_season_seasonRaces_vue___default.a }, { path: '/', redirect: '/home' }]
 });
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
@@ -33013,6 +33016,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -33263,6 +33284,54 @@ var render = function() {
                         1
                       )
                     ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("v-divider"),
+              _vm._v(" "),
+              _c("v-subheader", [_vm._v("Admin")]),
+              _vm._v(" "),
+              _c(
+                "v-list-tile",
+                {
+                  attrs: { ripple: "", to: "/add/race" },
+                  on: { click: function($event) {} }
+                },
+                [
+                  _c(
+                    "v-list-tile-action",
+                    [_c("v-icon", [_vm._v("mdi-plus-circle-outline")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-tile-content",
+                    [_c("v-list-tile-title", [_vm._v("Races")])],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-list-tile",
+                {
+                  attrs: { ripple: "", to: "/add/track" },
+                  on: { click: function($event) {} }
+                },
+                [
+                  _c(
+                    "v-list-tile-action",
+                    [_c("v-icon", [_vm._v("mdi-plus-circle-outline")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-tile-content",
+                    [_c("v-list-tile-title", [_vm._v("Tracks")])],
                     1
                   )
                 ],
@@ -37594,6 +37663,476 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-169bc220", module.exports)
+  }
+}
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(68)
+/* template */
+var __vue_template__ = __webpack_require__(69)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\races\\create.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-853c83a6", Component.options)
+  } else {
+    hotAPI.reload("data-v-853c83a6", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            tracks: [],
+            series: [],
+            seasons: [],
+            loadingTracks: true,
+            loadingSeries: true,
+            loadingSeasons: true,
+            selectedTrackID: null,
+            name: null,
+            series_id: null,
+            track_id: null,
+            season_id: null,
+            race_date: null,
+            youtube_id: null,
+            youtube_start_time: null,
+            modal: false
+        };
+    },
+    mounted: function mounted() {
+        this.getTracks();
+        this.getSeries();
+        this.getSeasons();
+    },
+
+    methods: {
+        getTracks: function getTracks() {
+            var _this = this;
+
+            this.loadingTracks = true;
+            this.tracks = [];
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/tracks').then(function (response) {
+                _this.tracks = response.data;
+                _this.loadingTracks = false;
+            }).catch(function (e) {
+                _this.loadingTracks = false;
+                console.log(e);
+            });
+        },
+        getSeries: function getSeries() {
+            var _this2 = this;
+
+            this.loadingSeries = true;
+            this.series = [];
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/series').then(function (response) {
+                _this2.series = response.data;
+                _this2.loadingSeries = false;
+            }).catch(function (e) {
+                _this2.loadingSeries = false;
+                console.log(e);
+            });
+        },
+        getSeasons: function getSeasons() {
+            var _this3 = this;
+
+            this.loadingSeasons = true;
+            this.seasons = [];
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/seasons').then(function (response) {
+                _this3.seasons = response.data;
+                _this3.loadingSeasons = false;
+            }).catch(function (e) {
+                _this3.loadingSeasons = false;
+                console.log(e);
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { sm12: "" } },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    [_c("v-toolbar-title", [_vm._v("Create Race")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Name",
+                          "prepend-icon": "mdi-rename-box"
+                        },
+                        model: {
+                          value: _vm.name,
+                          callback: function($$v) {
+                            _vm.name = $$v
+                          },
+                          expression: "name"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-select", {
+                        attrs: {
+                          items: _vm.tracks,
+                          "item-text": "name",
+                          "item-value": "id",
+                          label: "Track",
+                          loading: _vm.loadingTracks,
+                          "single-line": "",
+                          bottom: "",
+                          autocomplete: "",
+                          "prepend-icon": "mdi-road"
+                        },
+                        model: {
+                          value: _vm.track_id,
+                          callback: function($$v) {
+                            _vm.track_id = $$v
+                          },
+                          expression: "track_id"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-select", {
+                        attrs: {
+                          items: _vm.series,
+                          "item-text": "fullName",
+                          "item-value": "id",
+                          label: "Series",
+                          loading: _vm.loadingSeries,
+                          "single-line": "",
+                          bottom: "",
+                          autocomplete: "",
+                          "prepend-icon": "mdi-format-list-bulleted"
+                        },
+                        model: {
+                          value: _vm.series_id,
+                          callback: function($$v) {
+                            _vm.series_id = $$v
+                          },
+                          expression: "series_id"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-select", {
+                        attrs: {
+                          items: _vm.seasons,
+                          "item-text": "name",
+                          "item-value": "id",
+                          label: "Season",
+                          loading: _vm.loadingSeasons,
+                          "single-line": "",
+                          bottom: "",
+                          autocomplete: "",
+                          "prepend-icon": "mdi-weather-sunset"
+                        },
+                        model: {
+                          value: _vm.season_id,
+                          callback: function($$v) {
+                            _vm.season_id = $$v
+                          },
+                          expression: "season_id"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "v-dialog",
+                        {
+                          attrs: {
+                            persistent: "",
+                            lazy: "",
+                            "full-width": "",
+                            width: "290px"
+                          },
+                          model: {
+                            value: _vm.modal,
+                            callback: function($$v) {
+                              _vm.modal = $$v
+                            },
+                            expression: "modal"
+                          }
+                        },
+                        [
+                          _c("v-text-field", {
+                            attrs: {
+                              slot: "activator",
+                              label: "Race Date",
+                              "prepend-icon": "event",
+                              readonly: ""
+                            },
+                            slot: "activator",
+                            model: {
+                              value: _vm.race_date,
+                              callback: function($$v) {
+                                _vm.race_date = $$v
+                              },
+                              expression: "race_date"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("v-date-picker", {
+                            attrs: { scrollable: "", actions: "" },
+                            scopedSlots: _vm._u([
+                              {
+                                key: "default",
+                                fn: function(ref) {
+                                  var save = ref.save
+                                  var cancel = ref.cancel
+                                  return [
+                                    _c(
+                                      "v-card-actions",
+                                      [
+                                        _c("v-spacer"),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-btn",
+                                          {
+                                            attrs: {
+                                              flat: "",
+                                              color: "primary"
+                                            },
+                                            on: { click: cancel }
+                                          },
+                                          [_vm._v("Cancel")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-btn",
+                                          {
+                                            attrs: {
+                                              flat: "",
+                                              color: "primary"
+                                            },
+                                            on: { click: save }
+                                          },
+                                          [_vm._v("OK")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                }
+                              }
+                            ]),
+                            model: {
+                              value: _vm.race_date,
+                              callback: function($$v) {
+                                _vm.race_date = $$v
+                              },
+                              expression: "race_date"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Youtube ID",
+                          "prepend-icon": "mdi-message-video"
+                        },
+                        model: {
+                          value: _vm.youtube_id,
+                          callback: function($$v) {
+                            _vm.youtube_id = $$v
+                          },
+                          expression: "youtube_id"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Start Time (Seconds)",
+                          "prepend-icon": "mdi-timer"
+                        },
+                        model: {
+                          value: _vm.youtube_start_time,
+                          callback: function($$v) {
+                            _vm.youtube_start_time = $$v
+                          },
+                          expression: "youtube_start_time"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-853c83a6", module.exports)
   }
 }
 

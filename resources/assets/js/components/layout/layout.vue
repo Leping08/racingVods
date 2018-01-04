@@ -86,6 +86,24 @@
                         </v-list-tile-content>
                     </v-list-tile>
                 </v-list-group>
+                <v-divider></v-divider>
+                <v-subheader>Admin</v-subheader>
+                <v-list-tile ripple @click="" to="/add/race">
+                    <v-list-tile-action>
+                        <v-icon>mdi-plus-circle-outline</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Races</v-list-tile-title>
+                    </v-list-tile-content>
+                </v-list-tile>
+                <v-list-tile ripple @click="" to="/add/track">
+                    <v-list-tile-action>
+                        <v-icon>mdi-plus-circle-outline</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Tracks</v-list-tile-title>
+                    </v-list-tile-content>
+                </v-list-tile>
             </v-list>
         </v-navigation-drawer>
         <v-toolbar fixed app :color="theme ? '' : 'primary'">

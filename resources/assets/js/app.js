@@ -15,6 +15,7 @@ import seasonRaces from './components/season/seasonRaces.vue';
 import home from './components/home/home.vue';
 import tracks from './components/tracks/tracks.vue';
 import tracksID from './components/tracks/tracksID.vue';
+import createRace from './components/races/create.vue';
 
 Vue.use(Vuetify, {
     theme: {
@@ -44,6 +45,7 @@ const router = new VueRouter({
         { path: '/races/:id', component: raceID },
         { path: '/series/:id', component: seriesID },
         { path: '/tracks/:id', component: tracksID },
+        { path: '/add/race', component: createRace },
         { path: '/races/series/:seriesID/season/:seasonID', component: seasonRaces },
         { path: '/', redirect: '/home' }
 
