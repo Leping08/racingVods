@@ -34354,7 +34354,7 @@ var render = function() {
               ? [
                   _c(
                     "v-flex",
-                    { attrs: { lg4: "", md6: "", xs12: "" } },
+                    { attrs: { xl4: "", lg6: "", sm12: "" } },
                     [
                       _c(
                         "v-card",
@@ -35469,7 +35469,7 @@ var render = function() {
               ? [
                   _c(
                     "v-flex",
-                    { attrs: { lg4: "", md6: "", xs12: "" } },
+                    { attrs: { xl4: "", lg6: "", sm12: "" } },
                     [
                       _c(
                         "v-card",
@@ -36137,7 +36137,7 @@ var render = function() {
               ? [
                   _c(
                     "v-flex",
-                    { attrs: { lg4: "", md6: "", xs12: "" } },
+                    { attrs: { xl4: "", lg6: "", sm12: "" } },
                     [
                       _c(
                         "v-card",
