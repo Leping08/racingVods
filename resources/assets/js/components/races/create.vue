@@ -83,7 +83,39 @@
                                 prepend-icon="mdi-timer"
                         ></v-text-field>
                     </v-card-text>
+                    <v-divider></v-divider>
+                    <v-card-text>
+                        <v-btn
+                                outline
+                                color="primary"
+                                @click="createRace()"
+                        ><v-icon left dark>mdi-library-plus</v-icon>Create</v-btn>
+                        <v-btn
+                                outline
+                                color="info"
+                                @click="clear()"
+                        ><v-icon left dark>mdi-close-box-outline</v-icon>Clear</v-btn>
+                    </v-card-text>
                 </v-card>
+                <v-snackbar
+                    :timeout="timeout"
+                    v-model="success"
+                    :top="true"
+                    :right="true"
+                    class="green"
+                >
+                    {{newRace.name}} added!
+                </v-snackbar>
+
+                <v-snackbar
+                        :timeout="timeout"
+                        v-model="errors"
+                        :top="true"
+                        :right="true"
+                        class="red"
+                >
+                    Error
+                </v-snackbar>
             </v-flex>
         </v-layout>
     </v-container>
@@ -108,7 +140,11 @@
                 race_date: null,
                 youtube_id: null,
                 youtube_start_time: null,
-                modal: false
+                modal: false,
+                newRace: {},
+                success: false,
+                errors: false,
+                timeout: 5000
             }
         },
         mounted() {
@@ -155,6 +191,42 @@
                         this.loadingSeasons = false;
                         console.log(e);
                     });
+            },
+            createRace: function () {
+                axios.post('/api/race', {
+                        name: this.name,
+                        series_id: this.series_id,
+                        track_id: this.track_id,
+                        season_id: this.season_id,
+                        race_date: this.race_date,
+                        youtube_id: this.youtube_id,
+                        youtube_start_time: this.youtube_start_time,
+                    })
+                    .then((response) => {
+                        this.newRace = response.data;
+                        this.success = true;
+                        this.partialClear();
+                    })
+                    .catch((e) => {
+                        this.errors = true;
+                        console.log(e);
+                    });
+            },
+            clear: function () {
+                this.name = null;
+                this.series_id = null;
+                this.track_id = null;
+                this.season_id = null;
+                this.race_date = null;
+                this.youtube_id = null;
+                this.youtube_start_time = null;
+            },
+            partialClear: function () {
+                this.name = null;
+                this.track_id = null;
+                this.race_date = null;
+                this.youtube_id = null;
+                this.youtube_start_time = null;
             }
         }
     }

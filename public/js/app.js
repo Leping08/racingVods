@@ -37812,6 +37812,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -37831,7 +37863,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             race_date: null,
             youtube_id: null,
             youtube_start_time: null,
-            modal: false
+            modal: false,
+            newRace: {},
+            success: false,
+            errors: false,
+            timeout: 5000
         };
     },
     mounted: function mounted() {
@@ -37879,6 +37915,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this3.loadingSeasons = false;
                 console.log(e);
             });
+        },
+        createRace: function createRace() {
+            var _this4 = this;
+
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/api/race', {
+                name: this.name,
+                series_id: this.series_id,
+                track_id: this.track_id,
+                season_id: this.season_id,
+                race_date: this.race_date,
+                youtube_id: this.youtube_id,
+                youtube_start_time: this.youtube_start_time
+            }).then(function (response) {
+                _this4.newRace = response.data;
+                _this4.success = true;
+                _this4.partialClear();
+            }).catch(function (e) {
+                _this4.errors = true;
+                console.log(e);
+            });
+        },
+        clear: function clear() {
+            this.name = null;
+            this.series_id = null;
+            this.track_id = null;
+            this.season_id = null;
+            this.race_date = null;
+            this.youtube_id = null;
+            this.youtube_start_time = null;
+        },
+        partialClear: function partialClear() {
+            this.name = null;
+            this.track_id = null;
+            this.race_date = null;
+            this.youtube_id = null;
+            this.youtube_start_time = null;
         }
     }
 });
@@ -38112,9 +38184,93 @@ var render = function() {
                       })
                     ],
                     1
+                  ),
+                  _vm._v(" "),
+                  _c("v-divider"),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { outline: "", color: "primary" },
+                          on: {
+                            click: function($event) {
+                              _vm.createRace()
+                            }
+                          }
+                        },
+                        [
+                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
+                            _vm._v("mdi-library-plus")
+                          ]),
+                          _vm._v("Create")
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { outline: "", color: "info" },
+                          on: {
+                            click: function($event) {
+                              _vm.clear()
+                            }
+                          }
+                        },
+                        [
+                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
+                            _vm._v("mdi-close-box-outline")
+                          ]),
+                          _vm._v("Clear")
+                        ],
+                        1
+                      )
+                    ],
+                    1
                   )
                 ],
                 1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-snackbar",
+                {
+                  staticClass: "green",
+                  attrs: { timeout: _vm.timeout, top: true, right: true },
+                  model: {
+                    value: _vm.success,
+                    callback: function($$v) {
+                      _vm.success = $$v
+                    },
+                    expression: "success"
+                  }
+                },
+                [
+                  _vm._v(
+                    "\n                " +
+                      _vm._s(_vm.newRace.name) +
+                      " added!\n            "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "v-snackbar",
+                {
+                  staticClass: "red",
+                  attrs: { timeout: _vm.timeout, top: true, right: true },
+                  model: {
+                    value: _vm.errors,
+                    callback: function($$v) {
+                      _vm.errors = $$v
+                    },
+                    expression: "errors"
+                  }
+                },
+                [_vm._v("\n                Error\n            ")]
               )
             ],
             1

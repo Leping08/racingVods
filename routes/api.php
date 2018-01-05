@@ -26,6 +26,9 @@ Route::get('/races/latest', 'RacesController@latest');
 /* @see RacesController::show() */
 Route::get('/race/{id}', 'RacesController@show');
 
+/* @see RacesController::store() */
+Route::post('/race', 'RacesController@store');
+
 
 // Tracks
 /* @see TracksController::index() */

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Race;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class RacesController extends Controller
 {
@@ -35,7 +37,21 @@ class RacesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $race = $request->validate([
+            'name' => 'required|max:255',
+            'series_id' => 'required|integer',
+            'track_id' =>  'required|integer',
+            'season_id' => 'required|integer',
+            'race_date' => 'required|date',
+            'youtube_id' => 'required|max:20',
+            'youtube_start_time' => 'required|integer'
+        ]);
+
+        $race['race_date'] = Carbon::parse($race['race_date']);
+
+        $newRace = Race::create($race);
+        Log::info("$newRace->name was created.");
+        return $newRace;
     }
 
     /**
