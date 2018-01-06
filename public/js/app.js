@@ -34451,52 +34451,55 @@ var render = function() {
         "v-layout",
         { attrs: { row: "", wrap: "" } },
         [
-          _c(
-            "v-flex",
-            { attrs: { xs12: "" } },
-            [
-              _c(
-                "v-toolbar",
-                [
-                  _c("v-toolbar-title", [_vm._v("Races")]),
-                  _vm._v(" "),
-                  _c("v-spacer"),
-                  _vm._v(" "),
-                  _c("v-text-field", {
-                    staticClass: "pr-3",
-                    attrs: {
-                      "append-icon": "search",
-                      label: "Race or Series",
-                      "single-line": "",
-                      "hide-details": ""
-                    },
-                    model: {
-                      value: _vm.search,
-                      callback: function($$v) {
-                        _vm.search = $$v
-                      },
-                      expression: "search"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("v-spacer"),
-                  _vm._v(" "),
-                  _c("v-icon", { attrs: { color: "primary" } }, [
-                    _vm._v("mdi-flag-checkered")
-                  ])
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _vm._l(_vm.filteredRaces, function(race) {
-            return !_vm.loadingRaces
-              ? [
-                  _c(
+          !_vm.loadingRaces
+            ? [
+                _c(
+                  "v-flex",
+                  { attrs: { xs12: "" } },
+                  [
+                    _c(
+                      "v-toolbar",
+                      [
+                        _c("v-toolbar-title", [_vm._v("Races")]),
+                        _vm._v(" "),
+                        _c("v-spacer"),
+                        _vm._v(" "),
+                        _c("v-text-field", {
+                          staticClass: "pr-3",
+                          attrs: {
+                            "append-icon": "search",
+                            label: "Race or Series",
+                            "single-line": "",
+                            "hide-details": ""
+                          },
+                          model: {
+                            value: _vm.search,
+                            callback: function($$v) {
+                              _vm.search = $$v
+                            },
+                            expression: "search"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("v-spacer"),
+                        _vm._v(" "),
+                        _c("v-icon", { attrs: { color: "primary" } }, [
+                          _vm._v("mdi-flag-checkered")
+                        ])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _vm._l(_vm.filteredRaces, function(race) {
+                  return _c(
                     "v-flex",
-                    { attrs: { xl4: "", lg6: "", sm12: "" } },
+                    {
+                      attrs: { xl4: "", lg6: "", sm12: "" },
+                      on: { key: race.id }
+                    },
                     [
                       _c(
                         "v-card",
@@ -34554,9 +34557,9 @@ var render = function() {
                     ],
                     1
                   )
-                ]
-              : _vm._e()
-          }),
+                })
+              ]
+            : _vm._e(),
           _vm._v(" "),
           _vm.loadingRaces
             ? [
@@ -36665,7 +36668,7 @@ var render = function() {
                   _c("v-card-text", [
                     _c("p", [
                       _vm._v(
-                        "Videos from the top racing series around the world including The FIA World Endurance Championship, The International Motor Sports Association, and Indy Car."
+                        "Videos from the top racing series around the world including The FIA World Endurance Championship, Indy Car, and the International Motor Sports Association."
                       )
                     ])
                   ])
@@ -36765,7 +36768,7 @@ var render = function() {
                   _c("v-card-text", [
                     _c("p", [
                       _vm._v(
-                        "Tracks from around the world with data that includes layouts, lap distances, corner names, and track website."
+                        "Tracks from around the world with info including layouts, lap distances, corner names, and website."
                       )
                     ])
                   ])

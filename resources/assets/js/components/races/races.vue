@@ -1,24 +1,24 @@
 <template>
     <v-container fluid grid-list-md>
         <v-layout row wrap>
-            <v-flex xs12>
-                <v-toolbar>
-                    <v-toolbar-title>Races</v-toolbar-title>
-                    <v-spacer></v-spacer>
-                    <v-text-field
-                            class="pr-3"
-                            append-icon="search"
-                            label="Race or Series"
-                            single-line
-                            hide-details
-                            v-model="search"
-                    ></v-text-field>
-                    <v-spacer></v-spacer>
-                    <v-icon color="primary">mdi-flag-checkered</v-icon>
-                </v-toolbar>
-            </v-flex>
-            <template v-for="race in filteredRaces" @key="race.id" v-if="!loadingRaces">
-                <v-flex xl4 lg6 sm12>
+            <template v-if="!loadingRaces">
+                <v-flex xs12>
+                    <v-toolbar>
+                        <v-toolbar-title>Races</v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-text-field
+                                class="pr-3"
+                                append-icon="search"
+                                label="Race or Series"
+                                single-line
+                                hide-details
+                                v-model="search"
+                        ></v-text-field>
+                        <v-spacer></v-spacer>
+                        <v-icon color="primary">mdi-flag-checkered</v-icon>
+                    </v-toolbar>
+                </v-flex>
+                <v-flex xl4 lg6 sm12 v-for="race in filteredRaces" @key="race.id">
                     <v-card ripple :hover="true" :to="/races/+race.id">
                         <v-toolbar>
                             <v-toolbar-title>{{race.name}}</v-toolbar-title>

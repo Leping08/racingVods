@@ -22,7 +22,7 @@
                         <h1 class="headline">Series</h1>
                     </v-card-text>
                     <v-card-text>
-                        <p>Videos from the top racing series around the world including The FIA World Endurance Championship, The International Motor Sports Association, and Indy Car.</p>
+                        <p>Videos from the top racing series around the world including The FIA World Endurance Championship, Indy Car, and the International Motor Sports Association.</p>
                     </v-card-text>
                 </v-card>
             </v-flex>
@@ -52,7 +52,7 @@
                         <h1 class="headline">Tracks</h1>
                     </v-card-text>
                     <v-card-text>
-                        <p>Tracks from around the world with data that includes layouts, lap distances, corner names, and track website.</p>
+                        <p>Tracks from around the world with info including layouts, lap distances, corner names, and website.</p>
                     </v-card-text>
                 </v-card>
             </v-flex>
