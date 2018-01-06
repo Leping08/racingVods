@@ -76,8 +76,7 @@
                 <v-card class="text-xs-center" flat="true">
                     <v-carousel v-if="!loadingRaces">
                         <template v-for="race in races" @key="race.id">
-                            <!-- TODO: Make lnkable -->
-                            <v-carousel-item :src="'https://img.youtube.com/vi/'+race.youtube_id+'/hqdefault.jpg'">
+                            <v-carousel-item :src="'https://img.youtube.com/vi/'+race.youtube_id+'/hqdefault.jpg'" :to="'/races/'+race.id" style="text-decoration: none !important;">
                                 <v-toolbar>
                                     <v-toolbar-title>{{race.name}}</v-toolbar-title>
                                     <v-spacer></v-spacer>

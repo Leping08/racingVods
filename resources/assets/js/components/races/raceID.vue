@@ -28,7 +28,7 @@
                         <v-card-text>
                             <v-list two-line>
                                 <v-divider></v-divider>
-                                <v-list-tile :href="race.series.website" target="_blank">
+                                <v-list-tile>
                                     <v-list-tile-avatar>
                                         <v-icon>mdi-information-variant</v-icon>
                                     </v-list-tile-avatar>
@@ -38,7 +38,7 @@
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
-                                <v-list-tile @click="">
+                                <v-list-tile>
                                     <v-list-tile-avatar>
                                         <v-icon>mdi-ruler</v-icon>
                                     </v-list-tile-avatar>
@@ -49,7 +49,7 @@
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
-                                <v-list-tile @click="">
+                                <v-list-tile>
                                     <v-list-tile-avatar>
                                         <v-icon>mdi-calendar-clock</v-icon>
                                     </v-list-tile-avatar>
@@ -59,14 +59,13 @@
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
-                                <v-list-tile @click="">
+                                <v-list-tile>
                                     <v-list-tile-avatar>
                                         <v-icon>mdi-calendar</v-icon>
                                     </v-list-tile-avatar>
                                     <v-list-tile-content>
                                         <v-list-tile-title>Date</v-list-tile-title>
-                                        <!-- TODO: Format race date -->
-                                        <v-list-tile-sub-title>{{ race.race_date }}</v-list-tile-sub-title>
+                                        <v-list-tile-sub-title>{{ race.race_date | moment("M/D/YYYY") }}</v-list-tile-sub-title>
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
@@ -82,7 +81,7 @@
                         <v-card-text>
                             <v-list two-line>
                                 <v-divider></v-divider>
-                                <v-list-tile :href="race.series.website" target="_blank">
+                                <v-list-tile :to="'/series/'+race.series.id">
                                     <v-list-tile-avatar>
                                         <v-icon>mdi-information-variant</v-icon>
                                     </v-list-tile-avatar>
@@ -121,7 +120,7 @@
                             <v-flex md6 xs12>
                                 <v-list two-line>
                                     <v-divider></v-divider>
-                                    <v-list-tile :href="race.track.website" target="_blank">
+                                    <v-list-tile :to="'/tracks/'+race.track.id">
                                         <v-list-tile-avatar>
                                             <v-icon>mdi-information-variant</v-icon>
                                         </v-list-tile-avatar>
@@ -131,7 +130,7 @@
                                         </v-list-tile-content>
                                     </v-list-tile>
                                     <v-divider></v-divider>
-                                    <v-list-tile @click="">
+                                    <v-list-tile>
                                         <v-list-tile-avatar>
                                             <v-icon>mdi-ruler</v-icon>
                                         </v-list-tile-avatar>
@@ -141,7 +140,7 @@
                                         </v-list-tile-content>
                                     </v-list-tile>
                                     <v-divider></v-divider>
-                                    <v-list-tile @click="">
+                                    <v-list-tile>
                                         <v-list-tile-avatar>
                                             <v-icon>mdi-undo-variant</v-icon>
                                         </v-list-tile-avatar>

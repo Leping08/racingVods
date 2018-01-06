@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify';
 import VueRouter from 'vue-router';
+import moment from 'moment';
 
 import layout from './components/layout/layout.vue';
 import races from './components/races/races.vue';
@@ -29,6 +30,8 @@ Vue.use(Vuetify, {
     }
 });
 
+Vue.use(moment);
+Vue.use(require('vue-moment'));
 Vue.use(VueRouter);
 Vue.component('layout', layout);
 

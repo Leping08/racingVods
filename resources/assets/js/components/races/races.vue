@@ -1,7 +1,23 @@
 <template>
     <v-container fluid grid-list-md>
         <v-layout row wrap>
-            <template v-for="race in races" @key="race.id" v-if="!loadingRaces">
+            <v-flex xs12>
+                <v-toolbar>
+                    <v-toolbar-title>Races</v-toolbar-title>
+                    <v-spacer></v-spacer>
+                    <v-text-field
+                            class="pr-3"
+                            append-icon="search"
+                            label="Race or Series"
+                            single-line
+                            hide-details
+                            v-model="search"
+                    ></v-text-field>
+                    <v-spacer></v-spacer>
+                    <v-icon color="primary">mdi-flag-checkered</v-icon>
+                </v-toolbar>
+            </v-flex>
+            <template v-for="race in filteredRaces" @key="race.id" v-if="!loadingRaces">
                 <v-flex xl4 lg6 sm12>
                     <v-card ripple :hover="true" :to="/races/+race.id">
                         <v-toolbar>
@@ -33,6 +49,9 @@
         data () {
             return {
                 races: [],
+                search: '',
+                season17: true,
+                season18: true,
                 loadingRaces: true
             }
         },
@@ -50,6 +69,13 @@
                         this.loadingRaces = false;
                         console.log(e);
                     });
+            }
+        },
+        computed: {
+            filteredRaces() {
+                return this.races.filter(race => {
+                    return ((race.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1) || (race.series.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1))
+                })
             }
         }
     }

@@ -8,7 +8,7 @@ class Series extends Model
 {
     public function seasons()
     {
-        return $this->belongsToMany(Season::class);
+        return $this->belongsToMany(Season::class)->orderBy('id', 'desc');
     }
 
     public function races()

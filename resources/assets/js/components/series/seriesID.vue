@@ -2,7 +2,7 @@
     <v-container fluid grid-list-md>
         <v-layout row wrap>
             <template v-if="!loadingSeries">
-                <v-flex xs12>
+                <v-flex lg6 offset-lg3 md8 offset-md2 sm12>
                     <v-toolbar>
                         <v-toolbar-title>{{series.fullName}}</v-toolbar-title>
                         <v-spacer></v-spacer>
@@ -11,10 +11,13 @@
                         </v-btn>
                     </v-toolbar>
                     <v-card>
+                        <v-card-media :src="series.image" height="400px">
+                        </v-card-media>
                         <v-card-text>
-                            <!-- TODO: Make this card better -->
                             <p>{{series.description}}</p>
                             <v-list>
+                                <v-subheader>Seasons</v-subheader>
+                                <v-divider></v-divider>
                                 <template v-for="season in series.seasons" @key="season.id">
                                     <v-list-tile @click="" :to="'/races/series/'+series.id+'/season/'+season.id+'/'">
                                         <v-list-tile-content>
