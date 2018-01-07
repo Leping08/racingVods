@@ -125,6 +125,10 @@
                 <router-view></router-view>
             </v-container>
         </v-content>
+        <v-footer class="pa-4">
+            <v-spacer></v-spacer>
+            <span>&copy; {{ new Date().getFullYear() }} Racing Vods</span>
+        </v-footer>
     </v-app>
 </template>
 

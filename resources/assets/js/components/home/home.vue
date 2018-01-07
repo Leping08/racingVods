@@ -2,7 +2,7 @@
     <v-container fluid grid-list-md>
         <v-layout row wrap>
             <v-flex xs12>
-                <v-parallax jumbotron src="/img/home-heading.jpg" height="300">
+                <v-parallax jumbotron src="/img/home/home-heading.jpg" height="300">
                     <v-layout column align-center justify-center color="white">
                         <h1 class="white--text display-1">Racing Vods</h1>
                         <h3 class="white--text">It's Kinda Like Netflix For Gearheads.</h3>
@@ -65,7 +65,7 @@
                         <v-toolbar-title>Racing Vods</v-toolbar-title>
                     </v-toolbar>
                 </v-card>
-                <v-parallax src="/img/nurbur-night.png" height="400">
+                <v-parallax src="/img/home/nurbur-night.png" height="400">
                     <v-layout column align-right justify-center class="text-xs-right">
                         <h2 class="white--text">Built For Enthusiasts,<br>By Enthusiasts</h2>
                     </v-layout>
