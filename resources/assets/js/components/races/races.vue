@@ -18,7 +18,7 @@
                         <v-icon color="primary">mdi-flag-checkered</v-icon>
                     </v-toolbar>
                 </v-flex>
-                <v-flex xl4 lg6 sm12 v-for="race in filteredRaces" @key="race.id">
+                <v-flex xl4 lg6 sm12 v-for="race in filteredRaces" :key="race.id">
                     <v-card ripple :hover="true" :to="/races/+race.id">
                         <v-toolbar>
                             <v-toolbar-title>{{race.name}}</v-toolbar-title>
@@ -27,6 +27,7 @@
                                 {{race.series.name}}
                             </v-btn>
                         </v-toolbar>
+                        <!-- TODO: Fix image width -->
                         <v-card-media
                                 :src="'https://img.youtube.com/vi/'+race.youtube_id+'/hqdefault.jpg'"
                                 height="280px"

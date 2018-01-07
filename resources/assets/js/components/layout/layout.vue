@@ -5,7 +5,7 @@
                 v-model="drawer"
                 app
         >
-            <v-toolbar>
+            <!--<v-toolbar>
                 <v-list>
                     <v-list-tile>
                         <v-list-tile-title>
@@ -14,7 +14,7 @@
                     </v-list-tile>
                 </v-list>
             </v-toolbar>
-            <v-divider></v-divider>
+            <v-divider></v-divider>-->
             <v-list>
                 <v-list-tile ripple @click="" to="/home">
                     <v-list-tile-action>
@@ -72,21 +72,23 @@
                 >
                     <v-list-tile ripple slot="activator">
                         <v-list-tile-content>
-                            <v-list-tile-title>Comunity</v-list-tile-title>
+                            <v-list-tile-title>Community</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
+                    <!-- TODO: Add discord link -->
                     <v-list-tile ripple @click="" to="">
                         <v-list-tile-content>
                             <v-list-tile-title>Discord</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
+                    <!-- TODO: Add patreon link -->
                     <v-list-tile ripple @click="" to="">
                         <v-list-tile-content>
                             <v-list-tile-title>Patreon</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
                 </v-list-group>
-                <v-divider></v-divider>
+                <!-- <v-divider></v-divider>
                 <v-subheader>Admin</v-subheader>
                 <v-list-tile ripple @click="" to="/add/race">
                     <v-list-tile-action>
@@ -103,12 +105,20 @@
                     <v-list-tile-content>
                         <v-list-tile-title>Tracks</v-list-tile-title>
                     </v-list-tile-content>
-                </v-list-tile>
+                </v-list-tile> -->
             </v-list>
         </v-navigation-drawer>
         <v-toolbar fixed app :color="theme ? '' : 'primary'">
             <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-            <v-switch label="Night Mode" v-model="theme" color="blue" class="pt-4" :color="theme ? 'primary' : ''"></v-switch>
+            <v-toolbar-title>Racing Vods</v-toolbar-title>
+            <!--<v-spacer></v-spacer>
+            <v-switch
+                    label="Night Mode"
+                    v-model="theme"
+                    class="pt-4 text-xs-right"
+                    :color="theme ? 'primary' : ''"
+                    ripple
+            ></v-switch>-->
         </v-toolbar>
         <v-content :dark="theme">
             <v-container fluid fill-height :class="theme ? 'grey darken-2' : 'grey lighten-2'">
@@ -122,7 +132,7 @@
     export default {
         data: () => ({
             theme: true,
-            drawer: null
+            drawer: false
         })
     }
 </script>

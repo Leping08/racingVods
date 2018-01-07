@@ -4,6 +4,7 @@
             <template v-for="series in series" @key="series.id" v-if="!loadingSeries">
                 <v-flex xl4 lg6 sm12>
                     <v-card ripple :hover="true" :to="/series/+series.id">
+                        <!-- TODO: Fix image width -->
                         <v-card-media :src="series.image" height="300px">
                         </v-card-media>
                         <v-toolbar>

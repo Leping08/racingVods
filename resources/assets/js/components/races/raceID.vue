@@ -13,7 +13,7 @@
                     <v-card>
                         <v-card-text>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe id="vod" :src="'https://www.youtube.com/embed/'+race.youtube_id+'?rel=0;showinfo=0;enablejsapi=1&origin=http://127.0.0.1:8000'" allowfullscreen></iframe>
+                                <iframe id="vod" :src="'https://www.youtube.com/embed/'+race.youtube_id+'?rel=0;showinfo=0;enablejsapi=1&origin=http://racingvods.com'" allowfullscreen></iframe>
                             </div>
                         </v-card-text>
                     </v-card>
