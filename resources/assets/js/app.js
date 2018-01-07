@@ -4,6 +4,7 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import VueRouter from 'vue-router';
 import moment from 'moment';
+import VueAnalytics from 'vue-analytics'
 
 import layout from './components/layout/layout.vue';
 import races from './components/races/races.vue';
@@ -30,12 +31,6 @@ Vue.use(Vuetify, {
     }
 });
 
-Vue.use(moment);
-Vue.use(require('vue-moment'));
-Vue.use(VueRouter);
-Vue.component('layout', layout);
-
-
 const router = new VueRouter({
     mode: 'history',
     routes: [
@@ -54,6 +49,16 @@ const router = new VueRouter({
 
     ]
 });
+
+Vue.use(moment);
+Vue.use(require('vue-moment'));
+Vue.use(VueRouter);
+Vue.component('layout', layout);
+Vue.use(VueAnalytics, {
+    id: 'UA-98405544-5',
+    router
+});
+
 
 const app = new Vue({
     el: '#app',
