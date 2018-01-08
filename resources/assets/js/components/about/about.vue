@@ -7,20 +7,20 @@
                         <v-toolbar-title>
                             About
                         </v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-icon color="primary">mdi-information-outline</v-icon>
                     </v-toolbar>
                     <v-list>
                         <v-subheader>The Idea</v-subheader>
-                        <p class="px-3">Assembles and categorize races from various racing series around the world.</p>
-
+                        <p class="px-3">Assemble and categorize racing videos from various racing series around the world.</p>
                         <v-divider></v-divider>
-
                         <v-subheader>Tech Stack</v-subheader>
                         <v-list-tile avatar href="https://vuejs.org/" target="_blank">
                             <v-list-tile-avatar>
                                 <v-icon large>devicon-vuejs-plain colored</v-icon>
                             </v-list-tile-avatar>
                             <v-list-tile-content>
-                                <v-list-tile-title>Vue.js</v-list-tile-title>
+                                <v-list-tile-title>Vuejs</v-list-tile-title>
                                 <v-list-tile-sub-title>Front End</v-list-tile-sub-title>
                             </v-list-tile-content>
                         </v-list-tile>
@@ -50,16 +50,12 @@
                                 <v-icon large>devicon-amazonwebservices-plain colored</v-icon>
                             </v-list-tile-avatar>
                             <v-list-tile-content>
-                                <v-list-tile-title>Hosting</v-list-tile-title>
+                                <v-list-tile-title>Amazon Web Services</v-list-tile-title>
                                 <v-list-tile-sub-title>Linux Server</v-list-tile-sub-title>
                             </v-list-tile-content>
                         </v-list-tile>
                     </v-list>
                 </v-card>
-
-                <!-- TODO: Add about content
-                <i class="devicon-vuejs-plain display-1"></i>
-                <i class="devicon-laravel-plain display-1"></i>-->
             </v-flex>
         </v-layout>
     </v-container>
