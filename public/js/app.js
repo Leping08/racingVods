@@ -52332,20 +52332,211 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            {
+              attrs: {
+                lg6: "",
+                "offset-lg3": "",
+                md8: "",
+                "offset-md2": "",
+                xs12: ""
+              }
+            },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    [
+                      _c("v-toolbar-title", [
+                        _vm._v(
+                          "\n                        About\n                    "
+                        )
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list",
+                    [
+                      _c("v-subheader", [_vm._v("The Idea")]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "px-3" }, [
+                        _vm._v(
+                          "Assembles and categorize races from various racing series around the world."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("v-divider"),
+                      _vm._v(" "),
+                      _c("v-subheader", [_vm._v("Tech Stack")]),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "https://vuejs.org/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [
+                              _c("v-icon", { attrs: { large: "" } }, [
+                                _vm._v("devicon-vuejs-plain colored")
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [_vm._v("Vue.js")]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [_vm._v("Front End")])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "https://vuetifyjs.com/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c("v-list-tile-avatar", [
+                            _c("img", {
+                              attrs: {
+                                src:
+                                  "https://vuetifyjs.com/static/doc-images/logo.svg"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [_vm._v("Vuetify")]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v("Application Theme")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "https://laravel.com/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [
+                              _c("v-icon", { attrs: { large: "" } }, [
+                                _vm._v("devicon-laravel-plain colored")
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [_vm._v("Laravel")]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v("Back End API")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "https://aws.amazon.com/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [
+                              _c("v-icon", { attrs: { large: "" } }, [
+                                _vm._v(
+                                  "devicon-amazonwebservices-plain colored"
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [_vm._v("Hosting")]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v("Linux Server")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("i", { staticClass: "devicon-vuejs-plain display-1" }),
-      _vm._v(" "),
-      _c("i", { staticClass: "devicon-laravel-plain display-1" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
