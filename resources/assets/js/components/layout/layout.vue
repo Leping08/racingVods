@@ -111,8 +111,17 @@
         <v-toolbar fixed app :color="theme ? '' : 'primary'">
             <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
             <v-toolbar-title>Racing Vods</v-toolbar-title>
-            <!--<v-spacer></v-spacer>
-            <v-switch
+            <v-spacer></v-spacer>
+            <v-btn icon to="/races">
+                <v-icon>mdi-flag-checkered</v-icon>
+            </v-btn>
+            <v-btn icon>
+                <v-icon>mdi-discord</v-icon>
+            </v-btn>
+            <v-btn icon>
+                <v-icon>mdi-wallet-giftcard</v-icon>
+            </v-btn>
+            <!--<v-switch
                     label="Night Mode"
                     v-model="theme"
                     class="pt-4 text-xs-right"
