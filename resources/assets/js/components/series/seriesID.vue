@@ -2,7 +2,7 @@
     <v-container fluid grid-list-md>
         <v-layout row wrap>
             <template v-if="!loadingSeries">
-                <v-flex lg6 offset-lg3 md8 offset-md2 sm12>
+                <v-flex lg6 offset-lg3 md8 offset-md2 xs12>
                     <v-toolbar>
                         <v-toolbar-title>{{series.fullName}}</v-toolbar-title>
                         <v-spacer></v-spacer>
@@ -11,8 +11,7 @@
                         </v-btn>
                     </v-toolbar>
                     <v-card>
-                        <v-card-media :src="series.image" height="400px">
-                        </v-card-media>
+                        <img :src="'/img/series/'+series.image" style="max-width: 100%">
                         <v-card-text>
                             <v-list>
                                 <v-subheader>Description</v-subheader>

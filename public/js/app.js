@@ -50940,7 +50940,7 @@ var render = function() {
                 _vm._l(_vm.filteredRaces, function(race) {
                   return _c(
                     "v-flex",
-                    { key: race.id, attrs: { xl4: "", lg6: "", sm12: "" } },
+                    { key: race.id, attrs: { xl4: "", lg6: "", xs12: "" } },
                     [
                       _c(
                         "v-card",
@@ -52045,7 +52045,7 @@ var render = function() {
               ? [
                   _c(
                     "v-flex",
-                    { attrs: { xl4: "", lg6: "", sm12: "" } },
+                    { attrs: { xl4: "", lg6: "", xs12: "" } },
                     [
                       _c(
                         "v-card",
@@ -52058,7 +52058,10 @@ var render = function() {
                         },
                         [
                           _c("v-card-media", {
-                            attrs: { src: series.image, height: "300px" }
+                            attrs: {
+                              src: "/img/series/" + series.image,
+                              height: "300px"
+                            }
                           }),
                           _vm._v(" "),
                           _c(
@@ -52415,7 +52418,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -52470,7 +52472,7 @@ var render = function() {
                       "offset-lg3": "",
                       md8: "",
                       "offset-md2": "",
-                      sm12: ""
+                      xs12: ""
                     }
                   },
                   [
@@ -52508,8 +52510,9 @@ var render = function() {
                     _c(
                       "v-card",
                       [
-                        _c("v-card-media", {
-                          attrs: { src: _vm.series.image, height: "400px" }
+                        _c("img", {
+                          staticStyle: { "max-width": "100%" },
+                          attrs: { src: "/img/series/" + _vm.series.image }
                         }),
                         _vm._v(" "),
                         _c(
