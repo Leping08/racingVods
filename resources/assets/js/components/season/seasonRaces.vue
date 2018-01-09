@@ -2,7 +2,7 @@
     <v-container fluid grid-list-md>
         <v-layout row wrap>
             <template v-for="race, index in races" @key="race.id" v-if="!loadingRaces">
-                <v-flex xl4 lg6 sm12>
+                <v-flex xl4 lg6 xs12>
                     <v-card ripple :hover="true" :to="/races/+race.id">
                         <v-toolbar>
                             <v-toolbar-title>{{++index}}. {{race.name}}</v-toolbar-title>

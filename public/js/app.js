@@ -17322,7 +17322,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_tracks_tracksID_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_tracks_tracksID_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_races_create_vue__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_races_create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_races_create_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_stef_stef_vue__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_stef_stef_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_stef_stef_vue__);
 //Racing Vods 2 JS
+
 
 
 
@@ -17357,11 +17360,11 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuet
 
 var router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
     mode: 'history',
-    routes: [{ path: '/home', component: __WEBPACK_IMPORTED_MODULE_13__components_home_home_vue___default.a }, { path: '/about', component: __WEBPACK_IMPORTED_MODULE_10__components_about_about_vue___default.a }, { path: '/races', component: __WEBPACK_IMPORTED_MODULE_6__components_races_races_vue___default.a }, { path: '/series', component: __WEBPACK_IMPORTED_MODULE_8__components_series_series_vue___default.a }, { path: '/tracks', component: __WEBPACK_IMPORTED_MODULE_14__components_tracks_tracks_vue___default.a }, { path: '/schedule', component: __WEBPACK_IMPORTED_MODULE_9__components_schedule_schedule_vue___default.a }, { path: '/races/:id', component: __WEBPACK_IMPORTED_MODULE_7__components_races_raceID_vue___default.a }, { path: '/series/:id', component: __WEBPACK_IMPORTED_MODULE_11__components_series_seriesID_vue___default.a }, { path: '/tracks/:id', component: __WEBPACK_IMPORTED_MODULE_15__components_tracks_tracksID_vue___default.a }, { path: '/add/race', component: __WEBPACK_IMPORTED_MODULE_16__components_races_create_vue___default.a }, { path: '/races/series/:seriesID/season/:seasonID', component: __WEBPACK_IMPORTED_MODULE_12__components_season_seasonRaces_vue___default.a }, { path: '/', redirect: '/home' }]
+    routes: [{ path: '/home', component: __WEBPACK_IMPORTED_MODULE_13__components_home_home_vue___default.a }, { path: '/about', component: __WEBPACK_IMPORTED_MODULE_10__components_about_about_vue___default.a }, { path: '/races', component: __WEBPACK_IMPORTED_MODULE_6__components_races_races_vue___default.a }, { path: '/series', component: __WEBPACK_IMPORTED_MODULE_8__components_series_series_vue___default.a }, { path: '/tracks', component: __WEBPACK_IMPORTED_MODULE_14__components_tracks_tracks_vue___default.a }, { path: '/stef', component: __WEBPACK_IMPORTED_MODULE_17__components_stef_stef_vue___default.a }, { path: '/schedule', component: __WEBPACK_IMPORTED_MODULE_9__components_schedule_schedule_vue___default.a }, { path: '/races/:id', component: __WEBPACK_IMPORTED_MODULE_7__components_races_raceID_vue___default.a }, { path: '/series/:id', component: __WEBPACK_IMPORTED_MODULE_11__components_series_seriesID_vue___default.a }, { path: '/tracks/:id', component: __WEBPACK_IMPORTED_MODULE_15__components_tracks_tracksID_vue___default.a }, { path: '/add/race', component: __WEBPACK_IMPORTED_MODULE_16__components_races_create_vue___default.a }, { path: '/races/series/:seriesID/season/:seasonID', component: __WEBPACK_IMPORTED_MODULE_12__components_season_seasonRaces_vue___default.a }, { path: '/', redirect: '/home' }]
 });
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_moment___default.a);
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__webpack_require__(193));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__webpack_require__(195));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('layout', __WEBPACK_IMPORTED_MODULE_5__components_layout_layout_vue___default.a);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_4_vue_analytics___default.a, {
@@ -52968,7 +52971,7 @@ var render = function() {
               ? [
                   _c(
                     "v-flex",
-                    { attrs: { xl4: "", lg6: "", sm12: "" } },
+                    { attrs: { xl4: "", lg6: "", xs12: "" } },
                     [
                       _c(
                         "v-card",
@@ -55061,6 +55064,158 @@ if (false) {
 /* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(196)
+/* template */
+var __vue_template__ = __webpack_require__(194)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\stef\\stef.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-76648f56", Component.options)
+  } else {
+    hotAPI.reload("data-v-76648f56", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            {
+              attrs: {
+                lg6: "",
+                "offset-lg3": "",
+                md8: "",
+                "offset-md2": "",
+                xs12: ""
+              }
+            },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    [
+                      _c("v-toolbar-title", [
+                        _vm._v(
+                          "\n                        Stef SEO\n                    "
+                        )
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c("p", { staticClass: "title" }, [
+                        _vm._v(
+                          "\n                        Money made so far $" +
+                            _vm._s(_vm.total.toFixed(2)) +
+                            "\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { outline: "", round: "", color: "primary" },
+                          on: {
+                            click: function($event) {
+                              _vm.seoBool = true
+                            }
+                          }
+                        },
+                        [_vm._v("Start SEO")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { outline: "", round: "", color: "red" },
+                          on: {
+                            click: function($event) {
+                              _vm.seoBool = false
+                            }
+                          }
+                        },
+                        [_vm._v("Stop SEO")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-76648f56", module.exports)
+  }
+}
+
+/***/ }),
+/* 195 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var moment = __webpack_require__(0);
 
 module.exports = {
@@ -55234,6 +55389,62 @@ module.exports = {
 	},
 };
 
+
+/***/ }),
+/* 196 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            hourRate: 16.00,
+            total: 0,
+            seoBool: false
+        };
+    },
+    mounted: function mounted() {
+        this.seo();
+    },
+
+    methods: {
+        seo: function seo() {
+            var _this = this;
+
+            setInterval(function () {
+                if (_this.seoBool) {
+                    _this.total = _this.hourRate / 60 / 60 + _this.total;
+                }
+            }, 1000);
+        }
+    }
+});
 
 /***/ })
 /******/ ]);
