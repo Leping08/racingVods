@@ -9,7 +9,7 @@
                         <v-btn round outline color="primary" @click="jumpToVodStart()">Race Start</v-btn>
                     </v-toolbar>
                 </v-flex>
-                <v-flex md9 xs12>
+                <v-flex md9 sm12 xs12>
                     <v-card>
                         <v-card-text>
                             <div class="embed-responsive embed-responsive-16by9">
@@ -18,7 +18,7 @@
                         </v-card-text>
                     </v-card>
                 </v-flex>
-                <v-flex md3 xs12>
+                <v-flex md3 sm12 xs12>
                     <v-card>
                         <v-toolbar>
                             <v-toolbar-title>Race</v-toolbar-title>
@@ -201,11 +201,11 @@
             },
             jumpToVodStart: function () {
                 window.vodTime = this.race.youtube_start_time;
-                window.player = null;
                 window.player = new YT.Player('vod');
                 setTimeout(function(){
                     window.player.seekTo(Number(window.vodTime));
                     window.player.playVideo();
+                    window.player = null;
                 }, 1000);
             }
         }
