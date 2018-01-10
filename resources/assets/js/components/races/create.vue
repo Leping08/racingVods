@@ -1,7 +1,7 @@
 <template>
     <v-container fluid grid-list-md>
         <v-layout row wrap>
-            <v-flex sm12>
+            <v-flex lg8 offset-lg2 xs12>
                 <v-card>
                     <v-toolbar>
                         <v-toolbar-title>Create Race</v-toolbar-title>
@@ -73,6 +73,11 @@
                             </v-date-picker>
                         </v-dialog>
                         <v-text-field
+                                label="Duration"
+                                v-model="duration"
+                                prepend-icon="mdi-timer"
+                        ></v-text-field>
+                        <v-text-field
                                 label="Youtube ID"
                                 v-model="youtube_id"
                                 prepend-icon="mdi-message-video"
@@ -140,6 +145,7 @@
                 race_date: null,
                 youtube_id: null,
                 youtube_start_time: null,
+                duration: null,
                 modal: false,
                 newRace: {},
                 success: false,
@@ -201,6 +207,7 @@
                         race_date: this.race_date,
                         youtube_id: this.youtube_id,
                         youtube_start_time: this.youtube_start_time,
+                        duration: this.duration
                     })
                     .then((response) => {
                         this.newRace = response.data;
@@ -220,6 +227,7 @@
                 this.race_date = null;
                 this.youtube_id = null;
                 this.youtube_start_time = null;
+                this.duration = null;
             },
             partialClear: function () {
                 this.name = null;
@@ -227,6 +235,7 @@
                 this.race_date = null;
                 this.youtube_id = null;
                 this.youtube_start_time = null;
+                this.duration = null;
             }
         }
     }

@@ -40,17 +40,6 @@
                                 <v-divider></v-divider>
                                 <v-list-tile>
                                     <v-list-tile-avatar>
-                                        <v-icon>mdi-ruler</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Distance</v-list-tile-title>
-                                        <!-- TODO: Make race distance real data -->
-                                        <v-list-tile-sub-title>Placeholder</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
-                                <v-divider></v-divider>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
                                         <v-icon>mdi-calendar-clock</v-icon>
                                     </v-list-tile-avatar>
                                     <v-list-tile-content>
@@ -66,6 +55,16 @@
                                     <v-list-tile-content>
                                         <v-list-tile-title>Date</v-list-tile-title>
                                         <v-list-tile-sub-title>{{ race.race_date | moment("M/D/YYYY") }}</v-list-tile-sub-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                                <v-divider></v-divider>
+                                <v-list-tile>
+                                    <v-list-tile-avatar>
+                                        <v-icon>mdi-timer</v-icon>
+                                    </v-list-tile-avatar>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>Duration</v-list-tile-title>
+                                        <v-list-tile-sub-title>{{ race.duration }}</v-list-tile-sub-title>
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
@@ -202,18 +201,12 @@
             },
             jumpToVodStart: function () {
                 window.vodTime = this.race.youtube_start_time;
-                if(window.player){
-                    setTimeout(function(){
-                        window.player.seekTo(Number(window.vodTime));
-                        window.player.playVideo();
-                    }, 1000);
-                }else{
-                    window.player = new YT.Player('vod');
-                    setTimeout(function(){
-                        window.player.seekTo(Number(window.vodTime));
-                        window.player.playVideo();
-                    }, 1000);
-                }
+                window.player = null;
+                window.player = new YT.Player('vod');
+                setTimeout(function(){
+                    window.player.seekTo(Number(window.vodTime));
+                    window.player.playVideo();
+                }, 1000);
             }
         }
     }

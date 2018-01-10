@@ -44,7 +44,8 @@ class RacesController extends Controller
             'season_id' => 'required|integer',
             'race_date' => 'required|date',
             'youtube_id' => 'required|max:20',
-            'youtube_start_time' => 'required|integer'
+            'youtube_start_time' => 'required|integer',
+            'duration' => 'required|max:255'
         ]);
 
         $race['race_date'] = Carbon::parse($race['race_date']);

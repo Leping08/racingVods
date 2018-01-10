@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Race extends Model
 {
-    protected $fillable = ['name', 'race_date', 'season_id', 'series_id', 'track_id', 'youtube_id', 'youtube_start_time'];
+    protected $fillable = ['name', 'race_date', 'season_id', 'series_id', 'track_id', 'youtube_id', 'youtube_start_time', 'duration'];
 
     public function series()
     {
