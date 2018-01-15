@@ -1,5 +1,4 @@
 //Racing Vods 2 JS
-
 import Vue from 'vue';
 import Vuetify from 'vuetify';
 import VueRouter from 'vue-router';
@@ -17,8 +16,8 @@ import seasonRaces from './components/season/seasonRaces.vue';
 import home from './components/home/home.vue';
 import tracks from './components/tracks/tracks.vue';
 import tracksID from './components/tracks/tracksID.vue';
+import createTrack from './components/tracks/create.vue';
 import createRace from './components/races/create.vue';
-import stef from './components/stef/stef.vue';
 
 Vue.use(Vuetify, {
     theme: {
@@ -40,11 +39,11 @@ const router = new VueRouter({
         { path: '/races', component: races },
         { path: '/series', component: series },
         { path: '/tracks', component: tracks },
-        { path: '/stef', component: stef },
         { path: '/schedule', component: schedule },
         { path: '/races/:id', component: raceID },
         { path: '/series/:id', component: seriesID },
         { path: '/tracks/:id', component: tracksID },
+        { path: '/add/track', component: createTrack },
         { path: '/add/race', component: createRace },
         { path: '/races/series/:seriesID/season/:seasonID', component: seasonRaces },
         { path: '/', redirect: '/home' }

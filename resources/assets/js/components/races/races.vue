@@ -27,7 +27,6 @@
                                 {{race.series.name}}
                             </v-btn>
                         </v-toolbar>
-                        <!-- TODO: Fix image width -->
                         <v-card-media
                                 :src="'https://img.youtube.com/vi/'+race.youtube_id+'/hqdefault.jpg'"
                                 height="280px"
