@@ -4,6 +4,7 @@
             <v-flex xs12>
                 <v-card>
                     <v-card-text>
+                        <!-- TODO: Make the schedule better -->
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe src="https://calendar.google.com/calendar/embed?title=Upcoming%20Races&amp;height=600&amp;wkst=2&amp;bgcolor=%23999999&amp;
                                         src=drne83rrmn7m9baje25qh2248s%40group.calendar.google.com&amp;color=%23AB8B00&amp;

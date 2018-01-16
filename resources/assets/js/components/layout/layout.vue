@@ -5,8 +5,8 @@
                 v-model="drawer"
                 app
         >
-            <!--<img src="/img/logo/racingVods-light.png" style="max-width: 100%;">-->
-            <v-toolbar flat>
+            <img src="/img/logo/racingVods-light.png" style="max-width: 100%;">
+            <!--<v-toolbar flat>
                 <v-list>
                     <v-list-tile ripple @click="" to="/">
                         <v-list-tile-title class="title">
@@ -14,7 +14,7 @@
                         </v-list-tile-title>
                     </v-list-tile>
                 </v-list>
-            </v-toolbar>
+            </v-toolbar>-->
             <v-divider></v-divider>
             <v-list>
                 <v-list-tile ripple @click="" to="/">
@@ -59,14 +59,6 @@
                 </v-list-tile>
                 <v-divider></v-divider>
                 <v-subheader>Additional resources</v-subheader>
-                <v-list-tile ripple @click="" to="/about">
-                    <v-list-tile-action>
-                        <v-icon>mdi-information-outline</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>About</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
                 <v-list-group
                         prepend-icon="mdi-account-multiple"
                         no-action
@@ -76,21 +68,40 @@
                             <v-list-tile-title>Community</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
-                    <!-- TODO: Add discord link -->
-                    <v-list-tile ripple @click="" to="">
+                    <v-list-tile ripple @click="" href="https://discord.gg/VT3EpCd" target="_blank">
                         <v-list-tile-content>
                             <v-list-tile-title>Discord</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
-                    <!-- TODO: Add patreon link -->
+                    <!-- TODO: Add donation link -->
                     <v-list-tile ripple @click="" to="">
                         <v-list-tile-content>
-                            <v-list-tile-title>Patreon</v-list-tile-title>
+                            <v-list-tile-title>Donation</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
                 </v-list-group>
-                <!-- <v-divider></v-divider>
-                <v-subheader>Admin</v-subheader>
+                <v-list-group
+                        prepend-icon="mdi-information-outline"
+                        no-action
+                >
+                    <v-list-tile ripple slot="activator">
+                        <v-list-tile-content>
+                            <v-list-tile-title>About</v-list-tile-title>
+                        </v-list-tile-content>
+                    </v-list-tile>
+                    <v-list-tile ripple @click="" to="/road-map">
+                        <v-list-tile-content>
+                            <v-list-tile-title>Road Map</v-list-tile-title>
+                        </v-list-tile-content>
+                    </v-list-tile>
+                    <v-list-tile ripple @click="" to="/about">
+                        <v-list-tile-content>
+                            <v-list-tile-title>Tech Stack</v-list-tile-title>
+                        </v-list-tile-content>
+                    </v-list-tile>
+                </v-list-group>
+                <v-divider></v-divider>
+                <!--<v-subheader>Admin</v-subheader>
                 <v-list-tile ripple @click="" to="/add/race">
                     <v-list-tile-action>
                         <v-icon>mdi-plus-circle-outline</v-icon>
@@ -111,14 +122,14 @@
         </v-navigation-drawer>
         <v-toolbar fixed app :color="theme ? '' : 'primary'">
             <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-            <v-toolbar-title class="hidden-sm-and-up">
+            <!--<v-toolbar-title class="hidden-sm-and-up">
                 Racing Vods
-            </v-toolbar-title>
+            </v-toolbar-title>-->
             <v-spacer></v-spacer>
             <v-btn icon to="/races">
                 <v-icon>mdi-flag-checkered</v-icon>
             </v-btn>
-            <v-btn icon>
+            <v-btn icon href="https://discord.gg/VT3EpCd" target="_blank">
                 <v-icon>mdi-discord</v-icon>
             </v-btn>
             <v-btn icon>

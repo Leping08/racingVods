@@ -116,6 +116,7 @@
                         <v-card-text>
                             <v-layout row wrap>
                             <v-flex md6 xs12>
+                                <!-- TODO: Make sure I can use these images -->
                                 <img :src="race.track.image" style="max-width:100%;">
                             </v-flex>
                             <v-flex md6 xs12>
