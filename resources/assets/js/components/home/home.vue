@@ -15,7 +15,7 @@
 
         <v-layout row wrap>
             <v-flex md4 xs12 d-flex>
-                <v-card ripple class="text-xs-center" hover="true" flat="true" to="/series">
+                <v-card ripple class="text-xs-center" hover flat to="/series">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-format-list-bulleted</v-icon>
@@ -30,7 +30,7 @@
             </v-flex>
 
             <v-flex md4 xs12 d-flex>
-                <v-card ripple class="text-xs-center" hover="true" flat="true" to="/races">
+                <v-card ripple class="text-xs-center" hover flat to="/races">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-flag-checkered</v-icon>
@@ -45,7 +45,7 @@
             </v-flex>
 
             <v-flex md4 xs12 d-flex>
-                <v-card ripple class="text-xs-center" hover="true" flat="true" to="/tracks">
+                <v-card ripple class="text-xs-center" hover flat to="/tracks">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-road</v-icon>
@@ -62,7 +62,7 @@
 
         <v-layout row wrap>
             <v-flex md6 xs12>
-                <v-card class="text-xs-center" flat="true">
+                <v-card class="text-xs-center" flat>
                     <v-toolbar>
                         <v-toolbar-title>Racing Vods</v-toolbar-title>
                     </v-toolbar>
@@ -75,7 +75,7 @@
             </v-flex>
 
             <v-flex md6 xs12>
-                <v-card class="text-xs-center" flat="true">
+                <v-card class="text-xs-center" flat>
                     <v-carousel v-if="!loadingRaces">
                         <template v-for="race in races" @key="race.id">
                             <v-carousel-item :src="'https://img.youtube.com/vi/'+race.youtube_id+'/hqdefault.jpg'" :to="'/races/'+race.id" style="text-decoration: none !important;">
