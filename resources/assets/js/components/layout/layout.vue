@@ -5,18 +5,19 @@
                 v-model="drawer"
                 app
         >
-            <!--<v-toolbar>
+            <!--<img src="/img/logo/racingVods-light.png" style="max-width: 100%;">-->
+            <v-toolbar flat>
                 <v-list>
-                    <v-list-tile>
-                        <v-list-tile-title>
+                    <v-list-tile ripple @click="" to="/">
+                        <v-list-tile-title class="title">
                             Racing Vods
-                    </v-list-tile-title>
+                        </v-list-tile-title>
                     </v-list-tile>
                 </v-list>
             </v-toolbar>
-            <v-divider></v-divider>-->
+            <v-divider></v-divider>
             <v-list>
-                <v-list-tile ripple @click="" to="/home">
+                <v-list-tile ripple @click="" to="/">
                     <v-list-tile-action>
                         <v-icon>home</v-icon>
                     </v-list-tile-action>
@@ -110,7 +111,9 @@
         </v-navigation-drawer>
         <v-toolbar fixed app :color="theme ? '' : 'primary'">
             <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-            <v-toolbar-title>Racing Vods</v-toolbar-title>
+            <v-toolbar-title class="hidden-sm-and-up">
+                Racing Vods
+            </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn icon to="/races">
                 <v-icon>mdi-flag-checkered</v-icon>
@@ -143,9 +146,16 @@
 
 <script>
     export default {
-        data: () => ({
-            theme: true,
-            drawer: false
-        })
+        data () {
+            return {
+                theme: true,
+                drawer: false
+            }
+        },
+        mounted() {
+            if(this.$route.path !== '/'){
+                this.drawer = true;
+            }
+        }
     }
 </script>

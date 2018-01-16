@@ -17359,7 +17359,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuet
 
 var router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
     mode: 'history',
-    routes: [{ path: '/home', component: __WEBPACK_IMPORTED_MODULE_13__components_home_home_vue___default.a }, { path: '/about', component: __WEBPACK_IMPORTED_MODULE_10__components_about_about_vue___default.a }, { path: '/races', component: __WEBPACK_IMPORTED_MODULE_6__components_races_races_vue___default.a }, { path: '/series', component: __WEBPACK_IMPORTED_MODULE_8__components_series_series_vue___default.a }, { path: '/tracks', component: __WEBPACK_IMPORTED_MODULE_14__components_tracks_tracks_vue___default.a }, { path: '/schedule', component: __WEBPACK_IMPORTED_MODULE_9__components_schedule_schedule_vue___default.a }, { path: '/races/:id', component: __WEBPACK_IMPORTED_MODULE_7__components_races_raceID_vue___default.a }, { path: '/series/:id', component: __WEBPACK_IMPORTED_MODULE_11__components_series_seriesID_vue___default.a }, { path: '/tracks/:id', component: __WEBPACK_IMPORTED_MODULE_15__components_tracks_tracksID_vue___default.a }, { path: '/add/track', component: __WEBPACK_IMPORTED_MODULE_16__components_tracks_create_vue___default.a }, { path: '/add/race', component: __WEBPACK_IMPORTED_MODULE_17__components_races_create_vue___default.a }, { path: '/races/series/:seriesID/season/:seasonID', component: __WEBPACK_IMPORTED_MODULE_12__components_season_seasonRaces_vue___default.a }, { path: '/', redirect: '/home' }]
+    routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_13__components_home_home_vue___default.a }, { path: '/about', component: __WEBPACK_IMPORTED_MODULE_10__components_about_about_vue___default.a }, { path: '/races', component: __WEBPACK_IMPORTED_MODULE_6__components_races_races_vue___default.a }, { path: '/series', component: __WEBPACK_IMPORTED_MODULE_8__components_series_series_vue___default.a }, { path: '/tracks', component: __WEBPACK_IMPORTED_MODULE_14__components_tracks_tracks_vue___default.a }, { path: '/schedule', component: __WEBPACK_IMPORTED_MODULE_9__components_schedule_schedule_vue___default.a }, { path: '/races/:id', component: __WEBPACK_IMPORTED_MODULE_7__components_races_raceID_vue___default.a }, { path: '/series/:id', component: __WEBPACK_IMPORTED_MODULE_11__components_series_seriesID_vue___default.a }, { path: '/tracks/:id', component: __WEBPACK_IMPORTED_MODULE_15__components_tracks_tracksID_vue___default.a }, { path: '/add/track', component: __WEBPACK_IMPORTED_MODULE_16__components_tracks_create_vue___default.a }, { path: '/add/race', component: __WEBPACK_IMPORTED_MODULE_17__components_races_create_vue___default.a }, { path: '/races/series/:seriesID/season/:seasonID', component: __WEBPACK_IMPORTED_MODULE_12__components_season_seasonRaces_vue___default.a }, { path: '/', redirect: '/home' }]
 });
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_moment___default.a);
@@ -50248,6 +50248,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -50255,6 +50258,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             theme: true,
             drawer: false
         };
+    },
+    mounted: function mounted() {
+        if (this.$route.path !== '/') {
+            this.drawer = true;
+        }
     }
 });
 
@@ -50284,12 +50292,43 @@ var render = function() {
         },
         [
           _c(
+            "v-toolbar",
+            { attrs: { flat: "" } },
+            [
+              _c(
+                "v-list",
+                [
+                  _c(
+                    "v-list-tile",
+                    {
+                      attrs: { ripple: "", to: "/" },
+                      on: { click: function($event) {} }
+                    },
+                    [
+                      _c("v-list-tile-title", { staticClass: "title" }, [
+                        _vm._v(
+                          "\n                        Racing Vods\n                    "
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("v-divider"),
+          _vm._v(" "),
+          _c(
             "v-list",
             [
               _c(
                 "v-list-tile",
                 {
-                  attrs: { ripple: "", to: "/home" },
+                  attrs: { ripple: "", to: "/" },
                   on: { click: function($event) {} }
                 },
                 [
@@ -50497,7 +50536,9 @@ var render = function() {
             }
           }),
           _vm._v(" "),
-          _c("v-toolbar-title", [_vm._v("Racing Vods")]),
+          _c("v-toolbar-title", { staticClass: "hidden-sm-and-up" }, [
+            _vm._v("\n            Racing Vods\n        ")
+          ]),
           _vm._v(" "),
           _c("v-spacer"),
           _vm._v(" "),
@@ -51975,6 +52016,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -52063,7 +52106,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "v-flex",
-                  { attrs: { md9: "", sm12: "", xs12: "" } },
+                  { attrs: { xs12: "" } },
                   [
                     _c(
                       "v-card",
@@ -52098,7 +52141,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "v-flex",
-                  { attrs: { md3: "", sm12: "", xs12: "" } },
+                  { attrs: { md6: "", xs12: "" } },
                   [
                     _c(
                       "v-card",
@@ -52163,11 +52206,7 @@ var render = function() {
                                   [
                                     _c(
                                       "v-list-tile-avatar",
-                                      [
-                                        _c("v-icon", [
-                                          _vm._v("mdi-calendar-clock")
-                                        ])
-                                      ],
+                                      [_c("v-icon", [_vm._v("mdi-timer")])],
                                       1
                                     ),
                                     _vm._v(" "),
@@ -52175,11 +52214,11 @@ var render = function() {
                                       "v-list-tile-content",
                                       [
                                         _c("v-list-tile-title", [
-                                          _vm._v("Season")
+                                          _vm._v("Duration")
                                         ]),
                                         _vm._v(" "),
                                         _c("v-list-tile-sub-title", [
-                                          _vm._v(_vm._s(_vm.race.season.name))
+                                          _vm._v(_vm._s(_vm.race.duration))
                                         ])
                                       ],
                                       1
@@ -52223,34 +52262,6 @@ var render = function() {
                                   1
                                 ),
                                 _vm._v(" "),
-                                _c("v-divider"),
-                                _vm._v(" "),
-                                _c(
-                                  "v-list-tile",
-                                  [
-                                    _c(
-                                      "v-list-tile-avatar",
-                                      [_c("v-icon", [_vm._v("mdi-timer")])],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "v-list-tile-content",
-                                      [
-                                        _c("v-list-tile-title", [
-                                          _vm._v("Duration")
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("v-list-tile-sub-title", [
-                                          _vm._v(_vm._s(_vm.race.duration))
-                                        ])
-                                      ],
-                                      1
-                                    )
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
                                 _c("v-divider")
                               ],
                               1
@@ -52260,11 +52271,17 @@ var render = function() {
                         )
                       ],
                       1
-                    ),
-                    _vm._v(" "),
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-flex",
+                  { attrs: { md6: "", xs12: "" } },
+                  [
                     _c(
                       "v-card",
-                      { staticClass: "mt-2" },
                       [
                         _c(
                           "v-toolbar",
@@ -52315,7 +52332,41 @@ var render = function() {
                                         ]),
                                         _vm._v(" "),
                                         _c("v-list-tile-sub-title", [
-                                          _vm._v(_vm._s(_vm.race.series.name))
+                                          _vm._v(
+                                            _vm._s(_vm.race.series.fullName)
+                                          )
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c("v-divider"),
+                                _vm._v(" "),
+                                _c(
+                                  "v-list-tile",
+                                  [
+                                    _c(
+                                      "v-list-tile-avatar",
+                                      [
+                                        _c("v-icon", [
+                                          _vm._v("mdi-calendar-clock")
+                                        ])
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-list-tile-content",
+                                      [
+                                        _c("v-list-tile-title", [
+                                          _vm._v("Season")
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("v-list-tile-sub-title", [
+                                          _vm._v(_vm._s(_vm.race.season.name))
                                         ])
                                       ],
                                       1
@@ -53371,15 +53422,7 @@ var render = function() {
             ? [
                 _c(
                   "v-flex",
-                  {
-                    attrs: {
-                      lg6: "",
-                      "offset-lg3": "",
-                      md8: "",
-                      "offset-md2": "",
-                      xs12: ""
-                    }
-                  },
+                  { attrs: { md8: "", "offset-md2": "", xs12: "" } },
                   [
                     _c(
                       "v-toolbar",
@@ -53889,6 +53932,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -53958,13 +54003,17 @@ var render = function() {
                       }
                     },
                     [
-                      _c("h1", { staticClass: "white--text display-1" }, [
-                        _vm._v("Racing Vods")
-                      ]),
+                      _c("img", {
+                        staticClass: "hidden-md-and-up",
+                        staticStyle: { "max-width": "100%" },
+                        attrs: { src: "/img/logo/racingVods-light.png" }
+                      }),
                       _vm._v(" "),
-                      _c("h3", { staticClass: "white--text" }, [
-                        _vm._v("It's Kinda Like Netflix For Gearheads.")
-                      ])
+                      _c("img", {
+                        staticClass: "hidden-sm-and-down",
+                        staticStyle: { "max-width": "50%" },
+                        attrs: { src: "/img/logo/racingVods-light.png" }
+                      })
                     ]
                   )
                 ],

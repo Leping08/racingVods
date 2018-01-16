@@ -34,7 +34,7 @@ Vue.use(Vuetify, {
 const router = new VueRouter({
     mode: 'history',
     routes: [
-        { path: '/home', component: home },
+        { path: '/', component: home },
         { path: '/about', component: about },
         { path: '/races', component: races },
         { path: '/series', component: series },

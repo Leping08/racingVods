@@ -9,7 +9,7 @@
                         <v-btn round outline color="primary" @click="jumpToVodStart()">Race Start</v-btn>
                     </v-toolbar>
                 </v-flex>
-                <v-flex md9 sm12 xs12>
+                <v-flex xs12>
                     <v-card>
                         <v-card-text>
                             <div class="embed-responsive embed-responsive-16by9">
@@ -18,7 +18,7 @@
                         </v-card-text>
                     </v-card>
                 </v-flex>
-                <v-flex md3 sm12 xs12>
+                <v-flex md6 xs12>
                     <v-card>
                         <v-toolbar>
                             <v-toolbar-title>Race</v-toolbar-title>
@@ -40,11 +40,11 @@
                                 <v-divider></v-divider>
                                 <v-list-tile>
                                     <v-list-tile-avatar>
-                                        <v-icon>mdi-calendar-clock</v-icon>
+                                        <v-icon>mdi-timer</v-icon>
                                     </v-list-tile-avatar>
                                     <v-list-tile-content>
-                                        <v-list-tile-title>Season</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.season.name }}</v-list-tile-sub-title>
+                                        <v-list-tile-title>Duration</v-list-tile-title>
+                                        <v-list-tile-sub-title>{{ race.duration }}</v-list-tile-sub-title>
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
@@ -58,20 +58,12 @@
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
-                                        <v-icon>mdi-timer</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Duration</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.duration }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
-                                <v-divider></v-divider>
                             </v-list>
                         </v-card-text>
                     </v-card>
-                    <v-card class="mt-2">
+                </v-flex>
+                <v-flex md6 xs12>
+                    <v-card>
                         <v-toolbar>
                             <v-toolbar-title>Series</v-toolbar-title>
                             <v-spacer></v-spacer>
@@ -86,7 +78,17 @@
                                     </v-list-tile-avatar>
                                     <v-list-tile-content>
                                         <v-list-tile-title>Name</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.series.name }}</v-list-tile-sub-title>
+                                        <v-list-tile-sub-title>{{ race.series.fullName }}</v-list-tile-sub-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                                <v-divider></v-divider>
+                                <v-list-tile>
+                                    <v-list-tile-avatar>
+                                        <v-icon>mdi-calendar-clock</v-icon>
+                                    </v-list-tile-avatar>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>Season</v-list-tile-title>
+                                        <v-list-tile-sub-title>{{ race.season.name }}</v-list-tile-sub-title>
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
