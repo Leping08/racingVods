@@ -6,6 +6,13 @@
                     <v-progress-circular indeterminate v-bind:size="70" v-bind:width="7" color="primary"></v-progress-circular>
                 </template>
                 <template v-if="!loadingRaces">
+                    <v-toolbar>
+                        <v-toolbar-title>
+                            Schedule
+                        </v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-icon color="primary">mdi-calendar-range</v-icon>
+                    </v-toolbar>
                     <v-card>
                         <v-calendar
                                 mode='single'
