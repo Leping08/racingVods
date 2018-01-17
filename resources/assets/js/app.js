@@ -3,7 +3,8 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import VueRouter from 'vue-router';
 import moment from 'moment';
-import VueAnalytics from 'vue-analytics'
+import VueAnalytics from 'vue-analytics';
+import VCalendar from 'v-calendar';
 
 import layout from './components/layout/layout.vue';
 import races from './components/races/races.vue';
@@ -55,6 +56,7 @@ Vue.use(moment);
 Vue.use(require('vue-moment'));
 Vue.use(VueRouter);
 Vue.component('layout', layout);
+Vue.use(VCalendar);
 Vue.use(VueAnalytics, {
     id: 'UA-98405544-5',
     router
