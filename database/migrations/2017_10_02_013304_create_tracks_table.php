@@ -19,7 +19,7 @@ class CreateTracksTable extends Migration
             $table->integer('length'); // In miles
             $table->string('image');
             $table->string('numberOfCorners');
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }

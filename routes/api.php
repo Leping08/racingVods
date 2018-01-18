@@ -40,6 +40,9 @@ Route::get('/track/{id}', 'TracksController@show');
 /* @see TracksController::races() */
 Route::get('/track/{id}/races', 'TracksController@races');
 
+/* @see TracksController::store() */
+Route::post('/track', 'TracksController@store');
+
 
 // Series
 /* @see SeriesController::index() */

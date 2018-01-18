@@ -16,6 +16,7 @@
                                 label="Length in mi"
                                 v-model="length"
                                 prepend-icon="mdi-ruler"
+                                type="number"
                         ></v-text-field>
                         <v-text-field
                                 label="Image"
@@ -26,6 +27,12 @@
                                 label="Website"
                                 v-model="website"
                                 prepend-icon="web"
+                        ></v-text-field>
+                        <v-text-field
+                                label="Number of corners"
+                                v-model="numberOfCorners"
+                                prepend-icon="mdi-undo-variant"
+                                type="number"
                         ></v-text-field>
                     </v-card-text>
                     <v-divider></v-divider>
@@ -79,6 +86,7 @@
                 loadingSeries: true,
                 loadingSeasons: true,
                 selectedTrackID: null,
+                numberOfCorners: null,
                 newTrack: {},
                 modal: false,
                 success: false,
@@ -92,7 +100,8 @@
                     name: this.name,
                     length: this.length,
                     image: this.image,
-                    website: this.website
+                    website: this.website,
+                    numberOfCorners: this.numberOfCorners
                 })
                     .then((response) => {
                         this.newTrack = response.data;
@@ -109,6 +118,7 @@
                 this.length = null;
                 this.image = null;
                 this.website = null;
+                this.numberOfCorners = null;
             }
         }
     }
