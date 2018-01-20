@@ -2,7 +2,7 @@
     <v-container fluid grid-list-md>
         <v-layout row wrap>
             <template v-if="!loadingSeries">
-                <v-flex md8 offset-md2 xs12>
+                <v-flex lg6 offset-lg3 md8 offset-md2 xs12>
                     <v-toolbar>
                         <v-toolbar-title>{{series.fullName}}</v-toolbar-title>
                         <v-spacer></v-spacer>

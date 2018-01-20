@@ -1,5 +1,5 @@
 <template>
-    <v-app id="inspire" :dark="theme">
+    <v-app id="inspire" :dark="theme" v-resize="onResize">
         <v-navigation-drawer
                 fixed
                 v-model="drawer"
@@ -83,9 +83,9 @@
         </v-navigation-drawer>
         <v-toolbar fixed app :color="theme ? '' : 'primary'">
             <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-            <!--<v-toolbar-title class="hidden-sm-and-up">
+            <v-toolbar-title class="hidden-lg-and-up">
                 Racing Vods
-            </v-toolbar-title>-->
+            </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn icon to="/races">
                 <v-icon>mdi-flag-checkered</v-icon>
@@ -121,12 +121,22 @@
         data () {
             return {
                 theme: true,
-                drawer: false
+                drawer: false,
+                windowSize: {
+                    x: 0,
+                    y: 0
+                }
             }
         },
         mounted() {
-            if(this.$route.path !== '/'){
+            this.onResize();
+            if((this.$route.path !== '/') && (this.windowSize.x < 600)){
                 this.drawer = true;
+            }
+        },
+        methods: {
+            onResize () {
+                this.windowSize = { x: window.innerWidth, y: window.innerHeight }
             }
         }
     }

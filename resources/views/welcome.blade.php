@@ -28,10 +28,8 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <div>
-            <div id='app'>
-                <layout></layout>
-            </div>
+        <div id='app'>
+            <layout></layout>
         </div>
         <script src="/js/app.js"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
