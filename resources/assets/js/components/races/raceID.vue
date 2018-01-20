@@ -82,7 +82,7 @@
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
-                                <v-list-tile>
+                                <v-list-tile :to="'/races/series/'+race.series.id+'/season/'+race.season.id">
                                     <v-list-tile-avatar>
                                         <v-icon>mdi-calendar-clock</v-icon>
                                     </v-list-tile-avatar>

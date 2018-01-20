@@ -14,17 +14,17 @@
                         <img :src="'/img/series/'+series.image" style="max-width: 100%">
                         <v-card-text>
                             <v-list>
-                                <v-subheader>Description</v-subheader>
-                                <p class="px-3">{{series.description}}</p>
-                                <v-divider></v-divider>
                                 <v-subheader>Seasons</v-subheader>
                                 <template v-for="season in series.seasons" @key="season.id">
-                                    <v-list-tile @click="" :to="'/races/series/'+series.id+'/season/'+season.id+'/'">
+                                    <v-list-tile @click="" :to="'/races/series/'+series.id+'/season/'+season.id">
                                         <v-list-tile-content>
                                             <v-list-tile-title>{{ season.name }}</v-list-tile-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                 </template>
+                                <v-divider></v-divider>
+                                <v-subheader>Description</v-subheader>
+                                <p class="px-3">{{series.description}}</p>
                             </v-list>
                         </v-card-text>
                     </v-card>

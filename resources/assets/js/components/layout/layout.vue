@@ -6,15 +6,6 @@
                 app
         >
             <img src="/img/logo/racingVods-light.png" style="max-width: 100%;">
-            <!--<v-toolbar flat>
-                <v-list>
-                    <v-list-tile ripple @click="" to="/">
-                        <v-list-tile-title class="title">
-                            Racing Vods
-                        </v-list-tile-title>
-                    </v-list-tile>
-                </v-list>
-            </v-toolbar>-->
             <v-divider></v-divider>
             <v-list>
                 <v-list-tile ripple @click="" to="/">
@@ -80,44 +71,14 @@
                         </v-list-tile-content>
                     </v-list-tile>
                 </v-list-group>
-                <v-list-group
-                        prepend-icon="mdi-information-outline"
-                        no-action
-                >
-                    <v-list-tile ripple slot="activator">
-                        <v-list-tile-content>
-                            <v-list-tile-title>About</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile ripple @click="" to="/road-map">
-                        <v-list-tile-content>
-                            <v-list-tile-title>Road Map</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile ripple @click="" to="/about">
-                        <v-list-tile-content>
-                            <v-list-tile-title>Tech Stack</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
-                </v-list-group>
-                <v-divider></v-divider>
-                <!--<v-subheader>Admin</v-subheader>
-                <v-list-tile ripple @click="" to="/add/race">
+                <v-list-tile ripple @click="" to="/about">
                     <v-list-tile-action>
-                        <v-icon>mdi-plus-circle-outline</v-icon>
+                        <v-icon>mdi-information-outline</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                        <v-list-tile-title>Races</v-list-tile-title>
+                        <v-list-tile-title>About</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile ripple @click="" to="/add/track">
-                    <v-list-tile-action>
-                        <v-icon>mdi-plus-circle-outline</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>Tracks</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile> -->
             </v-list>
         </v-navigation-drawer>
         <v-toolbar fixed app :color="theme ? '' : 'primary'">

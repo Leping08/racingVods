@@ -9,7 +9,7 @@
                         <v-text-field
                                 class="pr-3"
                                 append-icon="search"
-                                label="Race or Series"
+                                label="Search Races"
                                 single-line
                                 hide-details
                                 v-model="search"

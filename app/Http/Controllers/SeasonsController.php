@@ -91,6 +91,7 @@ class SeasonsController extends Controller
                     ->orderBy('race_date', 'asc')
                     ->with('track')
                     ->with('series')
+                    ->with('season')
                     ->get();
     }
 }
