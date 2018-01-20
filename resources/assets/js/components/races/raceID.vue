@@ -138,7 +138,7 @@
                                         </v-list-tile-avatar>
                                         <v-list-tile-content>
                                             <v-list-tile-title>Length</v-list-tile-title>
-                                            <v-list-tile-sub-title>{{ race.track.length }}</v-list-tile-sub-title>
+                                            <v-list-tile-sub-title>{{ race.track.length }}mi / {{ (race.track.length * 1.60934).toFixed(2) }}km</v-list-tile-sub-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                     <v-divider></v-divider>
