@@ -1,6 +1,8 @@
 <template>
     <v-container fluid grid-list-md>
         <v-layout row wrap>
+            <!-- TODO: order by series with latest race to be added or by abc -->
+            <!-- TODO: Add search by series name -->
             <template v-for="series in series" @key="series.id" v-if="!loadingSeries">
                 <v-flex xl4 lg6 xs12>
                     <v-card ripple :hover="true" :to="/series/+series.id">

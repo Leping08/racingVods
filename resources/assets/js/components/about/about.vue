@@ -10,6 +10,7 @@
                         <v-spacer></v-spacer>
                         <v-icon color="primary">mdi-information-outline</v-icon>
                     </v-toolbar>
+                    <!-- TODO: Add copyright disclaimer -->
                     <v-list>
                         <v-subheader>The Idea</v-subheader>
                         <p class="px-3">Assemble and categorize racing videos from various racing series around the world.</p>
