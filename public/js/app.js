@@ -50239,7 +50239,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             theme: true,
-            drawer: true
+            drawer: null
         };
     }
 });

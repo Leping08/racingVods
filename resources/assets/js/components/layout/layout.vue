@@ -121,7 +121,7 @@
         data () {
             return {
                 theme: true,
-                drawer: true
+                drawer: null
             }
         }
     }
