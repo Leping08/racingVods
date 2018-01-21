@@ -14,7 +14,7 @@ class SeriesController extends Controller
      */
     public function index()
     {
-        return Series::all();
+        return Series::orderBy('fullName', 'asc')->get();
     }
 
     /**
