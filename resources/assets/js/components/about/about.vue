@@ -28,7 +28,7 @@
                             </v-list-tile-avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Racingcircuits.info</v-list-tile-title>
-                                <v-list-tile-sub-title>For providing the track layout images.</v-list-tile-sub-title>
+                                <v-list-tile-sub-title>Provided the track layout images.</v-list-tile-sub-title>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-list-tile avatar href="http://bradboothmedia.com/" target="_blank">
@@ -37,7 +37,7 @@
                             </v-list-tile-avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Brad Booth Media</v-list-tile-title>
-                                <v-list-tile-sub-title>For designing the logo.</v-list-tile-sub-title>
+                                <v-list-tile-sub-title>Designed the logo.</v-list-tile-sub-title>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-divider></v-divider>
