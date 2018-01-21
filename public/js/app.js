@@ -50239,24 +50239,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             theme: true,
-            drawer: false,
-            windowSize: {
-                x: 0,
-                y: 0
-            }
+            drawer: true
         };
-    },
-    mounted: function mounted() {
-        this.onResize();
-        if (this.$route.path !== '/' && this.windowSize.x < 600) {
-            this.drawer = true;
-        }
-    },
-
-    methods: {
-        onResize: function onResize() {
-            this.windowSize = { x: window.innerWidth, y: window.innerHeight };
-        }
     }
 });
 
@@ -50270,17 +50254,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-app",
-    {
-      directives: [
-        {
-          name: "resize",
-          rawName: "v-resize",
-          value: _vm.onResize,
-          expression: "onResize"
-        }
-      ],
-      attrs: { id: "inspire", dark: _vm.theme }
-    },
+    { attrs: { id: "inspire", dark: _vm.theme } },
     [
       _c(
         "v-navigation-drawer",

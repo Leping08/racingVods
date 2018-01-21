@@ -1,5 +1,5 @@
 <template>
-    <v-app id="inspire" :dark="theme" v-resize="onResize">
+    <v-app id="inspire" :dark="theme">
         <v-navigation-drawer
                 fixed
                 v-model="drawer"
@@ -121,22 +121,7 @@
         data () {
             return {
                 theme: true,
-                drawer: false,
-                windowSize: {
-                    x: 0,
-                    y: 0
-                }
-            }
-        },
-        mounted() {
-            this.onResize();
-            if((this.$route.path !== '/') && (this.windowSize.x < 600)){
-                this.drawer = true;
-            }
-        },
-        methods: {
-            onResize () {
-                this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+                drawer: true
             }
         }
     }
