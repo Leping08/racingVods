@@ -14,6 +14,7 @@ use \App\Http\Controllers\SeasonsController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::group(['middleware' => ['web', 'auth']], function () {
 
 
 //Races
@@ -58,3 +59,5 @@ Route::get('/seasons', 'SeasonsController@index');
 
 /* @see SeasonsController::races() */
 Route::get('/series/{seriesID}/season/{seasonID}', 'SeasonsController@races');
+
+});
