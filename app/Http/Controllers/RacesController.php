@@ -55,11 +55,10 @@ class RacesController extends Controller
         return $newRace;
     }
 
+
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|null|static|static[]
      */
     public function show($id)
     {
@@ -100,6 +99,9 @@ class RacesController extends Controller
         //
     }
 
+    /**
+     * @return mixed
+     */
     public function latest()
     {
         return Race::orderBy('id', 'desc')->take(5)->with(['track', 'season', 'series'])->get();

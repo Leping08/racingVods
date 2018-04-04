@@ -79,6 +79,18 @@
                         <v-list-tile-title>About</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
+                <template v-if="authCheck">
+                    <v-divider></v-divider>
+                    <v-subheader>Admin</v-subheader>
+                    <v-list-tile ripple @click="" to="/dashboard">
+                        <v-list-tile-action>
+                            <v-icon>mdi-account-key</v-icon>
+                        </v-list-tile-action>
+                        <v-list-tile-content>
+                            <v-list-tile-title>Dashboard</v-list-tile-title>
+                        </v-list-tile-content>
+                    </v-list-tile>
+                </template>
             </v-list>
         </v-navigation-drawer>
         <v-toolbar fixed app :color="theme ? '' : 'primary'">
@@ -113,6 +125,15 @@
             <v-spacer></v-spacer>
             <span>&copy; {{ new Date().getFullYear() }} Racing Vods</span>
         </v-footer>
+        <v-snackbar
+                :timeout="timeout"
+                v-model="show"
+                :top="true"
+                :right="true"
+                :color="color"
+        >
+            <strong>{{body}}</strong>
+        </v-snackbar>
     </v-app>
 </template>
 
@@ -121,7 +142,30 @@
         data () {
             return {
                 theme: true,
-                drawer: null
+                drawer: null,
+                user: '',
+                body: '',
+                color: 'success',
+                show: false,
+                timeout: 5000,
+            }
+        },
+        created() {
+            this.$store.dispatch('authCheck');
+            window.events.$on(
+                'flash', data => this.flash(data)
+            );
+        },
+        computed: {
+            authCheck: function () {
+                return this.$store.state.authCheck;
+            }
+        },
+        methods: {
+            flash(data) {
+                this.body = data.message;
+                this.color = data.color;
+                this.show = true;
             }
         }
     }

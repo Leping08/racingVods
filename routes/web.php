@@ -11,6 +11,13 @@
 |
 */
 
+/** @see MvpApiAccessToken::login() */
+//Route::post('/api/login', 'MvpApiAccessToken@login');
+
 Route::any('{all}', function () {
     return view('welcome');
 })->where(['all' => '.*']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
