@@ -96,7 +96,7 @@
         },
         methods: {
             createTrack: function () {
-                axios.post('/api/track', {
+                this.$api.post('/api/track', {
                     name: this.name,
                     length: this.length,
                     image: this.image,

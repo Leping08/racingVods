@@ -32,8 +32,8 @@ const router = new VueRouter({
         { path: '/races/:id', component: raceID },
         { path: '/series/:id', component: seriesID },
         { path: '/tracks/:id', component: tracksID },
-        { path: '/add/track', component: createTrack },
-        { path: '/add/race', component: createRace },
+        { path: '/add/track', component: createTrack, meta: { requiresAuth: true} },
+        { path: '/add/race', component: createRace, meta: { requiresAuth: true} },
         { path: '/races/series/:seriesID/season/:seasonID', component: seasonRaces },
         { path: '/login', component: login },
         { path: '/dashboard', component: dashboard },
@@ -42,6 +42,20 @@ const router = new VueRouter({
         { path: '/logout', component: logout },
         { path: '*', redirect: '/404' },
     ]
+});
+
+router.beforeEach((to, from, next) => {
+    if (to.matched.some(record => record.meta.requiresAuth)) {
+        if (! window.localStorage.accessToken) {
+            next({
+                path: '/logout'
+            });
+        } else {
+            next();
+        }
+    } else {
+        next();
+    }
 });
 
 export default router;

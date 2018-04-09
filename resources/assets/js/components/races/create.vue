@@ -199,7 +199,7 @@
                     });
             },
             createRace: function () {
-                axios.post('/api/race', {
+                this.$api.post('/api/race', {
                         name: this.name,
                         series_id: this.series_id,
                         track_id: this.track_id,

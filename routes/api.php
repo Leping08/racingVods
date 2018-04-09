@@ -4,6 +4,7 @@ use \App\Http\Controllers\RacesController;
 use \App\Http\Controllers\TracksController;
 use \App\Http\Controllers\SeriesController;
 use \App\Http\Controllers\SeasonsController;
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +15,19 @@ use \App\Http\Controllers\SeasonsController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
+
+
+Route::middleware('auth:api')->group(function () {
+    /* @see TracksController::store() */
+    Route::post('/track', 'TracksController@store');
+
+    /* @see RacesController::store() */
+    Route::post('/race', 'RacesController@store');
+});
 
 
 //Races
@@ -26,9 +40,6 @@ Route::get('/races/latest', 'RacesController@latest');
 /* @see RacesController::show() */
 Route::get('/race/{id}', 'RacesController@show');
 
-/* @see RacesController::store() */
-Route::post('/race', 'RacesController@store');
-
 
 // Tracks
 /* @see TracksController::index() */
@@ -40,8 +51,6 @@ Route::get('/track/{id}', 'TracksController@show');
 /* @see TracksController::races() */
 Route::get('/track/{id}/races', 'TracksController@races');
 
-/* @see TracksController::store() */
-Route::post('/track', 'TracksController@store');
 
 
 // Series

@@ -70,7 +70,6 @@
                 axios.post('/oauth/token', data)
                     .then((response) => {
                         window.setAccessToken(response.data.access_token);
-                        window.flash('Welcome');
                         this.$store.dispatch('authCheck');
                         this.$router.push('/dashboard');
                     })

@@ -9,7 +9,7 @@
         created() {
             window.setAccessToken('');
             this.$store.dispatch('authCheck');
-            this.$router.push('/login')
-        },
+            this.$router.push('/login');
+        }
     }
 </script>

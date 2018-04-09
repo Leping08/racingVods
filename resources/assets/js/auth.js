@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
 import axios from 'axios';
+import router from './router';
 
 //User AccessToken Functions
 window.setAccessToken = function (accessToken) {
@@ -17,12 +17,10 @@ window.flash = function (message, color = 'blue') {
     window.events.$emit('flash', { message, color });
 };
 
-
-export default function (Vue) {
-
+function http() {
     //Create an axios instance and apply all auth necessary to make api calls
     let http = axios.create();
-    http.defaults.headers.common['Authorization'] = 'Bearer ' + window.getAccessToken();
+    http.defaults.headers.common['Authorization'] = "Bearer " + window.getAccessToken();
     http.defaults.headers.common['Accept'] = 'application/json';
     http.defaults.headers.post['Content-Type'] = 'application/json';
 
@@ -31,31 +29,22 @@ export default function (Vue) {
         return response;
     }, function (error) {
         if (error.response.status === 401) {
-            window.setAccessToken(null);
-            location.href = '/login';
+            window.setAccessToken('');
+            router.push('/login');
         } else {
             throw error;
         }
     });
+    return http;
+}
 
 
-    //Create http vue prototype that can be used across the application.
-    Vue.api = http;
-
-    Vue.prototype.$api = Vue.api;
-
-
-    Vue.prototype.$authCheck = !!window.localStorage.accessToken;
-
+export default function (Vue) {
     Object.defineProperties(Vue.prototype, {
-        $auth: {
+        $api: {
             get () {
-                if(window.localStorage.accessToken){
-                    return true;
-                } else {
-                    return false;
-                }
+                return http();
             }
         }
-    })
+    });
 }
