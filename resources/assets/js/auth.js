@@ -38,7 +38,6 @@ function http() {
     return http;
 }
 
-
 export default function (Vue) {
     Object.defineProperties(Vue.prototype, {
         $api: {

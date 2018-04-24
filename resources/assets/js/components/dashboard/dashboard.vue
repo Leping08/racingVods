@@ -5,12 +5,12 @@
                 <v-card dark tile flat>
                     <v-container fill-height class="pa-0 pink darken-1 ma-0">
                         <v-layout row wrap align-center>
-                            <v-flex xs3>
+                            <v-flex lg3 xl2 md2 sm2 xs2>
                                 <v-card-text>
                                     <v-icon large>mdi-flag-checkered</v-icon>
                                 </v-card-text>
                             </v-flex>
-                            <v-flex xs9 class="pink lighten-1">
+                            <v-flex lg9 xl10 md10 sm10 xs10 class="pink lighten-1">
                                 <v-card-text>
                                     <div class="subheading">
                                         <b>Races</b>
@@ -29,12 +29,12 @@
                 <v-card dark tile flat>
                     <v-container fill-height class="pa-0 light-blue darken-1 ma-0">
                         <v-layout row wrap align-center>
-                            <v-flex xs3>
+                            <v-flex lg3 xl2 md2 sm2 xs2>
                                 <v-card-text>
                                     <v-icon large>mdi-format-list-bulleted</v-icon>
                                 </v-card-text>
                             </v-flex>
-                            <v-flex xs9 class="light-blue lighten-1">
+                            <v-flex lg9 xl10 md10 sm10 xs10 class="light-blue lighten-1">
                                 <v-card-text>
                                     <div class="subheading">
                                         <b>Series</b>
@@ -53,12 +53,12 @@
                 <v-card dark tile flat>
                     <v-container fill-height class="pa-0 teal darken-1 ma-0">
                         <v-layout row wrap align-center>
-                            <v-flex xs3>
+                            <v-flex lg3 xl2 md2 sm2 xs2>
                                 <v-card-text>
                                     <v-icon large>mdi-road</v-icon>
                                 </v-card-text>
                             </v-flex>
-                            <v-flex xs9 class="teal lighten-1">
+                            <v-flex lg9 xl10 md10 sm10 xs10 class="teal lighten-1">
                                 <v-card-text>
                                     <div class="subheading">
                                         <b>Tracks</b>
@@ -73,6 +73,22 @@
                 </v-card>
             </v-flex>
         </v-layout>
+
+        <v-layout row wrap>
+            <v-flex xs12 sm6>
+                <doughnutCard></doughnutCard>
+            </v-flex>
+            <v-flex xs12 sm6>
+                <barCard></barCard>
+            </v-flex>
+        </v-layout>
+
+        <!--<v-layout row wrap>
+            <v-flex xs12>
+                <horizontalBarDash></horizontalBarDash>
+            </v-flex>
+        </v-layout>
+
         <v-layout row wrap>
             <v-flex xs12 sm8 offset-sm2>
                 <v-card>
@@ -89,12 +105,20 @@
                     </v-card-text>
                 </v-card>
             </v-flex>
-        </v-layout>
+        </v-layout>-->
     </v-container>
 </template>
 
 <script>
+    import doughnutCard from './doughnutDash';
+    import barCard from './barDash';
+    import horizontalBarDash from './horizontalBarDash';
     export default {
+        components: {
+            doughnutCard,
+            barCard,
+            horizontalBarDash
+        },
         data() {
             return {
                 races: [],

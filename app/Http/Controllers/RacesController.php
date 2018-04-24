@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Race;
+use App\Season;
+use App\Series;
+use App\Track;
+use App\Video;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -51,7 +55,15 @@ class RacesController extends Controller
         $race['race_date'] = Carbon::parse($race['race_date']);
 
         $newRace = Race::create($race);
-        Log::info("$newRace->name was created.");
+        Log::info("Race ID: $newRace->id was created. Name: $newRace->id");
+
+        $video = Video::create([
+            'youtube_id' => $request->youtube_id,
+            'youtube_start_time' => $request->youtube_start_time,
+            'race_id' => $newRace->id
+        ]);
+        Log::info("Video ID: $video->id was created and associated to Race ID: $newRace->id. Name: $newRace->id");
+
         return $newRace;
     }
 
@@ -62,7 +74,7 @@ class RacesController extends Controller
      */
     public function show($id)
     {
-        return Race::with(['track', 'season', 'series'])->find($id);
+        return Race::with(['track', 'season', 'series', 'videos'])->find($id);
     }
 
     /**
@@ -105,5 +117,53 @@ class RacesController extends Controller
     public function latest()
     {
         return Race::orderBy('id', 'desc')->take(5)->with(['track', 'season', 'series'])->get();
+    }
+
+    //TODO: Remove once the races have been moved over
+    public function move()
+    {
+        $races = Race::all();
+        foreach($races as $race){
+            $vod = Video::create([
+                'youtube_id' => $race->youtube_id,
+                'youtube_start_time' => $race->youtube_start_time,
+                'race_id' => $race->id
+            ]);
+            echo($vod);
+            $vod = null;
+        }
+    }
+
+    public function test()
+    {
+        $racesCount = Series::withCount('races')->pluck('races_count');
+        $seriesNames = Series::pluck('name');
+
+        return [
+          'racesCount' => $racesCount,
+          'seriesNames' => $seriesNames
+        ];
+    }
+
+    public function test2()
+    {
+        $racesCount = Season::withCount('races')->pluck('races_count');
+        $seasonNames = Season::withCount('races')->pluck('name');
+
+        return [
+            'racesCount' => $racesCount,
+            'seasonNames' => $seasonNames
+        ];
+    }
+
+    public function test3()
+    {
+        $racesCount = Track::withCount('races')->pluck('races_count');
+        $trackNames = Track::withCount('races')->pluck('name');
+
+        return [
+            'racesCount' => $racesCount,
+            'trackNames' => $trackNames
+        ];
     }
 }

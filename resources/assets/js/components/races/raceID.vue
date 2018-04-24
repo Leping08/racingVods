@@ -9,16 +9,32 @@
                         <v-btn round outline color="primary" @click="jumpToVodStart()">Race Start</v-btn>
                     </v-toolbar>
                 </v-flex>
-                <v-flex xs12>
-                    <v-card>
-                        <v-card-text>
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe id="vod" :src="'https://www.youtube.com/embed/'+race.youtube_id+'?rel=0;showinfo=0;enablejsapi=1&origin=http://racingvods.com'" allowfullscreen></iframe>
-                            </div>
-                        </v-card-text>
-                    </v-card>
+                <v-flex x12>
+                    <v-stepper v-model="selected">
+                        <v-stepper-header v-if="race.videos.length > 1">
+                            <template v-for="(vod, index) in race.videos">
+                                <v-stepper-step :step="index+1" :complete="index+1 < selected">Part {{index+1}}</v-stepper-step>
+                                <v-divider v-if="race.videos.length != index+1"></v-divider>
+                            </template>
+                        </v-stepper-header>
+                        <v-stepper-items>
+                            <v-stepper-content :step="index+1" v-for="(vod, index) in race.videos" :key="vod.id">
+                                <v-card color="grey lighten-1" class="mb-3">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe :id="index == 1 ? vod : null" :src="'https://www.youtube.com/embed/'+vod.youtube_id+'?rel=0;showinfo=0;enablejsapi=1&origin=http://racingvods.com'" allowfullscreen></iframe>
+                                    </div>
+                                </v-card>
+                                <template v-if="!(selected === race.videos.length)">
+                                    <v-btn color="primary" @click="selected++">Next</v-btn>
+                                </template>
+                                <template v-if="0 < index">
+                                    <v-btn flat outline @click="selected--">Back</v-btn>
+                                </template>
+                            </v-stepper-content>
+                        </v-stepper-items>
+                    </v-stepper>
                 </v-flex>
-                <v-flex md6 xs12>
+                <v-flex xs12>
                     <v-card>
                         <v-toolbar>
                             <v-toolbar-title>Race</v-toolbar-title>
@@ -62,7 +78,7 @@
                         </v-card-text>
                     </v-card>
                 </v-flex>
-                <v-flex md6 xs12>
+                <v-flex xs12>
                     <v-card>
                         <v-toolbar>
                             <v-toolbar-title>Series</v-toolbar-title>
@@ -116,7 +132,6 @@
                         <v-card-text>
                             <v-layout row wrap>
                             <v-flex md6 xs12>
-                                <!-- TODO: Make sure I can use these images -->
                                 <img :src="race.track.image" style="max-width:100%;">
                             </v-flex>
                             <v-flex md6 xs12>
@@ -184,7 +199,8 @@
             return {
                 race: [],
                 loadingRace: true,
-                player: {}
+                player: {},
+                selected: 1
             }
         },
         mounted() {

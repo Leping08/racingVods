@@ -48,12 +48,19 @@
                                 autocomplete
                                 prepend-icon="mdi-weather-sunset"
                         ></v-select>
-                        <v-dialog
-                                persistent
-                                v-model="modal"
+
+
+                        <v-menu
+                                ref="menu"
                                 lazy
+                                :close-on-content-click="false"
+                                v-model="menu"
+                                transition="scale-transition"
+                                offset-y
                                 full-width
-                                width="290px"
+                                :nudge-right="40"
+                                min-width="290px"
+                                :return-value.sync="race_date"
                         >
                             <v-text-field
                                     slot="activator"
@@ -62,16 +69,36 @@
                                     prepend-icon="event"
                                     readonly
                             ></v-text-field>
-                            <v-date-picker v-model="race_date" scrollable actions>
-                                <template slot-scope="{ save, cancel }">
-                                    <v-card-actions>
-                                        <v-spacer></v-spacer>
-                                        <v-btn flat color="primary" @click="cancel">Cancel</v-btn>
-                                        <v-btn flat color="primary" @click="save">OK</v-btn>
-                                    </v-card-actions>
-                                </template>
+                            <v-date-picker v-model="race_date" color="primary">
+                                <v-spacer></v-spacer>
+                                <v-btn flat color="primary" @click="menu = false">Cancel</v-btn>
+                                <v-btn flat color="primary" @click="$refs.menu.save(race_date)">OK</v-btn>
                             </v-date-picker>
-                        </v-dialog>
+                        </v-menu>
+
+
+                        <!--<v-dialog-->
+                                <!--ref="dialog"-->
+                                <!--persistent-->
+                                <!--v-model="modal"-->
+                                <!--lazy-->
+                                <!--full-width-->
+                                <!--width="290px"-->
+                                <!--:return-value.sync="race_date"-->
+                        <!--&gt;-->
+                            <!--<v-text-field-->
+                                    <!--slot="activator"-->
+                                    <!--label="Picker in dialog"-->
+                                    <!--v-model="race_date"-->
+                                    <!--prepend-icon="event"-->
+                                    <!--readonly-->
+                            <!--&gt;</v-text-field>-->
+                            <!--<v-date-picker v-model="race_date" color="primary">-->
+                                <!--<v-spacer></v-spacer>-->
+                                <!--<v-btn flat color="primary" @click="modal = false">Cancel</v-btn>-->
+                                <!--<v-btn flat color="primary" @click="$refs.dialog.save(race_date)">OK</v-btn>-->
+                            <!--</v-date-picker>-->
+                        <!--</v-dialog>-->
                         <v-text-field
                                 label="Duration"
                                 v-model="duration"
@@ -102,25 +129,6 @@
                         ><v-icon left dark>mdi-close-box-outline</v-icon>Clear</v-btn>
                     </v-card-text>
                 </v-card>
-                <v-snackbar
-                    :timeout="timeout"
-                    v-model="success"
-                    :top="true"
-                    :right="true"
-                    class="green"
-                >
-                    {{newRace.name}} added!
-                </v-snackbar>
-
-                <v-snackbar
-                        :timeout="timeout"
-                        v-model="errors"
-                        :top="true"
-                        :right="true"
-                        class="red"
-                >
-                    Error
-                </v-snackbar>
             </v-flex>
         </v-layout>
     </v-container>
@@ -147,10 +155,8 @@
                 youtube_start_time: null,
                 duration: null,
                 modal: false,
-                newRace: {},
-                success: false,
-                errors: false,
-                timeout: 5000
+                menu: false,
+                newRace: {}
             }
         },
         mounted() {
@@ -211,11 +217,11 @@
                     })
                     .then((response) => {
                         this.newRace = response.data;
-                        this.success = true;
+                        window.flash(this.newRace.name + ' added', 'green');
                         this.partialClear();
                     })
                     .catch((e) => {
-                        this.errors = true;
+                        window.flash('Error', 'red');
                         console.log(e);
                     });
             },

@@ -22,4 +22,9 @@ class Race extends Model
     {
         return $this->belongsTo(Season::class);
     }
+
+    public function videos()
+    {
+        return $this->hasMany(Video::class);
+    }
 }

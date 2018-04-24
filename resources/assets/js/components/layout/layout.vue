@@ -40,14 +40,14 @@
                         <v-list-tile-title>Tracks</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <v-list-tile ripple @click="" to="/schedule">
-                    <v-list-tile-action>
-                        <v-icon>mdi-calendar-range</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>Schedule</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
+                <!--<v-list-tile ripple @click="" to="/schedule">-->
+                <!--<v-list-tile-action>-->
+                <!--<v-icon>mdi-calendar-range</v-icon>-->
+                <!--</v-list-tile-action>-->
+                <!--<v-list-tile-content>-->
+                <!--<v-list-tile-title>Schedule</v-list-tile-title>-->
+                <!--</v-list-tile-content>-->
+                <!--</v-list-tile>-->
                 <v-divider></v-divider>
                 <v-subheader>Additional resources</v-subheader>
                 <v-list-group
@@ -65,11 +65,11 @@
                         </v-list-tile-content>
                     </v-list-tile>
                     <!-- TODO: Add donation link -->
-                    <v-list-tile ripple @click="" to="">
-                        <v-list-tile-content>
-                            <v-list-tile-title>Donation</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
+                    <!--<v-list-tile ripple @click="" to="">-->
+                    <!--<v-list-tile-content>-->
+                    <!--<v-list-tile-title>Donation</v-list-tile-title>-->
+                    <!--</v-list-tile-content>-->
+                    <!--</v-list-tile>-->
                 </v-list-group>
                 <v-list-tile ripple @click="" to="/about">
                     <v-list-tile-action>
@@ -90,6 +90,37 @@
                             <v-list-tile-title>Dashboard</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
+                    <v-list-group
+                            prepend-icon="mdi-settings"
+                            no-action
+                    >
+                        <v-list-tile ripple slot="activator">
+                            <v-list-tile-content>
+                                <v-list-tile-title>Edit</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <!-- TODO: Add Series -->
+                        <v-list-tile ripple @click="" to="/edit/series">
+                            <v-list-tile-content>
+                                <v-list-tile-title>Series</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile ripple @click="" to="/edit/races">
+                            <v-list-tile-content>
+                                <v-list-tile-title>Races</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile ripple @click="" to="/add/video">
+                            <v-list-tile-content>
+                                <v-list-tile-title>Videos</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile ripple @click="" to="/edit/tracks">
+                            <v-list-tile-content>
+                                <v-list-tile-title>Tracks</v-list-tile-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                    </v-list-group>
                 </template>
             </v-list>
         </v-navigation-drawer>

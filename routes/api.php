@@ -27,6 +27,15 @@ Route::middleware('auth:api')->group(function () {
 
     /* @see RacesController::store() */
     Route::post('/race', 'RacesController@store');
+
+    /* @see VideosController::store() */
+    Route::post('/video', 'VideosController@store');
+
+
+
+    Route::get('/series-races-count', 'RacesController@test');
+    Route::get('/season-races-count', 'RacesController@test2');
+    Route::get('/races-per-track', 'RacesController@test3');
 });
 
 

@@ -49,25 +49,6 @@
                         ><v-icon left dark>mdi-close-box-outline</v-icon>Clear</v-btn>
                     </v-card-text>
                 </v-card>
-                <v-snackbar
-                        :timeout="timeout"
-                        v-model="success"
-                        :top="true"
-                        :right="true"
-                        class="green"
-                >
-                    {{newTrack.name}} added!
-                </v-snackbar>
-
-                <v-snackbar
-                        :timeout="timeout"
-                        v-model="errors"
-                        :top="true"
-                        :right="true"
-                        class="red"
-                >
-                    Error
-                </v-snackbar>
             </v-flex>
         </v-layout>
     </v-container>
@@ -87,11 +68,7 @@
                 loadingSeasons: true,
                 selectedTrackID: null,
                 numberOfCorners: null,
-                newTrack: {},
-                modal: false,
-                success: false,
-                errors: false,
-                timeout: 5000
+                newTrack: {}
             }
         },
         methods: {
@@ -105,11 +82,11 @@
                 })
                     .then((response) => {
                         this.newTrack = response.data;
-                        this.success = true;
+                        window.flash(this.newTrack.name + ' added', 'green');
                         this.clear();
                     })
                     .catch((e) => {
-                        this.errors = true;
+                        window.flash('Error', 'red');
                         console.log(e);
                     });
             },

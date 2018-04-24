@@ -18,6 +18,7 @@ import createRace from './components/races/create.vue';
 import login from './components/admin/login.vue';
 import logout from './components/admin/logout';
 import dashboard from './components/dashboard/dashboard';
+import createVideo from './components/videos/create';
 import notFound from './components/not-found/notFound.vue';
 
 const router = new VueRouter({
@@ -28,12 +29,14 @@ const router = new VueRouter({
         { path: '/races', component: races },
         { path: '/series', component: series },
         { path: '/tracks', component: tracks },
-        { path: '/schedule', component: schedule },
+        //TODO: Come up with a better schedule
+        //{ path: '/schedule', component: schedule },
         { path: '/races/:id', component: raceID },
         { path: '/series/:id', component: seriesID },
         { path: '/tracks/:id', component: tracksID },
-        { path: '/add/track', component: createTrack, meta: { requiresAuth: true} },
-        { path: '/add/race', component: createRace, meta: { requiresAuth: true} },
+        { path: '/edit/tracks', component: createTrack, meta: { requiresAuth: true} },
+        { path: '/edit/races', component: createRace, meta: { requiresAuth: true} },
+        { path: '/add/video', component: createVideo, meta: { requiresAuth: true} },
         { path: '/races/series/:seriesID/season/:seasonID', component: seasonRaces },
         { path: '/login', component: login },
         { path: '/dashboard', component: dashboard },

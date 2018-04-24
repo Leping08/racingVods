@@ -71,6 +71,7 @@
                     .then((response) => {
                         window.setAccessToken(response.data.access_token);
                         this.$store.dispatch('authCheck');
+                        this.$emit()
                         this.$router.push('/dashboard');
                     })
                     .catch((e) => {

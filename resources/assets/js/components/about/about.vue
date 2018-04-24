@@ -1,7 +1,7 @@
 <template>
     <v-container fluid grid-list-md>
         <v-layout row wrap>
-            <v-flex lg6 offset-lg3 md8 offset-md2 xs12>
+            <v-flex lg8 offset-lg2 md8 offset-md2 xs12>
                 <v-card>
                     <v-toolbar>
                         <v-toolbar-title>
