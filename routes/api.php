@@ -31,6 +31,8 @@ Route::middleware('auth:api')->group(function () {
     /* @see VideosController::store() */
     Route::post('/video', 'VideosController@store');
 
+    /* @see SeriesController::store() */
+    Route::post('/series', 'SeriesController@store');
 
 
     Route::get('/series-races-count', 'RacesController@test');

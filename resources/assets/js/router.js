@@ -19,6 +19,7 @@ import login from './components/admin/login.vue';
 import logout from './components/admin/logout';
 import dashboard from './components/dashboard/dashboard';
 import createVideo from './components/videos/create';
+import createSeries from './components/series/create';
 import notFound from './components/not-found/notFound.vue';
 
 const router = new VueRouter({
@@ -37,6 +38,7 @@ const router = new VueRouter({
         { path: '/edit/tracks', component: createTrack, meta: { requiresAuth: true} },
         { path: '/edit/races', component: createRace, meta: { requiresAuth: true} },
         { path: '/add/video', component: createVideo, meta: { requiresAuth: true} },
+        { path: '/add/series', component: createSeries, meta: { requiresAuth: true} },
         { path: '/races/series/:seriesID/season/:seasonID', component: seasonRaces },
         { path: '/login', component: login },
         { path: '/dashboard', component: dashboard },

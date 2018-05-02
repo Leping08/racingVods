@@ -119,21 +119,6 @@ class RacesController extends Controller
         return Race::orderBy('id', 'desc')->take(5)->with(['track', 'season', 'series'])->get();
     }
 
-    //TODO: Remove once the races have been moved over
-    public function move()
-    {
-        $races = Race::all();
-        foreach($races as $race){
-            $vod = Video::create([
-                'youtube_id' => $race->youtube_id,
-                'youtube_start_time' => $race->youtube_start_time,
-                'race_id' => $race->id
-            ]);
-            echo($vod);
-            $vod = null;
-        }
-    }
-
     public function test()
     {
         $racesCount = Series::withCount('races')->pluck('races_count');

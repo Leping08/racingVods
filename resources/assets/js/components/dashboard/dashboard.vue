@@ -82,42 +82,16 @@
                 <barCard></barCard>
             </v-flex>
         </v-layout>
-
-        <!--<v-layout row wrap>
-            <v-flex xs12>
-                <horizontalBarDash></horizontalBarDash>
-            </v-flex>
-        </v-layout>
-
-        <v-layout row wrap>
-            <v-flex xs12 sm8 offset-sm2>
-                <v-card>
-                    <v-toolbar color="" dark>
-                        <v-toolbar-title>Dashboard</v-toolbar-title>
-                        <v-spacer></v-spacer>
-                        <v-btn icon>
-                            <v-icon color="primary">mdi-lock</v-icon>
-                        </v-btn>
-                    </v-toolbar>
-                    <v-card-text>
-                        {{userName}} {{userId}}
-                        <v-btn color="red" @click="logout">Logout</v-btn>
-                    </v-card-text>
-                </v-card>
-            </v-flex>
-        </v-layout>-->
     </v-container>
 </template>
 
 <script>
     import doughnutCard from './doughnutDash';
     import barCard from './barDash';
-    import horizontalBarDash from './horizontalBarDash';
     export default {
         components: {
             doughnutCard,
-            barCard,
-            horizontalBarDash
+            barCard
         },
         data() {
             return {

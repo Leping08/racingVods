@@ -99,8 +99,7 @@
                                 <v-list-tile-title>Edit</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
-                        <!-- TODO: Add Series -->
-                        <v-list-tile ripple @click="" to="/edit/series">
+                        <v-list-tile ripple @click="" to="/add/series">
                             <v-list-tile-content>
                                 <v-list-tile-title>Series</v-list-tile-title>
                             </v-list-tile-content>

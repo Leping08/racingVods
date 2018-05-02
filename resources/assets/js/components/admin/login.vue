@@ -61,8 +61,8 @@
         methods: {
             login: function () {
                 let data = {
-                    client_id: 2,
-                    client_secret: 'uc3Bb5BDNpxc4pQLG0jOr00scej6E7p9WL9cCkL6',
+                    client_id: process.env.MIX_CLIENT_ID,
+                    client_secret: process.env.MIX_CLIENT_SECRET,
                     grant_type: 'password',
                     username: this.email,
                     password: this.password
@@ -71,7 +71,6 @@
                     .then((response) => {
                         window.setAccessToken(response.data.access_token);
                         this.$store.dispatch('authCheck');
-                        this.$emit()
                         this.$router.push('/dashboard');
                     })
                     .catch((e) => {

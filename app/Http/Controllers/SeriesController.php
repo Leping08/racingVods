@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Series;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class SeriesController extends Controller
 {
@@ -35,7 +36,22 @@ class SeriesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $series = $request->validate([
+            'name' => 'required|max:5',
+            'fullName' => 'required|max:255',
+            'image' =>  'required',
+            'website' => 'required',
+            'description' => 'required|max:5000'
+        ]);
+
+
+        $path = $request->file('image')->store('series');
+
+        $series['image'] = $path;
+
+        $newSeries = Series::create($series);
+        Log::info("$newSeries->fullName was created.");
+        return $newSeries;
     }
 
     /**
