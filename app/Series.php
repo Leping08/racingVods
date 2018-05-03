@@ -8,13 +8,13 @@ class Series extends Model
 {
     protected $fillable = ['name', 'fullName', 'image', 'website', 'description'];
 
-    public function seasons()
-    {
-        return $this->belongsToMany(Season::class)->orderBy('id', 'desc');
-    }
+//    public function seasons()
+//    {
+//        return $this->belongsToMany(Season::class)->orderBy('id', 'desc');
+//    }
 
     public function races()
     {
-        return $this->hasMany(Race::class)->orderBy('race_date', 'asc');
+        return $this->hasMany(Race::class)->with('season')->orderBy('race_date', 'asc');
     }
 }

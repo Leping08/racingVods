@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Race;
 use App\Series;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -62,7 +63,10 @@ class SeriesController extends Controller
      */
     public function show($id)
     {
-        return Series::with('seasons')->find($id);
+        $series = Series::where('id', $id)->with('races')->get();
+        $series['seasons'] = $series[0]->races->unique('season_id')->pluck('season');
+        //TODO: Remove races array no need to send it over the wire
+        return $series;
     }
 
     /**

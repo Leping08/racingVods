@@ -123,6 +123,7 @@
 
 
 <style lang='sass' scoped>
+    //TODO: Remove this css
     .popover-header
         text-align: center
         padding-bottom: 3px
