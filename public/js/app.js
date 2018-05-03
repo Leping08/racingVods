@@ -69610,7 +69610,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             series: [],
-            seasons: [],
             loadingSeries: true
         };
     },
@@ -69623,8 +69622,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this = this;
 
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/series/' + this.$route.params.id).then(function (response) {
-                _this.series = response.data[0];
-                _this.seasons = response.data['seasons'];
+                _this.series = response.data;
                 _this.loadingSeries = false;
             }).catch(function (e) {
                 _this.loadingSeries = false;
@@ -69711,7 +69709,7 @@ var render = function() {
                               [
                                 _c("v-subheader", [_vm._v("Seasons")]),
                                 _vm._v(" "),
-                                _vm._l(_vm.seasons, function(season) {
+                                _vm._l(_vm.series.seasons, function(season) {
                                   return [
                                     _c(
                                       "v-list-tile",

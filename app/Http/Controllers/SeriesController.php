@@ -64,8 +64,9 @@ class SeriesController extends Controller
     public function show($id)
     {
         $series = Series::where('id', $id)->with('races')->get();
-        $series['seasons'] = $series[0]->races->unique('season_id')->pluck('season');
-        //TODO: Remove races array no need to send it over the wire
+        $series = $series[0];
+        $series['seasons'] = $series->races->unique('season_id')->pluck('season');
+        unset($series->races);
         return $series;
     }
 

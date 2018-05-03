@@ -15,7 +15,7 @@
                         <v-card-text>
                             <v-list>
                                 <v-subheader>Seasons</v-subheader>
-                                <template v-for="season in seasons" @key="season.id">
+                                <template v-for="season in series.seasons" @key="season.id">
                                     <v-list-tile @click="" :to="'/races/series/'+series.id+'/season/'+season.id">
                                         <v-list-tile-content>
                                             <v-list-tile-title>{{ season.name }}</v-list-tile-title>
@@ -44,7 +44,6 @@
         data() {
             return {
                 series: [],
-                seasons: [],
                 loadingSeries: true,
             }
         },
@@ -55,8 +54,7 @@
             getSeries: function () {
                 axios.get('/api/series/' + this.$route.params.id)
                     .then((response) => {
-                        this.series = response.data[0];
-                        this.seasons = response.data['seasons'];
+                        this.series = response.data;
                         this.loadingSeries = false;
                     })
                     .catch((e) => {
