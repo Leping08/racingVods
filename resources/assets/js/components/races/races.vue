@@ -16,6 +16,7 @@
                         ></v-text-field>
                         <v-spacer></v-spacer>
                         <v-icon color="primary">mdi-flag-checkered</v-icon>
+                        <!-- TODO: Add filter to races -->
                     </v-toolbar>
                 </v-flex>
                 <v-flex xl4 lg6 xs12 v-for="race in filteredRaces" :key="race.id">

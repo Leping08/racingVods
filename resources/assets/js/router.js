@@ -6,7 +6,6 @@ Vue.use(VueRouter);
 import races from './components/races/races.vue';
 import raceID from './components/races/raceID.vue';
 import series from './components/series/series.vue';
-import schedule from './components/schedule/schedule.vue';
 import about from './components/about/about.vue';
 import seriesID from './components/series/seriesID.vue';
 import seasonRaces from './components/season/seasonRaces.vue';
@@ -30,8 +29,6 @@ const router = new VueRouter({
         { path: '/races', component: races },
         { path: '/series', component: series },
         { path: '/tracks', component: tracks },
-        //TODO: Come up with a better schedule
-        //{ path: '/schedule', component: schedule },
         { path: '/races/:id', component: raceID },
         { path: '/series/:id', component: seriesID },
         { path: '/tracks/:id', component: tracksID },

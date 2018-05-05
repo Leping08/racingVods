@@ -1,5 +1,6 @@
 <template>
     <v-container fluid grid-list-md>
+        <!-- TODO: Make a better schedule -->
         <v-layout row wrap>
             <v-flex md10 offset-md1 xs12>
                 <template v-if="loadingRaces" >
@@ -120,14 +121,3 @@
         }
     };
 </script>
-
-
-<style lang='sass' scoped>
-    //TODO: Remove this css
-    .popover-header
-        text-align: center
-        padding-bottom: 3px
-        border-bottom: 1px solid #dadada
-        margin: 0 0 3px 0
-        opacity: 0.7
-</style>

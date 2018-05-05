@@ -17,6 +17,7 @@
                             </v-list-tile-avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>The Idea</v-list-tile-title>
+                                <!-- TODO: Fix text wrap -->
                                 <v-list-tile-sub-title>Make a website that organizes racing videos from various racing series around the world.</v-list-tile-sub-title>
                             </v-list-tile-content>
                         </v-list-tile>
