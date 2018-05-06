@@ -1,45 +1,71 @@
 <template>
     <v-container fluid grid-list-md>
-        <v-layout row wrap>
-            <template v-if="!loadingRaces">
-                <v-flex xs12>
-                    <v-toolbar>
-                        <v-toolbar-title>Races</v-toolbar-title>
-                        <v-spacer></v-spacer>
-                        <v-text-field
-                                class="pr-3"
-                                append-icon="search"
-                                label="Search Races"
-                                single-line
-                                hide-details
-                                v-model="search"
-                        ></v-text-field>
-                        <v-spacer></v-spacer>
-                        <v-icon color="primary">mdi-flag-checkered</v-icon>
-                        <!-- TODO: Add filter to races -->
-                    </v-toolbar>
-                </v-flex>
-                <v-flex xl4 lg6 xs12 v-for="race in filteredRaces" :key="race.id">
-                    <v-card ripple :hover="true" :to="/races/+race.id">
+        <template v-if="loadingRaces">
+            <v-progress-linear :indeterminate="true"></v-progress-linear>
+        </template>
+        <transition appear
+                    name="custom-classes-transition"
+                    enter-active-class="animated fadeInUp"
+                    leave-active-class="animated fadeOutDown">
+            <v-flex xs12 v-if="!loadingRaces">
+                <v-toolbar>
+                    <v-toolbar-title>Races</v-toolbar-title>
+                    <v-spacer></v-spacer>
+                    <v-text-field
+                            class="pr-3"
+                            append-icon="search"
+                            label="Search Races"
+                            single-line
+                            hide-details
+                            v-model="search"
+                    ></v-text-field>
+                    <v-spacer></v-spacer>
+                    <v-icon color="primary">mdi-flag-checkered</v-icon>
+                    <!-- TODO: Add filter to races -->
+                </v-toolbar>
+            </v-flex>
+        </transition>
+
+
+        <v-data-iterator
+                :items="filteredRaces"
+                :rows-per-page-items="rowsPerPageItems"
+                :pagination.sync="pagination"
+                content-tag="v-layout"
+                class="pt-2"
+                row
+                wrap
+                v-if="!loadingRaces"
+        >
+            <transition slot="item" slot-scope="props"
+                        appear
+                        name="custom-classes-transition"
+                        enter-active-class="animated fadeInUp"
+                        leave-active-class="animated fadeOutDown"
+            >
+                <v-flex
+                        xs12
+                        sm6
+                        md6
+                        lg6
+                >
+                    <v-card ripple :hover="true" :to="/races/+props.item.id">
                         <v-toolbar>
-                            <v-toolbar-title>{{race.name}}</v-toolbar-title>
+                            <v-toolbar-title>{{props.item.name}}</v-toolbar-title>
                             <v-spacer></v-spacer>
-                            <v-btn outline round color="teal" :to="'/series/'+race.series.id">
-                                {{race.series.name}}
+                            <v-btn outline round color="teal" :to="'/series/'+props.item.series.id">
+                                {{props.item.series.name}}
                             </v-btn>
                         </v-toolbar>
                         <v-card-media
-                                :src="'https://img.youtube.com/vi/'+race.youtube_id+'/hqdefault.jpg'"
+                                :src="'https://img.youtube.com/vi/'+props.item.youtube_id+'/hqdefault.jpg'"
                                 height="280px"
                         >
                         </v-card-media>
                     </v-card>
                 </v-flex>
-            </template>
-            <template v-if="loadingRaces" >
-                <v-progress-circular indeterminate v-bind:size="70" v-bind:width="7" color="primary"></v-progress-circular>
-            </template>
-        </v-layout>
+            </transition>
+        </v-data-iterator>
     </v-container>
 </template>
 
@@ -51,9 +77,11 @@
             return {
                 races: [],
                 search: '',
-                season17: true,
-                season18: true,
-                loadingRaces: true
+                loadingRaces: true,
+                pagination: {
+                    rowsPerPage: 12
+                },
+                rowsPerPageItems: [ 12, 24, 48, { text: "All", value: -1 }]
             }
         },
         mounted() {

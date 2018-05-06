@@ -1,43 +1,67 @@
 <template>
     <v-container fluid grid-list-md>
-        <v-layout row wrap>
-            <template v-if="!loadingSeries">
-                <v-flex xs12>
-                    <v-toolbar>
-                        <v-toolbar-title>Series</v-toolbar-title>
-                        <v-spacer></v-spacer>
-                        <v-text-field
-                                class="pr-3"
-                                append-icon="search"
-                                label="Search Series"
-                                single-line
-                                hide-details
-                                v-model="search"
-                        ></v-text-field>
-                        <v-spacer></v-spacer>
-                        <v-icon color="primary">mdi-format-list-bulleted</v-icon>
-                    </v-toolbar>
+        <template v-if="loadingSeries">
+            <v-progress-linear :indeterminate="true"></v-progress-linear>
+        </template>
+        <transition appear
+                    name="custom-classes-transition"
+                    enter-active-class="animated fadeInUp"
+                    leave-active-class="animated fadeOutDown">
+            <v-flex xs12 v-if="!loadingSeries">
+                <v-toolbar>
+                    <v-toolbar-title>Series</v-toolbar-title>
+                    <v-spacer></v-spacer>
+                    <v-text-field
+                            class="pr-3"
+                            append-icon="search"
+                            label="Search Series"
+                            single-line
+                            hide-details
+                            v-model="search"
+                    ></v-text-field>
+                    <v-spacer></v-spacer>
+                    <v-icon color="primary">mdi-format-list-bulleted</v-icon>
+                </v-toolbar>
+            </v-flex>
+        </transition>
+
+
+        <v-data-iterator
+                :items="filteredSeries"
+                :rows-per-page-items="rowsPerPageItems"
+                :pagination.sync="pagination"
+                content-tag="v-layout"
+                class="pt-2"
+                row
+                wrap
+                v-if="!loadingSeries"
+        >
+            <transition slot="item" slot-scope="props"
+                        appear
+                        name="custom-classes-transition"
+                        enter-active-class="animated fadeInUp"
+                        leave-active-class="animated fadeOutDown"
+            >
+                <v-flex
+                        xs12
+                        sm6
+                        md6
+                        lg6
+                >
+                    <v-card ripple :hover="true" :to="/series/+props.item.id">
+                        <v-card-media :src="'/img/series/'+props.item.image" height="300px">
+                        </v-card-media>
+                        <v-toolbar>
+                            <v-toolbar-title>{{props.item.fullName}}</v-toolbar-title>
+                            <v-spacer></v-spacer>
+                            <v-btn outline round color="teal" :to="'/series/'+props.item.id">
+                                {{props.item.name}}
+                            </v-btn>
+                        </v-toolbar>
+                    </v-card>
                 </v-flex>
-                <template v-for="series in filteredSeries" @key="series.id">
-                    <v-flex xl4 lg6 xs12>
-                        <v-card ripple :hover="true" :to="/series/+series.id">
-                            <v-card-media :src="'/img/series/'+series.image" height="300px">
-                            </v-card-media>
-                            <v-toolbar>
-                                <v-toolbar-title>{{series.fullName}}</v-toolbar-title>
-                                <v-spacer></v-spacer>
-                                <v-btn outline round color="teal" :to="'/series/'+series.id">
-                                    {{series.name}}
-                                </v-btn>
-                            </v-toolbar>
-                        </v-card>
-                    </v-flex>
-                </template>
-            </template>
-            <template v-if="loadingSeries">
-                <v-progress-circular indeterminate v-bind:size="70" v-bind:width="7" color="primary"></v-progress-circular>
-            </template>
-        </v-layout>
+            </transition>
+        </v-data-iterator>
     </v-container>
 </template>
 
@@ -49,7 +73,11 @@
             return {
                 series: [],
                 loadingSeries: true,
-                search: ''
+                search: '',
+                pagination: {
+                    rowsPerPage: 12
+                },
+                rowsPerPageItems: [ 12, 24, 48, { text: "All", value: -1 }]
             }
         },
         mounted() {

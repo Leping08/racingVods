@@ -8,6 +8,7 @@
         <title>Racing Vods</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
         <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link href="/css/app.css" rel="stylesheet">
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico/apple-icon-57x57.png">

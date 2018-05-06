@@ -3,23 +3,29 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
 
+import about from './components/about/about.vue';
+import home from './components/home/home.vue';
+import dashboard from './components/dashboard/dashboard';
+import notFound from './components/not-found/notFound.vue';
+
+import logout from './components/admin/logout';
+import login from './components/admin/login.vue';
+
 import races from './components/races/races.vue';
 import raceID from './components/races/raceID.vue';
+import createRace from './components/races/create.vue';
+
 import series from './components/series/series.vue';
-import about from './components/about/about.vue';
 import seriesID from './components/series/seriesID.vue';
-import seasonRaces from './components/season/seasonRaces.vue';
-import home from './components/home/home.vue';
+import createSeries from './components/series/create';
+import seriesAdmin from './components/series/seriesAdmin.vue';
+
 import tracks from './components/tracks/tracks.vue';
 import tracksID from './components/tracks/tracksID.vue';
 import createTrack from './components/tracks/create.vue';
-import createRace from './components/races/create.vue';
-import login from './components/admin/login.vue';
-import logout from './components/admin/logout';
-import dashboard from './components/dashboard/dashboard';
+
+import seasonRaces from './components/season/seasonRaces.vue';
 import createVideo from './components/videos/create';
-import createSeries from './components/series/create';
-import notFound from './components/not-found/notFound.vue';
 
 const router = new VueRouter({
     mode: 'history',
@@ -36,6 +42,7 @@ const router = new VueRouter({
         { path: '/edit/races', component: createRace, meta: { requiresAuth: true} },
         { path: '/add/video', component: createVideo, meta: { requiresAuth: true} },
         { path: '/add/series', component: createSeries, meta: { requiresAuth: true} },
+        { path: '/admin/series', component: seriesAdmin, meta: { requiresAuth: true} },
         { path: '/races/series/:seriesID/season/:seasonID', component: seasonRaces },
         { path: '/login', component: login },
         { path: '/dashboard', component: dashboard },

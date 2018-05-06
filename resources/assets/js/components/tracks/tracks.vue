@@ -1,21 +1,29 @@
 <template>
     <v-container fluid grid-list-md>
-        <v-flex xs12>
-            <v-toolbar>
-                <v-toolbar-title>Tracks</v-toolbar-title>
-                <v-spacer></v-spacer>
-                <v-text-field
-                        class="pr-3"
-                        append-icon="search"
-                        label="Search Tracks"
-                        single-line
-                        hide-details
-                        v-model="search"
-                ></v-text-field>
-                <v-spacer></v-spacer>
-                <v-icon color="primary">mdi-road</v-icon>
-            </v-toolbar>
-        </v-flex>
+        <template v-if="loadingTracks">
+            <v-progress-linear :indeterminate="true"></v-progress-linear>
+        </template>
+        <transition appear
+                    name="custom-classes-transition"
+                    enter-active-class="animated fadeInUp"
+                    leave-active-class="animated fadeOutDown">
+            <v-flex xs12 v-if="!loadingTracks">
+                    <v-toolbar>
+                        <v-toolbar-title>Tracks</v-toolbar-title>
+                        <v-spacer></v-spacer>
+                        <v-text-field
+                                class="pr-3"
+                                append-icon="search"
+                                label="Search Tracks"
+                                single-line
+                                hide-details
+                                v-model="search"
+                        ></v-text-field>
+                        <v-spacer></v-spacer>
+                        <v-icon color="primary">mdi-road</v-icon>
+                    </v-toolbar>
+            </v-flex>
+        </transition>
 
         <v-data-iterator
                 :items="filteredTracks"
@@ -25,22 +33,28 @@
                 class="pt-2"
                 row
                 wrap
+                v-if="!loadingTracks"
         >
-            <v-flex
-                    slot="item"
-                    slot-scope="props"
-                    xs12
-                    sm6
-                    md4
-                    lg4
+            <transition slot="item" slot-scope="props"
+                        appear
+                        name="custom-classes-transition"
+                        enter-active-class="animated fadeInUp"
+                        leave-active-class="animated fadeOutDown"
             >
-                <v-card ripple :hover="true" :to="/tracks/+props.item.id">
-                    <v-toolbar>
-                        <v-toolbar-title>{{props.item.name}}</v-toolbar-title>
-                    </v-toolbar>
-                    <img :src="props.item.image" width="100%">
-                </v-card>
-            </v-flex>
+                <v-flex
+                        xs12
+                        sm6
+                        md4
+                        lg4
+                >
+                    <v-card ripple :hover="true" :to="/tracks/+props.item.id">
+                        <v-toolbar>
+                            <v-toolbar-title>{{props.item.name}}</v-toolbar-title>
+                        </v-toolbar>
+                        <img :src="props.item.image" width="100%">
+                    </v-card>
+                </v-flex>
+            </transition>
         </v-data-iterator>
     </v-container>
 </template>
@@ -54,33 +68,26 @@
                 tracks: [],
                 loadingTracks: true,
                 search: '',
-                loading: true,
                 pagination: {
-                    rowsPerPage: 6
+                    rowsPerPage: 12
                 },
-                rowsPerPageItems: [ 6, 15, 30, { text: "All", value: -1 }],
-                headers: [
-                    { text: 'Name', value: 'name',  align: 'left' },
-                    { text: 'Length (mi)', value: 'length' },
-                    { text: 'Length (km)', value: 'length' },
-                    { text: 'Corners', value: 'numberOfCorners' }
-                ]
+                rowsPerPageItems: [ 12, 24, 48, { text: "All", value: -1 }]
             }
         },
         mounted() {
-            this.getRaces();
+            this.getTracks();
         },
         methods: {
-            getRaces: function () {
+            getTracks: function () {
                 this.loading = true;
                 this.tracks = [];
                 axios.get('/api/tracks')
                     .then((response) => {
                         this.tracks = response.data;
-                        this.loading = false;
+                        this.loadingTracks = false;
                     })
                     .catch((e) => {
-                        this.loading = false;
+                        this.loadingTracks = false;
                         console.log(e);
                     });
             }
