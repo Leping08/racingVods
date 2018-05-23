@@ -30757,41 +30757,41 @@ module.exports = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_about_about_vue__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_about_about_vue__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_about_about_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_about_about_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_home_home_vue__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_home_home_vue__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_home_home_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_home_home_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_dashboard_dashboard__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_dashboard_dashboard__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_dashboard_dashboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_dashboard_dashboard__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_not_found_notFound_vue__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_not_found_notFound_vue__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_not_found_notFound_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_not_found_notFound_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_admin_logout__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_admin_logout__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_admin_logout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_admin_logout__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_admin_login_vue__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_admin_login_vue__ = __webpack_require__(253);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_admin_login_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_admin_login_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_races_races_vue__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_races_races_vue__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_races_races_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_races_races_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_races_raceID_vue__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_races_raceID_vue__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_races_raceID_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_races_raceID_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_races_create_vue__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_races_create_vue__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_races_create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_races_create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_series_series_vue__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_series_series_vue__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_series_series_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_series_series_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_series_seriesID_vue__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_series_seriesID_vue__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_series_seriesID_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_series_seriesID_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_series_create__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_series_create__ = __webpack_require__(271);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_series_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_series_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_series_seriesAdmin_vue__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_series_seriesAdmin_vue__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_series_seriesAdmin_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_series_seriesAdmin_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_tracks_tracks_vue__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_tracks_tracks_vue__ = __webpack_require__(277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_tracks_tracks_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_tracks_tracks_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_tracks_tracksID_vue__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_tracks_tracksID_vue__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_tracks_tracksID_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_tracks_tracksID_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_tracks_create_vue__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_tracks_create_vue__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_tracks_create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_tracks_create_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_season_seasonRaces_vue__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_season_seasonRaces_vue__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_season_seasonRaces_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_season_seasonRaces_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_videos_create__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_videos_create__ = __webpack_require__(289);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_videos_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__components_videos_create__);
 
 
@@ -30849,7 +30849,8 @@ router.beforeEach(function (to, from, next) {
 /* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(150);
+__webpack_require__(150);
+module.exports = __webpack_require__(294);
 
 
 /***/ }),
@@ -30873,7 +30874,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_layout_layout_vue__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_layout_layout_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_layout_layout_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__router__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__auth__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__auth__ = __webpack_require__(292);
 /**
  * Axios headers for api requests
  */
@@ -30917,7 +30918,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuet
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_9__auth__["a" /* default */]);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_moment___default.a);
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__webpack_require__(290));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__webpack_require__(293));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('layout', __WEBPACK_IMPORTED_MODULE_7__components_layout_layout_vue___default.a);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_5_v_calendar___default.a);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_chartjs__["c" /* default */]);
@@ -66873,9 +66874,2523 @@ if (inBrowser && window.Vue) {
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(231)
+var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(232)
+var __vue_template__ = __webpack_require__(231)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/about/about.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3b3eecc4", Component.options)
+  } else {
+    hotAPI.reload("data-v-3b3eecc4", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 231 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            {
+              attrs: {
+                lg8: "",
+                "offset-lg2": "",
+                md8: "",
+                "offset-md2": "",
+                xs12: ""
+              }
+            },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    [
+                      _c("v-toolbar-title", [
+                        _vm._v(
+                          "\n                        About\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("v-spacer"),
+                      _vm._v(" "),
+                      _c("v-icon", { attrs: { color: "primary" } }, [
+                        _vm._v("mdi-information-outline")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list",
+                    [
+                      _c(
+                        "v-list-tile",
+                        { attrs: { avatar: "" } },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [_c("v-icon", [_vm._v("mdi-lightbulb-on")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [_vm._v("The Idea")]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v(
+                                  "Make a website that organizes racing videos from various racing series around the world."
+                                )
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-divider"),
+                      _vm._v(" "),
+                      _c("v-subheader", [_vm._v("Shout-out")]),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "http://racingcircuits.info/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [_c("v-icon", [_vm._v("mdi-file-image")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [
+                                _vm._v("Racingcircuits.info")
+                              ]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v("Provided the track layout images.")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "http://bradboothmedia.com/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [_c("v-icon", [_vm._v("mdi-camera")])],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [
+                                _vm._v("Brad Booth Media")
+                              ]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v("Designed the logo.")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-divider"),
+                      _vm._v(" "),
+                      _c("v-subheader", [_vm._v("Tech Stack")]),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "https://vuejs.org/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [
+                              _c("v-icon", { attrs: { large: "" } }, [
+                                _vm._v("devicon-vuejs-plain colored")
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [_vm._v("Vuejs")]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [_vm._v("Front End")])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "https://vuetifyjs.com/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c("v-list-tile-avatar", [
+                            _c("img", {
+                              attrs: {
+                                src:
+                                  "https://vuetifyjs.com/static/doc-images/logo.svg"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [_vm._v("Vuetify")]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v("Application Theme")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "https://laravel.com/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [
+                              _c("v-icon", { attrs: { large: "" } }, [
+                                _vm._v("devicon-laravel-plain colored")
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [_vm._v("Laravel")]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v("Back End API")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-tile",
+                        {
+                          attrs: {
+                            avatar: "",
+                            href: "https://aws.amazon.com/",
+                            target: "_blank"
+                          }
+                        },
+                        [
+                          _c(
+                            "v-list-tile-avatar",
+                            [
+                              _c("v-icon", { attrs: { large: "" } }, [
+                                _vm._v(
+                                  "devicon-amazonwebservices-plain colored"
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-tile-content",
+                            [
+                              _c("v-list-tile-title", [
+                                _vm._v("Amazon Web Services")
+                              ]),
+                              _vm._v(" "),
+                              _c("v-list-tile-sub-title", [
+                                _vm._v("Linux Server")
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-divider"),
+                      _vm._v(" "),
+                      _c("v-subheader", [_vm._v("Copyright")]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "px-3" }, [
+                        _vm._v(
+                          "Racing Vods © 2018. All rights reserved. No copyright infringement intended."
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3b3eecc4", module.exports)
+  }
+}
+
+/***/ }),
+/* 232 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(233)
+/* template */
+var __vue_template__ = __webpack_require__(234)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/home/home.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-36a37488", Component.options)
+  } else {
+    hotAPI.reload("data-v-36a37488", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 233 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            races: [],
+            loadingRaces: true
+        };
+    },
+    mounted: function mounted() {
+        this.getRaces();
+    },
+
+    methods: {
+        getRaces: function getRaces() {
+            var _this = this;
+
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/races/latest').then(function (response) {
+                _this.races = response.data;
+                _this.loadingRaces = false;
+            }).catch(function (e) {
+                _this.loadingRaces = false;
+                console.log(e);
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { xs12: "" } },
+            [
+              _c(
+                "v-parallax",
+                {
+                  attrs: {
+                    jumbotron: "",
+                    src: "/img/home/home-heading.jpg",
+                    height: "300"
+                  }
+                },
+                [
+                  _c(
+                    "v-layout",
+                    {
+                      attrs: {
+                        column: "",
+                        "align-center": "",
+                        "justify-center": "",
+                        color: "white"
+                      }
+                    },
+                    [
+                      _c("img", {
+                        staticClass: "hidden-md-and-up",
+                        staticStyle: { "max-width": "100%" },
+                        attrs: { src: "/img/logo/racingVods-light.png" }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "hidden-sm-and-down",
+                        staticStyle: { "max-width": "45%" },
+                        attrs: { src: "/img/logo/racingVods-light.png" }
+                      })
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { md4: "", xs12: "", "d-flex": "" } },
+            [
+              _c(
+                "v-card",
+                {
+                  staticClass: "text-xs-center",
+                  attrs: { ripple: "", hover: "", flat: "", to: "/series" }
+                },
+                [
+                  _c("v-card-text"),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c(
+                        "v-icon",
+                        {
+                          attrs: { "x-large": "", dark: "", color: "primary" }
+                        },
+                        [_vm._v("mdi-format-list-bulleted")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _c("h1", { staticClass: "headline" }, [_vm._v("Series")])
+                  ]),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _c("p", [
+                      _vm._v(
+                        "Videos from the top racing series around the world including The FIA World Endurance Championship, Indy Car, and the International Motor Sports Association."
+                      )
+                    ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { md4: "", xs12: "", "d-flex": "" } },
+            [
+              _c(
+                "v-card",
+                {
+                  staticClass: "text-xs-center",
+                  attrs: { ripple: "", hover: "", flat: "", to: "/races" }
+                },
+                [
+                  _c("v-card-text"),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c(
+                        "v-icon",
+                        {
+                          attrs: { "x-large": "", dark: "", color: "primary" }
+                        },
+                        [_vm._v("mdi-flag-checkered")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _c("h1", { staticClass: "headline" }, [_vm._v("Races")])
+                  ]),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _c("p", [
+                      _vm._v(
+                        "Full race videos with the ability to jump to the start of the race and pick up watching where you left off."
+                      )
+                    ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { md4: "", xs12: "", "d-flex": "" } },
+            [
+              _c(
+                "v-card",
+                {
+                  staticClass: "text-xs-center",
+                  attrs: { ripple: "", hover: "", flat: "", to: "/tracks" }
+                },
+                [
+                  _c("v-card-text"),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c(
+                        "v-icon",
+                        {
+                          attrs: { "x-large": "", dark: "", color: "primary" }
+                        },
+                        [_vm._v("mdi-road")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _c("h1", { staticClass: "headline" }, [_vm._v("Tracks")])
+                  ]),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _c("p", [
+                      _vm._v(
+                        "Tracks from around the world with info including layouts, lap distances, corner names, and website."
+                      )
+                    ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { md6: "", xs12: "" } },
+            [
+              _c(
+                "v-card",
+                { staticClass: "text-xs-center", attrs: { flat: "" } },
+                [
+                  _c(
+                    "v-toolbar",
+                    [_c("v-toolbar-title", [_vm._v("Racing Vods")])],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-parallax",
+                { attrs: { src: "/img/home/nurbur-night.png", height: "400" } },
+                [
+                  _c(
+                    "v-layout",
+                    {
+                      staticClass: "text-xs-right",
+                      attrs: {
+                        column: "",
+                        "align-right": "",
+                        "justify-center": ""
+                      }
+                    },
+                    [
+                      _c("h2", { staticClass: "white--text" }, [
+                        _vm._v("Built For Enthusiasts,"),
+                        _c("br"),
+                        _vm._v("By Enthusiasts")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { attrs: { md6: "", xs12: "" } },
+            [
+              _c(
+                "v-card",
+                { staticClass: "text-xs-center", attrs: { flat: "" } },
+                [
+                  !_vm.loadingRaces
+                    ? _c(
+                        "v-carousel",
+                        [
+                          _vm._l(_vm.races, function(race) {
+                            return [
+                              _c(
+                                "v-carousel-item",
+                                {
+                                  staticStyle: {
+                                    "text-decoration": "none !important"
+                                  },
+                                  attrs: {
+                                    src:
+                                      "https://img.youtube.com/vi/" +
+                                      race.youtube_id +
+                                      "/hqdefault.jpg",
+                                    to: "/races/" + race.id
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "v-toolbar",
+                                    [
+                                      _c("v-toolbar-title", [
+                                        _vm._v(_vm._s(race.name))
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("v-spacer"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          attrs: {
+                                            outline: "",
+                                            round: "",
+                                            color: "teal",
+                                            href: "/series/" + race.series.id
+                                          }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                    " +
+                                              _vm._s(race.series.name) +
+                                              "\n                                "
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ]
+                          })
+                        ],
+                        2
+                      )
+                    : _vm._e()
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm.loadingRaces
+                ? [
+                    _c("v-progress-circular", {
+                      attrs: {
+                        indeterminate: "",
+                        size: 70,
+                        width: 7,
+                        color: "primary"
+                      }
+                    })
+                  ]
+                : _vm._e()
+            ],
+            2
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-36a37488", module.exports)
+  }
+}
+
+/***/ }),
+/* 235 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(236)
+/* template */
+var __vue_template__ = __webpack_require__(247)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/dashboard/dashboard.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-42b86712", Component.options)
+  } else {
+    hotAPI.reload("data-v-42b86712", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 236 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__doughnutDash__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__doughnutDash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__doughnutDash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__barDash__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__barDash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__barDash__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        doughnutCard: __WEBPACK_IMPORTED_MODULE_0__doughnutDash___default.a,
+        barCard: __WEBPACK_IMPORTED_MODULE_1__barDash___default.a
+    },
+    data: function data() {
+        return {
+            races: [],
+            tracks: [],
+            series: []
+        };
+    },
+    mounted: function mounted() {
+        this.getRaces();
+        this.getTracks();
+        this.getSeries();
+        this.$store.dispatch('setUser');
+    },
+
+    computed: {
+        userName: function userName() {
+            return this.$store.getters.userName;
+        },
+        userId: function userId() {
+            return this.$store.getters.userId;
+        }
+    },
+    methods: {
+        getRaces: function getRaces() {
+            var _this = this;
+
+            this.$api.get('/api/races').then(function (response) {
+                _this.races = response.data;
+            }).catch(function (e) {
+                console.log(e);
+            });
+        },
+        getTracks: function getTracks() {
+            var _this2 = this;
+
+            this.$api.get('/api/tracks').then(function (response) {
+                _this2.tracks = response.data;
+            }).catch(function (e) {
+                console.log(e);
+            });
+        },
+        getSeries: function getSeries() {
+            var _this3 = this;
+
+            this.$api.get('/api/series').then(function (response) {
+                _this3.series = response.data;
+            }).catch(function (e) {
+                console.log(e);
+            });
+        },
+        logout: function logout() {
+            this.$router.push('/logout');
+        }
+    }
+});
+
+/***/ }),
+/* 237 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(238)
+/* template */
+var __vue_template__ = __webpack_require__(241)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/dashboard/doughnutDash.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6fb0e5a6", Component.options)
+  } else {
+    hotAPI.reload("data-v-6fb0e5a6", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 238 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_doughnut__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_doughnut___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__charts_doughnut__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        doughnut: __WEBPACK_IMPORTED_MODULE_0__charts_doughnut___default.a
+    },
+    data: function data() {
+        return {
+            loading: false,
+            datacollection: {
+                labels: [],
+                datasets: [{
+                    backgroundColor: ['#4DB6AC', '#4FC3F7', '#F06292', '#7986CB', '#FFF176', '#FFB74D', '#A1887F', '#90A4AE'],
+                    data: []
+                }]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        // This more specific font property overrides the global property
+                        fontColor: 'white',
+                        defaultFontSize: 14,
+                        defaultFontFamily: "'Roboto', 'sans-serif'"
+                    }
+                }
+            }
+            //responsive: true,
+            //maintainAspectRatio: false
+        };
+    },
+    mounted: function mounted() {
+        this.chartData();
+    },
+
+    methods: {
+        chartData: function chartData() {
+            var _this = this;
+
+            this.loading = true;
+            this.$api.get('/api/series-races-count').then(function (response) {
+                _this.datacollection.datasets[0].data = response.data.racesCount;
+                _this.datacollection.labels = response.data.seriesNames;
+                _this.loading = false;
+            }).catch(function (e) {
+                _this.loading = false;
+                console.log(e);
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 239 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(240)
+/* template */
+var __vue_template__ = null
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/charts/doughnut.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-716b91b5", Component.options)
+  } else {
+    hotAPI.reload("data-v-716b91b5", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 240 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(14);
+
+
+var reactiveProp = __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["d" /* mixins */].reactiveProp;
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["b" /* Doughnut */],
+    mixins: [reactiveProp],
+    props: ['options'],
+    mounted: function mounted() {
+        // this.chartData is created in the mixin.
+        // If you want to pass options please create a local options object
+        this.renderChart(this.chartData, this.options);
+    }
+});
+
+/***/ }),
+/* 241 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-layout",
+    { attrs: { row: "", wrap: "" } },
+    [
+      _c(
+        "v-flex",
+        { staticClass: "pa-2", attrs: { xs12: "" } },
+        [
+          !_vm.loading
+            ? [
+                _c(
+                  "v-toolbar",
+                  [
+                    _c("v-toolbar-title", [
+                      _vm._v(
+                        "\n                    Races/Series\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("v-spacer"),
+                    _vm._v(" "),
+                    _c("v-icon", { attrs: { color: "primary" } }, [
+                      _vm._v("mdi-chart-arc")
+                    ])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-card",
+                  { attrs: { dark: "", tile: "", flat: "" } },
+                  [
+                    _c(
+                      "v-card-text",
+                      [
+                        _c("doughnut", {
+                          attrs: {
+                            "chart-data": _vm.datacollection,
+                            options: _vm.options
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ]
+            : _vm._e()
+        ],
+        2
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6fb0e5a6", module.exports)
+  }
+}
+
+/***/ }),
+/* 242 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(243)
+/* template */
+var __vue_template__ = __webpack_require__(246)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/dashboard/barDash.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-01dcc87a", Component.options)
+  } else {
+    hotAPI.reload("data-v-01dcc87a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 243 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_bar__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__charts_bar__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        bar: __WEBPACK_IMPORTED_MODULE_0__charts_bar___default.a
+    },
+    data: function data() {
+        return {
+            loading: false,
+            datacollection: {
+                labels: [],
+                datasets: [{
+                    label: "Races",
+                    backgroundColor: ['#4DB6AC', '#4FC3F7', '#F06292', '#7986CB', '#FFF176', '#FFB74D', '#A1887F', '#90A4AE'],
+                    borderColor: 'white',
+                    borderWidth: 1,
+                    data: []
+                }]
+            },
+            options: {
+                legend: {
+                    display: false,
+                    labels: {
+                        // This more specific font property overrides the global property
+                        fontColor: 'white',
+                        defaultFontSize: 14,
+                        defaultFontFamily: "'Roboto', 'sans-serif'"
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "white"
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "white"
+                        }
+                    }]
+                }
+                //responsive: true,
+                //maintainAspectRatio: false
+            }
+        };
+    },
+    mounted: function mounted() {
+        this.chartData();
+    },
+
+    methods: {
+        chartData: function chartData() {
+            var _this = this;
+
+            this.loading = true;
+            this.$api.get('/api/season-races-count').then(function (response) {
+                _this.datacollection.datasets[0].data = response.data.racesCount;
+                _this.datacollection.labels = response.data.seasonNames;
+                _this.loading = false;
+            }).catch(function (e) {
+                console.log(e);
+                _this.loading = false;
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 244 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(245)
+/* template */
+var __vue_template__ = null
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/charts/bar.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-50fe0fa0", Component.options)
+  } else {
+    hotAPI.reload("data-v-50fe0fa0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 245 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(14);
+
+
+var reactiveProp = __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["d" /* mixins */].reactiveProp;
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Bar */],
+    mixins: [reactiveProp],
+    props: ['options'],
+    mounted: function mounted() {
+        // this.chartData is created in the mixin.
+        // If you want to pass options please create a local options object
+        this.renderChart(this.chartData, this.options);
+    }
+});
+
+/***/ }),
+/* 246 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-layout",
+    { attrs: { row: "", wrap: "" } },
+    [
+      _c(
+        "v-flex",
+        { staticClass: "pa-2", attrs: { xs12: "" } },
+        [
+          !_vm.loading
+            ? [
+                _c(
+                  "v-toolbar",
+                  [
+                    _c("v-toolbar-title", [
+                      _vm._v(
+                        "\n                    Races/Season\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("v-spacer"),
+                    _vm._v(" "),
+                    _c("v-icon", { attrs: { color: "primary" } }, [
+                      _vm._v("mdi-chart-bar")
+                    ])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-card",
+                  { attrs: { dark: "", tile: "", flat: "" } },
+                  [
+                    _c(
+                      "v-card-text",
+                      [
+                        _c("bar", {
+                          attrs: {
+                            "chart-data": _vm.datacollection,
+                            options: _vm.options
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ]
+            : _vm._e()
+        ],
+        2
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-01dcc87a", module.exports)
+  }
+}
+
+/***/ }),
+/* 247 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { staticClass: "pa-0", attrs: { fluid: "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { staticClass: "pa-2", attrs: { xs12: "", sm6: "", md4: "" } },
+            [
+              _c(
+                "v-card",
+                { attrs: { dark: "", tile: "", flat: "" } },
+                [
+                  _c(
+                    "v-container",
+                    {
+                      staticClass: "pa-0 pink darken-1 ma-0",
+                      attrs: { "fill-height": "" }
+                    },
+                    [
+                      _c(
+                        "v-layout",
+                        { attrs: { row: "", wrap: "", "align-center": "" } },
+                        [
+                          _c(
+                            "v-flex",
+                            {
+                              attrs: {
+                                lg3: "",
+                                xl2: "",
+                                md2: "",
+                                sm2: "",
+                                xs2: ""
+                              }
+                            },
+                            [
+                              _c(
+                                "v-card-text",
+                                [
+                                  _c("v-icon", { attrs: { large: "" } }, [
+                                    _vm._v("mdi-flag-checkered")
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-flex",
+                            {
+                              staticClass: "pink lighten-1",
+                              attrs: {
+                                lg9: "",
+                                xl10: "",
+                                md10: "",
+                                sm10: "",
+                                xs10: ""
+                              }
+                            },
+                            [
+                              _c("v-card-text", [
+                                _c("div", { staticClass: "subheading" }, [
+                                  _c("b", [_vm._v("Races")])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "display-1" }, [
+                                  _vm._v(
+                                    "\n                                    " +
+                                      _vm._s(_vm.races.length) +
+                                      "\n                                "
+                                  )
+                                ])
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { staticClass: "pa-2", attrs: { xs12: "", sm6: "", md4: "" } },
+            [
+              _c(
+                "v-card",
+                { attrs: { dark: "", tile: "", flat: "" } },
+                [
+                  _c(
+                    "v-container",
+                    {
+                      staticClass: "pa-0 light-blue darken-1 ma-0",
+                      attrs: { "fill-height": "" }
+                    },
+                    [
+                      _c(
+                        "v-layout",
+                        { attrs: { row: "", wrap: "", "align-center": "" } },
+                        [
+                          _c(
+                            "v-flex",
+                            {
+                              attrs: {
+                                lg3: "",
+                                xl2: "",
+                                md2: "",
+                                sm2: "",
+                                xs2: ""
+                              }
+                            },
+                            [
+                              _c(
+                                "v-card-text",
+                                [
+                                  _c("v-icon", { attrs: { large: "" } }, [
+                                    _vm._v("mdi-format-list-bulleted")
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-flex",
+                            {
+                              staticClass: "light-blue lighten-1",
+                              attrs: {
+                                lg9: "",
+                                xl10: "",
+                                md10: "",
+                                sm10: "",
+                                xs10: ""
+                              }
+                            },
+                            [
+                              _c("v-card-text", [
+                                _c("div", { staticClass: "subheading" }, [
+                                  _c("b", [_vm._v("Series")])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "display-1" }, [
+                                  _vm._v(
+                                    "\n                                    " +
+                                      _vm._s(_vm.series.length) +
+                                      "\n                                "
+                                  )
+                                ])
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-flex",
+            { staticClass: "pa-2", attrs: { xs12: "", sm6: "", md4: "" } },
+            [
+              _c(
+                "v-card",
+                { attrs: { dark: "", tile: "", flat: "" } },
+                [
+                  _c(
+                    "v-container",
+                    {
+                      staticClass: "pa-0 teal darken-1 ma-0",
+                      attrs: { "fill-height": "" }
+                    },
+                    [
+                      _c(
+                        "v-layout",
+                        { attrs: { row: "", wrap: "", "align-center": "" } },
+                        [
+                          _c(
+                            "v-flex",
+                            {
+                              attrs: {
+                                lg3: "",
+                                xl2: "",
+                                md2: "",
+                                sm2: "",
+                                xs2: ""
+                              }
+                            },
+                            [
+                              _c(
+                                "v-card-text",
+                                [
+                                  _c("v-icon", { attrs: { large: "" } }, [
+                                    _vm._v("mdi-road")
+                                  ])
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-flex",
+                            {
+                              staticClass: "teal lighten-1",
+                              attrs: {
+                                lg9: "",
+                                xl10: "",
+                                md10: "",
+                                sm10: "",
+                                xs10: ""
+                              }
+                            },
+                            [
+                              _c("v-card-text", [
+                                _c("div", { staticClass: "subheading" }, [
+                                  _c("b", [_vm._v("Tracks")])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "display-1" }, [
+                                  _vm._v(
+                                    "\n                                    " +
+                                      _vm._s(_vm.tracks.length) +
+                                      "\n                                "
+                                  )
+                                ])
+                              ])
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { xs12: "", sm6: "" } },
+            [_c("doughnutCard")],
+            1
+          ),
+          _vm._v(" "),
+          _c("v-flex", { attrs: { xs12: "", sm6: "" } }, [_c("barCard")], 1)
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-42b86712", module.exports)
+  }
+}
+
+/***/ }),
+/* 248 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(249)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/not-found/notFound.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-57789ded", Component.options)
+  } else {
+    hotAPI.reload("data-v-57789ded", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 249 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            {
+              attrs: {
+                lg6: "",
+                "offset-lg3": "",
+                md8: "",
+                "offset-md2": "",
+                xs12: ""
+              }
+            },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    [
+                      _c("v-toolbar-title", [_vm._v("Oops!")]),
+                      _vm._v(" "),
+                      _c("v-spacer"),
+                      _vm._v(" "),
+                      _c("v-icon", { attrs: { color: "primary" } }, [
+                        _vm._v("mdi-alert-outline")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-card-media", {
+                    attrs: { src: "/img/home/404.jpg", height: "400px" }
+                  }),
+                  _vm._v(" "),
+                  _c("v-card-text", [
+                    _vm._v(
+                      "\n                    We can't seem to find the page you are looking for.\n                "
+                    )
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-57789ded", module.exports)
+  }
+}
+
+/***/ }),
+/* 250 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(251)
+/* template */
+var __vue_template__ = __webpack_require__(252)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/admin/logout.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4fed04e1", Component.options)
+  } else {
+    hotAPI.reload("data-v-4fed04e1", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 251 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    created: function created() {
+        window.setAccessToken('');
+        this.$store.dispatch('authCheck');
+        this.$router.push('/login');
+    }
+});
+
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div")
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4fed04e1", module.exports)
+  }
+}
+
+/***/ }),
+/* 253 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(254)
+/* template */
+var __vue_template__ = __webpack_require__(255)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/admin/login.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-31a3ffe2", Component.options)
+  } else {
+    hotAPI.reload("data-v-31a3ffe2", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 254 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            password: '',
+            e1: true,
+            valid: true,
+            email: '',
+            emailRules: [function (v) {
+                return !!v || 'E-mail is required';
+            }, function (v) {
+                return (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+                );
+            }]
+        };
+    },
+
+    methods: {
+        login: function login() {
+            var _this = this;
+
+            var data = {
+                client_id: "1",
+                client_secret: "XpVecNPc0rkNlyoUgTzq92Y98UMrfuVZOhePqTZR",
+                grant_type: 'password',
+                username: this.email,
+                password: this.password
+            };
+            axios.post('/oauth/token', data).then(function (response) {
+                window.setAccessToken(response.data.access_token);
+                _this.$store.dispatch('authCheck');
+                _this.$router.push('/dashboard');
+            }).catch(function (e) {
+                window.flash('Invalid Credentials', 'red');
+                console.log(e);
+            });
+        },
+        clear: function clear() {
+            this.email = '';
+            this.password = '';
+        }
+    }
+});
+
+/***/ }),
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { xs12: "", sm8: "", "offset-sm2": "" } },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    { attrs: { color: "", dark: "" } },
+                    [
+                      _c("v-toolbar-title", [_vm._v("Login")]),
+                      _vm._v(" "),
+                      _c("v-spacer"),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        { attrs: { icon: "" } },
+                        [
+                          _c("v-icon", { attrs: { color: "primary" } }, [
+                            _vm._v("mdi-lock")
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c(
+                        "v-form",
+                        {
+                          ref: "form",
+                          attrs: { "lazy-validation": "" },
+                          model: {
+                            value: _vm.valid,
+                            callback: function($$v) {
+                              _vm.valid = $$v
+                            },
+                            expression: "valid"
+                          }
+                        },
+                        [
+                          _c("v-text-field", {
+                            attrs: {
+                              label: "E-mail",
+                              rules: _vm.emailRules,
+                              required: ""
+                            },
+                            model: {
+                              value: _vm.email,
+                              callback: function($$v) {
+                                _vm.email = $$v
+                              },
+                              expression: "email"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("v-text-field", {
+                            attrs: {
+                              label: "Enter your password",
+                              "append-icon": _vm.e1
+                                ? "visibility"
+                                : "visibility_off",
+                              "append-icon-cb": function() {
+                                return (_vm.e1 = !_vm.e1)
+                              },
+                              type: _vm.e1 ? "password" : "text",
+                              rules: [
+                                function(v) {
+                                  return !!v || "Password is required"
+                                }
+                              ],
+                              counter: ""
+                            },
+                            on: {
+                              keyup: function($event) {
+                                if (
+                                  !("button" in $event) &&
+                                  _vm._k(
+                                    $event.keyCode,
+                                    "enter",
+                                    13,
+                                    $event.key,
+                                    "Enter"
+                                  )
+                                ) {
+                                  return null
+                                }
+                                return _vm.login($event)
+                              }
+                            },
+                            model: {
+                              value: _vm.password,
+                              callback: function($$v) {
+                                _vm.password = $$v
+                              },
+                              expression: "password"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: { disabled: !_vm.valid },
+                              on: { click: _vm.login }
+                            },
+                            [
+                              _vm._v(
+                                "\n                            submit\n                        "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("v-btn", { on: { click: _vm.clear } }, [
+                            _vm._v("clear")
+                          ])
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-31a3ffe2", module.exports)
+  }
+}
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(257)
+/* template */
+var __vue_template__ = __webpack_require__(258)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -66914,7 +69429,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 231 */
+/* 257 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67036,7 +69551,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 232 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -67221,15 +69736,15 @@ if (false) {
 }
 
 /***/ }),
-/* 233 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(234)
+var __vue_script__ = __webpack_require__(260)
 /* template */
-var __vue_template__ = __webpack_require__(235)
+var __vue_template__ = __webpack_require__(261)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -67268,7 +69783,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 234 */
+/* 260 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67509,7 +70024,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 235 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -68230,15 +70745,633 @@ if (false) {
 }
 
 /***/ }),
-/* 236 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(237)
+var __vue_script__ = __webpack_require__(263)
 /* template */
-var __vue_template__ = __webpack_require__(238)
+var __vue_template__ = __webpack_require__(264)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/races/create.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-46234500", Component.options)
+  } else {
+    hotAPI.reload("data-v-46234500", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 263 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            tracks: [],
+            series: [],
+            seasons: [],
+            loadingTracks: true,
+            loadingSeries: true,
+            loadingSeasons: true,
+            selectedTrackID: null,
+            name: null,
+            series_id: null,
+            track_id: null,
+            season_id: null,
+            race_date: null,
+            youtube_id: null,
+            youtube_start_time: null,
+            duration: null,
+            modal: false,
+            menu: false,
+            newRace: {}
+        };
+    },
+    mounted: function mounted() {
+        this.getTracks();
+        this.getSeries();
+        this.getSeasons();
+    },
+
+    methods: {
+        getTracks: function getTracks() {
+            var _this = this;
+
+            this.loadingTracks = true;
+            this.tracks = [];
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/tracks').then(function (response) {
+                _this.tracks = response.data;
+                _this.loadingTracks = false;
+            }).catch(function (e) {
+                _this.loadingTracks = false;
+                console.log(e);
+            });
+        },
+        getSeries: function getSeries() {
+            var _this2 = this;
+
+            this.loadingSeries = true;
+            this.series = [];
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/series').then(function (response) {
+                _this2.series = response.data;
+                _this2.loadingSeries = false;
+            }).catch(function (e) {
+                _this2.loadingSeries = false;
+                console.log(e);
+            });
+        },
+        getSeasons: function getSeasons() {
+            var _this3 = this;
+
+            this.loadingSeasons = true;
+            this.seasons = [];
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/seasons').then(function (response) {
+                _this3.seasons = response.data;
+                _this3.loadingSeasons = false;
+            }).catch(function (e) {
+                _this3.loadingSeasons = false;
+                console.log(e);
+            });
+        },
+        createRace: function createRace() {
+            var _this4 = this;
+
+            this.$api.post('/api/race', {
+                name: this.name,
+                series_id: this.series_id,
+                track_id: this.track_id,
+                season_id: this.season_id,
+                race_date: this.race_date,
+                youtube_id: this.youtube_id,
+                youtube_start_time: this.youtube_start_time,
+                duration: this.duration
+            }).then(function (response) {
+                _this4.newRace = response.data;
+                window.flash(_this4.newRace.name + ' added', 'green');
+                _this4.partialClear();
+            }).catch(function (e) {
+                window.flash('Error', 'red');
+                console.log(e);
+            });
+        },
+        clear: function clear() {
+            this.name = null;
+            this.series_id = null;
+            this.track_id = null;
+            this.season_id = null;
+            this.race_date = null;
+            this.youtube_id = null;
+            this.youtube_start_time = null;
+            this.duration = null;
+        },
+        partialClear: function partialClear() {
+            this.name = null;
+            this.track_id = null;
+            this.race_date = null;
+            this.youtube_id = null;
+            this.youtube_start_time = null;
+            this.duration = null;
+        }
+    }
+});
+
+/***/ }),
+/* 264 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { lg8: "", "offset-lg2": "", xs12: "" } },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    [_c("v-toolbar-title", [_vm._v("Create Race")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Name",
+                          "prepend-icon": "mdi-rename-box"
+                        },
+                        model: {
+                          value: _vm.name,
+                          callback: function($$v) {
+                            _vm.name = $$v
+                          },
+                          expression: "name"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-select", {
+                        attrs: {
+                          items: _vm.tracks,
+                          "item-text": "name",
+                          "item-value": "id",
+                          label: "Track",
+                          loading: _vm.loadingTracks,
+                          "single-line": "",
+                          bottom: "",
+                          autocomplete: "",
+                          "prepend-icon": "mdi-road"
+                        },
+                        model: {
+                          value: _vm.track_id,
+                          callback: function($$v) {
+                            _vm.track_id = $$v
+                          },
+                          expression: "track_id"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-select", {
+                        attrs: {
+                          items: _vm.series,
+                          "item-text": "fullName",
+                          "item-value": "id",
+                          label: "Series",
+                          loading: _vm.loadingSeries,
+                          "single-line": "",
+                          bottom: "",
+                          autocomplete: "",
+                          "prepend-icon": "mdi-format-list-bulleted"
+                        },
+                        model: {
+                          value: _vm.series_id,
+                          callback: function($$v) {
+                            _vm.series_id = $$v
+                          },
+                          expression: "series_id"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-select", {
+                        attrs: {
+                          items: _vm.seasons,
+                          "item-text": "name",
+                          "item-value": "id",
+                          label: "Season",
+                          loading: _vm.loadingSeasons,
+                          "single-line": "",
+                          bottom: "",
+                          autocomplete: "",
+                          "prepend-icon": "mdi-weather-sunset"
+                        },
+                        model: {
+                          value: _vm.season_id,
+                          callback: function($$v) {
+                            _vm.season_id = $$v
+                          },
+                          expression: "season_id"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "v-menu",
+                        {
+                          ref: "menu",
+                          attrs: {
+                            lazy: "",
+                            "close-on-content-click": false,
+                            transition: "scale-transition",
+                            "offset-y": "",
+                            "full-width": "",
+                            "nudge-right": 40,
+                            "min-width": "290px",
+                            "return-value": _vm.race_date
+                          },
+                          on: {
+                            "update:returnValue": function($event) {
+                              _vm.race_date = $event
+                            }
+                          },
+                          model: {
+                            value: _vm.menu,
+                            callback: function($$v) {
+                              _vm.menu = $$v
+                            },
+                            expression: "menu"
+                          }
+                        },
+                        [
+                          _c("v-text-field", {
+                            attrs: {
+                              slot: "activator",
+                              label: "Race Date",
+                              "prepend-icon": "event",
+                              readonly: ""
+                            },
+                            slot: "activator",
+                            model: {
+                              value: _vm.race_date,
+                              callback: function($$v) {
+                                _vm.race_date = $$v
+                              },
+                              expression: "race_date"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "v-date-picker",
+                            {
+                              attrs: { color: "primary" },
+                              model: {
+                                value: _vm.race_date,
+                                callback: function($$v) {
+                                  _vm.race_date = $$v
+                                },
+                                expression: "race_date"
+                              }
+                            },
+                            [
+                              _c("v-spacer"),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                {
+                                  attrs: { flat: "", color: "primary" },
+                                  on: {
+                                    click: function($event) {
+                                      _vm.menu = false
+                                    }
+                                  }
+                                },
+                                [_vm._v("Cancel")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-btn",
+                                {
+                                  attrs: { flat: "", color: "primary" },
+                                  on: {
+                                    click: function($event) {
+                                      _vm.$refs.menu.save(_vm.race_date)
+                                    }
+                                  }
+                                },
+                                [_vm._v("OK")]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Duration",
+                          "prepend-icon": "mdi-timer"
+                        },
+                        model: {
+                          value: _vm.duration,
+                          callback: function($$v) {
+                            _vm.duration = $$v
+                          },
+                          expression: "duration"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Youtube ID",
+                          "prepend-icon": "mdi-message-video"
+                        },
+                        model: {
+                          value: _vm.youtube_id,
+                          callback: function($$v) {
+                            _vm.youtube_id = $$v
+                          },
+                          expression: "youtube_id"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Start Time (Seconds)",
+                          "prepend-icon": "mdi-timer"
+                        },
+                        model: {
+                          value: _vm.youtube_start_time,
+                          callback: function($$v) {
+                            _vm.youtube_start_time = $$v
+                          },
+                          expression: "youtube_start_time"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-divider"),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { outline: "", color: "primary" },
+                          on: {
+                            click: function($event) {
+                              _vm.createRace()
+                            }
+                          }
+                        },
+                        [
+                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
+                            _vm._v("mdi-library-plus")
+                          ]),
+                          _vm._v("Create")
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { outline: "", color: "info" },
+                          on: {
+                            click: function($event) {
+                              _vm.clear()
+                            }
+                          }
+                        },
+                        [
+                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
+                            _vm._v("mdi-close-box-outline")
+                          ]),
+                          _vm._v("Clear")
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-46234500", module.exports)
+  }
+}
+
+/***/ }),
+/* 265 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(266)
+/* template */
+var __vue_template__ = __webpack_require__(267)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -68277,7 +71410,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 237 */
+/* 266 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68395,7 +71528,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 238 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -68577,391 +71710,15 @@ if (false) {
 }
 
 /***/ }),
-/* 239 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(269)
 /* template */
-var __vue_template__ = __webpack_require__(240)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/about/about.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3b3eecc4", Component.options)
-  } else {
-    hotAPI.reload("data-v-3b3eecc4", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 240 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-container",
-    { attrs: { fluid: "", "grid-list-md": "" } },
-    [
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            {
-              attrs: {
-                lg8: "",
-                "offset-lg2": "",
-                md8: "",
-                "offset-md2": "",
-                xs12: ""
-              }
-            },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-toolbar",
-                    [
-                      _c("v-toolbar-title", [
-                        _vm._v(
-                          "\n                        About\n                    "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("v-spacer"),
-                      _vm._v(" "),
-                      _c("v-icon", { attrs: { color: "primary" } }, [
-                        _vm._v("mdi-information-outline")
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list",
-                    [
-                      _c(
-                        "v-list-tile",
-                        { attrs: { avatar: "" } },
-                        [
-                          _c(
-                            "v-list-tile-avatar",
-                            [_c("v-icon", [_vm._v("mdi-lightbulb-on")])],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-list-tile-content",
-                            [
-                              _c("v-list-tile-title", [_vm._v("The Idea")]),
-                              _vm._v(" "),
-                              _c("v-list-tile-sub-title", [
-                                _vm._v(
-                                  "Make a website that organizes racing videos from various racing series around the world."
-                                )
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("v-divider"),
-                      _vm._v(" "),
-                      _c("v-subheader", [_vm._v("Shout-out")]),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-tile",
-                        {
-                          attrs: {
-                            avatar: "",
-                            href: "http://racingcircuits.info/",
-                            target: "_blank"
-                          }
-                        },
-                        [
-                          _c(
-                            "v-list-tile-avatar",
-                            [_c("v-icon", [_vm._v("mdi-file-image")])],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-list-tile-content",
-                            [
-                              _c("v-list-tile-title", [
-                                _vm._v("Racingcircuits.info")
-                              ]),
-                              _vm._v(" "),
-                              _c("v-list-tile-sub-title", [
-                                _vm._v("Provided the track layout images.")
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-tile",
-                        {
-                          attrs: {
-                            avatar: "",
-                            href: "http://bradboothmedia.com/",
-                            target: "_blank"
-                          }
-                        },
-                        [
-                          _c(
-                            "v-list-tile-avatar",
-                            [_c("v-icon", [_vm._v("mdi-camera")])],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-list-tile-content",
-                            [
-                              _c("v-list-tile-title", [
-                                _vm._v("Brad Booth Media")
-                              ]),
-                              _vm._v(" "),
-                              _c("v-list-tile-sub-title", [
-                                _vm._v("Designed the logo.")
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("v-divider"),
-                      _vm._v(" "),
-                      _c("v-subheader", [_vm._v("Tech Stack")]),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-tile",
-                        {
-                          attrs: {
-                            avatar: "",
-                            href: "https://vuejs.org/",
-                            target: "_blank"
-                          }
-                        },
-                        [
-                          _c(
-                            "v-list-tile-avatar",
-                            [
-                              _c("v-icon", { attrs: { large: "" } }, [
-                                _vm._v("devicon-vuejs-plain colored")
-                              ])
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-list-tile-content",
-                            [
-                              _c("v-list-tile-title", [_vm._v("Vuejs")]),
-                              _vm._v(" "),
-                              _c("v-list-tile-sub-title", [_vm._v("Front End")])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-tile",
-                        {
-                          attrs: {
-                            avatar: "",
-                            href: "https://vuetifyjs.com/",
-                            target: "_blank"
-                          }
-                        },
-                        [
-                          _c("v-list-tile-avatar", [
-                            _c("img", {
-                              attrs: {
-                                src:
-                                  "https://vuetifyjs.com/static/doc-images/logo.svg"
-                              }
-                            })
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "v-list-tile-content",
-                            [
-                              _c("v-list-tile-title", [_vm._v("Vuetify")]),
-                              _vm._v(" "),
-                              _c("v-list-tile-sub-title", [
-                                _vm._v("Application Theme")
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-tile",
-                        {
-                          attrs: {
-                            avatar: "",
-                            href: "https://laravel.com/",
-                            target: "_blank"
-                          }
-                        },
-                        [
-                          _c(
-                            "v-list-tile-avatar",
-                            [
-                              _c("v-icon", { attrs: { large: "" } }, [
-                                _vm._v("devicon-laravel-plain colored")
-                              ])
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-list-tile-content",
-                            [
-                              _c("v-list-tile-title", [_vm._v("Laravel")]),
-                              _vm._v(" "),
-                              _c("v-list-tile-sub-title", [
-                                _vm._v("Back End API")
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-tile",
-                        {
-                          attrs: {
-                            avatar: "",
-                            href: "https://aws.amazon.com/",
-                            target: "_blank"
-                          }
-                        },
-                        [
-                          _c(
-                            "v-list-tile-avatar",
-                            [
-                              _c("v-icon", { attrs: { large: "" } }, [
-                                _vm._v(
-                                  "devicon-amazonwebservices-plain colored"
-                                )
-                              ])
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-list-tile-content",
-                            [
-                              _c("v-list-tile-title", [
-                                _vm._v("Amazon Web Services")
-                              ]),
-                              _vm._v(" "),
-                              _c("v-list-tile-sub-title", [
-                                _vm._v("Linux Server")
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("v-divider"),
-                      _vm._v(" "),
-                      _c("v-subheader", [_vm._v("Copyright")]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "px-3" }, [
-                        _vm._v(
-                          "Racing Vods © 2018. All rights reserved. No copyright infringement intended."
-                        )
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3b3eecc4", module.exports)
-  }
-}
-
-/***/ }),
-/* 241 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(242)
-/* template */
-var __vue_template__ = __webpack_require__(243)
+var __vue_template__ = __webpack_require__(270)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -69000,7 +71757,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 242 */
+/* 269 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69076,7 +71833,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 243 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -69234,15 +71991,15 @@ if (false) {
 }
 
 /***/ }),
-/* 244 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(245)
+var __vue_script__ = __webpack_require__(272)
 /* template */
-var __vue_template__ = __webpack_require__(246)
+var __vue_template__ = __webpack_require__(273)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -69259,7 +72016,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/season/seasonRaces.vue"
+Component.options.__file = "resources/assets/js/components/series/create.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -69268,9 +72025,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d824136c", Component.options)
+    hotAPI.createRecord("data-v-2f98a5e6", Component.options)
   } else {
-    hotAPI.reload("data-v-d824136c", Component.options)
+    hotAPI.reload("data-v-2f98a5e6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -69281,7 +72038,398 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 245 */
+/* 272 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            name: null,
+            fullName: null,
+            image: null,
+            description: null,
+            website: null,
+            loadingTracks: true,
+            loadingSeries: true,
+            loadingSeasons: true,
+            selectedTrackID: null,
+            numberOfCorners: null,
+            newSeries: {},
+            title: "Image Upload",
+            dialog: false,
+            imageName: '',
+            imageUrl: '',
+            imageFile: ''
+        };
+    },
+
+    methods: {
+        createSeries: function createSeries() {
+            var _this = this;
+
+            var data = new FormData();
+            data.append('name', this.name);
+            data.append('fullName', this.fullName);
+            data.append('image', this.imageFile);
+            data.append('description', this.description);
+            data.append('website', this.website);
+
+            this.$api.post('/api/series', data, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            }).then(function (response) {
+                _this.newSeries = response.data;
+                window.flash(_this.newSeries.name + ' added', 'green');
+                _this.clear();
+            }).catch(function (e) {
+                window.flash('Error', 'red');
+                console.log(e);
+            });
+        },
+        clear: function clear() {
+            this.name = null;
+            this.fullName = null;
+            this.image = null;
+            this.description = null;
+            this.website = null;
+        },
+        pickFile: function pickFile() {
+            this.$refs.image.click();
+        },
+        onFilePicked: function onFilePicked(e) {
+            var _this2 = this;
+
+            var files = e.target.files;
+            if (files[0] !== undefined) {
+                this.imageName = files[0].name;
+                if (this.imageName.lastIndexOf('.') <= 0) {
+                    return;
+                }
+                var fr = new FileReader();
+                fr.readAsDataURL(files[0]);
+                fr.addEventListener('load', function () {
+                    _this2.imageUrl = fr.result;
+                    _this2.imageFile = files[0]; // this is an image file that can be sent to server...
+                });
+            } else {
+                this.imageName = '';
+                this.imageFile = '';
+                this.imageUrl = '';
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 273 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    { attrs: { fluid: "", "grid-list-md": "" } },
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "", wrap: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { lg8: "", "offset-lg2": "", xs12: "" } },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    [_c("v-toolbar-title", [_vm._v("Create Series")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Abbreviation",
+                          "prepend-icon": "mdi-tag-text-outline"
+                        },
+                        model: {
+                          value: _vm.name,
+                          callback: function($$v) {
+                            _vm.name = $$v
+                          },
+                          expression: "name"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Full Name",
+                          "prepend-icon": "mdi-rename-box"
+                        },
+                        model: {
+                          value: _vm.fullName,
+                          callback: function($$v) {
+                            _vm.fullName = $$v
+                          },
+                          expression: "fullName"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: { label: "Website", "prepend-icon": "web" },
+                        model: {
+                          value: _vm.website,
+                          callback: function($$v) {
+                            _vm.website = $$v
+                          },
+                          expression: "website"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm.imageUrl
+                        ? _c("img", {
+                            staticClass: "ml-5",
+                            attrs: { src: _vm.imageUrl, height: "150" }
+                          })
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Series Image",
+                          "prepend-icon": "attach_file"
+                        },
+                        on: { click: _vm.pickFile },
+                        model: {
+                          value: _vm.imageName,
+                          callback: function($$v) {
+                            _vm.imageName = $$v
+                          },
+                          expression: "imageName"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("input", {
+                        ref: "image",
+                        staticStyle: { display: "none" },
+                        attrs: { type: "file", accept: "image/*" },
+                        on: { change: _vm.onFilePicked }
+                      }),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          label: "Description",
+                          "prepend-icon": "mdi-note-text",
+                          "multi-line": ""
+                        },
+                        model: {
+                          value: _vm.description,
+                          callback: function($$v) {
+                            _vm.description = $$v
+                          },
+                          expression: "description"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-divider"),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-text",
+                    [
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { outline: "", color: "primary" },
+                          on: {
+                            click: function($event) {
+                              _vm.createSeries()
+                            }
+                          }
+                        },
+                        [
+                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
+                            _vm._v("mdi-library-plus")
+                          ]),
+                          _vm._v("Create")
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { outline: "", color: "info" },
+                          on: {
+                            click: function($event) {
+                              _vm.clear()
+                            }
+                          }
+                        },
+                        [
+                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
+                            _vm._v("mdi-close-box-outline")
+                          ]),
+                          _vm._v("Clear")
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-2f98a5e6", module.exports)
+  }
+}
+
+/***/ }),
+/* 274 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(275)
+/* template */
+var __vue_template__ = __webpack_require__(276)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/series/seriesAdmin.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-70eb0c52", Component.options)
+  } else {
+    hotAPI.reload("data-v-70eb0c52", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 275 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69323,13 +72471,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            races: [],
-            loadingRaces: true
+            series: [],
+            loadingSeries: true,
+            search: '',
+            headers: [{ text: 'Id', value: 'id' }, { text: 'Name', value: 'fullName' }, { text: 'Shorthand', value: 'name' }]
         };
     },
     mounted: function mounted() {
@@ -69340,19 +72500,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getSeries: function getSeries() {
             var _this = this;
 
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/series/' + this.$route.params.seriesID + '/season/' + this.$route.params.seasonID).then(function (response) {
-                _this.races = response.data;
-                _this.loadingRaces = false;
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/series').then(function (response) {
+                _this.series = response.data;
+                _this.loadingSeries = false;
             }).catch(function (e) {
-                _this.loadingRaces = false;
+                _this.loadingSeries = false;
                 console.log(e);
+            });
+        }
+    },
+    computed: {
+        filteredSeries: function filteredSeries() {
+            var _this2 = this;
+
+            return this.series.filter(function (series) {
+                return series.fullName.toLowerCase().indexOf(_this2.search.toLowerCase()) > -1 || series.name.toLowerCase().indexOf(_this2.search.toLowerCase()) > -1;
             });
         }
     }
 });
 
 /***/ }),
-/* 246 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -69367,7 +72536,7 @@ var render = function() {
         "v-layout",
         { attrs: { row: "", wrap: "" } },
         [
-          !_vm.loadingRaces
+          !_vm.loadingSeries
             ? [
                 _c(
                   "v-flex",
@@ -69376,99 +72545,85 @@ var render = function() {
                     _c(
                       "v-toolbar",
                       [
-                        _c("v-toolbar-title", [
-                          _vm._v(
-                            _vm._s(_vm.races[0].season.name) +
-                              " " +
-                              _vm._s(_vm.races[0].series.fullName)
-                          )
+                        _c("v-toolbar-title", [_vm._v("Series")]),
+                        _vm._v(" "),
+                        _c("v-spacer"),
+                        _vm._v(" "),
+                        _c("v-text-field", {
+                          staticClass: "pr-3",
+                          attrs: {
+                            "append-icon": "search",
+                            label: "Search Series",
+                            "single-line": "",
+                            "hide-details": ""
+                          },
+                          model: {
+                            value: _vm.search,
+                            callback: function($$v) {
+                              _vm.search = $$v
+                            },
+                            expression: "search"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("v-spacer"),
+                        _vm._v(" "),
+                        _c("v-icon", { attrs: { color: "primary" } }, [
+                          _vm._v("mdi-format-list-bulleted")
                         ])
                       ],
                       1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _vm._l(_vm.races, function(race, index) {
-                  return [
-                    _c(
-                      "v-flex",
-                      { attrs: { xl4: "", lg6: "", xs12: "" } },
-                      [
-                        _c(
-                          "v-card",
-                          {
-                            attrs: {
-                              ripple: "",
-                              hover: true,
-                              to: /races/ + race.id
-                            }
-                          },
-                          [
-                            _c(
-                              "v-toolbar",
+                    ),
+                    _vm._v(" "),
+                    _c("v-data-table", {
+                      staticClass: "elevation-1",
+                      attrs: {
+                        headers: _vm.headers,
+                        items: _vm.filteredSeries
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "items",
+                          fn: function(props) {
+                            return _c(
+                              "transition",
+                              {
+                                attrs: {
+                                  appear: "",
+                                  name: "custom-classes-transition",
+                                  "enter-active-class": "animated bounceInUp",
+                                  "leave-active-class": "animated bounceOutDown"
+                                }
+                              },
                               [
-                                _c("v-toolbar-title", [
-                                  _vm._v(
-                                    _vm._s(++index) + ". " + _vm._s(race.name)
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("v-spacer"),
-                                _vm._v(" "),
                                 _c(
-                                  "v-btn",
+                                  "router-link",
                                   {
                                     attrs: {
-                                      outline: "",
-                                      round: "",
-                                      color: "teal",
-                                      to: "/series/" + race.series.id
+                                      tag: "tr",
+                                      to: "/series/edit/" + props.item.id
                                     }
                                   },
                                   [
-                                    _vm._v(
-                                      "\n                                " +
-                                        _vm._s(race.series.name) +
-                                        "\n                            "
-                                    )
+                                    _c("td", [_vm._v(_vm._s(props.item.id))]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(_vm._s(props.item.fullName))
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [_vm._v(_vm._s(props.item.name))])
                                   ]
                                 )
                               ],
                               1
-                            ),
-                            _vm._v(" "),
-                            _c("v-card-media", {
-                              attrs: {
-                                src:
-                                  "https://img.youtube.com/vi/" +
-                                  race.youtube_id +
-                                  "/hqdefault.jpg",
-                                height: "280px"
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ]
-                })
-              ]
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.loadingRaces
-            ? [
-                _c("v-progress-circular", {
-                  attrs: {
-                    indeterminate: "",
-                    size: 70,
-                    width: 7,
-                    color: "primary"
-                  }
-                })
+                            )
+                          }
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                )
               ]
             : _vm._e()
         ],
@@ -69484,564 +72639,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-d824136c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-70eb0c52", module.exports)
   }
 }
 
 /***/ }),
-/* 247 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(248)
+var __vue_script__ = __webpack_require__(278)
 /* template */
-var __vue_template__ = __webpack_require__(249)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/home/home.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-36a37488", Component.options)
-  } else {
-    hotAPI.reload("data-v-36a37488", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 248 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            races: [],
-            loadingRaces: true
-        };
-    },
-    mounted: function mounted() {
-        this.getRaces();
-    },
-
-    methods: {
-        getRaces: function getRaces() {
-            var _this = this;
-
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/races/latest').then(function (response) {
-                _this.races = response.data;
-                _this.loadingRaces = false;
-            }).catch(function (e) {
-                _this.loadingRaces = false;
-                console.log(e);
-            });
-        }
-    }
-});
-
-/***/ }),
-/* 249 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-container",
-    { attrs: { fluid: "", "grid-list-md": "" } },
-    [
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            { attrs: { xs12: "" } },
-            [
-              _c(
-                "v-parallax",
-                {
-                  attrs: {
-                    jumbotron: "",
-                    src: "/img/home/home-heading.jpg",
-                    height: "300"
-                  }
-                },
-                [
-                  _c(
-                    "v-layout",
-                    {
-                      attrs: {
-                        column: "",
-                        "align-center": "",
-                        "justify-center": "",
-                        color: "white"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "hidden-md-and-up",
-                        staticStyle: { "max-width": "100%" },
-                        attrs: { src: "/img/logo/racingVods-light.png" }
-                      }),
-                      _vm._v(" "),
-                      _c("img", {
-                        staticClass: "hidden-sm-and-down",
-                        staticStyle: { "max-width": "45%" },
-                        attrs: { src: "/img/logo/racingVods-light.png" }
-                      })
-                    ]
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            { attrs: { md4: "", xs12: "", "d-flex": "" } },
-            [
-              _c(
-                "v-card",
-                {
-                  staticClass: "text-xs-center",
-                  attrs: { ripple: "", hover: "", flat: "", to: "/series" }
-                },
-                [
-                  _c("v-card-text"),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-text",
-                    [
-                      _c(
-                        "v-icon",
-                        {
-                          attrs: { "x-large": "", dark: "", color: "primary" }
-                        },
-                        [_vm._v("mdi-format-list-bulleted")]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-text", [
-                    _c("h1", { staticClass: "headline" }, [_vm._v("Series")])
-                  ]),
-                  _vm._v(" "),
-                  _c("v-card-text", [
-                    _c("p", [
-                      _vm._v(
-                        "Videos from the top racing series around the world including The FIA World Endurance Championship, Indy Car, and the International Motor Sports Association."
-                      )
-                    ])
-                  ])
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-flex",
-            { attrs: { md4: "", xs12: "", "d-flex": "" } },
-            [
-              _c(
-                "v-card",
-                {
-                  staticClass: "text-xs-center",
-                  attrs: { ripple: "", hover: "", flat: "", to: "/races" }
-                },
-                [
-                  _c("v-card-text"),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-text",
-                    [
-                      _c(
-                        "v-icon",
-                        {
-                          attrs: { "x-large": "", dark: "", color: "primary" }
-                        },
-                        [_vm._v("mdi-flag-checkered")]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-text", [
-                    _c("h1", { staticClass: "headline" }, [_vm._v("Races")])
-                  ]),
-                  _vm._v(" "),
-                  _c("v-card-text", [
-                    _c("p", [
-                      _vm._v(
-                        "Full race videos with the ability to jump to the start of the race and pick up watching where you left off."
-                      )
-                    ])
-                  ])
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-flex",
-            { attrs: { md4: "", xs12: "", "d-flex": "" } },
-            [
-              _c(
-                "v-card",
-                {
-                  staticClass: "text-xs-center",
-                  attrs: { ripple: "", hover: "", flat: "", to: "/tracks" }
-                },
-                [
-                  _c("v-card-text"),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-text",
-                    [
-                      _c(
-                        "v-icon",
-                        {
-                          attrs: { "x-large": "", dark: "", color: "primary" }
-                        },
-                        [_vm._v("mdi-road")]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-text", [
-                    _c("h1", { staticClass: "headline" }, [_vm._v("Tracks")])
-                  ]),
-                  _vm._v(" "),
-                  _c("v-card-text", [
-                    _c("p", [
-                      _vm._v(
-                        "Tracks from around the world with info including layouts, lap distances, corner names, and website."
-                      )
-                    ])
-                  ])
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            { attrs: { md6: "", xs12: "" } },
-            [
-              _c(
-                "v-card",
-                { staticClass: "text-xs-center", attrs: { flat: "" } },
-                [
-                  _c(
-                    "v-toolbar",
-                    [_c("v-toolbar-title", [_vm._v("Racing Vods")])],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-parallax",
-                { attrs: { src: "/img/home/nurbur-night.png", height: "400" } },
-                [
-                  _c(
-                    "v-layout",
-                    {
-                      staticClass: "text-xs-right",
-                      attrs: {
-                        column: "",
-                        "align-right": "",
-                        "justify-center": ""
-                      }
-                    },
-                    [
-                      _c("h2", { staticClass: "white--text" }, [
-                        _vm._v("Built For Enthusiasts,"),
-                        _c("br"),
-                        _vm._v("By Enthusiasts")
-                      ])
-                    ]
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-flex",
-            { attrs: { md6: "", xs12: "" } },
-            [
-              _c(
-                "v-card",
-                { staticClass: "text-xs-center", attrs: { flat: "" } },
-                [
-                  !_vm.loadingRaces
-                    ? _c(
-                        "v-carousel",
-                        [
-                          _vm._l(_vm.races, function(race) {
-                            return [
-                              _c(
-                                "v-carousel-item",
-                                {
-                                  staticStyle: {
-                                    "text-decoration": "none !important"
-                                  },
-                                  attrs: {
-                                    src:
-                                      "https://img.youtube.com/vi/" +
-                                      race.youtube_id +
-                                      "/hqdefault.jpg",
-                                    to: "/races/" + race.id
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "v-toolbar",
-                                    [
-                                      _c("v-toolbar-title", [
-                                        _vm._v(_vm._s(race.name))
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("v-spacer"),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-btn",
-                                        {
-                                          attrs: {
-                                            outline: "",
-                                            round: "",
-                                            color: "teal",
-                                            href: "/series/" + race.series.id
-                                          }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                    " +
-                                              _vm._s(race.series.name) +
-                                              "\n                                "
-                                          )
-                                        ]
-                                      )
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            ]
-                          })
-                        ],
-                        2
-                      )
-                    : _vm._e()
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm.loadingRaces
-                ? [
-                    _c("v-progress-circular", {
-                      attrs: {
-                        indeterminate: "",
-                        size: 70,
-                        width: 7,
-                        color: "primary"
-                      }
-                    })
-                  ]
-                : _vm._e()
-            ],
-            2
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-36a37488", module.exports)
-  }
-}
-
-/***/ }),
-/* 250 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(251)
-/* template */
-var __vue_template__ = __webpack_require__(252)
+var __vue_template__ = __webpack_require__(279)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -70080,7 +72691,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 251 */
+/* 278 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70194,7 +72805,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 252 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -70352,15 +72963,15 @@ if (false) {
 }
 
 /***/ }),
-/* 253 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(254)
+var __vue_script__ = __webpack_require__(281)
 /* template */
-var __vue_template__ = __webpack_require__(255)
+var __vue_template__ = __webpack_require__(282)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -70399,7 +73010,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 254 */
+/* 281 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70554,7 +73165,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 255 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -70900,15 +73511,15 @@ if (false) {
 }
 
 /***/ }),
-/* 256 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(257)
+var __vue_script__ = __webpack_require__(284)
 /* template */
-var __vue_template__ = __webpack_require__(258)
+var __vue_template__ = __webpack_require__(285)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -70947,7 +73558,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 257 */
+/* 284 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71058,7 +73669,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 258 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -71227,15 +73838,15 @@ if (false) {
 }
 
 /***/ }),
-/* 259 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(260)
+var __vue_script__ = __webpack_require__(287)
 /* template */
-var __vue_template__ = __webpack_require__(261)
+var __vue_template__ = __webpack_require__(288)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -71252,7 +73863,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/components/races/create.vue"
+Component.options.__file = "resources/assets/js/components/season/seasonRaces.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -71261,9 +73872,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-46234500", Component.options)
+    hotAPI.createRecord("data-v-d824136c", Component.options)
   } else {
-    hotAPI.reload("data-v-46234500", Component.options)
+    hotAPI.reload("data-v-d824136c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -71274,7 +73885,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 260 */
+/* 287 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71316,1260 +73927,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            tracks: [],
-            series: [],
-            seasons: [],
-            loadingTracks: true,
-            loadingSeries: true,
-            loadingSeasons: true,
-            selectedTrackID: null,
-            name: null,
-            series_id: null,
-            track_id: null,
-            season_id: null,
-            race_date: null,
-            youtube_id: null,
-            youtube_start_time: null,
-            duration: null,
-            modal: false,
-            menu: false,
-            newRace: {}
-        };
-    },
-    mounted: function mounted() {
-        this.getTracks();
-        this.getSeries();
-        this.getSeasons();
-    },
-
-    methods: {
-        getTracks: function getTracks() {
-            var _this = this;
-
-            this.loadingTracks = true;
-            this.tracks = [];
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/tracks').then(function (response) {
-                _this.tracks = response.data;
-                _this.loadingTracks = false;
-            }).catch(function (e) {
-                _this.loadingTracks = false;
-                console.log(e);
-            });
-        },
-        getSeries: function getSeries() {
-            var _this2 = this;
-
-            this.loadingSeries = true;
-            this.series = [];
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/series').then(function (response) {
-                _this2.series = response.data;
-                _this2.loadingSeries = false;
-            }).catch(function (e) {
-                _this2.loadingSeries = false;
-                console.log(e);
-            });
-        },
-        getSeasons: function getSeasons() {
-            var _this3 = this;
-
-            this.loadingSeasons = true;
-            this.seasons = [];
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/seasons').then(function (response) {
-                _this3.seasons = response.data;
-                _this3.loadingSeasons = false;
-            }).catch(function (e) {
-                _this3.loadingSeasons = false;
-                console.log(e);
-            });
-        },
-        createRace: function createRace() {
-            var _this4 = this;
-
-            this.$api.post('/api/race', {
-                name: this.name,
-                series_id: this.series_id,
-                track_id: this.track_id,
-                season_id: this.season_id,
-                race_date: this.race_date,
-                youtube_id: this.youtube_id,
-                youtube_start_time: this.youtube_start_time,
-                duration: this.duration
-            }).then(function (response) {
-                _this4.newRace = response.data;
-                window.flash(_this4.newRace.name + ' added', 'green');
-                _this4.partialClear();
-            }).catch(function (e) {
-                window.flash('Error', 'red');
-                console.log(e);
-            });
-        },
-        clear: function clear() {
-            this.name = null;
-            this.series_id = null;
-            this.track_id = null;
-            this.season_id = null;
-            this.race_date = null;
-            this.youtube_id = null;
-            this.youtube_start_time = null;
-            this.duration = null;
-        },
-        partialClear: function partialClear() {
-            this.name = null;
-            this.track_id = null;
-            this.race_date = null;
-            this.youtube_id = null;
-            this.youtube_start_time = null;
-            this.duration = null;
-        }
-    }
-});
-
-/***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-container",
-    { attrs: { fluid: "", "grid-list-md": "" } },
-    [
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            { attrs: { lg8: "", "offset-lg2": "", xs12: "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-toolbar",
-                    [_c("v-toolbar-title", [_vm._v("Create Race")])],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-text",
-                    [
-                      _c("v-text-field", {
-                        attrs: {
-                          label: "Name",
-                          "prepend-icon": "mdi-rename-box"
-                        },
-                        model: {
-                          value: _vm.name,
-                          callback: function($$v) {
-                            _vm.name = $$v
-                          },
-                          expression: "name"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("v-select", {
-                        attrs: {
-                          items: _vm.tracks,
-                          "item-text": "name",
-                          "item-value": "id",
-                          label: "Track",
-                          loading: _vm.loadingTracks,
-                          "single-line": "",
-                          bottom: "",
-                          autocomplete: "",
-                          "prepend-icon": "mdi-road"
-                        },
-                        model: {
-                          value: _vm.track_id,
-                          callback: function($$v) {
-                            _vm.track_id = $$v
-                          },
-                          expression: "track_id"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("v-select", {
-                        attrs: {
-                          items: _vm.series,
-                          "item-text": "fullName",
-                          "item-value": "id",
-                          label: "Series",
-                          loading: _vm.loadingSeries,
-                          "single-line": "",
-                          bottom: "",
-                          autocomplete: "",
-                          "prepend-icon": "mdi-format-list-bulleted"
-                        },
-                        model: {
-                          value: _vm.series_id,
-                          callback: function($$v) {
-                            _vm.series_id = $$v
-                          },
-                          expression: "series_id"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("v-select", {
-                        attrs: {
-                          items: _vm.seasons,
-                          "item-text": "name",
-                          "item-value": "id",
-                          label: "Season",
-                          loading: _vm.loadingSeasons,
-                          "single-line": "",
-                          bottom: "",
-                          autocomplete: "",
-                          "prepend-icon": "mdi-weather-sunset"
-                        },
-                        model: {
-                          value: _vm.season_id,
-                          callback: function($$v) {
-                            _vm.season_id = $$v
-                          },
-                          expression: "season_id"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "v-menu",
-                        {
-                          ref: "menu",
-                          attrs: {
-                            lazy: "",
-                            "close-on-content-click": false,
-                            transition: "scale-transition",
-                            "offset-y": "",
-                            "full-width": "",
-                            "nudge-right": 40,
-                            "min-width": "290px",
-                            "return-value": _vm.race_date
-                          },
-                          on: {
-                            "update:returnValue": function($event) {
-                              _vm.race_date = $event
-                            }
-                          },
-                          model: {
-                            value: _vm.menu,
-                            callback: function($$v) {
-                              _vm.menu = $$v
-                            },
-                            expression: "menu"
-                          }
-                        },
-                        [
-                          _c("v-text-field", {
-                            attrs: {
-                              slot: "activator",
-                              label: "Race Date",
-                              "prepend-icon": "event",
-                              readonly: ""
-                            },
-                            slot: "activator",
-                            model: {
-                              value: _vm.race_date,
-                              callback: function($$v) {
-                                _vm.race_date = $$v
-                              },
-                              expression: "race_date"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "v-date-picker",
-                            {
-                              attrs: { color: "primary" },
-                              model: {
-                                value: _vm.race_date,
-                                callback: function($$v) {
-                                  _vm.race_date = $$v
-                                },
-                                expression: "race_date"
-                              }
-                            },
-                            [
-                              _c("v-spacer"),
-                              _vm._v(" "),
-                              _c(
-                                "v-btn",
-                                {
-                                  attrs: { flat: "", color: "primary" },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.menu = false
-                                    }
-                                  }
-                                },
-                                [_vm._v("Cancel")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-btn",
-                                {
-                                  attrs: { flat: "", color: "primary" },
-                                  on: {
-                                    click: function($event) {
-                                      _vm.$refs.menu.save(_vm.race_date)
-                                    }
-                                  }
-                                },
-                                [_vm._v("OK")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c("v-text-field", {
-                        attrs: {
-                          label: "Duration",
-                          "prepend-icon": "mdi-timer"
-                        },
-                        model: {
-                          value: _vm.duration,
-                          callback: function($$v) {
-                            _vm.duration = $$v
-                          },
-                          expression: "duration"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("v-text-field", {
-                        attrs: {
-                          label: "Youtube ID",
-                          "prepend-icon": "mdi-message-video"
-                        },
-                        model: {
-                          value: _vm.youtube_id,
-                          callback: function($$v) {
-                            _vm.youtube_id = $$v
-                          },
-                          expression: "youtube_id"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("v-text-field", {
-                        attrs: {
-                          label: "Start Time (Seconds)",
-                          "prepend-icon": "mdi-timer"
-                        },
-                        model: {
-                          value: _vm.youtube_start_time,
-                          callback: function($$v) {
-                            _vm.youtube_start_time = $$v
-                          },
-                          expression: "youtube_start_time"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-divider"),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-text",
-                    [
-                      _c(
-                        "v-btn",
-                        {
-                          attrs: { outline: "", color: "primary" },
-                          on: {
-                            click: function($event) {
-                              _vm.createRace()
-                            }
-                          }
-                        },
-                        [
-                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
-                            _vm._v("mdi-library-plus")
-                          ]),
-                          _vm._v("Create")
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-btn",
-                        {
-                          attrs: { outline: "", color: "info" },
-                          on: {
-                            click: function($event) {
-                              _vm.clear()
-                            }
-                          }
-                        },
-                        [
-                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
-                            _vm._v("mdi-close-box-outline")
-                          ]),
-                          _vm._v("Clear")
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-46234500", module.exports)
-  }
-}
-
-/***/ }),
-/* 262 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(263)
-/* template */
-var __vue_template__ = __webpack_require__(264)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/admin/login.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-31a3ffe2", Component.options)
-  } else {
-    hotAPI.reload("data-v-31a3ffe2", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 263 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            password: '',
-            e1: true,
-            valid: true,
-            email: '',
-            emailRules: [function (v) {
-                return !!v || 'E-mail is required';
-            }, function (v) {
-                return (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-                );
-            }]
-        };
-    },
-
-    methods: {
-        login: function login() {
-            var _this = this;
-
-            var data = {
-                client_id: "1",
-                client_secret: "XpVecNPc0rkNlyoUgTzq92Y98UMrfuVZOhePqTZR",
-                grant_type: 'password',
-                username: this.email,
-                password: this.password
-            };
-            axios.post('/oauth/token', data).then(function (response) {
-                window.setAccessToken(response.data.access_token);
-                _this.$store.dispatch('authCheck');
-                _this.$router.push('/dashboard');
-            }).catch(function (e) {
-                window.flash('Invalid Credentials', 'red');
-                console.log(e);
-            });
-        },
-        clear: function clear() {
-            this.email = '';
-            this.password = '';
-        }
-    }
-});
-
-/***/ }),
-/* 264 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-container",
-    { attrs: { fluid: "", "grid-list-md": "" } },
-    [
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            { attrs: { xs12: "", sm8: "", "offset-sm2": "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-toolbar",
-                    { attrs: { color: "", dark: "" } },
-                    [
-                      _c("v-toolbar-title", [_vm._v("Login")]),
-                      _vm._v(" "),
-                      _c("v-spacer"),
-                      _vm._v(" "),
-                      _c(
-                        "v-btn",
-                        { attrs: { icon: "" } },
-                        [
-                          _c("v-icon", { attrs: { color: "primary" } }, [
-                            _vm._v("mdi-lock")
-                          ])
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-text",
-                    [
-                      _c(
-                        "v-form",
-                        {
-                          ref: "form",
-                          attrs: { "lazy-validation": "" },
-                          model: {
-                            value: _vm.valid,
-                            callback: function($$v) {
-                              _vm.valid = $$v
-                            },
-                            expression: "valid"
-                          }
-                        },
-                        [
-                          _c("v-text-field", {
-                            attrs: {
-                              label: "E-mail",
-                              rules: _vm.emailRules,
-                              required: ""
-                            },
-                            model: {
-                              value: _vm.email,
-                              callback: function($$v) {
-                                _vm.email = $$v
-                              },
-                              expression: "email"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("v-text-field", {
-                            attrs: {
-                              label: "Enter your password",
-                              "append-icon": _vm.e1
-                                ? "visibility"
-                                : "visibility_off",
-                              "append-icon-cb": function() {
-                                return (_vm.e1 = !_vm.e1)
-                              },
-                              type: _vm.e1 ? "password" : "text",
-                              rules: [
-                                function(v) {
-                                  return !!v || "Password is required"
-                                }
-                              ],
-                              counter: ""
-                            },
-                            on: {
-                              keyup: function($event) {
-                                if (
-                                  !("button" in $event) &&
-                                  _vm._k(
-                                    $event.keyCode,
-                                    "enter",
-                                    13,
-                                    $event.key,
-                                    "Enter"
-                                  )
-                                ) {
-                                  return null
-                                }
-                                return _vm.login($event)
-                              }
-                            },
-                            model: {
-                              value: _vm.password,
-                              callback: function($$v) {
-                                _vm.password = $$v
-                              },
-                              expression: "password"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "v-btn",
-                            {
-                              attrs: { disabled: !_vm.valid },
-                              on: { click: _vm.login }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            submit\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("v-btn", { on: { click: _vm.clear } }, [
-                            _vm._v("clear")
-                          ])
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-31a3ffe2", module.exports)
-  }
-}
-
-/***/ }),
-/* 265 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(266)
-/* template */
-var __vue_template__ = __webpack_require__(267)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/admin/logout.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4fed04e1", Component.options)
-  } else {
-    hotAPI.reload("data-v-4fed04e1", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 266 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    created: function created() {
-        window.setAccessToken('');
-        this.$store.dispatch('authCheck');
-        this.$router.push('/login');
-    }
-});
-
-/***/ }),
-/* 267 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div")
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4fed04e1", module.exports)
-  }
-}
-
-/***/ }),
-/* 268 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(269)
-/* template */
-var __vue_template__ = __webpack_require__(280)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/dashboard/dashboard.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-42b86712", Component.options)
-  } else {
-    hotAPI.reload("data-v-42b86712", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 269 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__doughnutDash__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__doughnutDash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__doughnutDash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__barDash__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__barDash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__barDash__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        doughnutCard: __WEBPACK_IMPORTED_MODULE_0__doughnutDash___default.a,
-        barCard: __WEBPACK_IMPORTED_MODULE_1__barDash___default.a
-    },
     data: function data() {
         return {
             races: [],
-            tracks: [],
-            series: []
+            loadingRaces: true
         };
     },
     mounted: function mounted() {
-        this.getRaces();
-        this.getTracks();
         this.getSeries();
-        this.$store.dispatch('setUser');
     },
 
-    computed: {
-        userName: function userName() {
-            return this.$store.getters.userName;
-        },
-        userId: function userId() {
-            return this.$store.getters.userId;
-        }
-    },
     methods: {
-        getRaces: function getRaces() {
-            var _this = this;
-
-            this.$api.get('/api/races').then(function (response) {
-                _this.races = response.data;
-            }).catch(function (e) {
-                console.log(e);
-            });
-        },
-        getTracks: function getTracks() {
-            var _this2 = this;
-
-            this.$api.get('/api/tracks').then(function (response) {
-                _this2.tracks = response.data;
-            }).catch(function (e) {
-                console.log(e);
-            });
-        },
         getSeries: function getSeries() {
-            var _this3 = this;
-
-            this.$api.get('/api/series').then(function (response) {
-                _this3.series = response.data;
-            }).catch(function (e) {
-                console.log(e);
-            });
-        },
-        logout: function logout() {
-            this.$router.push('/logout');
-        }
-    }
-});
-
-/***/ }),
-/* 270 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(271)
-/* template */
-var __vue_template__ = __webpack_require__(274)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/dashboard/doughnutDash.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6fb0e5a6", Component.options)
-  } else {
-    hotAPI.reload("data-v-6fb0e5a6", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 271 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_doughnut__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_doughnut___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__charts_doughnut__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        doughnut: __WEBPACK_IMPORTED_MODULE_0__charts_doughnut___default.a
-    },
-    data: function data() {
-        return {
-            loading: false,
-            datacollection: {
-                labels: [],
-                datasets: [{
-                    backgroundColor: ['#4DB6AC', '#4FC3F7', '#F06292', '#7986CB', '#FFF176', '#FFB74D', '#A1887F', '#90A4AE'],
-                    data: []
-                }]
-            },
-            options: {
-                legend: {
-                    labels: {
-                        // This more specific font property overrides the global property
-                        fontColor: 'white',
-                        defaultFontSize: 14,
-                        defaultFontFamily: "'Roboto', 'sans-serif'"
-                    }
-                }
-            }
-            //responsive: true,
-            //maintainAspectRatio: false
-        };
-    },
-    mounted: function mounted() {
-        this.chartData();
-    },
-
-    methods: {
-        chartData: function chartData() {
             var _this = this;
 
-            this.loading = true;
-            this.$api.get('/api/series-races-count').then(function (response) {
-                _this.datacollection.datasets[0].data = response.data.racesCount;
-                _this.datacollection.labels = response.data.seriesNames;
-                _this.loading = false;
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/series/' + this.$route.params.seriesID + '/season/' + this.$route.params.seasonID).then(function (response) {
+                _this.races = response.data;
+                _this.loadingRaces = false;
             }).catch(function (e) {
-                _this.loading = false;
+                _this.loadingRaces = false;
                 console.log(e);
             });
         }
@@ -72577,439 +73956,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 272 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(273)
-/* template */
-var __vue_template__ = null
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/charts/doughnut.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-716b91b5", Component.options)
-  } else {
-    hotAPI.reload("data-v-716b91b5", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 273 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(14);
-
-
-var reactiveProp = __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["d" /* mixins */].reactiveProp;
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["b" /* Doughnut */],
-    mixins: [reactiveProp],
-    props: ['options'],
-    mounted: function mounted() {
-        // this.chartData is created in the mixin.
-        // If you want to pass options please create a local options object
-        this.renderChart(this.chartData, this.options);
-    }
-});
-
-/***/ }),
-/* 274 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-layout",
-    { attrs: { row: "", wrap: "" } },
-    [
-      _c(
-        "v-flex",
-        { staticClass: "pa-2", attrs: { xs12: "" } },
-        [
-          !_vm.loading
-            ? [
-                _c(
-                  "v-toolbar",
-                  [
-                    _c("v-toolbar-title", [
-                      _vm._v(
-                        "\n                    Races/Series\n                "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("v-spacer"),
-                    _vm._v(" "),
-                    _c("v-icon", { attrs: { color: "primary" } }, [
-                      _vm._v("mdi-chart-arc")
-                    ])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "v-card",
-                  { attrs: { dark: "", tile: "", flat: "" } },
-                  [
-                    _c(
-                      "v-card-text",
-                      [
-                        _c("doughnut", {
-                          attrs: {
-                            "chart-data": _vm.datacollection,
-                            options: _vm.options
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ]
-            : _vm._e()
-        ],
-        2
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6fb0e5a6", module.exports)
-  }
-}
-
-/***/ }),
-/* 275 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(276)
-/* template */
-var __vue_template__ = __webpack_require__(279)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/dashboard/barDash.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-01dcc87a", Component.options)
-  } else {
-    hotAPI.reload("data-v-01dcc87a", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 276 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_bar__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__charts_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__charts_bar__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        bar: __WEBPACK_IMPORTED_MODULE_0__charts_bar___default.a
-    },
-    data: function data() {
-        return {
-            loading: false,
-            datacollection: {
-                labels: [],
-                datasets: [{
-                    label: "Races",
-                    backgroundColor: ['#4DB6AC', '#4FC3F7', '#F06292', '#7986CB', '#FFF176', '#FFB74D', '#A1887F', '#90A4AE'],
-                    borderColor: 'white',
-                    borderWidth: 1,
-                    data: []
-                }]
-            },
-            options: {
-                legend: {
-                    display: false,
-                    labels: {
-                        // This more specific font property overrides the global property
-                        fontColor: 'white',
-                        defaultFontSize: 14,
-                        defaultFontFamily: "'Roboto', 'sans-serif'"
-                    }
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            fontColor: "white"
-                        }
-                    }],
-                    xAxes: [{
-                        ticks: {
-                            fontColor: "white"
-                        }
-                    }]
-                }
-                //responsive: true,
-                //maintainAspectRatio: false
-            }
-        };
-    },
-    mounted: function mounted() {
-        this.chartData();
-    },
-
-    methods: {
-        chartData: function chartData() {
-            var _this = this;
-
-            this.loading = true;
-            this.$api.get('/api/season-races-count').then(function (response) {
-                _this.datacollection.datasets[0].data = response.data.racesCount;
-                _this.datacollection.labels = response.data.seasonNames;
-                _this.loading = false;
-            }).catch(function (e) {
-                console.log(e);
-                _this.loading = false;
-            });
-        }
-    }
-});
-
-/***/ }),
-/* 277 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(278)
-/* template */
-var __vue_template__ = null
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/charts/bar.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-50fe0fa0", Component.options)
-  } else {
-    hotAPI.reload("data-v-50fe0fa0", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 278 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(14);
-
-
-var reactiveProp = __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["d" /* mixins */].reactiveProp;
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Bar */],
-    mixins: [reactiveProp],
-    props: ['options'],
-    mounted: function mounted() {
-        // this.chartData is created in the mixin.
-        // If you want to pass options please create a local options object
-        this.renderChart(this.chartData, this.options);
-    }
-});
-
-/***/ }),
-/* 279 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-layout",
-    { attrs: { row: "", wrap: "" } },
-    [
-      _c(
-        "v-flex",
-        { staticClass: "pa-2", attrs: { xs12: "" } },
-        [
-          !_vm.loading
-            ? [
-                _c(
-                  "v-toolbar",
-                  [
-                    _c("v-toolbar-title", [
-                      _vm._v(
-                        "\n                    Races/Season\n                "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("v-spacer"),
-                    _vm._v(" "),
-                    _c("v-icon", { attrs: { color: "primary" } }, [
-                      _vm._v("mdi-chart-bar")
-                    ])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "v-card",
-                  { attrs: { dark: "", tile: "", flat: "" } },
-                  [
-                    _c(
-                      "v-card-text",
-                      [
-                        _c("bar", {
-                          attrs: {
-                            "chart-data": _vm.datacollection,
-                            options: _vm.options
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ]
-            : _vm._e()
-        ],
-        2
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-01dcc87a", module.exports)
-  }
-}
-
-/***/ }),
-/* 280 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -73018,287 +73965,118 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-container",
-    { staticClass: "pa-0", attrs: { fluid: "" } },
+    { attrs: { fluid: "", "grid-list-md": "" } },
     [
       _c(
         "v-layout",
         { attrs: { row: "", wrap: "" } },
         [
-          _c(
-            "v-flex",
-            { staticClass: "pa-2", attrs: { xs12: "", sm6: "", md4: "" } },
-            [
-              _c(
-                "v-card",
-                { attrs: { dark: "", tile: "", flat: "" } },
-                [
-                  _c(
-                    "v-container",
-                    {
-                      staticClass: "pa-0 pink darken-1 ma-0",
-                      attrs: { "fill-height": "" }
-                    },
-                    [
-                      _c(
-                        "v-layout",
-                        { attrs: { row: "", wrap: "", "align-center": "" } },
-                        [
-                          _c(
-                            "v-flex",
-                            {
-                              attrs: {
-                                lg3: "",
-                                xl2: "",
-                                md2: "",
-                                sm2: "",
-                                xs2: ""
-                              }
-                            },
-                            [
-                              _c(
-                                "v-card-text",
-                                [
-                                  _c("v-icon", { attrs: { large: "" } }, [
-                                    _vm._v("mdi-flag-checkered")
-                                  ])
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-flex",
-                            {
-                              staticClass: "pink lighten-1",
-                              attrs: {
-                                lg9: "",
-                                xl10: "",
-                                md10: "",
-                                sm10: "",
-                                xs10: ""
-                              }
-                            },
-                            [
-                              _c("v-card-text", [
-                                _c("div", { staticClass: "subheading" }, [
-                                  _c("b", [_vm._v("Races")])
+          !_vm.loadingRaces
+            ? [
+                _c(
+                  "v-flex",
+                  { attrs: { xs12: "" } },
+                  [
+                    _c(
+                      "v-toolbar",
+                      [
+                        _c("v-toolbar-title", [
+                          _vm._v(
+                            _vm._s(_vm.races[0].season.name) +
+                              " " +
+                              _vm._s(_vm.races[0].series.fullName)
+                          )
+                        ])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _vm._l(_vm.races, function(race, index) {
+                  return [
+                    _c(
+                      "v-flex",
+                      { attrs: { xl4: "", lg6: "", xs12: "" } },
+                      [
+                        _c(
+                          "v-card",
+                          {
+                            attrs: {
+                              ripple: "",
+                              hover: true,
+                              to: /races/ + race.id
+                            }
+                          },
+                          [
+                            _c(
+                              "v-toolbar",
+                              [
+                                _c("v-toolbar-title", [
+                                  _vm._v(
+                                    _vm._s(++index) + ". " + _vm._s(race.name)
+                                  )
                                 ]),
                                 _vm._v(" "),
-                                _c("div", { staticClass: "display-1" }, [
-                                  _vm._v(
-                                    "\n                                    " +
-                                      _vm._s(_vm.races.length) +
-                                      "\n                                "
-                                  )
-                                ])
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
+                                _c("v-spacer"),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: {
+                                      outline: "",
+                                      round: "",
+                                      color: "teal",
+                                      to: "/series/" + race.series.id
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(race.series.name) +
+                                        "\n                            "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("v-card-media", {
+                              attrs: {
+                                src:
+                                  "https://img.youtube.com/vi/" +
+                                  race.youtube_id +
+                                  "/hqdefault.jpg",
+                                height: "280px"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                })
+              ]
+            : _vm._e(),
           _vm._v(" "),
-          _c(
-            "v-flex",
-            { staticClass: "pa-2", attrs: { xs12: "", sm6: "", md4: "" } },
-            [
-              _c(
-                "v-card",
-                { attrs: { dark: "", tile: "", flat: "" } },
-                [
-                  _c(
-                    "v-container",
-                    {
-                      staticClass: "pa-0 light-blue darken-1 ma-0",
-                      attrs: { "fill-height": "" }
-                    },
-                    [
-                      _c(
-                        "v-layout",
-                        { attrs: { row: "", wrap: "", "align-center": "" } },
-                        [
-                          _c(
-                            "v-flex",
-                            {
-                              attrs: {
-                                lg3: "",
-                                xl2: "",
-                                md2: "",
-                                sm2: "",
-                                xs2: ""
-                              }
-                            },
-                            [
-                              _c(
-                                "v-card-text",
-                                [
-                                  _c("v-icon", { attrs: { large: "" } }, [
-                                    _vm._v("mdi-format-list-bulleted")
-                                  ])
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-flex",
-                            {
-                              staticClass: "light-blue lighten-1",
-                              attrs: {
-                                lg9: "",
-                                xl10: "",
-                                md10: "",
-                                sm10: "",
-                                xs10: ""
-                              }
-                            },
-                            [
-                              _c("v-card-text", [
-                                _c("div", { staticClass: "subheading" }, [
-                                  _c("b", [_vm._v("Series")])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "display-1" }, [
-                                  _vm._v(
-                                    "\n                                    " +
-                                      _vm._s(_vm.series.length) +
-                                      "\n                                "
-                                  )
-                                ])
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-flex",
-            { staticClass: "pa-2", attrs: { xs12: "", sm6: "", md4: "" } },
-            [
-              _c(
-                "v-card",
-                { attrs: { dark: "", tile: "", flat: "" } },
-                [
-                  _c(
-                    "v-container",
-                    {
-                      staticClass: "pa-0 teal darken-1 ma-0",
-                      attrs: { "fill-height": "" }
-                    },
-                    [
-                      _c(
-                        "v-layout",
-                        { attrs: { row: "", wrap: "", "align-center": "" } },
-                        [
-                          _c(
-                            "v-flex",
-                            {
-                              attrs: {
-                                lg3: "",
-                                xl2: "",
-                                md2: "",
-                                sm2: "",
-                                xs2: ""
-                              }
-                            },
-                            [
-                              _c(
-                                "v-card-text",
-                                [
-                                  _c("v-icon", { attrs: { large: "" } }, [
-                                    _vm._v("mdi-road")
-                                  ])
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-flex",
-                            {
-                              staticClass: "teal lighten-1",
-                              attrs: {
-                                lg9: "",
-                                xl10: "",
-                                md10: "",
-                                sm10: "",
-                                xs10: ""
-                              }
-                            },
-                            [
-                              _c("v-card-text", [
-                                _c("div", { staticClass: "subheading" }, [
-                                  _c("b", [_vm._v("Tracks")])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "display-1" }, [
-                                  _vm._v(
-                                    "\n                                    " +
-                                      _vm._s(_vm.tracks.length) +
-                                      "\n                                "
-                                  )
-                                ])
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
+          _vm.loadingRaces
+            ? [
+                _c("v-progress-circular", {
+                  attrs: {
+                    indeterminate: "",
+                    size: 70,
+                    width: 7,
+                    color: "primary"
+                  }
+                })
+              ]
+            : _vm._e()
         ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            { attrs: { xs12: "", sm6: "" } },
-            [_c("doughnutCard")],
-            1
-          ),
-          _vm._v(" "),
-          _c("v-flex", { attrs: { xs12: "", sm6: "" } }, [_c("barCard")], 1)
-        ],
-        1
+        2
       )
     ],
     1
@@ -73310,20 +74088,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-42b86712", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-d824136c", module.exports)
   }
 }
 
 /***/ }),
-/* 281 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(282)
+var __vue_script__ = __webpack_require__(290)
 /* template */
-var __vue_template__ = __webpack_require__(283)
+var __vue_template__ = __webpack_require__(291)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -73362,7 +74140,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 282 */
+/* 290 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73568,7 +74346,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 283 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -73949,522 +74727,7 @@ if (false) {
 }
 
 /***/ }),
-/* 284 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(285)
-/* template */
-var __vue_template__ = __webpack_require__(286)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/series/create.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2f98a5e6", Component.options)
-  } else {
-    hotAPI.reload("data-v-2f98a5e6", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 285 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            name: null,
-            fullName: null,
-            image: null,
-            description: null,
-            website: null,
-            loadingTracks: true,
-            loadingSeries: true,
-            loadingSeasons: true,
-            selectedTrackID: null,
-            numberOfCorners: null,
-            newSeries: {},
-            title: "Image Upload",
-            dialog: false,
-            imageName: '',
-            imageUrl: '',
-            imageFile: ''
-        };
-    },
-
-    methods: {
-        createSeries: function createSeries() {
-            var _this = this;
-
-            var data = new FormData();
-            data.append('name', this.name);
-            data.append('fullName', this.fullName);
-            data.append('image', this.imageFile);
-            data.append('description', this.description);
-            data.append('website', this.website);
-
-            this.$api.post('/api/series', data, {
-                headers: {
-                    'Content-Type': 'multipart/form-data'
-                }
-            }).then(function (response) {
-                _this.newSeries = response.data;
-                window.flash(_this.newSeries.name + ' added', 'green');
-                _this.clear();
-            }).catch(function (e) {
-                window.flash('Error', 'red');
-                console.log(e);
-            });
-        },
-        clear: function clear() {
-            this.name = null;
-            this.fullName = null;
-            this.image = null;
-            this.description = null;
-            this.website = null;
-        },
-        pickFile: function pickFile() {
-            this.$refs.image.click();
-        },
-        onFilePicked: function onFilePicked(e) {
-            var _this2 = this;
-
-            var files = e.target.files;
-            if (files[0] !== undefined) {
-                this.imageName = files[0].name;
-                if (this.imageName.lastIndexOf('.') <= 0) {
-                    return;
-                }
-                var fr = new FileReader();
-                fr.readAsDataURL(files[0]);
-                fr.addEventListener('load', function () {
-                    _this2.imageUrl = fr.result;
-                    _this2.imageFile = files[0]; // this is an image file that can be sent to server...
-                });
-            } else {
-                this.imageName = '';
-                this.imageFile = '';
-                this.imageUrl = '';
-            }
-        }
-    }
-});
-
-/***/ }),
-/* 286 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-container",
-    { attrs: { fluid: "", "grid-list-md": "" } },
-    [
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            { attrs: { lg8: "", "offset-lg2": "", xs12: "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-toolbar",
-                    [_c("v-toolbar-title", [_vm._v("Create Series")])],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-text",
-                    [
-                      _c("v-text-field", {
-                        attrs: {
-                          label: "Abbreviation",
-                          "prepend-icon": "mdi-tag-text-outline"
-                        },
-                        model: {
-                          value: _vm.name,
-                          callback: function($$v) {
-                            _vm.name = $$v
-                          },
-                          expression: "name"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("v-text-field", {
-                        attrs: {
-                          label: "Full Name",
-                          "prepend-icon": "mdi-rename-box"
-                        },
-                        model: {
-                          value: _vm.fullName,
-                          callback: function($$v) {
-                            _vm.fullName = $$v
-                          },
-                          expression: "fullName"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("v-text-field", {
-                        attrs: { label: "Website", "prepend-icon": "web" },
-                        model: {
-                          value: _vm.website,
-                          callback: function($$v) {
-                            _vm.website = $$v
-                          },
-                          expression: "website"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm.imageUrl
-                        ? _c("img", {
-                            staticClass: "ml-5",
-                            attrs: { src: _vm.imageUrl, height: "150" }
-                          })
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _c("v-text-field", {
-                        attrs: {
-                          label: "Series Image",
-                          "prepend-icon": "attach_file"
-                        },
-                        on: { click: _vm.pickFile },
-                        model: {
-                          value: _vm.imageName,
-                          callback: function($$v) {
-                            _vm.imageName = $$v
-                          },
-                          expression: "imageName"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        ref: "image",
-                        staticStyle: { display: "none" },
-                        attrs: { type: "file", accept: "image/*" },
-                        on: { change: _vm.onFilePicked }
-                      }),
-                      _vm._v(" "),
-                      _c("v-text-field", {
-                        attrs: {
-                          label: "Description",
-                          "prepend-icon": "mdi-note-text",
-                          "multi-line": ""
-                        },
-                        model: {
-                          value: _vm.description,
-                          callback: function($$v) {
-                            _vm.description = $$v
-                          },
-                          expression: "description"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-divider"),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-text",
-                    [
-                      _c(
-                        "v-btn",
-                        {
-                          attrs: { outline: "", color: "primary" },
-                          on: {
-                            click: function($event) {
-                              _vm.createSeries()
-                            }
-                          }
-                        },
-                        [
-                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
-                            _vm._v("mdi-library-plus")
-                          ]),
-                          _vm._v("Create")
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-btn",
-                        {
-                          attrs: { outline: "", color: "info" },
-                          on: {
-                            click: function($event) {
-                              _vm.clear()
-                            }
-                          }
-                        },
-                        [
-                          _c("v-icon", { attrs: { left: "", dark: "" } }, [
-                            _vm._v("mdi-close-box-outline")
-                          ]),
-                          _vm._v("Clear")
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2f98a5e6", module.exports)
-  }
-}
-
-/***/ }),
-/* 287 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(288)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/not-found/notFound.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-57789ded", Component.options)
-  } else {
-    hotAPI.reload("data-v-57789ded", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 288 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-container",
-    { attrs: { fluid: "", "grid-list-md": "" } },
-    [
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            {
-              attrs: {
-                lg6: "",
-                "offset-lg3": "",
-                md8: "",
-                "offset-md2": "",
-                xs12: ""
-              }
-            },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-toolbar",
-                    [
-                      _c("v-toolbar-title", [_vm._v("Oops!")]),
-                      _vm._v(" "),
-                      _c("v-spacer"),
-                      _vm._v(" "),
-                      _c("v-icon", { attrs: { color: "primary" } }, [
-                        _vm._v("mdi-alert-outline")
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-media", {
-                    attrs: { src: "/img/home/404.jpg", height: "400px" }
-                  }),
-                  _vm._v(" "),
-                  _c("v-card-text", [
-                    _vm._v(
-                      "\n                    We can't seem to find the page you are looking for.\n                "
-                    )
-                  ])
-                ],
-                1
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-57789ded", module.exports)
-  }
-}
-
-/***/ }),
-/* 289 */
+/* 292 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74526,7 +74789,7 @@ function http() {
 });
 
 /***/ }),
-/* 290 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
@@ -74700,266 +74963,10 @@ module.exports = {
 
 
 /***/ }),
-/* 291 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 294 */
+/***/ (function(module, exports) {
 
-var disposed = false
-var normalizeComponent = __webpack_require__(3)
-/* script */
-var __vue_script__ = __webpack_require__(292)
-/* template */
-var __vue_template__ = __webpack_require__(293)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/series/seriesAdmin.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-70eb0c52", Component.options)
-  } else {
-    hotAPI.reload("data-v-70eb0c52", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 292 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            series: [],
-            loadingSeries: true,
-            search: '',
-            headers: [{ text: 'Id', value: 'id' }, { text: 'Name', value: 'fullName' }, { text: 'Shorthand', value: 'name' }]
-        };
-    },
-    mounted: function mounted() {
-        this.getSeries();
-    },
-
-    methods: {
-        getSeries: function getSeries() {
-            var _this = this;
-
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/series').then(function (response) {
-                _this.series = response.data;
-                _this.loadingSeries = false;
-            }).catch(function (e) {
-                _this.loadingSeries = false;
-                console.log(e);
-            });
-        }
-    },
-    computed: {
-        filteredSeries: function filteredSeries() {
-            var _this2 = this;
-
-            return this.series.filter(function (series) {
-                return series.fullName.toLowerCase().indexOf(_this2.search.toLowerCase()) > -1 || series.name.toLowerCase().indexOf(_this2.search.toLowerCase()) > -1;
-            });
-        }
-    }
-});
-
-/***/ }),
-/* 293 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "v-container",
-    { attrs: { fluid: "", "grid-list-md": "" } },
-    [
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          !_vm.loadingSeries
-            ? [
-                _c(
-                  "v-flex",
-                  { attrs: { xs12: "" } },
-                  [
-                    _c(
-                      "v-toolbar",
-                      [
-                        _c("v-toolbar-title", [_vm._v("Series")]),
-                        _vm._v(" "),
-                        _c("v-spacer"),
-                        _vm._v(" "),
-                        _c("v-text-field", {
-                          staticClass: "pr-3",
-                          attrs: {
-                            "append-icon": "search",
-                            label: "Search Series",
-                            "single-line": "",
-                            "hide-details": ""
-                          },
-                          model: {
-                            value: _vm.search,
-                            callback: function($$v) {
-                              _vm.search = $$v
-                            },
-                            expression: "search"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-spacer"),
-                        _vm._v(" "),
-                        _c("v-icon", { attrs: { color: "primary" } }, [
-                          _vm._v("mdi-format-list-bulleted")
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("v-data-table", {
-                      staticClass: "elevation-1",
-                      attrs: {
-                        headers: _vm.headers,
-                        items: _vm.filteredSeries
-                      },
-                      scopedSlots: _vm._u([
-                        {
-                          key: "items",
-                          fn: function(props) {
-                            return _c(
-                              "transition",
-                              {
-                                attrs: {
-                                  appear: "",
-                                  name: "custom-classes-transition",
-                                  "enter-active-class": "animated bounceInUp",
-                                  "leave-active-class": "animated bounceOutDown"
-                                }
-                              },
-                              [
-                                _c(
-                                  "router-link",
-                                  {
-                                    attrs: {
-                                      tag: "tr",
-                                      to: "/series/edit/" + props.item.id
-                                    }
-                                  },
-                                  [
-                                    _c("td", [_vm._v(_vm._s(props.item.id))]),
-                                    _vm._v(" "),
-                                    _c("td", [
-                                      _vm._v(_vm._s(props.item.fullName))
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [_vm._v(_vm._s(props.item.name))])
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          }
-                        }
-                      ])
-                    })
-                  ],
-                  1
-                )
-              ]
-            : _vm._e()
-        ],
-        2
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-70eb0c52", module.exports)
-  }
-}
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
