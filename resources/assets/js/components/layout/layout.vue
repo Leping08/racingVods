@@ -146,10 +146,8 @@
                     ripple
             ></v-switch>-->
         </v-toolbar>
-        <v-content :dark="theme">
-            <v-container fluid fill-height :class="theme ? 'grey darken-2' : 'grey lighten-2'">
-                <router-view></router-view>
-            </v-container>
+        <v-content :class="theme ? 'grey darken-2' : 'grey lighten-2'">
+            <router-view></router-view>
         </v-content>
         <v-footer class="pa-4">
             <v-spacer></v-spacer>
