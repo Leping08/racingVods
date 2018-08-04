@@ -21,7 +21,7 @@
                             <v-stepper-content :step="index+1" v-for="(vod, index) in race.videos" :key="vod.id">
                                 <v-card color="grey lighten-1" class="mb-3">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe :id="index == 1 ? vod : null" :src="'https://www.youtube.com/embed/'+vod.youtube_id+'?rel=0;showinfo=0;enablejsapi=1&origin=http://racingvods.com'" allowfullscreen></iframe>
+                                        <iframe :id="index = 1 ? 'vod' : 'notVod'" :src="'https://www.youtube.com/embed/'+vod.youtube_id+'?rel=0;showinfo=0;enablejsapi=1&origin=https://racingvods.com'" allowfullscreen></iframe>
                                     </div>
                                 </v-card>
                                 <template v-if="!(selected === race.videos.length)">
