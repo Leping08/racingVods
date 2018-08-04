@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="pa-0">
+    <v-container fluid>
         <v-layout row wrap>
             <v-flex xs12 sm6 md4 class="pa-2">
                 <v-card dark tile flat>
