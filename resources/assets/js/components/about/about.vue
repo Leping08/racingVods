@@ -55,7 +55,7 @@
 
                         <v-list-tile avatar href="https://vuetifyjs.com/" target="_blank">
                             <v-list-tile-avatar>
-                                <img src="https://vuetifyjs.com/static/doc-images/logo.svg">
+                                <img src="https://cdn.vuetifyjs.com/images/logos/v-alt.svg">
                             </v-list-tile-avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>Vuetify</v-list-tile-title>
