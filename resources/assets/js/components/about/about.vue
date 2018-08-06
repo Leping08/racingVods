@@ -10,17 +10,18 @@
                         <v-spacer></v-spacer>
                         <v-icon color="primary">mdi-information-outline</v-icon>
                     </v-toolbar>
-                    <v-list>
+                    <v-list three-line>
                         <v-list-tile avatar>
                             <v-list-tile-avatar>
                                 <v-icon>mdi-lightbulb-on</v-icon>
                             </v-list-tile-avatar>
                             <v-list-tile-content>
                                 <v-list-tile-title>The Idea</v-list-tile-title>
-                                <!-- TODO: Fix text wrap -->
                                 <v-list-tile-sub-title>Make a website that organizes racing videos from various racing series around the world.</v-list-tile-sub-title>
                             </v-list-tile-content>
                         </v-list-tile>
+                    </v-list>
+                    <v-list>
                         <v-divider></v-divider>
                         <v-subheader>Shout-out</v-subheader>
                         <v-list-tile avatar href="http://racingcircuits.info/" target="_blank">
@@ -54,7 +55,7 @@
                         </v-list-tile>
 
                         <v-list-tile avatar href="https://vuetifyjs.com/" target="_blank">
-                            <v-list-tile-avatar>
+                            <v-list-tile-avatar tile>
                                 <img src="https://cdn.vuetifyjs.com/images/logos/v-alt.svg">
                             </v-list-tile-avatar>
                             <v-list-tile-content>
