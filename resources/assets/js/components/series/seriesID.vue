@@ -14,16 +14,24 @@
                         <img :src="'/img/series/'+series.image" style="max-width: 100%">
                         <v-card-text>
                             <v-list>
-                                <v-subheader>Seasons</v-subheader>
-                                <template v-for="season in series.seasons" @key="season.id">
-                                    <v-list-tile @click="" :to="'/races/series/'+series.id+'/season/'+season.id">
+                                <v-subheader class="title">Seasons</v-subheader>
+                                <template v-for="(season, index) in series.seasons" @key="season.id">
+                                    <v-divider
+                                            :key="index"
+                                    ></v-divider>
+                                    <v-list-tile
+                                            :key="index"
+                                            ripple
+                                            @click=""
+                                            :to="'/races/series/'+series.id+'/season/'+season.id"
+                                    >
                                         <v-list-tile-content>
                                             <v-list-tile-title>{{ season.name }}</v-list-tile-title>
                                         </v-list-tile-content>
                                     </v-list-tile>
                                 </template>
                                 <v-divider></v-divider>
-                                <v-subheader>Description</v-subheader>
+                                <v-subheader class="title">Description</v-subheader>
                                 <p class="px-3">{{series.description}}</p>
                             </v-list>
                         </v-card-text>
