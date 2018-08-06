@@ -225,7 +225,7 @@
                     window.player.seekTo(Number(window.vodTime));
                     window.player.playVideo();
                     window.player = null;
-                }, 100);
+                }, 1000);
             }
         }
     }
