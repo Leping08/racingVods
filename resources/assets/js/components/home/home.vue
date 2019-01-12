@@ -67,7 +67,7 @@
                         <v-toolbar-title>Racing Vods</v-toolbar-title>
                     </v-toolbar>
                 </v-card>
-                <v-parallax src="/img/home/nurbur-night.png" height="400">
+                <v-parallax src="/img/home/nurbur-night.jpg" height="400">
                     <v-layout column align-right justify-center class="text-xs-right">
                         <h2 class="white--text">Built For Enthusiasts,<br>By Enthusiasts</h2>
                     </v-layout>

@@ -63,8 +63,7 @@ class SeriesController extends Controller
      */
     public function show($id)
     {
-        $series = Series::where('id', $id)->with('races')->get();
-        $series = $series[0];
+        $series = Series::where('id', $id)->with('races')->first();
         $series['seasons'] = $series->races->unique('season_id')->pluck('season');
         unset($series->races);
         return $series;
