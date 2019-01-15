@@ -113,11 +113,25 @@ return [
     */
 
     'markdown' => [
-        'theme' => 'default',
+        'theme' => 'racingvods',
 
         'paths' => [
             resource_path('views/vendor/mail'),
         ],
     ],
+
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Admin Email
+    |--------------------------------------------------------------------------
+    |
+    | This is the email address where any admin emails will go
+    | for example reports about new races.
+    |
+    */
+
+    'adminEmail' => env('ADMIN_EMAIL')
 
 ];
