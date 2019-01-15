@@ -38,11 +38,6 @@ class Kernel extends ConsoleKernel
         $schedule->call(function () {
             (new FindPotentialRaces())->sendReport();
         })->weekly()->tuesdays()->at('5:00');
-
-
-        $schedule->call(function () {
-            Log::info("The cron is working");
-        })->everyMinute();
     }
 
     /**
