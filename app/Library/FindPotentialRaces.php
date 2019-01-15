@@ -30,6 +30,7 @@ class FindPotentialRaces
         }
 
         $newestYoutubeVideos = $videos->flatten(1);
+        Log::info("Found {$newestYoutubeVideos->count()} races");
         $alreadyStoredRaces = Race::pluck('youtube_id');
         $alreadyStoredPotentialRaces = PotentialRaces::withTrashed()->pluck('youtube_id');
 
@@ -62,6 +63,8 @@ class FindPotentialRaces
         $races = PotentialRaces::where('created_at', '>=', $date)->get();
 
         Mail::to(config('mail.adminEmail'))
+            ->subject('New Races Report')
             ->send(new NewRacesReport($races));
+        Log::info("Sent New Races Report email");
     }
 }
