@@ -40,14 +40,14 @@
                         <v-list-tile-title>Tracks</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
-                <!--<v-list-tile ripple @click="" to="/schedule">-->
-                <!--<v-list-tile-action>-->
-                <!--<v-icon>mdi-calendar-range</v-icon>-->
-                <!--</v-list-tile-action>-->
-                <!--<v-list-tile-content>-->
-                <!--<v-list-tile-title>Schedule</v-list-tile-title>-->
-                <!--</v-list-tile-content>-->
-                <!--</v-list-tile>-->
+                <v-list-tile ripple @click="" to="/schedule">
+                    <v-list-tile-action>
+                        <v-icon>mdi-calendar-range</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Schedule</v-list-tile-title>
+                    </v-list-tile-content>
+                </v-list-tile>
                 <v-divider></v-divider>
                 <v-subheader>Additional resources</v-subheader>
                 <v-list-group

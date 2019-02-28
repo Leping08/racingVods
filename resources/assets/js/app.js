@@ -22,7 +22,6 @@ import Vuetify from 'vuetify';
 import VueCharts from 'vue-chartjs';
 import moment from 'moment';
 import VueAnalytics from 'vue-analytics';
-import VCalendar from 'v-calendar';
 import store from './vuex';
 import layout from './components/layout/layout.vue';
 import router from './router';
@@ -44,7 +43,6 @@ Vue.use(api);
 Vue.use(moment);
 Vue.use(require('vue-moment'));
 Vue.component('layout', layout);
-Vue.use(VCalendar);
 Vue.use(VueCharts);
 Vue.use(VueAnalytics, {
     id: 'UA-98405544-5',

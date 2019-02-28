@@ -78,3 +78,7 @@ Route::get('/seasons', 'SeasonsController@index');
 
 /* @see SeasonsController::races() */
 Route::get('/series/{seriesID}/season/{seasonID}', 'SeasonsController@races');
+
+Route::get('/events', function (){
+    return \App\Race::with('series', 'track', 'season')->get();
+});

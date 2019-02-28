@@ -85,7 +85,7 @@
                         </v-list-tile>
                         <v-divider></v-divider>
                         <v-subheader>Copyright</v-subheader>
-                        <p class="px-3">Racing Vods © 2018. All rights reserved. No copyright infringement intended.</p>
+                        <p class="px-3">Racing Vods © {{ new Date().getFullYear() }}. All rights reserved. No copyright infringement intended.</p>
                     </v-list>
                 </v-card>
             </v-flex>

@@ -27,6 +27,8 @@ import createTrack from './components/tracks/create.vue';
 import seasonRaces from './components/season/seasonRaces.vue';
 import createVideo from './components/videos/create';
 
+import schedule from './components/calendar/schedule'
+
 const router = new VueRouter({
     mode: 'history',
     routes: [
@@ -35,6 +37,7 @@ const router = new VueRouter({
         { path: '/races', component: races },
         { path: '/series', component: series },
         { path: '/tracks', component: tracks },
+        { path: '/schedule', component: schedule },
         { path: '/races/:id', component: raceID },
         { path: '/series/:id', component: seriesID },
         { path: '/tracks/:id', component: tracksID },
