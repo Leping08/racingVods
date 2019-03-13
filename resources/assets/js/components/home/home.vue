@@ -74,11 +74,12 @@
                 </v-parallax>
             </v-flex>
 
+            <!-- TODO: Get the link working -->
             <v-flex md6 xs12>
                 <v-card class="text-xs-center" flat>
-                    <v-carousel v-if="!loadingRaces">
+                    <v-carousel v-if="!loadingRaces" >
                         <template v-for="race in races" @key="race.id">
-                            <v-carousel-item :src="'https://img.youtube.com/vi/'+race.youtube_id+'/hqdefault.jpg'" :to="'/races/'+race.id" style="text-decoration: none !important;">
+                            <v-carousel-item :src="race.videos[0].thumbnail"  :to="'/races/'+race.id" style="text-decoration: none !important; background-size: auto;">
                                 <v-toolbar>
                                     <v-toolbar-title>{{race.name}}</v-toolbar-title>
                                     <v-spacer></v-spacer>

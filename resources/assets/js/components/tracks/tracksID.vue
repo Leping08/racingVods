@@ -78,7 +78,7 @@
         </template>
 
         <v-layout row wrap>
-            <template v-for="race in races" @key="race.id" v-if="!loadingRaces">
+            <template v-for="race in track.races" @key="race.id" v-if="!loadingTrack">
                 <v-flex lg4 md6 xs12>
                     <v-card ripple :hover="true" :to="/races/+race.id">
                         <v-toolbar>
@@ -88,15 +88,11 @@
                                 {{race.series.name}}
                             </v-btn>
                         </v-toolbar>
-                        <v-card-media
-                                :src="'https://img.youtube.com/vi/'+race.youtube_id+'/hqdefault.jpg'"
-                                height="280px"
-                        >
-                        </v-card-media>
+                        <v-img :src="race.videos[0].thumbnail"></v-img>
                     </v-card>
                 </v-flex>
             </template>
-            <template v-if="loadingRaces" >
+            <template v-if="loadingTrack">
                 <v-progress-circular indeterminate v-bind:size="70" v-bind:width="7" color="primary"></v-progress-circular>
             </template>
         </v-layout>
@@ -110,16 +106,14 @@
         data() {
             return {
                 track: [],
-                loadingTrack: true,
-                loadingRaces: true
+                loadingTrack: true
             }
         },
         mounted() {
-            this.getSeries();
-            this.getRaces();
+            this.getTrack();
         },
         methods: {
-            getSeries: function () {
+            getTrack: function () {
                 axios.get('/api/track/' + this.$route.params.id)
                     .then((response) => {
                         this.track = response.data;
@@ -127,17 +121,6 @@
                     })
                     .catch((e) => {
                         this.loadingTrack = false;
-                        console.log(e);
-                    });
-            },
-            getRaces: function () {
-                axios.get('/api/track/' + this.$route.params.id + '/races')
-                    .then((response) => {
-                        this.races = response.data;
-                        this.loadingRaces = false;
-                    })
-                    .catch((e) => {
-                        this.loadingRaces = false;
                         console.log(e);
                     });
             }

@@ -57,11 +57,7 @@
                                 {{props.item.series.name}}
                             </v-btn>
                         </v-toolbar>
-                        <v-card-media
-                                :src="'https://img.youtube.com/vi/'+props.item.youtube_id+'/hqdefault.jpg'"
-                                height="280px"
-                        >
-                        </v-card-media>
+                        <v-img :src="props.item.videos[0].thumbnail"></v-img>
                     </v-card>
                 </v-flex>
             </transition>
