@@ -1,0 +1,1 @@
+<img alt="" style="max-width: 50%;" src="{{{$src}}}">
