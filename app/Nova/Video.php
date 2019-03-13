@@ -48,6 +48,11 @@ class Video extends Resource
             Text::make('Youtube Id'),
             Number::make('Start Time (Seconds)', 'youtube_start_time'),
             BelongsTo::make('Race'),
+            Text::make('Thumbnail', function () {
+                return view('vendor.nova.partials.image', [
+                    'src' => $this->thumbnail,
+                ])->render();
+            })->asHtml()->onlyOnDetail(),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail()
         ];

@@ -46,10 +46,14 @@ class Series extends Resource
             ID::make()->sortable(),
             Text::make('Acronym', 'name'),
             Text::make('Name', 'fullName'),
-            Text::make('image')->onlyOnDetail(), //TODO: Make this work
             Text::make('Website'),
             Text::make('Description')->onlyOnDetail(),
             Text::make('Youtube Chanel Name'),
+            Text::make('Image', function () {
+                return view('vendor.nova.partials.image', [
+                    'src' => '/img/series/'.$this->image,
+                ])->render();
+            })->asHtml()->onlyOnDetail(), //TODO: Make it so this can be uploaded
             HasMany::make('Races'),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail()
