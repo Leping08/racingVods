@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Series extends Model
 {
+    //TODO: Update column name of fullName
     protected $fillable = ['name', 'fullName', 'image', 'website', 'description'];
 
     public function races()
