@@ -8,8 +8,6 @@ class Video extends Model
 {
     protected $appends = ['thumbnail'];
 
-    protected $attributes = ['thumbnail'];
-
     protected $fillable = [
         'youtube_id',
         'youtube_start_time',
