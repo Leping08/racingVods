@@ -33,6 +33,7 @@ class Video extends Resource
      */
     public static $search = [
         'id',
+        'youtube_id'
     ];
 
     /**
@@ -52,7 +53,7 @@ class Video extends Resource
                 return view('vendor.nova.partials.image', [
                     'src' => $this->thumbnail,
                 ])->render();
-            })->asHtml()->onlyOnDetail(),
+            })->asHtml(),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail()
         ];

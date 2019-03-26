@@ -32,6 +32,7 @@ class Season extends Resource
      */
     public static $search = [
         'id',
+        'name'
     ];
 
     /**

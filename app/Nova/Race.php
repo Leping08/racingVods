@@ -34,6 +34,7 @@ class Race extends Resource
      */
     public static $search = [
         'id',
+        'name'
     ];
 
     /**

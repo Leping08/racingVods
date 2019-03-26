@@ -35,6 +35,8 @@ class Track extends Resource
      */
     public static $search = [
         'id',
+        'name',
+        'website'
     ];
 
     /**

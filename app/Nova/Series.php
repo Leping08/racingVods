@@ -32,6 +32,11 @@ class Series extends Resource
      */
     public static $search = [
         'id',
+        'name',
+        'fullName',
+        'website',
+        'description',
+        'youtube_chanel_name'
     ];
 
     /**

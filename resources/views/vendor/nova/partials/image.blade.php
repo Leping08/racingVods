@@ -1,1 +1,1 @@
-<img alt="" style="max-width: 50%;" src="{{{$src}}}">
+<img alt="" style="max-width: 25%;" src="{{{$src}}}">
