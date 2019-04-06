@@ -48,7 +48,7 @@ class Video extends Resource
             ID::make()->sortable(),
             Text::make('Youtube Id'),
             Number::make('Start Time (Seconds)', 'youtube_start_time'),
-            BelongsTo::make('Race'),
+            BelongsTo::make('Race')->searchable(),
             Text::make('Thumbnail', function () {
                 return view('vendor.nova.partials.image', [
                     'src' => $this->thumbnail,
