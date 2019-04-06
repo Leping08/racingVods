@@ -36,4 +36,42 @@ class Race extends Model
     {
         return $this->hasMany(Video::class);
     }
+
+    public function scopeThisSeason($query)
+    {
+        return $query->where('season_id', $this->season->id);
+    }
+
+    public function scopeThisSeries($query)
+    {
+        return $query->where('series_id', $this->series->id);
+    }
+
+    public function next()
+    {
+        $collection = $this->thisSeason()
+                            ->thisSeries()
+                            ->orderBy('race_date', 'asc')
+                            ->get();
+
+        $index = $collection->search(function($collection) {
+            return $collection->id === $this->id;
+        });
+
+        return $collection->get($index + 1);
+    }
+
+    public function previous()
+    {
+        $collection = $this->thisSeason()
+                            ->thisSeries()
+                            ->orderBy('race_date', 'asc')
+                            ->get();
+
+        $index = $collection->search(function($collection) {
+            return $collection->id === $this->id;
+        });
+
+        return $collection->get($index - 1);
+    }
 }
