@@ -50,7 +50,6 @@ class Race extends Resource
             Text::make('Name'),
             Date::make('Race Date'),
             Text::make('Duration'),
-            Text::make('Youtube Id')->hideFromIndex(),
             BelongsTo::make('Track')->searchable(),
             BelongsTo::make('Series')->searchable(),
             BelongsTo::make('Season')->searchable(),
