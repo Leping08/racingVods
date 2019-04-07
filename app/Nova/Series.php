@@ -52,7 +52,7 @@ class Series extends Resource
             Text::make('Acronym', 'name'),
             Text::make('Name', 'fullName'),
             Text::make('Website'),
-            Text::make('Description')->onlyOnDetail(),
+            Text::make('Description')->hideFromIndex(),
             Text::make('Youtube Chanel Name'),
             Text::make('Image', function () {
                 return view('vendor.nova.partials.image', [

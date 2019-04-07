@@ -52,7 +52,7 @@ class Race extends Resource
             Text::make('Duration'),
             BelongsTo::make('Track')->searchable(),
             BelongsTo::make('Series')->searchable(),
-            BelongsTo::make('Season')->searchable(),
+            BelongsTo::make('Season'),
             HasMany::make('Videos'),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail(),

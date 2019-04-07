@@ -51,7 +51,7 @@ class Track extends Resource
             ID::make()->sortable(),
             Text::make('Name'),
             Number::make('Length (MI)', 'length'),
-            Text::make('Image')->onlyOnDetail(),
+            Text::make('Image')->hideFromIndex(),
             Text::make('Number of corners', 'numberOfCorners'),
             Text::make('Website'),
             HasMany::make('Races'),
