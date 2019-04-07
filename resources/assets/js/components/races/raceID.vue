@@ -24,12 +24,20 @@
                                         <iframe :id="index = 1 ? 'vod' : 'notVod'" :src="'https://www.youtube.com/embed/'+vod.youtube_id+'?rel=0;showinfo=0;enablejsapi=1&origin=https://racingvods.com'" allowfullscreen></iframe>
                                     </div>
                                 </v-card>
-                                <template v-if="!(selected === race.videos.length)">
-                                    <v-btn color="primary" @click="selected++">Next</v-btn>
-                                </template>
-                                <template v-if="0 < index">
-                                    <v-btn flat outline @click="selected--">Back</v-btn>
-                                </template>
+                                <v-layout row justify-space-between v-if="race.videos.length > 1">
+                                    <template v-if="selected > 1">
+                                        <v-btn flat outline @click="selected--"><v-icon dark left>mdi-chevron-left</v-icon> Back</v-btn>
+                                    </template>
+                                    <template v-else>
+                                        <v-btn flat outline disabled><v-icon dark left>mdi-chevron-left</v-icon> Back</v-btn>
+                                    </template>
+                                    <template v-if="!(selected === race.videos.length)">
+                                        <v-btn color="primary" outline @click="selected++">Next <v-icon dark right>mdi-chevron-right</v-icon></v-btn>
+                                    </template>
+                                    <template v-else>
+                                        <v-btn color="primary" outline disabled>Next <v-icon dark right>mdi-chevron-right</v-icon></v-btn>
+                                    </template>
+                                </v-layout>
                             </v-stepper-content>
                         </v-stepper-items>
                     </v-stepper>
