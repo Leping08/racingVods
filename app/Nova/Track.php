@@ -50,7 +50,7 @@ class Track extends Resource
         return [
             ID::make()->sortable(),
             Text::make('Name'),
-            Number::make('Length (MI)', 'length'),
+            Number::make('Length (MI)', 'length')->step(0.01),
             Text::make('Image')->hideFromIndex(),
             Text::make('Number of corners', 'numberOfCorners'),
             Text::make('Website'),
