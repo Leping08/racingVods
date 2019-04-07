@@ -51,9 +51,21 @@ class Track extends Resource
             ID::make()->sortable(),
             Text::make('Name'),
             Number::make('Length (MI)', 'length')->step(0.01),
-            Text::make('Image')->hideFromIndex(),
             Text::make('Number of corners', 'numberOfCorners'),
-            Text::make('Website'),
+            Text::make('Website')->onlyOnForms(),
+            Text::make('Website', function () {
+                return view('vendor.nova.partials.link', [
+                    'text' => $this->website,
+                    'link' => $this->website,
+                    'new_tab' => true
+                ])->render();
+            })->asHtml()->exceptOnForms(),
+            Text::make('Image URL', 'image')->hideFromIndex(),
+            Text::make('Image', function () {
+                return view('vendor.nova.partials.image', [
+                    'src' => $this->image,
+                ])->render();
+            })->asHtml()->onlyOnDetail(),
             HasMany::make('Races'),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail()

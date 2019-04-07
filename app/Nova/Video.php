@@ -47,6 +47,13 @@ class Video extends Resource
         return [
             ID::make()->sortable(),
             Text::make('Youtube Id'),
+            Text::make('Video Link', function () {
+                return view('vendor.nova.partials.link', [
+                    'text' => 'https://www.youtube.com/watch?v=' . $this->youtube_id . '&t=' . $this->youtube_start_time . 's',
+                    'link' => 'https://www.youtube.com/watch?v=' . $this->youtube_id . '&t=' . $this->youtube_start_time . 's',
+                    'new_tab' => true
+                ])->render();
+            })->asHtml()->exceptOnForms(),
             Number::make('Start Time (Seconds)', 'youtube_start_time'),
             BelongsTo::make('Race')->searchable(),
             Text::make('Thumbnail', function () {
