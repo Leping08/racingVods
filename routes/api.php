@@ -5,6 +5,8 @@ use \App\Http\Controllers\TracksController;
 use \App\Http\Controllers\SeriesController;
 use \App\Http\Controllers\SeasonsController;
 use Illuminate\Http\Request;
+use App\Race;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -51,6 +53,15 @@ Route::get('/races/latest', 'RacesController@latest');
 /* @see RacesController::show() */
 Route::get('/race/{id}', 'RacesController@show');
 
+Route::get('/race/{race}/next', function (Race $race){
+    return $race->next();
+});
+
+Route::get('/race/{race}/previous', function (Race $race){
+    return $race->previous();
+});
+
+
 
 // Tracks
 /* @see TracksController::index() */
@@ -77,5 +88,5 @@ Route::get('/seasons', 'SeasonsController@index');
 Route::get('/series/{seriesID}/season/{seasonID}', 'SeasonsController@races');
 
 Route::get('/events', function (){
-    return \App\Race::with('series', 'track', 'season')->get();
+    return Race::with('series', 'track', 'season')->get();
 });
