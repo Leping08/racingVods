@@ -12,7 +12,7 @@
                     <v-toolbar-title>Series</v-toolbar-title>
                     <v-spacer></v-spacer>
                     <v-text-field
-                            class="pr-3"
+                            class="pr-3 pb-3"
                             append-icon="search"
                             label="Search Series"
                             single-line
@@ -49,8 +49,11 @@
                         lg6
                 >
                     <v-card ripple :hover="true" :to="/series/+props.item.id">
-                        <v-card-media :src="'/img/series/'+props.item.image" height="300px">
-                        </v-card-media>
+                        <v-img
+                                :src="'/img/series/'+props.item.image"
+                                aspect-ratio="2"
+
+                        ></v-img>
                         <v-toolbar>
                             <v-toolbar-title>{{props.item.fullName}}</v-toolbar-title>
                             <v-spacer></v-spacer>

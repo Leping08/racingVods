@@ -12,7 +12,7 @@
                     <v-toolbar-title>Races</v-toolbar-title>
                     <v-spacer></v-spacer>
                     <v-text-field
-                            class="pr-3"
+                            class="pr-3 pb-3"
                             append-icon="search"
                             label="Search Races"
                             single-line
