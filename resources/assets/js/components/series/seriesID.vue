@@ -16,9 +16,7 @@
                             <v-list>
                                 <v-subheader class="title">Seasons</v-subheader>
                                 <template v-for="(season, index) in series.seasons" @key="season.id">
-                                    <v-divider
-                                            :key="index"
-                                    ></v-divider>
+                                    <v-divider></v-divider>
                                     <v-list-tile
                                             :key="index"
                                             ripple
