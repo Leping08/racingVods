@@ -147,7 +147,7 @@
             ></v-switch>-->
         </v-toolbar>
         <v-content :class="theme ? 'grey darken-2' : 'grey lighten-2'">
-            <router-view></router-view>
+            <router-view :key="$route.fullPath"></router-view>
         </v-content>
         <v-footer class="pa-4">
             <v-spacer></v-spacer>
