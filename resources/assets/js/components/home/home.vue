@@ -74,7 +74,6 @@
                 </v-parallax>
             </v-flex>
 
-            <!-- TODO: Get the link working -->
             <v-flex md6 xs12>
                 <v-card class="text-xs-center" flat>
                     <v-carousel v-if="!loadingRaces" >
