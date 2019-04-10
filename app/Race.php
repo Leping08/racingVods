@@ -3,9 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Nova\Actions\Actionable;
 
 class Race extends Model
 {
+    use Actionable;
     /**
      * The attributes that should be cast to native types.
      *
