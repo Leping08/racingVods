@@ -6,7 +6,6 @@
                     <v-toolbar>
                         <v-toolbar-title>Create Series</v-toolbar-title>
                     </v-toolbar>
-                    <!-- TODO: Add Form Validation -->
                     <v-card-text>
                         <v-text-field
                                 label="Abbreviation"
