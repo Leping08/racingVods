@@ -139,55 +139,77 @@
                         </v-toolbar>
                         <v-card-text>
                             <v-layout row wrap>
-                            <v-flex md6 xs12>
-                                <img :src="race.track.image" style="max-width:100%;">
-                            </v-flex>
-                            <v-flex md6 xs12>
-                                <v-list two-line>
-                                    <v-divider></v-divider>
-                                    <v-list-tile :to="'/tracks/'+race.track.id">
-                                        <v-list-tile-avatar>
-                                            <v-icon>mdi-information-variant</v-icon>
-                                        </v-list-tile-avatar>
-                                        <v-list-tile-content>
-                                            <v-list-tile-title>Name</v-list-tile-title>
-                                            <v-list-tile-sub-title>{{ race.track.name }}</v-list-tile-sub-title>
-                                        </v-list-tile-content>
-                                    </v-list-tile>
-                                    <v-divider></v-divider>
-                                    <v-list-tile>
-                                        <v-list-tile-avatar>
-                                            <v-icon>mdi-ruler</v-icon>
-                                        </v-list-tile-avatar>
-                                        <v-list-tile-content>
-                                            <v-list-tile-title>Length</v-list-tile-title>
-                                            <v-list-tile-sub-title>{{ race.track.length }}mi / {{ (race.track.length * 1.60934).toFixed(2) }}km</v-list-tile-sub-title>
-                                        </v-list-tile-content>
-                                    </v-list-tile>
-                                    <v-divider></v-divider>
-                                    <v-list-tile>
-                                        <v-list-tile-avatar>
-                                            <v-icon>mdi-undo-variant</v-icon>
-                                        </v-list-tile-avatar>
-                                        <v-list-tile-content>
-                                            <v-list-tile-title>Corners</v-list-tile-title>
-                                            <v-list-tile-sub-title>{{ race.track.numberOfCorners }}</v-list-tile-sub-title>
-                                        </v-list-tile-content>
-                                    </v-list-tile>
-                                    <v-divider></v-divider>
-                                    <v-list-tile :href="race.track.website" target="_blank">
-                                        <v-list-tile-avatar>
-                                            <v-icon>web</v-icon>
-                                        </v-list-tile-avatar>
-                                        <v-list-tile-content>
-                                            <v-list-tile-title>Website</v-list-tile-title>
-                                            <v-list-tile-sub-title>{{ race.track.website }}</v-list-tile-sub-title>
-                                        </v-list-tile-content>
-                                    </v-list-tile>
-                                    <v-divider></v-divider>
-                                </v-list>
-                            </v-flex>
+                                <v-flex md6 xs12>
+                                    <img :src="race.track.image" style="max-width:100%;">
+                                </v-flex>
+                                <v-flex md6 xs12>
+                                    <v-list two-line>
+                                        <v-divider></v-divider>
+                                        <v-list-tile :to="'/tracks/'+race.track.id">
+                                            <v-list-tile-avatar>
+                                                <v-icon>mdi-information-variant</v-icon>
+                                            </v-list-tile-avatar>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>Name</v-list-tile-title>
+                                                <v-list-tile-sub-title>{{ race.track.name }}</v-list-tile-sub-title>
+                                            </v-list-tile-content>
+                                        </v-list-tile>
+                                        <v-divider></v-divider>
+                                        <v-list-tile>
+                                            <v-list-tile-avatar>
+                                                <v-icon>mdi-ruler</v-icon>
+                                            </v-list-tile-avatar>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>Length</v-list-tile-title>
+                                                <v-list-tile-sub-title>{{ race.track.length }}mi / {{ (race.track.length * 1.60934).toFixed(2) }}km</v-list-tile-sub-title>
+                                            </v-list-tile-content>
+                                        </v-list-tile>
+                                        <v-divider></v-divider>
+                                        <v-list-tile>
+                                            <v-list-tile-avatar>
+                                                <v-icon>mdi-undo-variant</v-icon>
+                                            </v-list-tile-avatar>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>Corners</v-list-tile-title>
+                                                <v-list-tile-sub-title>{{ race.track.numberOfCorners }}</v-list-tile-sub-title>
+                                            </v-list-tile-content>
+                                        </v-list-tile>
+                                        <v-divider></v-divider>
+                                        <v-list-tile :href="race.track.website" target="_blank">
+                                            <v-list-tile-avatar>
+                                                <v-icon>web</v-icon>
+                                            </v-list-tile-avatar>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>Website</v-list-tile-title>
+                                                <v-list-tile-sub-title>{{ race.track.website }}</v-list-tile-sub-title>
+                                            </v-list-tile-content>
+                                        </v-list-tile>
+                                        <v-divider></v-divider>
+                                    </v-list>
+                                </v-flex>
                             </v-layout>
+                        </v-card-text>
+                    </v-card>
+                </v-flex>
+                <v-flex xs12>
+                    <v-card>
+                        <v-toolbar>
+                            <v-toolbar-title>Schedule</v-toolbar-title>
+                            <v-spacer></v-spacer>
+                            <v-icon color="primary">mdi-calendar-range</v-icon>
+                        </v-toolbar>
+                        <v-card-text>
+                            <v-list two-line>
+                                <template v-for="(seasonRace, index) in seasonRaces" @key="seasonRace.id">
+                                    <v-divider></v-divider>
+                                    <v-list-tile :to="'/races/'+seasonRace.id" @click="" :key="seasonRace.id" ripple>
+                                        <v-list-tile-content>
+                                            <v-list-tile-title>{{index+1}}. {{ seasonRace.name }}</v-list-tile-title>
+                                            <v-list-tile-sub-title>{{ seasonRace.track.name }}</v-list-tile-sub-title>
+                                        </v-list-tile-content>
+                                    </v-list-tile>
+                                </template>
+                            </v-list>
                         </v-card-text>
                     </v-card>
                 </v-flex>
@@ -206,7 +228,9 @@
         data () {
             return {
                 race: [],
+                seasonRaces: [],
                 loadingRace: true,
+                loadingSeasonRaces: true,
                 player: {},
                 selected: 1
             }
@@ -220,9 +244,21 @@
                     .then((response) => {
                         this.race = response.data;
                         this.loadingRace = false;
+                        this.getSeason(this.race.season.id, this.race.series.id)
                     })
                     .catch((e) => {
                         this.loadingRace = false;
+                        console.log(e);
+                    });
+            },
+            getSeason: function (seasonID, seriesID) {
+                axios.get('/api/series/' + seriesID + '/season/' + seasonID)
+                    .then((response) => {
+                        this.seasonRaces = response.data;
+                        this.loadingSeasonRaces = false;
+                    })
+                    .catch((e) => {
+                        this.loadingSeasonRaces = false;
                         console.log(e);
                     });
             },
