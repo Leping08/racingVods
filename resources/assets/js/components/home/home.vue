@@ -79,15 +79,17 @@
                 <v-card class="text-xs-center" flat>
                     <v-carousel v-if="!loadingRaces" >
                         <template v-for="race in races" @key="race.id">
-                            <v-carousel-item :src="race.videos[0].thumbnail"  :to="'/races/'+race.id" style="text-decoration: none !important; background-size: auto;">
-                                <v-toolbar>
-                                    <v-toolbar-title>{{race.name}}</v-toolbar-title>
-                                    <v-spacer></v-spacer>
-                                    <v-btn outline round color="teal" :href="'/series/'+race.series.id">
-                                        {{race.series.name}}
-                                    </v-btn>
-                                </v-toolbar>
-                            </v-carousel-item>
+                            <router-link :to="'/races/'+race.id" style="text-decoration: none !important; background-size: auto;">
+                                <v-carousel-item :src="race.videos[0].thumbnail">
+                                    <v-toolbar>
+                                        <v-toolbar-title>{{race.name}}</v-toolbar-title>
+                                        <v-spacer></v-spacer>
+                                        <v-btn outline round color="teal" :href="'/series/'+race.series.id">
+                                            {{race.series.name}}
+                                        </v-btn>
+                                    </v-toolbar>
+                                </v-carousel-item>
+                            </router-link>
                         </template>
                     </v-carousel>
                 </v-card>
