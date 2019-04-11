@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+Use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,8 +14,7 @@
 |
 */
 
-/** @see MvpApiAccessToken::login() */
-//Route::post('/api/login', 'MvpApiAccessToken@login');
+
 
 Route::any('{all}', function () {
     return view('welcome');
