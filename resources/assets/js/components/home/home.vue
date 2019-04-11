@@ -80,19 +80,7 @@
                         <template v-for="race in races" @key="race.id">
                             <router-link :to="'/races/'+race.id" style="text-decoration: none !important; background-size: auto;">
                                 <v-carousel-item :src="race.videos[0].thumbnail">
-                                    <v-toolbar>
-                                        <v-toolbar-title>{{race.name}}</v-toolbar-title>
-                                        <v-spacer></v-spacer>
-                                        <v-icon
-                                                v-if="race.new"
-                                                color="primary"
-                                        >
-                                            mdi-new-box
-                                        </v-icon>
-                                        <v-btn outline round color="teal" :href="'/series/'+race.series.id">
-                                            {{race.series.name}}
-                                        </v-btn>
-                                    </v-toolbar>
+                                    <race-toolbar :race="race"></race-toolbar>
                                 </v-carousel-item>
                             </router-link>
                         </template>
@@ -109,7 +97,9 @@
 
 <script>
     import axios from 'axios';
+    import RaceToolbar from "../utilitys/race-toolbar";
     export default {
+        components: {RaceToolbar},
         data () {
             return {
                 races: [],

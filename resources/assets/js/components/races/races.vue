@@ -50,13 +50,7 @@
                         lg6
                 >
                     <v-card ripple :hover="true" :to="/races/+props.item.id">
-                        <v-toolbar>
-                            <v-toolbar-title>{{props.item.name}}</v-toolbar-title>
-                            <v-spacer></v-spacer>
-                            <v-btn outline round color="teal" :to="'/series/'+props.item.series.id">
-                                {{props.item.series.name}}
-                            </v-btn>
-                        </v-toolbar>
+                        <race-toolbar :race="props.item"></race-toolbar>
                         <v-img :src="props.item.videos[0].thumbnail"></v-img>
                     </v-card>
                 </v-flex>
@@ -68,7 +62,9 @@
 
 <script>
     import axios from 'axios';
+    import RaceToolbar from "../utilitys/race-toolbar";
     export default {
+        components: {RaceToolbar},
         data () {
             return {
                 races: [],

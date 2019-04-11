@@ -6,6 +6,12 @@
                     <v-toolbar>
                         <v-toolbar-title>{{race.name}}</v-toolbar-title>
                         <v-spacer></v-spacer>
+                        <v-icon
+                                v-if="race.new"
+                                color="primary"
+                        >
+                            mdi-new-box
+                        </v-icon>
                         <v-btn round outline color="primary" @click="jumpToVodStart()">Race Start</v-btn>
                     </v-toolbar>
                 </v-flex>
