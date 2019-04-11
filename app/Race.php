@@ -18,9 +18,9 @@ use Laravel\Nova\Actions\Actionable;
  * @property integer $track_id
  * @property string $duration
  * @property bool $new
- * @property \Illuminate\Support\Carbon race_date
- * @property \Illuminate\Support\Carbon $created_at
- * @property \Illuminate\Support\Carbon $updated_at
+ * @property Carbon race_date
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
  * @property-read Series $series
  * @property-read Track $track
  * @property-read Season $season
