@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Season;
 use App\Race;
+use App\Series;
 use Illuminate\Http\Request;
 
 class SeasonsController extends Controller
@@ -13,7 +14,7 @@ class SeasonsController extends Controller
         return Season::all();
     }
 
-    public function races($series, $season)
+    public function races(Series $series, Season $season)
     {
         return Race::where('season_id', $series->id)
                     ->where('series_id', $season->id)
