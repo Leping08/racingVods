@@ -39,6 +39,8 @@ class Race extends Model
         'race_date' => 'datetime:Y-m-d',
     ];
 
+    protected $appends = ['new'];
+
     protected $fillable = ['name', 'race_date', 'season_id', 'series_id', 'track_id', 'duration'];
 
     /**
