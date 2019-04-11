@@ -14,7 +14,7 @@ class SeriesController extends Controller
         return Series::orderBy('fullName', 'asc')->get();
     }
 
-    public function store(Request $request)
+    public function store(Request $request) //TODO Not needed with nova
     {
         $series = $request->validate([
             'name' => 'required|max:5',
@@ -34,9 +34,9 @@ class SeriesController extends Controller
         return $newSeries;
     }
 
-    public function show($id)
+    public function show(Series $series) //TODO Check if this is still being used
     {
-        $series = Series::where('id', $id)->with('races')->first();
+        $series = $series->load('races');
         $series['seasons'] = $series->races->unique('season_id')->pluck('season');
         unset($series->races);
         return $series;

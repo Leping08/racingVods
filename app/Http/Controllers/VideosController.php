@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Log;
 
 class VideosController extends Controller
 {
-    public function store(Request $request)
+    public function store(Request $request) //TODO Not needed with nova
     {
         $video = $request->validate([
             'youtube_id' => 'required|max:255',

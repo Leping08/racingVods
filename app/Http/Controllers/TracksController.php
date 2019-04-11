@@ -14,7 +14,7 @@ class TracksController extends Controller
         return Track::all();
     }
 
-    public function store(Request $request)
+    public function store(Request $request) //TODO Not needed with nova
     {
         $track = $request->validate([
             'name' => 'required|max:255',
@@ -29,8 +29,8 @@ class TracksController extends Controller
         return $newTrack;
     }
 
-    public function show($id)
+    public function show(Track $track)
     {
-        return Track::with('races.videos', 'races.series', 'races.season')->find($id);
+        return $track->load('races.videos', 'races.series', 'races.season');
     }
 }

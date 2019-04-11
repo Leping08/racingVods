@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Race;
-use App\Season;
-use App\Series;
-use App\Track;
 use App\Video;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -18,7 +15,7 @@ class RacesController extends Controller
         return Race::orderBy('id', 'desc')->with(['track', 'season', 'series', 'videos'])->get();
     }
 
-    public function store(Request $request)
+    public function store(Request $request) //TODO Not needed with nova
     {
         $race = $request->validate([
             'name' => 'required|max:255',
@@ -46,9 +43,9 @@ class RacesController extends Controller
         return $newRace;
     }
 
-    public function show($id)
+    public function show(Race $race)
     {
-        return Race::with(['track', 'season', 'series', 'videos'])->find($id);
+        return $race->load(['track', 'season', 'series', 'videos']);
     }
 
     public function latest()

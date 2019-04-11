@@ -49,7 +49,7 @@ Route::get('/races', 'RacesController@index');
 Route::get('/races/latest', 'RacesController@latest');
 
 /* @see RacesController::show() */
-Route::get('/race/{id}', 'RacesController@show');
+Route::get('/race/{race}', 'RacesController@show');
 
 
 
@@ -58,7 +58,7 @@ Route::get('/race/{id}', 'RacesController@show');
 Route::get('/tracks', 'TracksController@index');
 
 /* @see TracksController::show() */
-Route::get('/track/{id}', 'TracksController@show');
+Route::get('/track/{track}', 'TracksController@show');
 
 
 
@@ -67,7 +67,7 @@ Route::get('/track/{id}', 'TracksController@show');
 Route::get('/series', 'SeriesController@index');
 
 /* @see SeriesController::show() */
-Route::get('/series/{id}', 'SeriesController@show');
+Route::get('/series/{series}', 'SeriesController@show');
 
 
 
@@ -76,7 +76,7 @@ Route::get('/series/{id}', 'SeriesController@show');
 Route::get('/seasons', 'SeasonsController@index');
 
 /* @see SeasonsController::races() */
-Route::get('/series/{seriesID}/season/{seasonID}', 'SeasonsController@races');
+Route::get('/series/{series}/season/{season}', 'SeasonsController@races');
 
 
 
