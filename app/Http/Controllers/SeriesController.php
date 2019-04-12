@@ -5,13 +5,16 @@ namespace App\Http\Controllers;
 use App\Race;
 use App\Series;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 
 class SeriesController extends Controller
 {
     public function index()
     {
-        return Series::orderBy('fullName', 'asc')->get();
+        return Cache::remember('series_index', config('cache.time'), function () {
+            return Series::orderBy('fullName', 'asc')->get();
+        });
     }
 
     public function store(Request $request) //TODO Not needed with nova
@@ -36,9 +39,11 @@ class SeriesController extends Controller
 
     public function show(Series $series)
     {
-        $series->load('races');
-        $series['seasons'] = $series->races->unique('season_id')->pluck('season');
-        unset($series->races);
-        return $series;
+        return Cache::remember("series_show_{$series->id}", config('cache.time'), function () use ($series) {
+            $series->load('races');
+            $series['seasons'] = $series->races->unique('season_id')->pluck('season');
+            unset($series->races);
+            return $series;
+        });
     }
 }

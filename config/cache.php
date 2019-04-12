@@ -28,6 +28,8 @@ return [
     |
     */
 
+    'time' => now()->addMinutes(60 * 6),
+
     'stores' => [
 
         'apc' => [

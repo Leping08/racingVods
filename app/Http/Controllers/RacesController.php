@@ -6,13 +6,16 @@ use App\Race;
 use App\Video;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 
 class RacesController extends Controller
 {
     public function index()
     {
-        return Race::orderBy('id', 'desc')->with(['track', 'season', 'series', 'videos'])->get();
+        return Cache::remember('race_index', config('cache.time'), function () {
+            return Race::orderBy('id', 'desc')->with(['track', 'season', 'series', 'videos'])->get();
+        });
     }
 
     public function store(Request $request) //TODO Not needed with nova
@@ -45,11 +48,15 @@ class RacesController extends Controller
 
     public function show(Race $race)
     {
-        return $race->load(['track', 'season', 'series', 'videos']);
+        return Cache::remember("race_show_{$race->id}", config('cache.time'), function () use ($race) {
+            return $race->load(['track', 'season', 'series', 'videos']);
+        });
     }
 
     public function latest()
     {
-        return Race::orderBy('id', 'desc')->take(5)->with(['track', 'season', 'series', 'videos'])->get();
+        return Cache::remember('race_latest', config('cache.time'), function () {
+            return Race::orderBy('id', 'desc')->take(5)->with(['track', 'season', 'series', 'videos'])->get();
+        });
     }
 }
