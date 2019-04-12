@@ -36,7 +36,7 @@ class SeriesController extends Controller
 
     public function show(Series $series) //TODO Check if this is still being used
     {
-        $series = $series->load('races');
+        $series->load('races');
         $series['seasons'] = $series->races->unique('season_id')->pluck('season');
         unset($series->races);
         return $series;
