@@ -16,8 +16,8 @@ class SeasonsController extends Controller
 
     public function races(Series $series, Season $season)
     {
-        return Race::where('season_id', $series->id)
-                    ->where('series_id', $season->id)
+        return Race::where('season_id', $season->id)
+                    ->where('series_id', $series->id)
                     ->with(['track', 'series', 'season', 'videos'])
                     ->orderBy('race_date', 'asc')
                     ->get();
