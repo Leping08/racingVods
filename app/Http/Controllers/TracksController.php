@@ -13,7 +13,7 @@ class TracksController extends Controller
     public function index()
     {
         return Cache::remember('track_index', config('cache.time'), function () {
-            return Track::orderBy('fullName', 'asc')->get();
+            return Track::orderBy('name', 'asc')->get();
         });
     }
 
