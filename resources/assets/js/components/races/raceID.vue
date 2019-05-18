@@ -24,11 +24,9 @@
                         </v-stepper-header>
                         <v-stepper-items>
                             <v-stepper-content :step="index+1" v-for="(vod, index) in race.videos" :key="vod.id">
-                                <v-responsive :aspect-ratio="16/9">
-                                    <template v-if="selected === (index + 1)">
-                                        <youtube :video-id="vod.youtube_id" :ref="'video'+(index)" :resize="true" :fit-parent="true"></youtube>
-                                    </template>
-                                </v-responsive>
+                                <template v-if="selected === (index + 1)">
+                                    <youtube :video-id="vod.youtube_id" :ref="'video'+(index)" :resize="true" :fit-parent="true"></youtube>
+                                </template>
                                 <v-layout align-center justify-center row fill-height class="mt-3">
                                     <template v-if="race.videos.length > 1">
                                         <template v-if="selected > 1">
@@ -304,6 +302,7 @@
                     });
             },
             play: function(index) {
+                console.log(this.$refs.yeet);
                 this.$refs['video'+(index)][0].player.playVideo();
             },
             pause: function(index) {
