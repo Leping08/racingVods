@@ -12,7 +12,6 @@
                         >
                             mdi-new-box
                         </v-icon>
-                        <v-btn round outline color="primary" @click="jumpToVodStart()">Race Start</v-btn>
                     </v-toolbar>
                 </v-flex>
                 <v-flex x12>
@@ -25,23 +24,55 @@
                         </v-stepper-header>
                         <v-stepper-items>
                             <v-stepper-content :step="index+1" v-for="(vod, index) in race.videos" :key="vod.id">
-                                <v-card color="grey lighten-1" class="mb-3">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe :id="index = 1 ? 'vod' : 'notVod'" :src="'https://www.youtube.com/embed/'+vod.youtube_id+'?rel=0;showinfo=0;enablejsapi=1&origin=https://racingvods.com'" allowfullscreen></iframe>
-                                    </div>
-                                </v-card>
-                                <v-layout row justify-space-between v-if="race.videos.length > 1">
-                                    <template v-if="selected > 1">
-                                        <v-btn flat outline @click="selected--"><v-icon dark left>mdi-chevron-left</v-icon> Back</v-btn>
+                                <v-responsive :aspect-ratio="16/9">
+                                    <template v-if="selected === (index + 1)">
+                                        <youtube :video-id="vod.youtube_id" :ref="'video'+(index)" :resize="true" :fit-parent="true"></youtube>
                                     </template>
-                                    <template v-else>
-                                        <v-btn flat outline disabled><v-icon dark left>mdi-chevron-left</v-icon> Back</v-btn>
+                                </v-responsive>
+                                <v-layout align-center justify-center row fill-height class="mt-3">
+                                    <template v-if="race.videos.length > 1">
+                                        <template v-if="selected > 1">
+                                            <v-btn flat outline round @click="selected--"><v-icon dark left>mdi-chevron-left</v-icon> Back</v-btn>
+                                        </template>
+                                        <template v-else>
+                                            <v-btn flat outline round disabled><v-icon dark left>mdi-chevron-left</v-icon> Back</v-btn>
+                                        </template>
                                     </template>
-                                    <template v-if="!(selected === race.videos.length)">
-                                        <v-btn color="primary" outline @click="selected++">Next <v-icon dark right>mdi-chevron-right</v-icon></v-btn>
+                                    <v-spacer></v-spacer>
+                                    <template v-if="selected <= 1">
+                                        <v-tooltip top>
+                                            <template v-slot:activator="{ on }">
+                                                <v-btn outline small fab color="teal" v-on="on" @click="start(index, vod.youtube_start_time)">
+                                                    <v-icon>mdi-clock-start</v-icon>
+                                                </v-btn>
+                                            </template>
+                                            <span>Race Start</span>
+                                        </v-tooltip>
                                     </template>
-                                    <template v-else>
-                                        <v-btn color="primary" outline disabled>Next <v-icon dark right>mdi-chevron-right</v-icon></v-btn>
+                                    <v-tooltip top>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn outline small fab color="teal" v-on="on" @click="play(index)">
+                                                <v-icon>mdi-play</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Play</span>
+                                    </v-tooltip>
+                                    <v-tooltip top>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn outline small fab color="teal" v-on="on" @click="pause(index)">
+                                                <v-icon>mdi-stop</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Pause</span>
+                                    </v-tooltip>
+                                    <v-spacer></v-spacer>
+                                    <template v-if="race.videos.length > 1">
+                                        <template v-if="!(selected === race.videos.length)">
+                                            <v-btn color="primary" round outline @click="selected++">Next <v-icon dark right>mdi-chevron-right</v-icon></v-btn>
+                                        </template>
+                                        <template v-else>
+                                            <v-btn color="primary" round outline disabled>Next <v-icon dark right>mdi-chevron-right</v-icon></v-btn>
+                                        </template>
                                     </template>
                                 </v-layout>
                             </v-stepper-content>
@@ -229,6 +260,7 @@
 
 
 <script>
+    import youtube from 'vue-youtube'
     import axios from 'axios';
     export default {
         data () {
@@ -240,6 +272,9 @@
                 player: {},
                 selected: 1
             }
+        },
+        comments: {
+            youtube
         },
         mounted() {
             this.getRace();
@@ -268,14 +303,15 @@
                         console.log(e);
                     });
             },
-            jumpToVodStart: function () {
-                window.vodTime = this.race.youtube_start_time;
-                window.player = new YT.Player('vod');
-                setTimeout(function(){
-                    window.player.seekTo(Number(window.vodTime));
-                    window.player.playVideo();
-                    window.player = null;
-                }, 1000);
+            play: function(index) {
+                this.$refs['video'+(index)][0].player.playVideo();
+            },
+            pause: function(index) {
+                this.$refs['video'+(index)][0].player.pauseVideo();
+            },
+            start: function(index, start) {
+                this.$refs['video'+(index)][0].player.seekTo(start);
+                this.play(index);
             }
         }
     }
