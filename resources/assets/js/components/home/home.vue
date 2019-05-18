@@ -2,14 +2,12 @@
     <v-container fluid grid-list-md>
         <v-layout row wrap>
             <v-flex xs12>
-                <v-parallax jumbotron src="/img/home/home-heading.jpg" height="300">
-                    <v-layout column align-center justify-center color="white">
-                        <!--<h1 class="white--text display-1">Racing Vods</h1>
-                        <h3 class="white--text">It's Kinda Like Netflix For Gearheads.</h3>-->
-                        <img src="/img/logo/racingVods-light.png" style="max-width: 100%;" class="hidden-md-and-up">
-                        <img src="/img/logo/racingVods-light.png" style="max-width: 45%;" class="hidden-sm-and-down">
+                <v-img :aspect-ratio="16/9" max-height="300px" src="/img/home/home-heading.jpg">
+                    <v-layout align-center justify-center row fill-height>
+                        <v-img src="/img/logo/racingVods-light.png" max-width="90%;" class="hidden-md-and-up"></v-img>
+                        <v-img src="/img/logo/racingVods-light.png" max-width="45%" class="hidden-sm-and-down"></v-img>
                     </v-layout>
-                </v-parallax>
+                </v-img>
             </v-flex>
         </v-layout>
 
