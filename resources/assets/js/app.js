@@ -22,6 +22,7 @@ import Vuetify from 'vuetify';
 import VueCharts from 'vue-chartjs';
 import moment from 'moment';
 import VueAnalytics from 'vue-analytics';
+import VueYoutube from 'vue-youtube';
 import store from './vuex';
 import layout from './components/layout/layout.vue';
 import router from './router';
@@ -44,6 +45,7 @@ Vue.use(moment);
 Vue.use(require('vue-moment'));
 Vue.component('layout', layout);
 Vue.use(VueCharts);
+Vue.use(VueYoutube);
 Vue.use(VueAnalytics, {
     id: 'UA-98405544-5',
     router
