@@ -25,7 +25,11 @@
                         <v-stepper-items>
                             <v-stepper-content :step="index+1" v-for="(vod, index) in race.videos" :key="vod.id">
                                 <template v-if="selected === (index + 1)">
-                                    <youtube :video-id="vod.youtube_id" :ref="'video'+(index)" :resize="true" :fit-parent="true"></youtube>
+                                    <v-layout row wrap>
+                                        <v-flex xs12>
+                                            <youtube :video-id="vod.youtube_id" :ref="'video'+(index)" :resize="true" :fit-parent="true"></youtube>
+                                        </v-flex>
+                                    </v-layout>
                                 </template>
                                 <v-layout align-center justify-center row fill-height class="mt-3">
                                     <template v-if="race.videos.length > 1">
