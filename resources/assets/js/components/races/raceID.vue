@@ -83,15 +83,22 @@
 
                                     <v-spacer></v-spacer>
 
-                                    <template v-if="!(selected === race.videos.length)">
-                                        <v-tooltip top>
-                                            <template v-slot:activator="{ on }">
-                                                <v-btn outline small fab v-on="on" @click="selected++">
-                                                    <v-icon>mdi-chevron-right</v-icon>
-                                                </v-btn>
-                                            </template>
-                                            <span>Next Part</span>
-                                        </v-tooltip>
+                                    <template v-if="race.videos.length > 1">
+                                        <template v-if="!(selected === race.videos.length)">
+                                            <v-tooltip top>
+                                                <template v-slot:activator="{ on }">
+                                                    <v-btn outline small fab v-on="on" @click="selected++">
+                                                        <v-icon>mdi-chevron-right</v-icon>
+                                                    </v-btn>
+                                                </template>
+                                                <span>Next Part</span>
+                                            </v-tooltip>
+                                        </template>
+                                        <template v-else>
+                                            <v-btn outline small fab disabled>
+                                                <v-icon>mdi-chevron-right</v-icon>
+                                            </v-btn>
+                                        </template>
                                     </template>
                                 </v-layout>
                             </v-stepper-content>
