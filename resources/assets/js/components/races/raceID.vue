@@ -14,7 +14,7 @@
                         </v-icon>
                     </v-toolbar>
                 </v-flex>
-                <v-flex x12>
+                <v-flex xs12>
                     <v-stepper v-model="selected">
                         <v-stepper-header v-if="race.videos.length > 1">
                             <template v-for="(vod, index) in race.videos">
@@ -34,54 +34,71 @@
                                 <v-layout align-center justify-center row fill-height class="mt-3">
                                     <template v-if="race.videos.length > 1">
                                         <template v-if="selected > 1">
-                                            <v-btn flat outline round @click="selected--"><v-icon dark left>mdi-chevron-left</v-icon> Back</v-btn>
+                                            <v-tooltip top>
+                                                <template v-slot:activator="{ on }">
+                                                    <v-btn outline small fab v-on="on" @click="selected--">
+                                                        <v-icon>mdi-chevron-left</v-icon>
+                                                    </v-btn>
+                                                </template>
+                                                <span>Last Part</span>
+                                            </v-tooltip>
                                         </template>
                                         <template v-else>
-                                            <v-btn flat outline round disabled><v-icon dark left>mdi-chevron-left</v-icon> Back</v-btn>
+                                            <v-btn outline small fab disabled>
+                                                <v-icon>mdi-chevron-left</v-icon>
+                                            </v-btn>
                                         </template>
                                     </template>
+
                                     <v-spacer></v-spacer>
-                                    <template v-if="selected <= 1">
+
+                                    <div>
+                                        <template v-if="selected <= 1">
+                                            <v-tooltip top>
+                                                <template v-slot:activator="{ on }">
+                                                    <v-btn outline small fab color="teal" v-on="on" @click="start(index, vod.youtube_start_time)">
+                                                        <v-icon>mdi-clock-start</v-icon>
+                                                    </v-btn>
+                                                </template>
+                                                <span>Race Start</span>
+                                            </v-tooltip>
+                                        </template>
                                         <v-tooltip top>
                                             <template v-slot:activator="{ on }">
-                                                <v-btn outline small fab color="teal" v-on="on" @click="start(index, vod.youtube_start_time)">
-                                                    <v-icon>mdi-clock-start</v-icon>
+                                                <v-btn outline small fab color="teal" v-on="on" @click="play(index)">
+                                                    <v-icon>mdi-play</v-icon>
                                                 </v-btn>
                                             </template>
-                                            <span>Race Start</span>
+                                            <span>Play</span>
                                         </v-tooltip>
-                                    </template>
-                                    <v-tooltip top>
-                                        <template v-slot:activator="{ on }">
-                                            <v-btn outline small fab color="teal" v-on="on" @click="play(index)">
-                                                <v-icon>mdi-play</v-icon>
-                                            </v-btn>
-                                        </template>
-                                        <span>Play</span>
-                                    </v-tooltip>
-                                    <v-tooltip top>
-                                        <template v-slot:activator="{ on }">
-                                            <v-btn outline small fab color="teal" v-on="on" @click="pause(index)">
-                                                <v-icon>mdi-stop</v-icon>
-                                            </v-btn>
-                                        </template>
-                                        <span>Pause</span>
-                                    </v-tooltip>
+                                        <v-tooltip top>
+                                            <template v-slot:activator="{ on }">
+                                                <v-btn outline small fab color="teal" v-on="on" @click="pause(index)">
+                                                    <v-icon>mdi-stop</v-icon>
+                                                </v-btn>
+                                            </template>
+                                            <span>Pause</span>
+                                        </v-tooltip>
+                                    </div>
+
                                     <v-spacer></v-spacer>
-                                    <template v-if="race.videos.length > 1">
-                                        <template v-if="!(selected === race.videos.length)">
-                                            <v-btn color="primary" round outline @click="selected++">Next <v-icon dark right>mdi-chevron-right</v-icon></v-btn>
-                                        </template>
-                                        <template v-else>
-                                            <v-btn color="primary" round outline disabled>Next <v-icon dark right>mdi-chevron-right</v-icon></v-btn>
-                                        </template>
+
+                                    <template v-if="!(selected === race.videos.length)">
+                                        <v-tooltip top>
+                                            <template v-slot:activator="{ on }">
+                                                <v-btn outline small fab v-on="on" @click="selected++">
+                                                    <v-icon>mdi-chevron-right</v-icon>
+                                                </v-btn>
+                                            </template>
+                                            <span>Next Part</span>
+                                        </v-tooltip>
                                     </template>
                                 </v-layout>
                             </v-stepper-content>
                         </v-stepper-items>
                     </v-stepper>
                 </v-flex>
-                <v-flex xs12>
+                <v-flex md6 s12>
                     <v-card>
                         <v-toolbar>
                             <v-toolbar-title>Race</v-toolbar-title>
@@ -125,7 +142,7 @@
                         </v-card-text>
                     </v-card>
                 </v-flex>
-                <v-flex xs12>
+                <v-flex md6 s12>
                     <v-card>
                         <v-toolbar>
                             <v-toolbar-title>Series</v-toolbar-title>
