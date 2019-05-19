@@ -10,7 +10,7 @@
             <v-list>
                 <v-list-tile ripple @click="" to="/">
                     <v-list-tile-action>
-                        <v-icon>home</v-icon>
+                        <v-icon>mdi-home</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>Home</v-list-tile-title>

@@ -35,7 +35,5 @@
             <layout></layout>
         </div>
         <script src="/js/app.js"></script>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     </body>
 </html>
