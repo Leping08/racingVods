@@ -3,31 +3,31 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
 
-import about from './components/about/about.vue';
-import home from './components/home/home.vue';
-import dashboard from './components/dashboard/dashboard';
-import notFound from './components/not-found/notFound.vue';
+const about = () => import('./components/about/about.vue');
+const home = () => import('./components/home/home.vue');
+const dashboard = () => import('./components/dashboard/dashboard');
+const notFound = () => import('./components/not-found/notFound.vue');
 
-import logout from './components/admin/logout';
-import login from './components/admin/login.vue';
+const logout = () => import('./components/admin/logout');
+const login = () => import('./components/admin/login.vue');
 
-import races from './components/races/races.vue';
-import raceID from './components/races/raceID.vue';
-import createRace from './components/races/create.vue';
+const races = () => import('./components/races/races.vue');
+const raceID = () => import('./components/races/raceID.vue');
+const createRace = () => import('./components/races/create.vue');
 
-import series from './components/series/series.vue';
-import seriesID from './components/series/seriesID.vue';
-import createSeries from './components/series/create';
-import seriesAdmin from './components/series/seriesAdmin.vue';
+const series = () => import('./components/series/series.vue');
+const seriesID = () => import('./components/series/seriesID.vue');
+const createSeries = () => import('./components/series/create');
+const seriesAdmin = () => import('./components/series/seriesAdmin.vue');
 
-import tracks from './components/tracks/tracks.vue';
-import tracksID from './components/tracks/tracksID.vue';
-import createTrack from './components/tracks/create.vue';
+const tracks = () => import('./components/tracks/tracks.vue');
+const tracksID = () => import('./components/tracks/tracksID.vue');
+const createTrack = () => import('./components/tracks/create.vue');
 
-import seasonRaces from './components/season/seasonRaces.vue';
-import createVideo from './components/videos/create';
+const seasonRaces = () => import('./components/season/seasonRaces.vue');
+const createVideo = () => import('./components/videos/create');
 
-import schedule from './components/calendar/schedule'
+const schedule = () => import('./components/calendar/schedule');
 
 const router = new VueRouter({
     mode: 'history',

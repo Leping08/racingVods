@@ -11,6 +11,9 @@ let mix = require('laravel-mix');
  |
 */
 
+mix.babelConfig({
+    plugins: ['@babel/plugin-syntax-dynamic-import'],
+});
 
 mix.js('resources/assets/js/app.js', 'public/js');
 
