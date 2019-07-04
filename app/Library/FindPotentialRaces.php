@@ -12,6 +12,7 @@ use App\Series;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 
 class FindPotentialRaces
 {
@@ -40,7 +41,7 @@ class FindPotentialRaces
                 //Check if this race is already in the PotentialRaces table
                 if(! $alreadyStoredPotentialRaces->contains($vid->contentDetails->videoId)){
                     //Make sure the video title does not contain the word qualifying
-                    if(! str_contains($vid->snippet->title, ['qualifying', 'Qualifying'])){
+                    if(! Str::contains($vid->snippet->title, ['qualifying', 'Qualifying'])){
                         Log::info("New video is being added to the DB. ID:{$vid->contentDetails->videoId} Title: {$vid->snippet->title}");
                         PotentialRaces::create([
                             'title' => $vid->snippet->title,
