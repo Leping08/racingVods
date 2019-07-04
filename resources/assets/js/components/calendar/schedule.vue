@@ -141,9 +141,9 @@
         computed: {
             // convert the list of events into a map of lists keyed by date
             eventsMap () {
-                const map = {}
-                this.events.forEach(e => (map[e.race_date] = map[e.race_date] || []).push(e))
-                return map
+                const map = {};
+                this.events.forEach(e => (map[e.race_date] = map[e.race_date] || []).push(e));
+                return map;
             }
         },
         methods: {
@@ -168,7 +168,7 @@
         },
         filters: {
             year: function (value) {
-                return moment(value).format('YYYY')
+                return moment(value).format('YYYY');
             },
             month: function (value) {
                 return moment(value).format('MMMM');
@@ -176,21 +176,3 @@
         }
     }
 </script>
-
-<style lang="stylus" scoped>
-    .my-event {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        border-radius: 20px;
-        //background-color: #212121;
-        color: #00c4a9;
-        border: 1px solid #00c4a9;
-        width: 100%;
-        font-size: 12px;
-        padding: 3px;
-        padding-left: 10px;
-        cursor: pointer;
-        margin-bottom: 1px;
-    }
-</style>
