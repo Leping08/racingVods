@@ -16,7 +16,7 @@ class Series extends Resource
      *
      * @var string
      */
-    public static $model = 'App\Series';
+    public static $model = \App\Series::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

@@ -17,7 +17,7 @@ class Video extends Resource
      *
      * @var string
      */
-    public static $model = 'App\Video';
+    public static $model = \App\Video::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

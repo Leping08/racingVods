@@ -19,7 +19,7 @@ class Track extends Resource
      *
      * @var string
      */
-    public static $model = 'App\Track';
+    public static $model = \App\Track::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

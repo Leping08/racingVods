@@ -18,7 +18,7 @@ class Race extends Resource
      *
      * @var string
      */
-    public static $model = 'App\Race';
+    public static $model = \App\Race::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
