@@ -17,6 +17,7 @@ use Laravel\Nova\Actions\Actionable;
  * @property int $race_id
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property Carbon $deleted_at
  * @property-read Race $race
  */
 

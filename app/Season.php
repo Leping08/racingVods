@@ -15,6 +15,7 @@ use Laravel\Nova\Actions\Actionable;
  * @property string $name
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property Carbon $deleted_at
  * @property-read Race $races
  */
 

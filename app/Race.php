@@ -22,6 +22,7 @@ use Laravel\Nova\Actions\Actionable;
  * @property Carbon race_date
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property Carbon $deleted_at
  * @property-read Series $series
  * @property-read Track $track
  * @property-read Season $season
