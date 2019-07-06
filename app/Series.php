@@ -5,6 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Nova\Actions\Actionable;
 
 /**
@@ -23,7 +24,7 @@ use Laravel\Nova\Actions\Actionable;
 
 class Series extends Model
 {
-    use Actionable;
+    use Actionable, SoftDeletes;
 
     protected $fillable = ['name', 'full_name', 'image', 'website', 'description'];
 

@@ -5,6 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Nova\Actions\Actionable;
 
 /**
@@ -19,7 +20,7 @@ use Laravel\Nova\Actions\Actionable;
 
 class Season extends Model
 {
-    use Actionable;
+    use Actionable, SoftDeletes;
 
     /**
      * @return HasMany
