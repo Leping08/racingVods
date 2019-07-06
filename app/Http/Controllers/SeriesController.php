@@ -13,7 +13,7 @@ class SeriesController extends Controller
     public function index()
     {
         return Cache::remember('series_index', config('cache.time'), function () {
-            return Series::orderBy('fullName', 'asc')->get();
+            return Series::orderBy('full_name', 'asc')->get();
         });
     }
 

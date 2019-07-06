@@ -23,7 +23,7 @@ class Series extends Resource
      *
      * @var string
      */
-    public static $title = 'fullName';
+    public static $title = 'full_name';
 
     /**
      * The columns that should be searched.
@@ -33,7 +33,7 @@ class Series extends Resource
     public static $search = [
         'id',
         'name',
-        'fullName',
+        'full_name',
         'website',
         'description',
         'youtube_chanel_name'
@@ -50,7 +50,7 @@ class Series extends Resource
         return [
             ID::make()->sortable(),
             Text::make('Acronym', 'name'),
-            Text::make('Name', 'fullName'),
+            Text::make('Name', 'full_name'),
             Text::make('Website')->onlyOnForms(),
             Text::make('Website', function () {
                 return view('vendor.nova.partials.link', [

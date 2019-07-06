@@ -51,7 +51,7 @@ class Track extends Resource
             ID::make()->sortable(),
             Text::make('Name'),
             Number::make('Length (MI)', 'length')->step(0.01),
-            Text::make('Number of corners', 'numberOfCorners'),
+            Text::make('Number of corners', 'number_of_corners'),
             Text::make('Website')->onlyOnForms(),
             Text::make('Website', function () {
                 return view('vendor.nova.partials.link', [

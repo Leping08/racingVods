@@ -165,7 +165,7 @@
                                     </v-list-tile-avatar>
                                     <v-list-tile-content>
                                         <v-list-tile-title>Name</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.series.fullName }}</v-list-tile-sub-title>
+                                        <v-list-tile-sub-title>{{ race.series.full_name }}</v-list-tile-sub-title>
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>
@@ -234,7 +234,7 @@
                                             </v-list-tile-avatar>
                                             <v-list-tile-content>
                                                 <v-list-tile-title>Corners</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ race.track.numberOfCorners }}</v-list-tile-sub-title>
+                                                <v-list-tile-sub-title>{{ race.track.number_of_corners }}</v-list-tile-sub-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
                                         <v-divider></v-divider>

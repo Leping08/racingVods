@@ -77,7 +77,7 @@
         computed: {
             filteredSeries() {
                 return this.series.filter(series => {
-                    return ((series.fullName.toLowerCase().indexOf(this.search.toLowerCase()) > -1) || (series.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1))
+                    return ((series.full_name.toLowerCase().indexOf(this.search.toLowerCase()) > -1) || (series.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1))
                 })
             }
         }

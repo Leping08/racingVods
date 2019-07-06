@@ -53,7 +53,7 @@
                                     </v-list-tile-avatar>
                                     <v-list-tile-content>
                                         <v-list-tile-title>Corners</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ track.numberOfCorners }}</v-list-tile-sub-title>
+                                        <v-list-tile-sub-title>{{ track.number_of_corners }}</v-list-tile-sub-title>
                                     </v-list-tile-content>
                                 </v-list-tile>
                                 <v-divider></v-divider>

@@ -4,7 +4,7 @@
             <template v-if="!loadingSeries">
                 <v-flex lg6 offset-lg3 md8 offset-md2 xs12>
                     <v-toolbar>
-                        <v-toolbar-title>{{series.fullName}}</v-toolbar-title>
+                        <v-toolbar-title>{{series.full_name}}</v-toolbar-title>
                         <v-spacer></v-spacer>
                         <v-btn outline round color="teal" :to="'/series/'+series.id">
                             {{series.name}}

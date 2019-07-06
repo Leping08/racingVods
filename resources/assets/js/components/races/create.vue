@@ -26,7 +26,7 @@
                         ></v-select>
                         <v-select
                                 v-bind:items="series"
-                                item-text="fullName"
+                                item-text="full_name"
                                 item-value="id"
                                 v-model="series_id"
                                 label="Series"

@@ -4,7 +4,7 @@
             <template v-if="!loadingRaces">
                 <v-flex xs12>
                     <v-toolbar>
-                        <v-toolbar-title>{{races[0].season.name}} {{races[0].series.fullName}}</v-toolbar-title>
+                        <v-toolbar-title>{{races[0].season.name}} {{races[0].series.full_name}}</v-toolbar-title>
                     </v-toolbar>
                 </v-flex>
                 <template v-for="race, index in races" @key="race.id">

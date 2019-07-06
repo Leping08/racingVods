@@ -12,7 +12,7 @@ use Laravel\Nova\Actions\Actionable;
  *
  * @property integer $id
  * @property string $name
- * @property string $fullName
+ * @property string $full_name
  * @property string $image
  * @property string $website
  * @property string $description
@@ -25,8 +25,7 @@ class Series extends Model
 {
     use Actionable;
 
-    //TODO: Update column name of fullName
-    protected $fillable = ['name', 'fullName', 'image', 'website', 'description'];
+    protected $fillable = ['name', 'full_name', 'image', 'website', 'description'];
 
     /**
      * @return HasMany

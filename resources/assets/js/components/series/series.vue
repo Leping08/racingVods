@@ -55,7 +55,7 @@
 
                         ></v-img>
                         <v-toolbar>
-                            <v-toolbar-title>{{props.item.fullName}}</v-toolbar-title>
+                            <v-toolbar-title>{{props.item.full_name}}</v-toolbar-title>
                             <v-spacer></v-spacer>
                             <v-btn outline round color="teal" :to="'/series/'+props.item.id">
                                 {{props.item.name}}
@@ -102,7 +102,7 @@
         computed: {
             filteredSeries() {
                 return this.series.filter(series => {
-                    return ((series.fullName.toLowerCase().indexOf(this.search.toLowerCase()) > -1) || (series.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1))
+                    return ((series.full_name.toLowerCase().indexOf(this.search.toLowerCase()) > -1) || (series.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1))
                 })
             }
         }

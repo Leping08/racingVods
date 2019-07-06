@@ -87,7 +87,7 @@
                                                     </v-list-tile-avatar>
                                                     <v-list-tile-content>
                                                         <v-list-tile-title>Series</v-list-tile-title>
-                                                        <v-list-tile-sub-title>{{ event.series.fullName }}</v-list-tile-sub-title>
+                                                        <v-list-tile-sub-title>{{ event.series.full_name }}</v-list-tile-sub-title>
                                                     </v-list-tile-content>
                                                 </v-list-tile>
                                                 <v-divider></v-divider>

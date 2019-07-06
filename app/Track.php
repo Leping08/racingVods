@@ -15,8 +15,7 @@ use Laravel\Nova\Actions\Actionable;
  * @property float $length
  * @property string $image
  * @property string $website
- * @property string $numberOfCorners
- * @property string $description
+ * @property string $number_of_corners
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property-read Race $races
@@ -26,9 +25,7 @@ class Track extends Model
 {
     use Actionable;
 
-    //TODO: Remove the description column
-    //TODO: Update the name of the numberOfCorners column
-    protected $fillable = ['name', 'length', 'image', 'website', 'numberOfCorners', 'description'];
+    protected $fillable = ['name', 'length', 'image', 'website', 'number_of_corners'];
 
     /**
      * @return HasMany
