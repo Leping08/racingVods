@@ -2,10 +2,22 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Nova\Actions\Actionable;
 use Laravel\Passport\HasApiTokens;
+
+/**
+ * An Eloquent Model: 'User'
+ *
+ * @property integer $id
+ * @property string $email
+ * @property string $password
+ * @property string $remember_token
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ */
 
 class User extends Authenticatable
 {
