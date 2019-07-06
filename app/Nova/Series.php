@@ -59,6 +59,7 @@ class Series extends Resource
                     'new_tab' => true
                 ])->render();
             })->asHtml()->exceptOnForms(),
+            Text::make('Image File', 'image')->hideFromIndex(),
             Text::make('Description')->hideFromIndex(),
             Text::make('Youtube Chanel Name'),
             Text::make('Image', function () {
