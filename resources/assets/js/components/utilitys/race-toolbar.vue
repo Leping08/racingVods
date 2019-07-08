@@ -8,7 +8,7 @@
         >
             mdi-new-box
         </v-icon>
-        <v-btn outline round color="teal" :href="'/series/'+race.series.id">
+        <v-btn outline round color="teal" :to="'/series/'+race.series.id">
             {{race.series.name}}
         </v-btn>
     </v-toolbar>
