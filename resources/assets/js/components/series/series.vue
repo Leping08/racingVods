@@ -49,11 +49,6 @@
                         lg6
                 >
                     <v-card ripple :hover="true" :to="/series/+props.item.id">
-                        <v-img
-                                :src="'/img/series/'+props.item.image"
-                                aspect-ratio="2"
-
-                        ></v-img>
                         <v-toolbar>
                             <v-toolbar-title>{{props.item.full_name}}</v-toolbar-title>
                             <v-spacer></v-spacer>
@@ -61,6 +56,10 @@
                                 {{props.item.name}}
                             </v-btn>
                         </v-toolbar>
+                        <v-img
+                                :src="'/img/series/'+props.item.image"
+                                aspect-ratio="2"
+                        ></v-img>
                     </v-card>
                 </v-flex>
             </transition>
