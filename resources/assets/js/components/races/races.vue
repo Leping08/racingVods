@@ -49,10 +49,7 @@
                         md6
                         lg6
                 >
-                    <v-card ripple :hover="true" :to="/races/+props.item.id">
-                        <race-toolbar :race="props.item"></race-toolbar>
-                        <v-img :src="props.item.videos[0].thumbnail"></v-img>
-                    </v-card>
+                    <race-card :race="props.item"></race-card>
                 </v-flex>
             </transition>
         </v-data-iterator>
@@ -62,9 +59,9 @@
 
 <script>
     import axios from 'axios';
-    import RaceToolbar from "../utilitys/race-toolbar";
+    import RaceCard from "../utilitys/race-card";
     export default {
-        components: {RaceToolbar},
+        components: {RaceCard},
         data () {
             return {
                 races: [],
@@ -90,6 +87,9 @@
                         this.loadingRaces = false;
                         console.log(e);
                     });
+            },
+            hideBadThumbnails: function (event) {
+                console.log(event);
             }
         },
         computed: {

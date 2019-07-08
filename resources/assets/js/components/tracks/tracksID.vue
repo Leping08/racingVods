@@ -80,16 +80,7 @@
         <v-layout row wrap>
             <template v-for="race in track.races" @key="race.id" v-if="!loadingTrack">
                 <v-flex lg4 md6 xs12>
-                    <v-card ripple :hover="true" :to="/races/+race.id">
-                        <v-toolbar>
-                            <v-toolbar-title>{{race.name}}</v-toolbar-title>
-                            <v-spacer></v-spacer>
-                            <v-btn outline round color="teal" :to="'/series/'+race.series.id">
-                                {{race.series.name}}
-                            </v-btn>
-                        </v-toolbar>
-                        <v-img :src="race.videos[0].thumbnail"></v-img>
-                    </v-card>
+                    <race-card :race="race"></race-card>
                 </v-flex>
             </template>
             <template v-if="loadingTrack">
@@ -102,7 +93,9 @@
 
 <script>
     import axios from 'axios';
+    import RaceCard from "../utilitys/race-card";
     export default {
+        components: {RaceCard},
         data() {
             return {
                 track: [],
