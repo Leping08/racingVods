@@ -3,16 +3,7 @@
         <v-layout row wrap>
             <template v-if="!loadingRace">
                 <v-flex xs12>
-                    <v-toolbar>
-                        <v-toolbar-title>{{race.name}}</v-toolbar-title>
-                        <v-spacer></v-spacer>
-                        <v-icon
-                                v-if="race.new"
-                                color="primary"
-                        >
-                            mdi-new-box
-                        </v-icon>
-                    </v-toolbar>
+                    <race-toolbar :race="race"></race-toolbar>
                 </v-flex>
                 <v-flex xs12>
                     <v-stepper v-model="selected">
@@ -288,7 +279,9 @@
 <script>
     import youtube from 'vue-youtube'
     import axios from 'axios';
+    import RaceToolbar from "../utilitys/race-toolbar";
     export default {
+        components: {RaceToolbar},
         data () {
             return {
                 race: [],
