@@ -7,9 +7,9 @@
                         <v-toolbar-title>{{races[0].season.name}} {{races[0].series.full_name}}</v-toolbar-title>
                     </v-toolbar>
                 </v-flex>
-                <template v-for="race in races" @key="race.id">
-                    <v-flex xl4 lg6 xs12>
-                        <race-card :race="race"></race-card>
+                <template v-for="race, index in races" @key="race.id">
+                    <v-flex lg6 xs12>
+                        <race-card :race="race" :title="(index+1) + '. ' + race.name"></race-card>
                     </v-flex>
                 </template>
             </template>

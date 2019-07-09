@@ -1,6 +1,9 @@
 <template>
     <v-toolbar>
-        <v-toolbar-title>{{race.name}}</v-toolbar-title>
+        <v-toolbar-title>
+            <template v-if="title">{{title}}</template>
+            <template v-else="title">{{race.name}}</template>
+        </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-icon
                 v-if="race.new"
@@ -18,7 +21,8 @@
     export default {
         name: "race-toolbar",
         props: [
-            'race'
+            'race',
+            'title'
         ]
     }
 </script>

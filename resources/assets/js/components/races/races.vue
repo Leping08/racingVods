@@ -49,7 +49,7 @@
                         md6
                         lg6
                 >
-                    <race-card :race="props.item"></race-card>
+                    <race-card :race="props.item" :title="props.item.season.name + ' ' + props.item.name"></race-card>
                 </v-flex>
             </transition>
         </v-data-iterator>

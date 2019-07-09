@@ -80,7 +80,7 @@
         <v-layout row wrap>
             <template v-for="race in track.races" @key="race.id" v-if="!loadingTrack">
                 <v-flex lg4 md6 xs12>
-                    <race-card :race="race"></race-card>
+                    <race-card :race="race" :title="race.season.name + ' ' + race.name"></race-card>
                 </v-flex>
             </template>
             <template v-if="loadingTrack">
