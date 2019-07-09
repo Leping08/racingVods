@@ -65,7 +65,7 @@
                                         <v-tooltip top>
                                             <template v-slot:activator="{ on }">
                                                 <v-btn outline small fab color="teal" v-on="on" @click="pause(index)">
-                                                    <v-icon>mdi-stop</v-icon>
+                                                    <v-icon>mdi-pause</v-icon>
                                                 </v-btn>
                                             </template>
                                             <span>Pause</span>
