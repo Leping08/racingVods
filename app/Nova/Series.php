@@ -61,7 +61,7 @@ class Series extends Resource
             })->asHtml()->exceptOnForms(),
             Text::make('Image File', 'image')->hideFromIndex(),
             Text::make('Description')->hideFromIndex(),
-            Text::make('Youtube Chanel Name'),
+            Text::make('Youtube Channel Name', 'youtube_chanel_name'),
             Text::make('Image', function () {
                 return view('vendor.nova.partials.image', [
                     'src' => '/img/series/'.$this->image,
