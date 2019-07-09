@@ -15,6 +15,7 @@ use Laravel\Nova\Actions\Actionable;
  * @property string $youtube_id
  * @property string $youtube_start_time
  * @property int $race_id
+ * @property bool $valid_thumbnail
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon $deleted_at
@@ -30,7 +31,8 @@ class Video extends Model
     protected $fillable = [
         'youtube_id',
         'youtube_start_time',
-        'race_id'
+        'race_id',
+        'valid_thumbnail'
     ];
 
     /**

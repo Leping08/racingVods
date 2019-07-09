@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -56,6 +57,7 @@ class Video extends Resource
             })->asHtml()->exceptOnForms(),
             Number::make('Start Time (Seconds)', 'youtube_start_time'),
             BelongsTo::make('Race')->searchable(),
+            Boolean::make('Valid Thumbnail', 'valid_thumbnail'),
             Text::make('Thumbnail', function () {
                 return view('vendor.nova.partials.image', [
                     'src' => $this->thumbnail,
