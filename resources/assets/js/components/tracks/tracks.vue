@@ -61,7 +61,6 @@
 
 
 <script>
-    import axios from 'axios';
     export default {
         data () {
             return {
@@ -81,7 +80,7 @@
             getTracks: function () {
                 this.loading = true;
                 this.tracks = [];
-                axios.get('/api/tracks')
+                this.$axios.get('/api/tracks')
                     .then((response) => {
                         this.tracks = response.data;
                         this.loadingTracks = false;

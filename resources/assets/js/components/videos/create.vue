@@ -130,7 +130,7 @@
             getSeries: function () {
                 this.loadingSeries = true;
                 this.series = [];
-                axios.get('/api/series')
+                this.$axios.get('/api/series')
                     .then((response) => {
                         this.series = response.data;
                         this.loadingSeries = false;
@@ -143,7 +143,7 @@
             getSeasons: function () {
                 this.loadingSeasons = true;
                 this.seasons = [];
-                axios.get('/api/seasons')
+                this.$axios.get('/api/seasons')
                     .then((response) => {
                         this.seasons = response.data;
                         this.loadingSeasons = false;
@@ -156,7 +156,7 @@
             getRaces: function () {
                 this.loadingRaces = true;
                 this.races = [];
-                axios.get('/api/series/'+ this.series_id + '/season/' + this.season_id)
+                this.$axios.get('/api/series/'+ this.series_id + '/season/' + this.season_id)
                     .then((response) => {
                         this.races = response.data;
                         this.loadingRaces = false;
@@ -169,7 +169,7 @@
             getVideos: function () {
                 this.loadingRace = true;
                 this.race = [];
-                axios.get('/api/race/' + this.race_id)
+                this.$axios.get('/api/race/' + this.race_id)
                     .then((response) => {
                         this.race = response.data;
                         this.loadingRace = false;
@@ -180,7 +180,7 @@
                     });
             },
             addVideo: function () {
-                this.$api.post('/api/video', {
+                this.$axios.post('/api/video', {
                     race_id: this.race_id,
                     youtube_id: this.youtube_id,
                     youtube_start_time: this.youtube_start_time

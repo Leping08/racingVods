@@ -94,7 +94,6 @@
 
 
 <script>
-    import axios from 'axios';
     import RaceToolbar from "../utilitys/race-toolbar";
     export default {
         components: {RaceToolbar},
@@ -109,7 +108,7 @@
         },
         methods: {
             getRaces: function () {
-                axios.get('/api/races/latest')
+                this.$axios.get('/api/races/latest')
                     .then((response) => {
                         this.races = response.data;
                         this.loadingRaces = false;

@@ -135,7 +135,6 @@
 </template>
 
 <script>
-    import axios from 'axios';
     export default {
         data() {
             return {
@@ -168,7 +167,7 @@
             getTracks: function () {
                 this.loadingTracks = true;
                 this.tracks = [];
-                axios.get('/api/tracks')
+                this.$axios.get('/api/tracks')
                     .then((response) => {
                         this.tracks = response.data;
                         this.loadingTracks = false;
@@ -181,7 +180,7 @@
             getSeries: function () {
                 this.loadingSeries = true;
                 this.series = [];
-                axios.get('/api/series')
+                this.$axios.get('/api/series')
                     .then((response) => {
                         this.series = response.data;
                         this.loadingSeries = false;
@@ -194,7 +193,7 @@
             getSeasons: function () {
                 this.loadingSeasons = true;
                 this.seasons = [];
-                axios.get('/api/seasons')
+                this.$axios.get('/api/seasons')
                     .then((response) => {
                         this.seasons = response.data;
                         this.loadingSeasons = false;

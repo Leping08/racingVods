@@ -92,7 +92,6 @@
 
 
 <script>
-    import axios from 'axios';
     import RaceCard from "../utilitys/race-card";
     export default {
         components: {RaceCard},
@@ -107,7 +106,7 @@
         },
         methods: {
             getTrack: function () {
-                axios.get('/api/track/' + this.$route.params.id)
+                this.$axios.get('/api/track/' + this.$route.params.id)
                     .then((response) => {
                         this.track = response.data;
                         this.loadingTrack = false;

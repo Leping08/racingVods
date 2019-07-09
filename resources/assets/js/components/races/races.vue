@@ -58,8 +58,7 @@
 
 
 <script>
-    import axios from 'axios';
-    import RaceCard from "../utilitys/race-card";
+    const RaceCard = () => import("../utilitys/race-card");
     export default {
         components: {RaceCard},
         data () {
@@ -78,7 +77,7 @@
         },
         methods: {
             getRaces: function () {
-                axios.get('/api/races')
+                this.$axios.get('/api/races')
                     .then((response) => {
                         this.races = response.data;
                         this.loadingRaces = false;

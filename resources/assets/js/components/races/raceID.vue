@@ -278,7 +278,6 @@
 
 <script>
     import youtube from 'vue-youtube'
-    import axios from 'axios';
     import RaceToolbar from "../utilitys/race-toolbar";
     export default {
         components: {RaceToolbar},
@@ -300,7 +299,7 @@
         },
         methods: {
             getRace: function () {
-                axios.get('/api/race/' + this.$route.params.id)
+                this.$axios.get('/api/race/' + this.$route.params.id)
                     .then((response) => {
                         this.race = response.data;
                         this.loadingRace = false;
@@ -312,7 +311,7 @@
                     });
             },
             getSeason: function (seasonID, seriesID) {
-                axios.get('/api/series/' + seriesID + '/season/' + seasonID)
+                this.$axios.get('/api/series/' + seriesID + '/season/' + seasonID)
                     .then((response) => {
                         this.seasonRaces = response.data;
                         this.loadingSeasonRaces = false;

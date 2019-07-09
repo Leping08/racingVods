@@ -69,7 +69,6 @@
 
 
 <script>
-    import axios from 'axios';
     export default {
         data () {
             return {
@@ -87,7 +86,7 @@
         },
         methods: {
             getSeries: function () {
-                axios.get('/api/series')
+                this.$axios.get('/api/series')
                     .then((response) => {
                         this.series = response.data;
                         this.loadingSeries = false;

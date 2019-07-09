@@ -21,7 +21,6 @@
 </template>
 
 <script>
-    import axios from 'axios';
     import RaceCard from "../utilitys/race-card";
     export default {
         components: {RaceCard},
@@ -36,7 +35,7 @@
         },
         methods: {
             getSeries: function () {
-                axios.get('/api/series/' + this.$route.params.seriesID + '/season/' + this.$route.params.seasonID)
+                this.$axios.get('/api/series/' + this.$route.params.seriesID + '/season/' + this.$route.params.seasonID)
                     .then((response) => {
                         this.races = response.data;
                         this.loadingRaces = false;

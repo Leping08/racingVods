@@ -123,7 +123,6 @@
 </template>
 
 <script>
-    import axios from 'axios';
     import moment from 'moment';
     export default {
         data: () => ({
@@ -151,7 +150,7 @@
                 alert(event.title)
             },
             getEvents: function () {
-                axios.get('/api/events')
+                this.$axios.get('/api/events')
                     .then((response) => {
                         this.events = response.data;
                         this.loadingEvents = false;

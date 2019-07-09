@@ -27,6 +27,7 @@ import store from './vuex';
 import layout from './components/layout/layout.vue';
 import router from './router';
 import api from './auth';
+import axios from 'axios'
 
 Vue.use(Vuetify, {
     theme: {
@@ -50,6 +51,7 @@ Vue.use(VueAnalytics, {
     id: 'UA-98405544-5',
     router
 });
+Vue.prototype.$axios = axios;
 
 
 const app = new Vue({
