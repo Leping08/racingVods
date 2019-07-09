@@ -22,7 +22,7 @@
                         <h1 class="headline">Series</h1>
                     </v-card-text>
                     <v-card-text>
-                        <p>Videos from the top racing series around the world including The FIA World Endurance Championship, Indy Car, and the International Motor Sports Association.</p>
+                        <p>Videos from the top racing series around the world including the FIA World Endurance Championship, Indy Car, and the International Motor Sports Association.</p>
                     </v-card-text>
                 </v-card>
             </v-flex>
