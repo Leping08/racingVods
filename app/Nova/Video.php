@@ -61,7 +61,7 @@ class Video extends Resource
             Boolean::make('Valid Thumbnail', 'valid_thumbnail')->hideWhenCreating(),
             Text::make('Thumbnail', function () {
                 return view('vendor.nova.partials.image', [
-                    'src' => $this->thumbnail,
+                    'src' => "https://img.youtube.com/vi/{$this->youtube_id}/maxresdefault.jpg"
                 ])->render();
             })->asHtml(),
             DateTime::make('Created At')->onlyOnDetail(),
