@@ -48,6 +48,6 @@ class Video extends Model
      */
     public function getThumbnailAttribute()
     {
-        return 'https://img.youtube.com/vi/' . $this->youtube_id . '/maxresdefault.jpg';
+        return $this->valid_thumbnail ? "https://img.youtube.com/vi/{$this->youtube_id}/maxresdefault.jpg" : "/img/home/nurbur-night.jpg";
     }
 }

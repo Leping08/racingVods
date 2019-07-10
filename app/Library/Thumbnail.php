@@ -6,6 +6,7 @@ namespace App\Library;
 
 use App\Video;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Log;
 
 
 class Thumbnail
@@ -23,13 +24,17 @@ class Thumbnail
 
         //TODO: Write a test for this class
         try{
-            $res = $client->get($this->video->thumbnail);
+            $res = $client->get("https://img.youtube.com/vi/{$this->video->youtube_id}/maxresdefault.jpg");
             if($res->getStatusCode() == 200){
+                Log::info("The video thumbnail for video id: {$this->video->id} is good");
                 $this->save(true);
             } else {
+                Log::info("The http status for the thumbnail of video id: {$this->video->id} is {$res->getStatusCode()}");
                 $this->save(false);
             }
         } catch (\Exception $exception) {
+            Log::info("An exception was thrown trying to get the video thumbnail for video id: {$this->video->id}");
+            Log::info($exception->getMessage());
             $this->save(false);
         }
     }
