@@ -9,7 +9,7 @@ $factory->define(App\Series::class, function (Faker $faker) {
         'name' => $faker->word,
         'full_name' => $faker->name,
         'image' => $faker->imageUrl() . '.jpg',
-        'description' => $faker->paragraph,
+        'description' => $faker->sentence,
         'website' => $faker->url,
         'youtube_chanel_name' => $faker->word,
     ];

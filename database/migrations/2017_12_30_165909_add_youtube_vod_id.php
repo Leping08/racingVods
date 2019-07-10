@@ -14,8 +14,8 @@ class AddYoutubeVodId extends Migration
     public function up()
     {
         Schema::table('races', function (Blueprint $table) {
-            $table->string('youtube_id')->after('duration')->nullable();
-            $table->string('youtube_start_time')->after('duration')->nullable();
+            $table->string('youtube_id')->after('track_id')->nullable();
+            $table->string('youtube_start_time')->after('track_id')->nullable();
         });
     }
 
