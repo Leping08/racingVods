@@ -15,11 +15,8 @@ Use Illuminate\Support\Facades\Auth;
 */
 
 
+//Auth::routes();
 
 Route::any('{all}', function () {
-    return view('welcome');
+    return view('layouts.app');
 })->where('all', '^(?!nova).*$');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
