@@ -29,6 +29,11 @@ class Track extends Model
 
     protected $fillable = ['name', 'length', 'image', 'website', 'number_of_corners'];
 
+    protected $casts = [
+        'length' => 'float',
+        'number_of_corners' => 'int'
+    ];
+
     /**
      * @return HasMany
      */
