@@ -16,15 +16,4 @@ class SeasonsController extends Controller
             return Season::all();
         });
     }
-
-    public function races(Series $series, Season $season)
-    {
-        return Cache::remember("season_{$season->id}_series_{$series->id}", config('cache.time'), function () use ($series, $season) {
-            return Race::where('season_id', $season->id)
-                ->where('series_id', $series->id)
-                ->with(['track', 'series', 'season', 'videos'])
-                ->orderBy('race_date', 'asc')
-                ->get();
-        });
-    }
 }
