@@ -52,11 +52,4 @@ class RacesController extends Controller
             return $race->load(['track', 'season', 'series', 'videos']);
         });
     }
-
-    public function latest()
-    {
-        return Cache::remember('race_latest', config('cache.time'), function () {
-            return Race::orderBy('id', 'desc')->take(5)->with(['track', 'season', 'series', 'videos'])->get();
-        });
-    }
 }

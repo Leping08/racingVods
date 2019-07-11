@@ -45,8 +45,8 @@ Route::middleware('auth:api')->group(function () {
 /* @see RacesController::index() */
 Route::get('/races', 'RacesController@index');
 
-/* @see RacesController::latest() */
-Route::get('/races/latest', 'RacesController@latest');
+/* @see LatestRacesController::index() */
+Route::get('/races/latest', 'LatestRacesController@index');
 
 /* @see RacesController::show() */
 Route::get('/race/{race}', 'RacesController@show');
