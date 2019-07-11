@@ -9,8 +9,8 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
         <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <link href="/css/app.css" rel="stylesheet">
-        <link href="/css/theme.css" rel="stylesheet">
+        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+        <link href="{{ mix('/css/theme.css') }}" rel="stylesheet">
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/favicon.ico/apple-icon-60x60.png">
@@ -34,6 +34,6 @@
         <div id='app'>
             <layout></layout>
         </div>
-        <script src="/js/app.js"></script>
+        <script src="{{ mix('/js/app.js') }}"></script>
     </body>
 </html>
