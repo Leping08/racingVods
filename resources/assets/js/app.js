@@ -1,20 +1,5 @@
 /**
- * Axios headers for api requests
- */
-
-window.axios = require('axios');
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
-let token = document.head.querySelector('meta[name="csrf-token"]');
-if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
-} else {
-    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
-}
-
-
-/**
- * Racing Vods 2 JS
+ * Racing Vods JS
  */
 
 import Vue from 'vue';
@@ -51,6 +36,18 @@ Vue.use(VueAnalytics, {
     id: 'UA-98405544-5',
     router
 });
+
+
+/**
+ * Axios headers for api requests
+ */
+axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+let token = document.head.querySelector('meta[name="csrf-token"]');
+if (token) {
+    axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+} else {
+    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+}
 Vue.prototype.$axios = axios;
 
 

@@ -50,6 +50,14 @@
                 </v-list-tile>
                 <v-divider></v-divider>
                 <v-subheader>Additional resources</v-subheader>
+                <v-list-tile ripple @click="" to="/about">
+                    <v-list-tile-action>
+                        <v-icon>mdi-information-outline</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>About</v-list-tile-title>
+                    </v-list-tile-content>
+                </v-list-tile>
                 <v-list-group
                         prepend-icon="mdi-account-multiple"
                         no-action
@@ -71,12 +79,12 @@
                     <!--</v-list-tile-content>-->
                     <!--</v-list-tile>-->
                 </v-list-group>
-                <v-list-tile ripple @click="" to="/about">
+                <v-list-tile ripple @click="" to="/contact-us">
                     <v-list-tile-action>
-                        <v-icon>mdi-information-outline</v-icon>
+                        <v-icon>mdi-message-text-outline</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
-                        <v-list-tile-title>About</v-list-tile-title>
+                        <v-list-tile-title>Contact Us</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
                 <template v-if="authCheck">

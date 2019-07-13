@@ -3,8 +3,9 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
 
-const about = () => import('./components/about/about.vue');
 const home = () => import('./components/home/home.vue');
+const about = () => import('./components/about/about.vue');
+const contactUs = () => import('./components/contact-us/contactUs.vue');
 const dashboard = () => import('./components/dashboard/dashboard.vue');
 const notFound = () => import('./components/not-found/notFound.vue');
 
@@ -34,6 +35,7 @@ const router = new VueRouter({
     routes: [
         { path: '/', component: home },
         { path: '/about', component: about },
+        { path: '/contact-us', component: contactUs },
         { path: '/races', component: races },
         { path: '/series', component: series },
         { path: '/tracks', component: tracks },
