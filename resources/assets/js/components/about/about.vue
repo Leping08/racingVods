@@ -23,7 +23,27 @@
                     </v-list>
                     <v-list>
                         <v-divider></v-divider>
-                        <v-subheader>Shout-out</v-subheader>
+                        <v-subheader>Tips and Tricks</v-subheader>
+                        <v-list-tile avatar>
+                            <v-list-tile-avatar>
+                                <v-icon>mdi-clock-start</v-icon>
+                            </v-list-tile-avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Race Start</v-list-tile-title>
+                                <v-list-tile-sub-title>Sick of the pre race ceremonies? So are we. Use the race start button to jump to the drop of the green flag.</v-list-tile-sub-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile avatar href="https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk" target="_blank">
+                            <v-list-tile-avatar>
+                                <v-icon>mdi-cancel</v-icon>
+                            </v-list-tile-avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>Ad Block for Youtube</v-list-tile-title>
+                                <v-list-tile-sub-title>No one likes ads, so use this chrome browser extension to get rid of them.</v-list-tile-sub-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-divider></v-divider>
+                        <v-subheader>Shout Outs</v-subheader>
                         <v-list-tile avatar href="http://racingcircuits.info/" target="_blank">
                             <v-list-tile-avatar>
                                 <v-icon>mdi-file-image</v-icon>
@@ -40,6 +60,15 @@
                             <v-list-tile-content>
                                 <v-list-tile-title>Brad Booth Media</v-list-tile-title>
                                 <v-list-tile-sub-title>Designed the logo.</v-list-tile-sub-title>
+                            </v-list-tile-content>
+                        </v-list-tile>
+                        <v-list-tile avatar href="https://deltavcreative.com/" target="_blank">
+                            <v-list-tile-avatar>
+                                <v-icon>mdi-server-network</v-icon>
+                            </v-list-tile-avatar>
+                            <v-list-tile-content>
+                                <v-list-tile-title>DeltaV Creative</v-list-tile-title>
+                                <v-list-tile-sub-title>Built and maintains the website.</v-list-tile-sub-title>
                             </v-list-tile-content>
                         </v-list-tile>
                         <v-divider></v-divider>
