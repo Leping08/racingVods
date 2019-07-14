@@ -143,9 +143,9 @@
             <v-btn icon href="https://discord.gg/VT3EpCd" target="_blank">
                 <v-icon>mdi-discord</v-icon>
             </v-btn>
-            <v-btn icon>
-                <v-icon>mdi-wallet-giftcard</v-icon>
-            </v-btn>
+<!--            <v-btn icon>-->
+<!--                <v-icon>mdi-wallet-giftcard</v-icon>-->
+<!--            </v-btn>-->
             <!--<v-switch
                     label="Night Mode"
                     v-model="theme"
