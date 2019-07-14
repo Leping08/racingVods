@@ -23,4 +23,51 @@ class ContactUsTest extends TestCase
 
         $this->assertDatabaseHas('contact_us', $contact->toArray());
     }
+
+    /** @test */
+    public function email_validation()
+    {
+        $contact = factory(ContactUs::class)->make([
+            'email' => 'not_valid_email'
+        ]);
+
+        $response = $this->json('POST', '/api/contact-us', $contact->toArray());
+
+        $response->assertStatus(422);
+
+
+
+        $contact2 = factory(ContactUs::class)->make([
+            'email' => ''
+        ]);
+
+        $response = $this->json('POST', '/api/contact-us', $contact2->toArray());
+
+        $response->assertStatus(422);
+    }
+
+    /** @test */
+    public function name_validation()
+    {
+        $contact = factory(ContactUs::class)->make([
+            'name' => ''
+        ]);
+
+        $response = $this->json('POST', '/api/contact-us', $contact->toArray());
+
+        $response->assertStatus(422);
+    }
+
+    /** @test */
+    public function message_validation()
+    {
+        $contact = factory(ContactUs::class)->make([
+            'message' => ''
+        ]);
+
+        $response = $this->json('POST', '/api/contact-us', $contact->toArray());
+
+        $response->assertStatus(422);
+
+    }
 }
