@@ -22,7 +22,6 @@ class Thumbnail
     {
         $client = new Client();
 
-        //TODO: Write a test for this class
         try{
             $res = $client->get("https://img.youtube.com/vi/{$this->video->youtube_id}/maxresdefault.jpg");
             if($res->getStatusCode() == 200){

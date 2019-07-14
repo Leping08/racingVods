@@ -99,11 +99,10 @@
                     })
                     .then((response) => {
                         this.clear();
-                        //TODO: Add toast or response message
-                        console.log(response);
+                        window.flash('Message Sent!', 'green');
                     })
                     .catch((error) => {
-                        //TODO: Add toast or error message
+                        window.flash('Looks like something went wrong. We are looking into it.', 'red');
                         console.log(error);
                     });
             }
