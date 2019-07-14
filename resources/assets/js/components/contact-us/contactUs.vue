@@ -97,12 +97,12 @@
                         'email': this.email,
                         'message': this.message
                     })
-                    .then(function (response) {
+                    .then((response) => {
                         this.clear();
                         //TODO: Add toast or response message
                         console.log(response);
                     })
-                    .catch(function (error) {
+                    .catch((error) => {
                         //TODO: Add toast or error message
                         console.log(error);
                     });

@@ -83,3 +83,9 @@ Route::get('/series/{series}/season/{season}', 'SeriesSeasonController@index');
 //Schedule
 /* @see ScheduleController::index() */
 Route::get('/events', 'ScheduleController@index');
+
+
+
+//Contact Us
+/* @see ContactUsController::store() */
+Route::post('/contact-us', 'ContactUsController@store');
