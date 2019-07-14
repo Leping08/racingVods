@@ -10,7 +10,6 @@ class EventTest extends TestCase
 {
     use RefreshDatabase;
 
-
     /** @test */
     public function index()
     {
