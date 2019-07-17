@@ -78,4 +78,17 @@ return [
         Authorize::class,
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Nova Admin Emails
+    |--------------------------------------------------------------------------
+    |
+    | These are the emails of the admin that can login to nova
+    |
+    */
+
+    'admin' => [
+        'derek@deltavcreative.com',
+        'mikejrowell@gmail.com'
+    ]
 ];
