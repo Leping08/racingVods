@@ -23,7 +23,7 @@
                                     </v-layout>
                                 </template>
                                 <v-layout align-center justify-center row fill-height class="mt-3">
-                                    <template v-if="race.videos.length > 1">
+                                    <div v-if="race.videos.length > 1">
                                         <template v-if="selected > 1">
                                             <v-tooltip top>
                                                 <template v-slot:activator="{ on }">
@@ -39,12 +39,12 @@
                                                 <v-icon>mdi-chevron-left</v-icon>
                                             </v-btn>
                                         </template>
-                                    </template>
+                                    </div>
 
                                     <v-spacer></v-spacer>
 
                                     <div>
-                                        <template v-if="selected <= 1">
+                                        <template v-if="(selected <= 1) || (vod.youtube_start_time > 0)">
                                             <v-tooltip top>
                                                 <template v-slot:activator="{ on }">
                                                     <v-btn outline small fab color="teal" v-on="on" @click="start(index, vod.youtube_start_time)">
@@ -74,7 +74,7 @@
 
                                     <v-spacer></v-spacer>
 
-                                    <template v-if="race.videos.length > 1">
+                                    <div v-if="race.videos.length > 1">
                                         <template v-if="!(selected === race.videos.length)">
                                             <v-tooltip top>
                                                 <template v-slot:activator="{ on }">
@@ -90,7 +90,7 @@
                                                 <v-icon>mdi-chevron-right</v-icon>
                                             </v-btn>
                                         </template>
-                                    </template>
+                                    </div>
                                 </v-layout>
                             </v-stepper-content>
                         </v-stepper-items>
