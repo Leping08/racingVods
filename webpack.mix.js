@@ -1,4 +1,5 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 /*
  |--------------------------------------------------------------------------
@@ -15,12 +16,30 @@ mix.babelConfig({
     plugins: ['@babel/plugin-syntax-dynamic-import'],
 });
 
-mix.js('resources/assets/js/app.js', 'public/js').version();
+mix.browserSync(process.env.APP_URL);
 
-mix.stylus('resources/assets/css/test.styl', 'public/css/theme.css');
+mix.webpackConfig({
+    resolve: {
+        extensions: ['.js', '.json', '.vue'],
+        alias: {
+            '~': path.join(__dirname, './resources/js'),
+            '$comp': path.join(__dirname, './resources/js/components')
+        }
+    },
+    plugins: [
+        new VuetifyLoaderPlugin()
+    ]
+});
+
+mix.js('resources/assets/js/app.js', 'public/js');
+
+//.sass('resources/styles/app.sass', 'public/css');
+
+//mix.js('resources/assets/js/app.js', 'public/js').version();
+
+mix.sass('resources/assets/css/app.sass', 'public/css/theme.css').version();
 
 mix.styles([
     //'node_modules/vuetify/dist/vuetify.css',
-    //'node_modules/v-calendar/lib/v-calendar.min.css',
     'resources/assets/css/custom.css'
 ], 'public/css/app.css').version();

@@ -1,138 +1,156 @@
 <template>
-    <v-app id="inspire" :dark="theme">
+    <v-app id="inspire">
         <v-navigation-drawer
-                fixed
                 v-model="drawer"
                 app
         >
-            <img src="/img/logo/racingVods-light.png" style="max-width: 100%;">
+            <v-img src="/img/logo/racingVods-light.png" style="max-width: 100%;"></v-img>
             <v-divider></v-divider>
-            <v-list>
-                <v-list-tile ripple @click="" to="/">
-                    <v-list-tile-action>
-                        <v-icon>mdi-home</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>Home</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile ripple @click="" to="/series">
-                    <v-list-tile-action>
-                        <v-icon>mdi-format-list-bulleted</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>Series</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile ripple @click="" to="/races">
-                    <v-list-tile-action>
-                        <v-icon>mdi-flag-checkered</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>Races</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile ripple @click="" to="/tracks">
-                    <v-list-tile-action>
-                        <v-icon>mdi-road</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>Tracks</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile ripple @click="" to="/schedule">
-                    <v-list-tile-action>
-                        <v-icon>mdi-calendar-range</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>Schedule</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
+
+            <v-list nav shaped>
+                <v-list-item-group ripple exact color="primary">
+                    <v-list-item to="/">
+                        <v-list-item-icon>
+                            <v-icon>mdi-home</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                            <v-list-item-title>Home</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
+                <v-list-item-group ripple exact color="primary">
+                    <v-list-item to="/series">
+                        <v-list-item-icon>
+                            <v-icon>mdi-format-list-bulleted</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                            <v-list-item-title>Series</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
+                <v-list-item-group ripple exact color="primary">
+                    <v-list-item to="/races">
+                        <v-list-item-icon>
+                            <v-icon>mdi-flag-checkered</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                            <v-list-item-title>Races</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
+                <v-list-item-group ripple exact color="primary">
+                    <v-list-item to="/tracks">
+                        <v-list-item-icon>
+                            <v-icon>mdi-road</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                            <v-list-item-title>Tracks</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
+                <v-list-item-group ripple exact color="primary">
+                    <v-list-item to="/schedule">
+                        <v-list-item-icon>
+                            <v-icon>mdi-calendar-range</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                            <v-list-item-title>Schedule</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
                 <v-divider></v-divider>
                 <v-subheader>Additional resources</v-subheader>
-                <v-list-tile ripple @click="" to="/about">
-                    <v-list-tile-action>
-                        <v-icon>mdi-information-outline</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>About</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
+                <v-list-item-group ripple exact color="primary">
+                    <v-list-item to="/about">
+                        <v-list-item-icon>
+                            <v-icon>mdi-information-outline</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                            <v-list-item-title>About</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
                 <v-list-group
                         prepend-icon="mdi-account-multiple"
                         no-action
                 >
-                    <v-list-tile ripple slot="activator">
-                        <v-list-tile-content>
-                            <v-list-tile-title>Community</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile ripple @click="" href="https://discord.gg/VT3EpCd" target="_blank">
-                        <v-list-tile-content>
-                            <v-list-tile-title>Discord</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
+                    <v-list-item-group ripple slot="activator">
+                        <v-list-item-content>
+                            <v-list-item-title>Community</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item-group>
+                    <v-list-item-group ripple>
+                        <v-list-item href="https://discord.gg/VT3EpCd" target="_blank">
+                            <v-list-item-content>
+                                <v-list-item-title>Discord</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-list-item-group>
                     <!-- TODO: Add donation link -->
-                    <!--<v-list-tile ripple @click="" to="">-->
-                    <!--<v-list-tile-content>-->
-                    <!--<v-list-tile-title>Donation</v-list-tile-title>-->
-                    <!--</v-list-tile-content>-->
-                    <!--</v-list-tile>-->
+                    <!--<v-list-item-group ripple to="">-->
+                    <!--<v-list-item-content>-->
+                    <!--<v-list-item-title>Donation</v-list-item-title>-->
+                    <!--</v-list-item-content>-->
+                    <!--<v-list-item-group/-->
                 </v-list-group>
-                <v-list-tile ripple @click="" to="/contact-us">
-                    <v-list-tile-action>
-                        <v-icon>mdi-message-text-outline</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                        <v-list-tile-title>Contact Us</v-list-tile-title>
-                    </v-list-tile-content>
-                </v-list-tile>
+                <v-list-item-group ripple exact color="primary">
+                    <v-list-item to="/contact-us">
+                        <v-list-item-icon>
+                            <v-icon>mdi-message-text-outline</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                            <v-list-item-title>Contact Us</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
                 <template v-if="authCheck">
                     <v-divider></v-divider>
                     <v-subheader>Admin</v-subheader>
-                    <v-list-tile ripple @click="" to="/dashboard">
-                        <v-list-tile-action>
-                            <v-icon>mdi-account-key</v-icon>
-                        </v-list-tile-action>
-                        <v-list-tile-content>
-                            <v-list-tile-title>Dashboard</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
+                    <v-list-item-group ripple to="/dashboard">
+                        <v-list-item>
+                            <v-list-item-icon>
+                                <v-icon>mdi-account-key</v-icon>
+                            </v-list-item-icon>
+                            <v-list-item-content>
+                                <v-list-item-title>Dashboard</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-list-item-group>
                     <v-list-group
                             prepend-icon="mdi-settings"
                             no-action
                     >
-                        <v-list-tile ripple slot="activator">
-                            <v-list-tile-content>
-                                <v-list-tile-title>Edit</v-list-tile-title>
-                            </v-list-tile-content>
-                        </v-list-tile>
-                        <v-list-tile ripple @click="" to="/add/series">
-                            <v-list-tile-content>
-                                <v-list-tile-title>Series</v-list-tile-title>
-                            </v-list-tile-content>
-                        </v-list-tile>
-                        <v-list-tile ripple @click="" to="/edit/races">
-                            <v-list-tile-content>
-                                <v-list-tile-title>Races</v-list-tile-title>
-                            </v-list-tile-content>
-                        </v-list-tile>
-                        <v-list-tile ripple @click="" to="/add/video">
-                            <v-list-tile-content>
-                                <v-list-tile-title>Videos</v-list-tile-title>
-                            </v-list-tile-content>
-                        </v-list-tile>
-                        <v-list-tile ripple @click="" to="/edit/tracks">
-                            <v-list-tile-content>
-                                <v-list-tile-title>Tracks</v-list-tile-title>
-                            </v-list-tile-content>
-                        </v-list-tile>
+                        <v-list-item-group ripple slot="activator">
+                            <v-list-item-content>
+                                <v-list-item-title>Edit</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item-group>
+                        <v-list-item-group ripple to="/add/series">
+                            <v-list-item-content>
+                                <v-list-item-title>Series</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item-group>
+                        <v-list-item-group ripple to="/edit/races">
+                            <v-list-item-content>
+                                <v-list-item-title>Races</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item-group>
+                        <v-list-item-group ripple to="/add/video">
+                            <v-list-item-content>
+                                <v-list-item-title>Videos</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item-group>
+                        <v-list-item-group ripple to="/edit/tracks">
+                            <v-list-item-content>
+                                <v-list-item-title>Tracks</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item-group>
                     </v-list-group>
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-toolbar fixed app :color="theme ? '' : 'primary'">
-            <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+        <v-app-bar fixed app color="grey darken-4">
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title class="hidden-lg-and-up">
                 Racing Vods
             </v-toolbar-title>
@@ -146,16 +164,11 @@
 <!--            <v-btn icon>-->
 <!--                <v-icon>mdi-wallet-giftcard</v-icon>-->
 <!--            </v-btn>-->
-            <!--<v-switch
-                    label="Night Mode"
-                    v-model="theme"
-                    class="pt-4 text-xs-right"
-                    :color="theme ? 'primary' : ''"
-                    ripple
-            ></v-switch>-->
-        </v-toolbar>
-        <v-content :class="theme ? 'grey darken-2' : 'grey lighten-2'">
-            <router-view :key="$route.fullPath"></router-view>
+        </v-app-bar>
+        <v-content class="grey darken-2">
+            <div class="pa-2">
+                <router-view :key="$route.fullPath"></router-view>
+            </div>
         </v-content>
         <v-footer class="pa-4">
             <v-spacer></v-spacer>

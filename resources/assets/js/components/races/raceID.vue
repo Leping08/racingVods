@@ -22,32 +22,33 @@
                                         </v-flex>
                                     </v-layout>
                                 </template>
-                                <v-layout align-center justify-center row fill-height class="mt-3">
-                                    <div v-if="race.videos.length > 1">
-                                        <template v-if="selected > 1">
-                                            <v-tooltip top>
-                                                <template v-slot:activator="{ on }">
-                                                    <v-btn outline small fab v-on="on" @click="selected--">
-                                                        <v-icon>mdi-chevron-left</v-icon>
-                                                    </v-btn>
-                                                </template>
-                                                <span>Last Part</span>
-                                            </v-tooltip>
-                                        </template>
-                                        <template v-else>
-                                            <v-btn outline small fab disabled>
-                                                <v-icon>mdi-chevron-left</v-icon>
-                                            </v-btn>
-                                        </template>
-                                    </div>
 
-                                    <v-spacer></v-spacer>
+                                <div class="d-flex justify-space-between mt-2">
+                                    <div>
+                                        <div v-if="race.videos.length > 1">
+                                            <template v-if="selected > 1">
+                                                <v-tooltip top>
+                                                    <template v-slot:activator="{ on }">
+                                                        <v-btn outlined small fab v-on="on" @click="selected--">
+                                                            <v-icon>mdi-chevron-left</v-icon>
+                                                        </v-btn>
+                                                    </template>
+                                                    <span>Last Part</span>
+                                                </v-tooltip>
+                                            </template>
+                                            <template v-else>
+                                                <v-btn outlined small fab disabled>
+                                                    <v-icon>mdi-chevron-left</v-icon>
+                                                </v-btn>
+                                            </template>
+                                        </div>
+                                    </div>
 
                                     <div>
                                         <template v-if="(selected <= 1) || (vod.youtube_start_time > 0)">
                                             <v-tooltip top>
                                                 <template v-slot:activator="{ on }">
-                                                    <v-btn outline small fab color="teal" v-on="on" @click="start(index, vod.youtube_start_time)">
+                                                    <v-btn outlined small fab color="primary" v-on="on" @click="start(index, vod.youtube_start_time)">
                                                         <v-icon>mdi-clock-start</v-icon>
                                                     </v-btn>
                                                 </template>
@@ -56,7 +57,7 @@
                                         </template>
                                         <v-tooltip top>
                                             <template v-slot:activator="{ on }">
-                                                <v-btn outline small fab color="teal" v-on="on" @click="play(index)">
+                                                <v-btn outlined small fab color="primary" v-on="on" @click="play(index)">
                                                     <v-icon>mdi-play</v-icon>
                                                 </v-btn>
                                             </template>
@@ -64,7 +65,7 @@
                                         </v-tooltip>
                                         <v-tooltip top>
                                             <template v-slot:activator="{ on }">
-                                                <v-btn outline small fab color="teal" v-on="on" @click="pause(index)">
+                                                <v-btn outlined small fab color="primary" v-on="on" @click="pause(index)">
                                                     <v-icon>mdi-pause</v-icon>
                                                 </v-btn>
                                             </template>
@@ -72,69 +73,69 @@
                                         </v-tooltip>
                                     </div>
 
-                                    <v-spacer></v-spacer>
-
-                                    <div v-if="race.videos.length > 1">
-                                        <template v-if="!(selected === race.videos.length)">
-                                            <v-tooltip top>
-                                                <template v-slot:activator="{ on }">
-                                                    <v-btn outline small fab v-on="on" @click="selected++">
-                                                        <v-icon>mdi-chevron-right</v-icon>
-                                                    </v-btn>
-                                                </template>
-                                                <span>Next Part</span>
-                                            </v-tooltip>
-                                        </template>
-                                        <template v-else>
-                                            <v-btn outline small fab disabled>
-                                                <v-icon>mdi-chevron-right</v-icon>
-                                            </v-btn>
-                                        </template>
+                                    <div>
+                                        <div v-if="race.videos.length > 1">
+                                            <template v-if="!(selected === race.videos.length)">
+                                                <v-tooltip top>
+                                                    <template v-slot:activator="{ on }">
+                                                        <v-btn outlined small fab v-on="on" @click="selected++">
+                                                            <v-icon>mdi-chevron-right</v-icon>
+                                                        </v-btn>
+                                                    </template>
+                                                    <span>Next Part</span>
+                                                </v-tooltip>
+                                            </template>
+                                            <template v-else>
+                                                <v-btn outlined small fab disabled>
+                                                    <v-icon>mdi-chevron-right</v-icon>
+                                                </v-btn>
+                                            </template>
+                                        </div>
                                     </div>
-                                </v-layout>
+                                </div>
                             </v-stepper-content>
                         </v-stepper-items>
                     </v-stepper>
                 </v-flex>
                 <v-flex md6 s12>
                     <v-card>
-                        <v-toolbar>
+                        <v-toolbar color="grey darken-4">
                             <v-toolbar-title>Race</v-toolbar-title>
                             <v-spacer></v-spacer>
                             <v-icon color="primary">mdi-flag-checkered</v-icon>
                         </v-toolbar>
                         <v-card-text>
-                            <v-list two-line>
+                            <v-list two-line shaped>
                                 <v-divider></v-divider>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
+                                <v-list-item>
+                                    <v-list-item-icon>
                                         <v-icon>mdi-information-variant</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Name</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.name }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Name</v-list-item-title>
+                                        <v-list-item-subtitle>{{ race.name }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
+                                <v-list-item>
+                                    <v-list-item-icon>
                                         <v-icon>mdi-timer</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Duration</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.duration }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Duration</v-list-item-title>
+                                        <v-list-item-subtitle>{{ race.duration }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
+                                <v-list-item>
+                                    <v-list-item-icon>
                                         <v-icon>mdi-calendar</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Date</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.race_date | moment("M/D/YYYY") }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Date</v-list-item-title>
+                                        <v-list-item-subtitle>{{ race.race_date | moment("M/D/YYYY") }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
                             </v-list>
                         </v-card-text>
@@ -142,43 +143,43 @@
                 </v-flex>
                 <v-flex md6 s12>
                     <v-card>
-                        <v-toolbar>
+                        <v-toolbar color="grey darken-4">
                             <v-toolbar-title>Series</v-toolbar-title>
                             <v-spacer></v-spacer>
                             <v-icon color="primary">mdi-format-list-bulleted</v-icon>
                         </v-toolbar>
                         <v-card-text>
-                            <v-list two-line>
+                            <v-list two-line shaped>
                                 <v-divider></v-divider>
-                                <v-list-tile :to="'/series/'+race.series.id">
-                                    <v-list-tile-avatar>
+                                <v-list-item :to="'/series/'+race.series.id">
+                                    <v-list-item-icon>
                                         <v-icon>mdi-information-variant</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Name</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.series.full_name }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Name</v-list-item-title>
+                                        <v-list-item-subtitle>{{ race.series.full_name }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
-                                <v-list-tile :to="'/races/series/'+race.series.id+'/season/'+race.season.id">
-                                    <v-list-tile-avatar>
+                                <v-list-item :to="'/races/series/'+race.series.id+'/season/'+race.season.id">
+                                    <v-list-item-icon>
                                         <v-icon>mdi-calendar-clock</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Season</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.season.name }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Season</v-list-item-title>
+                                        <v-list-item-subtitle>{{ race.season.name }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
-                                <v-list-tile :href="race.series.website" target="_blank">
-                                    <v-list-tile-avatar>
+                                <v-list-item :href="race.series.website" target="_blank">
+                                    <v-list-item-icon>
                                         <v-icon>web</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Website</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ race.series.website }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Website</v-list-item-title>
+                                        <v-list-item-subtitle>{{ race.series.website }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
                             </v-list>
                         </v-card-text>
@@ -186,7 +187,7 @@
                 </v-flex>
                 <v-flex xs12>
                     <v-card>
-                        <v-toolbar>
+                        <v-toolbar color="grey darken-4">
                             <v-toolbar-title>Track</v-toolbar-title>
                             <v-spacer></v-spacer>
                             <v-icon color="primary">mdi-road</v-icon>
@@ -194,50 +195,50 @@
                         <v-card-text>
                             <v-layout row wrap>
                                 <v-flex md6 xs12>
-                                    <img :src="race.track.image" style="max-width:100%;">
+                                    <v-img :src="race.track.image" style="max-width:100%;"></v-img>
                                 </v-flex>
                                 <v-flex md6 xs12>
-                                    <v-list two-line>
+                                    <v-list two-line shaped>
                                         <v-divider></v-divider>
-                                        <v-list-tile :to="'/tracks/'+race.track.id">
-                                            <v-list-tile-avatar>
+                                        <v-list-item :to="'/tracks/'+race.track.id">
+                                            <v-list-item-icon>
                                                 <v-icon>mdi-information-variant</v-icon>
-                                            </v-list-tile-avatar>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Name</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ race.track.name }}</v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
+                                            </v-list-item-icon>
+                                            <v-list-item-content>
+                                                <v-list-item-title>Name</v-list-item-title>
+                                                <v-list-item-subtitle>{{ race.track.name }}</v-list-item-subtitle>
+                                            </v-list-item-content>
+                                        </v-list-item>
                                         <v-divider></v-divider>
-                                        <v-list-tile>
-                                            <v-list-tile-avatar>
+                                        <v-list-item>
+                                            <v-list-item-icon>
                                                 <v-icon>mdi-ruler</v-icon>
-                                            </v-list-tile-avatar>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Length</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ race.track.length }}mi / {{ (race.track.length * 1.60934).toFixed(2) }}km</v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
+                                            </v-list-item-icon>
+                                            <v-list-item-content>
+                                                <v-list-item-title>Length</v-list-item-title>
+                                                <v-list-item-subtitle>{{ race.track.length }}mi / {{ (race.track.length * 1.60934).toFixed(2) }}km</v-list-item-subtitle>
+                                            </v-list-item-content>
+                                        </v-list-item>
                                         <v-divider></v-divider>
-                                        <v-list-tile>
-                                            <v-list-tile-avatar>
+                                        <v-list-item>
+                                            <v-list-item-icon>
                                                 <v-icon>mdi-undo-variant</v-icon>
-                                            </v-list-tile-avatar>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Corners</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ race.track.number_of_corners }}</v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
+                                            </v-list-item-icon>
+                                            <v-list-item-content>
+                                                <v-list-item-title>Corners</v-list-item-title>
+                                                <v-list-item-subtitle>{{ race.track.number_of_corners }}</v-list-item-subtitle>
+                                            </v-list-item-content>
+                                        </v-list-item>
                                         <v-divider></v-divider>
-                                        <v-list-tile :href="race.track.website" target="_blank">
-                                            <v-list-tile-avatar>
+                                        <v-list-item :href="race.track.website" target="_blank">
+                                            <v-list-item-icon>
                                                 <v-icon>web</v-icon>
-                                            </v-list-tile-avatar>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Website</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ race.track.website }}</v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
+                                            </v-list-item-icon>
+                                            <v-list-item-content>
+                                                <v-list-item-title>Website</v-list-item-title>
+                                                <v-list-item-subtitle>{{ race.track.website }}</v-list-item-subtitle>
+                                            </v-list-item-content>
+                                        </v-list-item>
                                         <v-divider></v-divider>
                                     </v-list>
                                 </v-flex>
@@ -247,21 +248,35 @@
                 </v-flex>
                 <v-flex xs12>
                     <v-card>
-                        <v-toolbar>
+                        <v-toolbar color="grey darken-4">
                             <v-toolbar-title>Schedule</v-toolbar-title>
                             <v-spacer></v-spacer>
                             <v-icon color="primary">mdi-calendar-range</v-icon>
                         </v-toolbar>
+
+<!--                        <v-list-item-group ripple exact color="primary">-->
+<!--                            <v-list-item>-->
+<!--                                <v-list-item-icon>-->
+<!--                                    <v-icon>mdi-calendar-range</v-icon>-->
+<!--                                </v-list-item-icon>-->
+<!--                                <v-list-item-content>-->
+<!--                                    <v-list-item-title>Schedule</v-list-item-title>-->
+<!--                                </v-list-item-content>-->
+<!--                            </v-list-item>-->
+<!--                        </v-list-item-group>-->
+
                         <v-card-text>
-                            <v-list two-line>
+                            <v-list two-line shaped>
                                 <template v-for="(seasonRace, index) in seasonRaces" @key="seasonRace.id">
                                     <v-divider></v-divider>
-                                    <v-list-tile :to="'/races/'+seasonRace.id" @click="" :key="seasonRace.id" ripple>
-                                        <v-list-tile-content>
-                                            <v-list-tile-title>{{index+1}}. {{ seasonRace.name }}</v-list-tile-title>
-                                            <v-list-tile-sub-title>{{ seasonRace.track.name }}</v-list-tile-sub-title>
-                                        </v-list-tile-content>
-                                    </v-list-tile>
+                                    <v-list-item-group link ripple exact color="primary">
+                                        <v-list-item :to="'/races/'+seasonRace.id" :key="seasonRace.id">
+                                            <v-list-item-content>
+                                                <v-list-item-title>{{index+1}}. {{ seasonRace.name }}</v-list-item-title>
+                                                <v-list-item-subtitle>{{ seasonRace.track.name }}</v-list-item-subtitle>
+                                            </v-list-item-content>
+                                        </v-list-item>
+                                    </v-list-item-group>
                                 </template>
                             </v-list>
                         </v-card-text>

@@ -8,11 +8,11 @@
                     enter-active-class="animated fadeInUp"
                     leave-active-class="animated fadeOutDown">
             <v-flex xs12 v-if="!loadingTracks">
-                    <v-toolbar>
+                    <v-toolbar color="grey darken-4">
                         <v-toolbar-title>Tracks</v-toolbar-title>
                         <v-spacer></v-spacer>
                         <v-text-field
-                                class="pr-3 pb-3"
+                                class="pr-3 pb-1"
                                 append-icon="search"
                                 label="Search Tracks"
                                 single-line
@@ -25,35 +25,35 @@
             </v-flex>
         </transition>
 
+
         <v-data-iterator
                 :items="filteredTracks"
-                :rows-per-page-items="rowsPerPageItems"
-                :pagination.sync="pagination"
-                content-tag="v-layout"
-                class="pt-2"
-                row
-                wrap
+                :items-per-page.sync="itemsPerPage"
+                :footer-props="{ itemsPerPageOptions }"
                 v-if="!loadingTracks"
         >
-            <transition slot="item" slot-scope="props"
+            <transition slot-scope="props"
                         appear
                         name="custom-classes-transition"
                         enter-active-class="animated fadeInUp"
-                        leave-active-class="animated fadeOutDown"
-            >
-                <v-flex
-                        xs12
-                        sm6
-                        md4
-                        lg4
-                >
-                    <v-card ripple :hover="true" :to="/tracks/+props.item.id">
-                        <v-toolbar>
-                            <v-toolbar-title>{{props.item.name}}</v-toolbar-title>
-                        </v-toolbar>
-                        <img :src="props.item.image" width="100%">
-                    </v-card>
-                </v-flex>
+                        leave-active-class="animated fadeOutDown">
+                <v-row>
+                    <v-col
+                            v-for="track in props.items"
+                            :key="track.id"
+                            cols="12"
+                            sm="12"
+                            md="6"
+                            lg="6"
+                    >
+                        <v-card ripple :hover="true" :to="/tracks/+track.id">
+                            <v-toolbar color="grey darken-4">
+                                <v-toolbar-title>{{track.name}}</v-toolbar-title>
+                            </v-toolbar>
+                            <v-img alt="" :src="track.image" width="100%"></v-img>
+                        </v-card>
+                    </v-col>
+                </v-row>
             </transition>
         </v-data-iterator>
     </v-container>
@@ -67,10 +67,8 @@
                 tracks: [],
                 loadingTracks: true,
                 search: '',
-                pagination: {
-                    rowsPerPage: 12
-                },
-                rowsPerPageItems: [ 12, 24, 48, { text: "All", value: -1 }]
+                itemsPerPageOptions: [12, 24, 48, { text: "All", value: -1 }],
+                itemsPerPage: 12,
             }
         },
         mounted() {

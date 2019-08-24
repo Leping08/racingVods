@@ -2,14 +2,14 @@
     <v-layout row wrap>
         <v-flex xs12 class="pa-2">
             <template v-if="!loading">
-                <v-toolbar>
+                <v-app-bar>
                     <v-toolbar-title>
                         Races/Season
                     </v-toolbar-title>
                     <v-spacer></v-spacer>
                     <v-icon color="primary">mdi-chart-bar</v-icon>
-                </v-toolbar>
-                <v-card dark tile flat>
+                </v-app-bar>
+                <v-card tile flat>
                     <v-card-text>
                         <bar :chart-data="datacollection" :options="options"></bar>
                     </v-card-text>

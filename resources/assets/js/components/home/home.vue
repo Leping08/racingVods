@@ -12,47 +12,47 @@
         </v-layout>
 
         <v-layout row wrap>
-            <v-flex md4 xs12 d-flex>
-                <v-card ripple class="text-xs-center" hover flat to="/series">
+            <v-flex sm4 xs12 d-flex>
+                <v-card ripple class="text-center" hover flat to="/series">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-format-list-bulleted</v-icon>
                     </v-card-text>
                     <v-card-text>
-                        <h1 class="headline">Series</h1>
+                        <h1 class="headline white--text">Series</h1>
                     </v-card-text>
                     <v-card-text>
-                        <p>Videos from the top racing series around the world including the FIA World Endurance Championship, Indy Car, and the International Motor Sports Association.</p>
+                        <p class="white--text">Videos from the top racing series around the world including the FIA World Endurance Championship, Indy Car, and the International Motor Sports Association.</p>
                     </v-card-text>
                 </v-card>
             </v-flex>
 
-            <v-flex md4 xs12 d-flex>
-                <v-card ripple class="text-xs-center" hover flat to="/races">
+            <v-flex sm4 xs12 d-flex>
+                <v-card ripple class="text-center" hover flat to="/races">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-flag-checkered</v-icon>
                     </v-card-text>
                     <v-card-text>
-                        <h1 class="headline">Races</h1>
+                        <h1 class="headline white--text">Races</h1>
                     </v-card-text>
                     <v-card-text>
-                        <p>Full race videos with the ability to jump to the start of the race and pick up watching where you left off.</p>
+                        <p class="white--text">Full race videos with the ability to jump to the start of the race and pick up watching where you left off.</p>
                     </v-card-text>
                 </v-card>
             </v-flex>
 
-            <v-flex md4 xs12 d-flex>
-                <v-card ripple class="text-xs-center" hover flat to="/tracks">
+            <v-flex sm4 xs12 d-flex>
+                <v-card ripple class="text-center" hover flat to="/tracks">
                     <v-card-text></v-card-text>
                     <v-card-text>
                         <v-icon x-large dark color="primary">mdi-road</v-icon>
                     </v-card-text>
                     <v-card-text>
-                        <h1 class="headline">Tracks</h1>
+                        <h1 class="headline white--text">Tracks</h1>
                     </v-card-text>
                     <v-card-text>
-                        <p>Tracks from around the world with info including layouts, lap distances, corner names, and website.</p>
+                        <p class="white--text">Tracks from around the world with info including layouts, lap distances, corner names, and website.</p>
                     </v-card-text>
                 </v-card>
             </v-flex>
@@ -61,13 +61,13 @@
         <v-layout row wrap>
             <v-flex md6 xs12>
                 <v-card class="text-xs-center" flat>
-                    <v-toolbar>
+                    <v-toolbar color="grey darken-4">
                         <v-toolbar-title>Racing Vods</v-toolbar-title>
                     </v-toolbar>
                 </v-card>
                 <v-parallax src="/img/home/nurbur-night.jpg" height="435" class="elevation-2">
                     <v-layout column align-right justify-center class="text-xs-right">
-                        <h2 class="white--text">Built For Enthusiasts,<br>By Enthusiasts</h2>
+                        <h2 class="white--text text-right">Built For Enthusiasts,<br>By Enthusiasts</h2>
                     </v-layout>
                 </v-parallax>
             </v-flex>

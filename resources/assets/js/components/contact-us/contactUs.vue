@@ -3,7 +3,7 @@
         <v-layout row wrap>
             <v-flex lg8 offset-lg2 md8 offset-md2 xs12>
                 <v-card>
-                    <v-toolbar>
+                    <v-toolbar color="grey darken-4">
                         <v-toolbar-title>
                             Contact Us
                         </v-toolbar-title>
@@ -41,16 +41,16 @@
                             </v-textarea>
 
                             <v-btn
-                                    outline
-                                    round
-                                    color="teal"
+                                    outlined
+                                    rounded
+                                    color="primary"
                                     :disabled="!valid"
                                     @click="submit"
                             >Submit</v-btn>
                             <v-btn
                                     @click="clear"
-                                    outline
-                                    round
+                                    outlined
+                                    rounded
                                     color="grey"
                             >clear</v-btn>
                         </v-form>

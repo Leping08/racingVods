@@ -3,9 +3,9 @@
         <v-layout row wrap>
             <v-flex lg8 offset-lg2 xs12>
                 <v-card>
-                    <v-toolbar>
+                    <v-app-bar>
                         <v-toolbar-title>Create Race</v-toolbar-title>
-                    </v-toolbar>
+                    </v-app-bar>
                     <v-card-text>
                         <v-text-field
                                 label="Name"
@@ -121,12 +121,12 @@
                                 outline
                                 color="primary"
                                 @click="createRace()"
-                        ><v-icon left dark>mdi-library-plus</v-icon>Create</v-btn>
+                        ><v-icon left>mdi-library-plus</v-icon>Create</v-btn>
                         <v-btn
                                 outline
                                 color="info"
                                 @click="clear()"
-                        ><v-icon left dark>mdi-close-box-outline</v-icon>Clear</v-btn>
+                        ><v-icon left>mdi-close-box-outline</v-icon>Clear</v-btn>
                     </v-card-text>
                 </v-card>
             </v-flex>

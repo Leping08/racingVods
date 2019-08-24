@@ -3,13 +3,13 @@
         <v-layout row wrap>
             <template v-if="!loadingRaces">
                 <v-flex xs12>
-                    <v-toolbar>
+                    <v-toolbar color="grey darken-4 mx-2">
                         <v-toolbar-title>{{races[0].season.name}} {{races[0].series.full_name}}</v-toolbar-title>
                     </v-toolbar>
                 </v-flex>
                 <template v-for="race, index in races" @key="race.id">
                     <v-flex lg6 xs12>
-                        <race-card :race="race" :title="(index+1) + '. ' + race.name"></race-card>
+                        <race-card class="ma-2" :race="race" :title="(index+1) + '. ' + race.name"></race-card>
                     </v-flex>
                 </template>
             </template>

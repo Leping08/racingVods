@@ -38,6 +38,7 @@
                 </v-btn>
             </v-flex>
 
+
             <v-flex
                     xs12
                     class="mb-3"
@@ -47,9 +48,14 @@
                             ref="calendar"
                             v-model="start"
                             :type="type"
-                            color="primary"
+                            :events="events"
+                            event-start="race_date"
+                            event-color="black"
+                            event-text-color="primary"
+                            event-name="name"
+                            event-more
                     >
-                        <template
+                        <!--<template
                                 slot="day"
                                 slot-scope="{ date }"
                         >
@@ -114,7 +120,7 @@
                                     </v-card>
                                 </v-menu>
                             </template>
-                        </template>
+                        </template>-->
                     </v-calendar>
                 </v-sheet>
             </v-flex>
