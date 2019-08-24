@@ -8,11 +8,11 @@
                     enter-active-class="animated fadeInUp"
                     leave-active-class="animated fadeOutDown">
             <v-flex xs12 v-if="!loadingSeries">
-                <v-toolbar>
+                <v-toolbar color="grey darken-4">
                     <v-toolbar-title>Series</v-toolbar-title>
                     <v-spacer></v-spacer>
                     <v-text-field
-                            class="pr-3 pb-3"
+                            class="pr-3 pb-1"
                             append-icon="search"
                             label="Search Series"
                             single-line
@@ -28,40 +28,39 @@
 
         <v-data-iterator
                 :items="filteredSeries"
-                :rows-per-page-items="rowsPerPageItems"
-                :pagination.sync="pagination"
-                content-tag="v-layout"
-                class="pt-2"
-                row
-                wrap
+                :items-per-page.sync="itemsPerPage"
+                :footer-props="{ itemsPerPageOptions }"
                 v-if="!loadingSeries"
         >
-            <transition slot="item" slot-scope="props"
+            <transition slot-scope="props"
                         appear
                         name="custom-classes-transition"
                         enter-active-class="animated fadeInUp"
-                        leave-active-class="animated fadeOutDown"
-            >
-                <v-flex
-                        xs12
-                        sm6
-                        md6
-                        lg6
-                >
-                    <v-card ripple :hover="true" :to="/series/+props.item.id">
-                        <v-toolbar>
-                            <v-toolbar-title>{{props.item.full_name}}</v-toolbar-title>
-                            <v-spacer></v-spacer>
-                            <v-btn outline round color="teal" :to="'/series/'+props.item.id">
-                                {{props.item.name}}
-                            </v-btn>
-                        </v-toolbar>
-                        <v-img
-                                :src="'/img/series/'+props.item.image"
-                                aspect-ratio="2"
-                        ></v-img>
-                    </v-card>
-                </v-flex>
+                        leave-active-class="animated fadeOutDown">
+                <v-row>
+                    <v-col
+                            v-for="series in props.items"
+                            :key="series.id"
+                            cols="12"
+                            sm="12"
+                            md="6"
+                            lg="6"
+                    >
+                        <v-card ripple :hover="true" :to="/series/+series.id">
+                            <v-toolbar color="grey darken-4">
+                                <v-toolbar-title>{{series.full_name}}</v-toolbar-title>
+                                <v-spacer></v-spacer>
+                                <v-btn outlined rounded color="primary" :to="'/series/'+series.id">
+                                    {{series.name}}
+                                </v-btn>
+                            </v-toolbar>
+                            <v-img
+                                    :src="'/img/series/'+series.image"
+                                    aspect-ratio="2"
+                            ></v-img>
+                        </v-card>
+                    </v-col>
+                </v-row>
             </transition>
         </v-data-iterator>
     </v-container>
@@ -75,10 +74,8 @@
                 series: [],
                 loadingSeries: true,
                 search: '',
-                pagination: {
-                    rowsPerPage: 12
-                },
-                rowsPerPageItems: [ 12, 24, 48, { text: "All", value: -1 }]
+                itemsPerPageOptions: [12, 24, 48, { text: "All", value: -1 }],
+                itemsPerPage: 12,
             }
         },
         mounted() {

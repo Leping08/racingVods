@@ -3,74 +3,75 @@
         <template v-if="!loadingTrack">
             <v-layout row wrap>
                 <v-flex xs12>
-                    <v-toolbar>
+                    <v-toolbar color="grey darken-4">
                         <v-toolbar-title>{{track.name}}</v-toolbar-title>
                     </v-toolbar>
                 </v-flex>
             </v-layout>
 
             <v-layout row wrap>
-                <v-flex md6 xs12 d-flex>
+                <v-flex md6 xs12>
                     <v-card>
-                        <v-toolbar>
+                        <v-toolbar color="grey darken-4">
                             <v-toolbar-title>Layout</v-toolbar-title>
                         </v-toolbar>
-                        <img :src="track.image" class="" style="max-width: 100%;">
+                        <v-img alt="" :src="track.image" class="" style="max-width: 100%;"></v-img>
                     </v-card>
                 </v-flex>
 
-                <v-flex md6 xs12 d-flex>
+                <v-flex md6 xs12>
                     <v-card>
-                        <v-toolbar>
+                        <v-toolbar color="grey darken-4">
                             <v-toolbar-title>Info</v-toolbar-title>
                         </v-toolbar>
                         <v-card-text>
-                            <v-list two-line>
+                            <v-list two-line shaped>
                                 <v-divider></v-divider>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
+                                <v-list-item>
+                                    <v-list-item-icon>
                                         <v-icon>mdi-information-variant</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Name</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ track.name }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Name</v-list-item-title>
+                                        <v-list-item-subtitle>{{ track.name }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
+                                <v-list-item>
+                                    <v-list-item-icon>
                                         <v-icon>mdi-ruler</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Length</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ track.length }}mi / {{ (track.length * 1.60934).toFixed(2) }}km</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Length</v-list-item-title>
+                                        <v-list-item-subtitle>{{ track.length }}mi / {{ (track.length * 1.60934).toFixed(2) }}km</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
-                                <v-list-tile>
-                                    <v-list-tile-avatar>
+                                <v-list-item>
+                                    <v-list-item-icon>
                                         <v-icon>mdi-undo-variant</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Corners</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ track.number_of_corners }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Corners</v-list-item-title>
+                                        <v-list-item-subtitle>{{ track.number_of_corners }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
-                                <v-list-tile :href="track.website" target="_blank">
-                                    <v-list-tile-avatar>
+                                <v-list-item :href="track.website" target="_blank">
+                                    <v-list-item-icon>
                                         <v-icon>web</v-icon>
-                                    </v-list-tile-avatar>
-                                    <v-list-tile-content>
-                                        <v-list-tile-title>Website</v-list-tile-title>
-                                        <v-list-tile-sub-title>{{ track.website }}</v-list-tile-sub-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Website</v-list-item-title>
+                                        <v-list-item-subtitle>{{ track.website }}</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
                                 <v-divider></v-divider>
                             </v-list>
                         </v-card-text>
                     </v-card>
                 </v-flex>
+
             </v-layout>
         </template>
         <template v-if="loadingTrack">

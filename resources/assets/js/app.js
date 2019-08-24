@@ -3,7 +3,7 @@
  */
 
 import Vue from 'vue';
-import Vuetify from 'vuetify';
+import Vuetify from 'vuetify'
 import VueCharts from 'vue-chartjs';
 import moment from 'moment';
 import VueAnalytics from 'vue-analytics';
@@ -14,17 +14,7 @@ import router from './router';
 import api from './auth';
 import axios from 'axios'
 
-Vue.use(Vuetify, {
-    theme: {
-        "primary": "#00c4a9",
-        "secondary": "#4DB6AC",
-        "accent": "#F44336",
-        "error": "#F44336",
-        "warning": "#ffeb3b",
-        "info": "#2196F3",
-        "success": "#4CAF50"
-    }
-});
+Vue.use(Vuetify);
 
 Vue.use(api);
 Vue.use(moment);
@@ -54,5 +44,21 @@ Vue.prototype.$axios = axios;
 const app = new Vue({
     el: '#app',
     router,
-    store
+    store,
+    vuetify: new Vuetify({
+        theme: {
+            dark: true,
+            themes: {
+                dark: {
+                    "primary": "#00c4a9",
+                    "secondary": "#4DB6AC",
+                    "accent": "#F44336",
+                    "error": "#F44336",
+                    "warning": "#ffeb3b",
+                    "info": "#2196F3",
+                    "success": "#4CAF50"
+                }
+            }
+        }
+    })
 });

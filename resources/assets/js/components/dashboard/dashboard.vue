@@ -51,14 +51,14 @@
 
             <v-flex xs12 sm6 md4 class="pa-2">
                 <v-card dark tile flat>
-                    <v-container fill-height class="pa-0 teal darken-1 ma-0">
+                    <v-container fill-height class="pa-0 primary darken-1 ma-0">
                         <v-layout row wrap align-center>
                             <v-flex lg3 xl2 md2 sm2 xs2>
                                 <v-card-text>
                                     <v-icon large>mdi-road</v-icon>
                                 </v-card-text>
                             </v-flex>
-                            <v-flex lg9 xl10 md10 sm10 xs10 class="teal lighten-1">
+                            <v-flex lg9 xl10 md10 sm10 xs10 class="primary lighten-1">
                                 <v-card-text>
                                     <div class="subheading">
                                         <b>Tracks</b>

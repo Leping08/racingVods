@@ -28,7 +28,7 @@
                                 v-model="website"
                                 prepend-icon="web"
                         ></v-text-field>
-                        <img :src="imageUrl" height="150" class="ml-5" v-if="imageUrl"/>
+                        <v-img :src="imageUrl" height="150" class="ml-5" v-if="imageUrl"></v-img>
                         <v-text-field
                                 label="Series Image"
                                 @click='pickFile'

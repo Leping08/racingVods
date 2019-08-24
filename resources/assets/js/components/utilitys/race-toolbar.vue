@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar>
+    <v-toolbar color="grey darken-4">
         <v-toolbar-title>
             <template v-if="title">{{title}}</template>
             <template v-else="title">{{race.name}}</template>
@@ -11,7 +11,7 @@
         >
             mdi-new-box
         </v-icon>
-        <v-btn outline round color="teal" :to="'/series/'+race.series.id">
+        <v-btn outlined rounded color="primary" :to="'/series/'+race.series.id">
             {{race.series.name}}
         </v-btn>
     </v-toolbar>

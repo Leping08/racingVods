@@ -8,11 +8,11 @@
                     enter-active-class="animated fadeInUp"
                     leave-active-class="animated fadeOutDown">
             <v-flex xs12 v-if="!loadingRaces">
-                <v-toolbar>
+                <v-toolbar color="grey darken-4">
                     <v-toolbar-title>Races</v-toolbar-title>
                     <v-spacer></v-spacer>
                     <v-text-field
-                            class="pr-3 pb-3"
+                            class="pr-3 pb-1"
                             append-icon="search"
                             label="Search Races"
                             single-line
@@ -29,28 +29,27 @@
 
         <v-data-iterator
                 :items="filteredRaces"
-                :rows-per-page-items="rowsPerPageItems"
-                :pagination.sync="pagination"
-                content-tag="v-layout"
-                class="pt-2"
-                row
-                wrap
+                :items-per-page.sync="itemsPerPage"
+                :footer-props="{ itemsPerPageOptions }"
                 v-if="!loadingRaces"
         >
-            <transition slot="item" slot-scope="props"
+            <transition slot-scope="props"
                         appear
                         name="custom-classes-transition"
                         enter-active-class="animated fadeInUp"
-                        leave-active-class="animated fadeOutDown"
-            >
-                <v-flex
-                        xs12
-                        sm6
-                        md6
-                        lg6
-                >
-                    <race-card :race="props.item" :title="props.item.season.name + ' ' + props.item.name"></race-card>
-                </v-flex>
+                        leave-active-class="animated fadeOutDown">
+                <v-row>
+                    <v-col
+                            v-for="race in props.items"
+                            :key="race.id"
+                            cols="12"
+                            sm="12"
+                            md="6"
+                            lg="6"
+                    >
+                        <race-card :race="race" :title="race.season.name + ' ' + race.name"></race-card>
+                    </v-col>
+                </v-row>
             </transition>
         </v-data-iterator>
     </v-container>
@@ -61,15 +60,13 @@
     const RaceCard = () => import("../utilitys/race-card");
     export default {
         components: {RaceCard},
-        data () {
+        data() {
             return {
                 races: [],
                 search: '',
                 loadingRaces: true,
-                pagination: {
-                    rowsPerPage: 12
-                },
-                rowsPerPageItems: [ 12, 24, 48, { text: "All", value: -1 }]
+                itemsPerPageOptions: [12, 24, 48, { text: "All", value: -1 }],
+                itemsPerPage: 12,
             }
         },
         mounted() {
