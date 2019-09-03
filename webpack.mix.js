@@ -31,11 +31,9 @@ mix.webpackConfig({
     ]
 });
 
-mix.js('resources/assets/js/app.js', 'public/js');
-
 //.sass('resources/styles/app.sass', 'public/css');
 
-//mix.js('resources/assets/js/app.js', 'public/js').version();
+mix.js('resources/assets/js/app.js', 'public/js').version();
 
 mix.sass('resources/assets/css/app.sass', 'public/css/theme.css').version();
 
