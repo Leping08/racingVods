@@ -9,6 +9,7 @@ use App\Mail\NewRacesReport;
 use App\PotentialRaces;
 use App\Race;
 use App\Series;
+use App\Video;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -32,7 +33,7 @@ class FindPotentialRaces
 
         $newestYoutubeVideos = $videos->flatten(1);
         Log::info("Found {$newestYoutubeVideos->count()} races");
-        $alreadyStoredRaces = Race::pluck('youtube_id');
+        $alreadyStoredRaces = Video::pluck('youtube_id');
         $alreadyStoredPotentialRaces = PotentialRaces::withTrashed()->pluck('youtube_id');
 
         foreach ($newestYoutubeVideos as $vid){
