@@ -15,8 +15,10 @@ use Laravel\Nova\Actions\Actionable;
  * @property string $name
  * @property string $full_name
  * @property string $image
- * @property string $website
  * @property string $description
+ * @property string $website
+ * @property string $youtube_chanel_name
+ * @property integer $min_race_time
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon $deleted_at

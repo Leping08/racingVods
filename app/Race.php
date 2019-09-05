@@ -109,11 +109,11 @@ class Race extends Model
     public function next()
     {
         $collection = $this->thisSeason()
-                            ->thisSeries()
-                            ->orderBy('race_date', 'asc')
-                            ->get();
+            ->thisSeries()
+            ->orderBy('race_date', 'asc')
+            ->get();
 
-        $index = $collection->search(function($collection) {
+        $index = $collection->search(function ($collection) {
             return $collection->id === $this->id;
         });
 
@@ -126,11 +126,11 @@ class Race extends Model
     public function previous()
     {
         $collection = $this->thisSeason()
-                            ->thisSeries()
-                            ->orderBy('race_date', 'asc')
-                            ->get();
+            ->thisSeries()
+            ->orderBy('race_date', 'asc')
+            ->get();
 
-        $index = $collection->search(function($collection) {
+        $index = $collection->search(function ($collection) {
             return $collection->id === $this->id;
         });
 

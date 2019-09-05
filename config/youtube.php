@@ -10,6 +10,43 @@
 */
 
 return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Youtube API Key
+    |--------------------------------------------------------------------------
+    |
+    | This is the API key that will be used in all api calls to youtube.
+    | You can get a key from here: https://console.developers.google.com/
+    |
+    */
+
     'key' => env('YOUTUBE_API_KEY', 'YOUR_API_KEY'),
-    'racesPerSeries' => 5
+
+    /*
+    |--------------------------------------------------------------------------
+    | Number Of Videos Pulled From The API For A Series
+    |--------------------------------------------------------------------------
+    |
+    | This is the number of videos that will be selected from a youtube
+    | chanel for each series.
+    |
+    */
+
+    'races_per_series' => 5,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Video Title Black List
+    |--------------------------------------------------------------------------
+    |
+    | If a video contains any of these words in the title it will be ignored.
+    |
+    */
+
+    'excluded_key_words' => [
+        'sim',
+        'qualifying',
+        'practice'
+    ]
 ];

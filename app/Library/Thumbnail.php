@@ -22,9 +22,9 @@ class Thumbnail
     {
         $client = new Client();
 
-        try{
+        try {
             $res = $client->get("https://img.youtube.com/vi/{$this->video->youtube_id}/maxresdefault.jpg");
-            if($res->getStatusCode() == 200){
+            if ($res->getStatusCode() == 200) {
                 Log::info("The video thumbnail for video id: {$this->video->id} is good");
                 $this->save(true);
             } else {
@@ -38,7 +38,8 @@ class Thumbnail
         }
     }
 
-    private function save(bool $bool){
+    private function save(bool $bool)
+    {
         $this->video->valid_thumbnail = $bool;
         $this->video->save();
     }

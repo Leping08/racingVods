@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Nova\Actions\Actionable;
+use phpDocumentor\Reflection\Types\Integer;
 
 /**
  * An Eloquent Model: 'Season'
@@ -29,5 +30,13 @@ class Season extends Model
     public function races()
     {
         return $this->hasMany(Race::class);
+    }
+
+    /**
+     * @return int|null
+     */
+    public static function current(): ?int
+    {
+        return Season::where('name', Carbon::now()->year)->first()->id ?? null;
     }
 }
