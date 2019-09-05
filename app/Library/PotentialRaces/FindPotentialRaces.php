@@ -62,7 +62,7 @@ class FindPotentialRaces
     {
         $races = PotentialRaces::where('email_sent', false)->get();
 
-        Mail::to(config('mail.adminEmail'))
+        Mail::to(config('mail.admin_email'))
             ->send(new NewRacesReport($races));
         Log::info("Sent New Races Report email");
 
