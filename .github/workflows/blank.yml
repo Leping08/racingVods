@@ -12,7 +12,7 @@ jobs:
     
     - name: Install composer dependencies
       env:
-      COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
+        COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
       run: composer install --prefer-dist
       
     - name: Run PHPUnit
