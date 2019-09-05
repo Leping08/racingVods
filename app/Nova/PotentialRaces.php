@@ -48,9 +48,9 @@ class PotentialRaces extends Resource
             Text::make('Youtube Id'),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail(),
-            BelongsTo::make('Series', 'series_id', \App\Nova\Series::class)->hideFromIndex(),
-            BelongsTo::make('Season', 'season_id', \App\Nova\Season::class)->hideFromIndex(),
-            BelongsTo::make('Track', 'track_id', \App\Nova\Track::class)->hideFromIndex(),
+            BelongsTo::make('Series', 'series', \App\Nova\Series::class)->hideFromIndex(),
+            BelongsTo::make('Season', 'season', \App\Nova\Season::class)->hideFromIndex(),
+            BelongsTo::make('Track', 'track', \App\Nova\Track::class)->hideFromIndex(),
         ];
     }
 

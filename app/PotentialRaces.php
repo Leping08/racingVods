@@ -35,9 +35,9 @@ class PotentialRaces extends Model
     /**
      * @return BelongsTo
      */
-    public function race()
+    public function series()
     {
-        return $this->belongsTo(Race::class);
+        return $this->belongsTo(Series::class);
     }
 
     /**
