@@ -56,7 +56,7 @@ class FindPotentialRaces
 
     /**
      *  Send new races email report to admin
-     *  This report has the last 7 days of potential races
+     *  Mark the potential races as sent
      */
     public static function sendReport()
     {
