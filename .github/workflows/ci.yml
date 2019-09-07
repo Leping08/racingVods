@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
-   - name: Create database server
+    - name: Create database server
       run: mysql -u root -p
       run: root
       run: CREATE DATABASE TDD
