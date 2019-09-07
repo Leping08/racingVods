@@ -8,6 +8,7 @@
         <v-icon
                 v-if="race.new"
                 color="primary"
+                class="mr-2"
         >
             mdi-new-box
         </v-icon>
