@@ -10,6 +10,12 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
+   - name: Create database server
+      run: mysql -u root -p
+      run: root
+      run: CREATE DATABASE TDD
+      run: quit
+    
     - name: Install composer dependencies
       env:
         COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
