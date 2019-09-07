@@ -12,8 +12,7 @@ jobs:
     
     - name: Create database server
       run: |
-        sudo mysql -u root -p
-        root
+        sudo mysql -u root
     
     - name: Install composer dependencies
       env:
