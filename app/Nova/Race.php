@@ -51,7 +51,7 @@ class Race extends Resource
             ID::make()->sortable(),
             Text::make('Name')->withMeta(["value" => $json->title ?? $this->name]),
             Date::make('Race Date'),
-            Text::make('Duration')->withMeta(["value" => $json->duration ?? $this->name]),
+            Text::make('Duration')->withMeta(["value" => $json->duration ?? $this->duration]),
             BelongsTo::make('Track')->withMeta(["belongsToId" => $json->track_id ?? $this->track_id])->searchable(),
             BelongsTo::make('Series')->withMeta(["belongsToId" => $json->series_id ?? $this->series_id])->searchable(),
             BelongsTo::make('Season')->withMeta(["belongsToId" => $json->season_id ?? $this->season_id]),
