@@ -42,6 +42,13 @@ class PotentialRaces extends Resource
      */
     public function fields(Request $request)
     {
+        $json = [
+            "name" => $this->title,
+            "track_id" => $this->track_id ?? null,
+            "series_id" => $this->series_id ?? null,
+            "season_id" => $this->season_id ?? null
+        ];
+
         return [
             ID::make()->sortable(),
             Text::make('Title'),
@@ -51,6 +58,15 @@ class PotentialRaces extends Resource
             BelongsTo::make('Series', 'series', \App\Nova\Series::class)->hideFromIndex(),
             BelongsTo::make('Season', 'season', \App\Nova\Season::class)->hideFromIndex(),
             BelongsTo::make('Track', 'track', \App\Nova\Track::class)->hideFromIndex(),
+            Text::make('Create Race', function ($json){
+                return view('partials.link', [
+                    'link' => "/nova/resources/races/new?viaRelationship=".json_encode($json),
+                    'text' => 'Create Race'
+                ])->render();
+//                return"<a href=\"/nova/resources/races/new?viaResource=&amp;viaResourceId=&amp;viaRelationship=".urlencode(json_encode($json))." class=\"btn btn-default btn-primary\">
+//                    Create Race
+//                </a>";
+            })->asHtml()->hideFromIndex(),
         ];
     }
 

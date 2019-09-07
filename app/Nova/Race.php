@@ -45,14 +45,16 @@ class Race extends Resource
      */
     public function fields(Request $request)
     {
+        $json = json_decode($request->input('viaRelationship')) ?? null;
+
         return [
             ID::make()->sortable(),
-            Text::make('Name'),
+            Text::make('Name')->withMeta(["value" => $json->title ?? 'testing']),
             Date::make('Race Date'),
-            Text::make('Duration'),
-            BelongsTo::make('Track')->searchable(),
-            BelongsTo::make('Series')->searchable(),
-            BelongsTo::make('Season'),
+            Text::make('Duration')->withMeta(["value" => $json->duration ?? null]),
+            BelongsTo::make('Track')->withMeta(["belongsToId" => $json->track_id ?? null])->searchable(),
+            BelongsTo::make('Series')->withMeta(["belongsToId" => $json->series_id ?? null])->searchable(),
+            BelongsTo::make('Season')->withMeta(["belongsToId" => $json->season_id ?? null]),
             HasMany::make('Videos'),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail(),
