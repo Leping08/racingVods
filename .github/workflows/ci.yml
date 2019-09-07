@@ -12,10 +12,10 @@ jobs:
     
     - name: Create database server
       run: |
-        mysql -uroot -p'root'
-        CREATE DATABASE TDD;
+        echo "show all tables"
+        mysql -uroot -p'root'<<EOFMYSQL
         show tables;
-        quit
+        EOFMYSQL
 
 #     - uses: mirromutth/mysql-action@v1.1
 #       with:
