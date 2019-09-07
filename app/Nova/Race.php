@@ -49,12 +49,12 @@ class Race extends Resource
 
         return [
             ID::make()->sortable(),
-            Text::make('Name')->withMeta(["value" => $json->title ?? 'testing']),
+            Text::make('Name')->withMeta(["value" => $json->title ?? $this->name]),
             Date::make('Race Date'),
-            Text::make('Duration')->withMeta(["value" => $json->duration ?? null]),
-            BelongsTo::make('Track')->withMeta(["belongsToId" => $json->track_id ?? null])->searchable(),
-            BelongsTo::make('Series')->withMeta(["belongsToId" => $json->series_id ?? null])->searchable(),
-            BelongsTo::make('Season')->withMeta(["belongsToId" => $json->season_id ?? null]),
+            Text::make('Duration')->withMeta(["value" => $json->duration ?? $this->name]),
+            BelongsTo::make('Track')->withMeta(["belongsToId" => $json->track_id ?? $this->track_id])->searchable(),
+            BelongsTo::make('Series')->withMeta(["belongsToId" => $json->series_id ?? $this->series_id])->searchable(),
+            BelongsTo::make('Season')->withMeta(["belongsToId" => $json->season_id ?? $this->season_id]),
             HasMany::make('Videos'),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail(),
