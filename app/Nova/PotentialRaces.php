@@ -52,7 +52,13 @@ class PotentialRaces extends Resource
         return [
             ID::make()->sortable(),
             Text::make('Title'),
-            Text::make('Youtube Id'),
+            Text::make('Youtube Id', function ($json){
+                return view('partials.link', [
+                    'link' => "https://www.youtube.com/watch?v=".$this->youtube_id,
+                    'text' => $this->youtube_id,
+                    'new_tab' => true
+                ])->render();
+            })->asHtml()->hideFromIndex(),
             DateTime::make('Created At')->onlyOnDetail(),
             DateTime::make('Updated At')->onlyOnDetail(),
             BelongsTo::make('Series', 'series', \App\Nova\Series::class)->hideFromIndex(),
@@ -61,11 +67,9 @@ class PotentialRaces extends Resource
             Text::make('Create Race', function ($json){
                 return view('partials.link', [
                     'link' => "/nova/resources/races/new?viaRelationship=".json_encode($json),
-                    'text' => 'Create Race'
+                    'text' => 'Create Race',
+                    'new_tab' => false
                 ])->render();
-//                return"<a href=\"/nova/resources/races/new?viaResource=&amp;viaResourceId=&amp;viaRelationship=".urlencode(json_encode($json))." class=\"btn btn-default btn-primary\">
-//                    Create Race
-//                </a>";
             })->asHtml()->hideFromIndex(),
         ];
     }
