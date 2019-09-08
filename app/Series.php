@@ -29,7 +29,7 @@ class Series extends Model
 {
     use Actionable, SoftDeletes;
 
-    protected $fillable = ['name', 'full_name', 'image', 'website', 'description'];
+    protected $fillable = ['name', 'full_name', 'image', 'website', 'description', 'min_race_time'];
 
     /**
      * @return HasMany
