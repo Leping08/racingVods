@@ -8,7 +8,7 @@
         | Title         | Link     |
         |:------------- |:-------- |
         @foreach($races as $race)
-            | {{ str_replace($race->title,'', '|') }} | [Watch](https://www.youtube.com/watch?v={{$race->youtube_id}}) |
+            | {{ str_replace('|', '', $race->title) }} | [Watch](https://www.youtube.com/watch?v={{$race->youtube_id}}) |
         @endforeach
     @else
         No new races today
