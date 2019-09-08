@@ -34,6 +34,7 @@ class NewRacesReport extends Mailable
     public function build()
     {
         return $this->markdown('emails.newRacesReport')
+                    ->from('admin@racingvods.com')
                     ->subject('New Races Report')
                     ->with([
                         'races' => $this->races

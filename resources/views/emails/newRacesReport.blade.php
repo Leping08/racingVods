@@ -5,10 +5,10 @@
 
 @component('mail::table')
     @if($races->count())
-        | Title         | Youtube_id            | Link     |
-        |:------------- |:--------------------- |:-------- |
+        | Title         | Link     |
+        |:------------- |:-------- |
         @foreach($races as $race)
-            | {{$race->title}}  | {{$race->youtube_id}} |  [Watch](https://www.youtube.com/watch?v={{$race->youtube_id}}) |
+            | {{ str_replace($race->title,'', '|') }} | [Watch](https://www.youtube.com/watch?v={{$race->youtube_id}}) |
         @endforeach
     @else
         No new races today

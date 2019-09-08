@@ -6,7 +6,7 @@ namespace App\Library\PotentialRaces;
 
 use App\Library\PotentialRaces\Youtube\Api;
 use App\Mail\NewRacesReport;
-use App\PotentialRaces;
+use App\PotentialRace;
 use App\Series;
 use App\Video;
 use Illuminate\Support\Facades\Log;
@@ -30,7 +30,7 @@ class FindPotentialRaces
         $newestYoutubeVideos = $videos->flatten(1);
         Log::info("Found {$newestYoutubeVideos->count()} races");
         $alreadyStoredRaces = Video::pluck('youtube_id');
-        $alreadyStoredPotentialRaces = PotentialRaces::withTrashed()->pluck('youtube_id');
+        $alreadyStoredPotentialRaces = PotentialRace::withTrashed()->pluck('youtube_id');
 
         foreach ($newestYoutubeVideos as $vid) {
             //Check if this race is already in the races table
@@ -40,7 +40,7 @@ class FindPotentialRaces
                     //Make sure the video title does not contain any black listed words
                     if (!Str::contains($vid->snippet->title, config('youtube.excluded_key_words'))) {
                         Log::info("New video is being added to the DB. ID:{$vid->contentDetails->videoId} Title: {$vid->snippet->title}");
-                        PotentialRaces::create([
+                        PotentialRace::create([
                             'title' => $vid->snippet->title,
                             'youtube_id' => $vid->contentDetails->videoId,
                             'series_id' => $vid->series_id,
@@ -60,7 +60,7 @@ class FindPotentialRaces
      */
     public static function sendReport()
     {
-        $races = PotentialRaces::where('email_sent', false)->get();
+        $races = PotentialRace::where('email_sent', false)->get();
 
         Mail::to(config('mail.admin_email'))
             ->send(new NewRacesReport($races));

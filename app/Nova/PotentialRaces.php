@@ -16,7 +16,7 @@ class PotentialRaces extends Resource
      *
      * @var string
      */
-    public static $model = \App\PotentialRaces::class;
+    public static $model = \App\PotentialRace::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

@@ -26,7 +26,7 @@ use Laravel\Nova\Actions\Actionable;
  * @property-read Season $season
  */
 
-class PotentialRaces extends Model
+class PotentialRace extends Model
 {
     use SoftDeletes, Actionable;
 
