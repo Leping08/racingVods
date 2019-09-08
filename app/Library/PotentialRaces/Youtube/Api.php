@@ -5,6 +5,7 @@ namespace App\Library\PotentialRaces\Youtube;
 
 
 use Alaouy\Youtube\Youtube;
+use App\Library\PotentialRaces\Track\GuessTrack;
 use App\Season;
 use App\Series;
 use Carbon\CarbonInterval;
@@ -26,6 +27,7 @@ class Api
 
         //Loop over the latest videos and return the video if it's longer then the min_race_time
         foreach ($newVideos['results'] as $vid) {
+            dd($vid);
             $ISOvidDuration = $youtube->getVideoInfo($vid->contentDetails->videoId)->contentDetails->duration;
             $carbonDuration = CarbonInterval::create($ISOvidDuration);
             $vidDurationInMin = $carbonDuration->__get('minutes') + (60 * $carbonDuration->__get('hours'));
@@ -33,7 +35,7 @@ class Api
             if ($vidDurationInMin >= $series->min_race_time) {
                 $vid->series_id = $series->id;
                 $vid->season_id = Season::current();
-                $vid->track_id = null; //TODO Get Track ID working
+                $vid->track_id = GuessTrack::handle($vid->snippet->title);
                 $potentialNewRaces->push($vid);
             }
         }
