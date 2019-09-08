@@ -35,10 +35,6 @@ class Kernel extends ConsoleKernel
         $schedule->call(function () {
             FindPotentialRaces::sendReport();
         })->dailyAt('5:15');
-
-        $schedule->call(function () {
-            Log::info('Working!');
-        })->everyMinute();
     }
 
     /**
