@@ -27,11 +27,9 @@ class Api
 
         //Loop over the latest videos and return the video if it's longer then the min_race_time
         foreach ($newVideos['results'] as $vid) {
-            dd($vid);
             $ISOvidDuration = $youtube->getVideoInfo($vid->contentDetails->videoId)->contentDetails->duration;
             $carbonDuration = CarbonInterval::create($ISOvidDuration);
             $vidDurationInMin = $carbonDuration->__get('minutes') + (60 * $carbonDuration->__get('hours'));
-            dump($series->min_race_time);
             if ($vidDurationInMin >= $series->min_race_time) {
                 $vid->series_id = $series->id;
                 $vid->season_id = Season::current();
