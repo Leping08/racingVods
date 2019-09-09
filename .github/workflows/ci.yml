@@ -32,14 +32,5 @@ jobs:
     - name: Run PHPUnit
       run: php7.3 vendor/bin/phpunit
 
-    - name: SSH
-      uses: "maddox/actions/ssh@master"
-      args: "echo 'hello'"
-      secrets: [
-        "PRIVATE_KEY",
-        "HOST",
-        "USER"
-      ]
-
       
       
