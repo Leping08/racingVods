@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Nova\Metrics\Views;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
@@ -82,7 +83,9 @@ class Series extends Resource
      */
     public function cards(Request $request)
     {
-        return [];
+        return [
+            (new Views('App\Series'))->width('2/3')->onlyOnDetail()
+        ];
     }
 
     /**

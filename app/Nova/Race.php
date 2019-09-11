@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Nova\Metrics\Views;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Fields\DateTime;
@@ -69,7 +70,9 @@ class Race extends Resource
      */
     public function cards(Request $request)
     {
-        return [];
+        return [
+            (new Views('App\Race'))->width('2/3')->onlyOnDetail()
+        ];
     }
 
     /**
