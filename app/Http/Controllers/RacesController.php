@@ -26,7 +26,7 @@ class RacesController extends Controller
         $race = $request->validate([
             'name' => 'required|max:255',
             'series_id' => 'required|integer',
-            'track_id' =>  'required|integer',
+            'track_id' => 'required|integer',
             'season_id' => 'required|integer',
             'race_date' => 'required|date',
             'youtube_id' => 'required|max:20',

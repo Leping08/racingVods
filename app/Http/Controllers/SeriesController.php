@@ -25,7 +25,7 @@ class SeriesController extends Controller
         $series = $request->validate([
             'name' => 'required|max:5',
             'fullName' => 'required|max:255',
-            'image' =>  'required',
+            'image' => 'required',
             'website' => 'required',
             'description' => 'required|max:5000'
         ]);

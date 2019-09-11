@@ -25,7 +25,7 @@ class TracksController extends Controller
         $track = $request->validate([
             'name' => 'required|max:255',
             'length' => 'required|numeric',
-            'image' =>  'required',
+            'image' => 'required',
             'website' => 'required',
             'numberOfCorners' => 'required|numeric'
         ]);
