@@ -4,6 +4,7 @@ namespace App;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * An Eloquent Model: 'View'
@@ -20,6 +21,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class View extends Model
 {
+    use SoftDeletes;
+
     protected $fillable = [
         'viewable_type',
         'viewable_id'
