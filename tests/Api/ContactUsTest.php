@@ -36,7 +36,6 @@ class ContactUsTest extends TestCase
         $response->assertStatus(422);
 
 
-
         $contact2 = factory(ContactUs::class)->make([
             'email' => ''
         ]);

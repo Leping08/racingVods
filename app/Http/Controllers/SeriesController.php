@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Library\Traits\Viewable;
 use App\Race;
 use App\Series;
 use Illuminate\Http\Request;
@@ -10,6 +11,8 @@ use Illuminate\Support\Facades\Log;
 
 class SeriesController extends Controller
 {
+    use Viewable;
+
     public function index()
     {
         return Cache::remember('series_index', config('cache.time'), function () {
@@ -22,7 +25,7 @@ class SeriesController extends Controller
         $series = $request->validate([
             'name' => 'required|max:5',
             'fullName' => 'required|max:255',
-            'image' =>  'required',
+            'image' => 'required',
             'website' => 'required',
             'description' => 'required|max:5000'
         ]);
@@ -39,6 +42,8 @@ class SeriesController extends Controller
 
     public function show(Series $series)
     {
+        $this->trackView($series);
+
         return Cache::remember("series_show_{$series->id}", config('cache.time'), function () use ($series) {
             $series->load('races');
             $series['seasons'] = $series->races->unique('season_id')->pluck('season');

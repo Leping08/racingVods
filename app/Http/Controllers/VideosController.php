@@ -13,7 +13,7 @@ class VideosController extends Controller
         $video = $request->validate([
             'youtube_id' => 'required|max:255',
             'youtube_start_time' => 'required|numeric',
-            'race_id' =>  'required|numeric'
+            'race_id' => 'required|numeric'
         ]);
 
         $newVideo = Video::create($video);

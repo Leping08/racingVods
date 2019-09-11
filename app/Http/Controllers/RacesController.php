@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Library\Traits\Viewable;
 use App\Race;
 use App\Video;
 use Carbon\Carbon;
@@ -11,6 +12,8 @@ use Illuminate\Support\Facades\Log;
 
 class RacesController extends Controller
 {
+    use Viewable;
+
     public function index()
     {
         return Cache::remember('race_index', config('cache.time'), function () {
@@ -23,7 +26,7 @@ class RacesController extends Controller
         $race = $request->validate([
             'name' => 'required|max:255',
             'series_id' => 'required|integer',
-            'track_id' =>  'required|integer',
+            'track_id' => 'required|integer',
             'season_id' => 'required|integer',
             'race_date' => 'required|date',
             'youtube_id' => 'required|max:20',
@@ -48,6 +51,8 @@ class RacesController extends Controller
 
     public function show(Race $race)
     {
+        $this->trackView($race);
+
         return Cache::remember("race_show_{$race->id}", config('cache.time'), function () use ($race) {
             return $race->load(['track', 'season', 'series', 'videos']);
         });

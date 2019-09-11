@@ -136,4 +136,9 @@ class Race extends Model
 
         return $collection->get($index - 1);
     }
+
+    public function views()
+    {
+        return $this->morphMany('App\View', 'viewable');
+    }
 }

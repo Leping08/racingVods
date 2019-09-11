@@ -38,4 +38,9 @@ class Series extends Model
     {
         return $this->hasMany(Race::class)->with('season')->orderBy('race_date', 'asc');
     }
+
+    public function views()
+    {
+        return $this->morphMany('App\View', 'viewable');
+    }
 }
