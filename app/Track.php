@@ -41,4 +41,9 @@ class Track extends Model
     {
         return $this->hasMany(Race::class)->orderBy('race_date');
     }
+
+    public function views()
+    {
+        return $this->morphMany('App\View', 'viewable');
+    }
 }
