@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Nova\Metrics\ViewsTrend;
+use App\Nova\Metrics\ViewsValue;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
@@ -54,7 +56,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-            new Help,
+            (new ViewsTrend())->width('2/3'),
+            (new ViewsValue())->width('1/3')
         ];
     }
 
@@ -76,5 +79,15 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function register()
     {
         //
+    }
+
+    /**
+     * Get the cards that should be displayed on the Nova dashboard.
+     *
+     * @return array
+     */
+    protected function dashboards()
+    {
+        return [];
     }
 }

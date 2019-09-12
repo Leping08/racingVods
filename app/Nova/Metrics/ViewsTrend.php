@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Laravel\Nova\Metrics\Trend;
 
-class Views extends Trend
+class ViewsTrend extends Trend
 {
     public $model;
 
-    public function __construct($model, $component = null)
+    public function __construct($model = null, $component = null)
     {
         parent::__construct($component);
 
@@ -26,7 +26,11 @@ class Views extends Trend
      */
     public function calculate(Request $request)
     {
-        return $this->countByDays($request, View::where('viewable_id', $request->segment(3))->where('viewable_type', $this->model));
+        if($this->model) {
+            return $this->countByDays($request, View::where('viewable_id', $request->segment(3))->where('viewable_type', $this->model));
+        } else {
+            return $this->countByDays($request, View::class);
+        }
     }
 
     /**

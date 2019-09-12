@@ -2,6 +2,8 @@
 
 namespace App\Nova;
 
+use App\Nova\Metrics\ViewsTrend;
+use App\Nova\Metrics\ViewsValue;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\MorphTo;
@@ -59,7 +61,10 @@ class View extends Resource
      */
     public function cards(Request $request)
     {
-        return [];
+        return [
+            (new ViewsTrend())->width('2/3'),
+            (new ViewsValue())->width('1/3')
+        ];
     }
 
     /**

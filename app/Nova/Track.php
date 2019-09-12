@@ -2,7 +2,8 @@
 
 namespace App\Nova;
 
-use App\Nova\Metrics\Views;
+use App\Nova\Metrics\ViewsTrend;
+use App\Nova\Metrics\ViewsValue;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
@@ -80,7 +81,8 @@ class Track extends Resource
     public function cards(Request $request)
     {
         return [
-            (new Views('App\Track'))->width('2/3')->onlyOnDetail()
+            (new ViewsTrend('App\Track'))->width('2/3')->onlyOnDetail(),
+            (new ViewsValue('App\Track'))->width('1/3')->onlyOnDetail()
         ];
     }
 

@@ -2,7 +2,8 @@
 
 namespace App\Nova;
 
-use App\Nova\Metrics\Views;
+use App\Nova\Metrics\ViewsTrend;
+use App\Nova\Metrics\ViewsValue;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Fields\DateTime;
@@ -71,7 +72,8 @@ class Race extends Resource
     public function cards(Request $request)
     {
         return [
-            (new Views('App\Race'))->width('2/3')->onlyOnDetail()
+            (new ViewsTrend('App\Race'))->width('2/3')->onlyOnDetail(),
+            (new ViewsValue('App\Race'))->width('1/3')->onlyOnDetail()
         ];
     }
 
