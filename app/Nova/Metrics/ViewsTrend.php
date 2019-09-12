@@ -66,4 +66,9 @@ class ViewsTrend extends Trend
     {
         return 'views';
     }
+
+    public function name()
+    {
+        return 'Views Per Day';
+    }
 }

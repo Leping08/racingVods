@@ -69,4 +69,10 @@ class ViewsValue extends Value
     {
         return 'new-views';
     }
+
+
+    public function name()
+    {
+        return 'Views';
+    }
 }
