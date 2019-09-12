@@ -15,7 +15,7 @@
     @endif
 @endcomponent
 
-@component('mail::button', ['url' => '/nova/resources/potential-races', 'color' => 'green'])
+@component('mail::button', ['url' => config('app.url').'nova/resources/potential-races', 'color' => 'green'])
 View Details
 @endcomponent
 
