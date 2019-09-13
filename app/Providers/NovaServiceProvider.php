@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Nova\Metrics\RacesPerSeries;
 use App\Nova\Metrics\ViewsTrend;
 use App\Nova\Metrics\ViewsValue;
 use Laravel\Nova\Nova;
@@ -57,7 +58,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         return [
             (new ViewsTrend())->width('2/3'),
-            (new ViewsValue())->width('1/3')
+            (new ViewsValue())->width('1/3'),
+            (new RacesPerSeries())->width('1/3')
         ];
     }
 
