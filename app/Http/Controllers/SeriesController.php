@@ -46,7 +46,7 @@ class SeriesController extends Controller
 
         return Cache::remember("series_show_{$series->id}", config('cache.time'), function () use ($series) {
             $series->load('races');
-            $series['seasons'] = $series->races->unique('season_id')->pluck('season');
+            $series['seasons'] = $series->races->unique('season_id')->pluck('season')->sortByDesc('id');
             unset($series->races);
             return $series;
         });
